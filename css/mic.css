@@ -1041,7 +1041,10 @@ label #btn,label #cancel
         margin-left: 55px;
     }
     .sec-box .item div{
-        width: 100%;
+        width: 99%;
+    }
+    .bg-gray-box-three {
+        height: 68rem;
     }
     .item .rhs-box{
         height: 460px;
@@ -1095,7 +1098,7 @@ label #btn,label #cancel
         height: 0;
     }
     .foo-cont .lg-hr {
-        margin-top: 115px;
+        margin-top: 135px;
     }
     .hori-cha p{
         margin-top: 60px;
