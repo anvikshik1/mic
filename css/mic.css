@@ -718,9 +718,6 @@ footer{
 
 
 /* ------------------------------Media query--------------------- */
-@media screen and (max-width: 1440px){
-   
-}
 @media screen and (max-width: 1680px){
     
     .ver-box #email {
