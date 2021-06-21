@@ -394,26 +394,34 @@
       <hr color="#00adef" class="sm-hr">
 
     <div class="ver-box">
-      <div>
-        <p>To be notified of our latest news, register now for our email newsletter.</p>
-        <div class="hori-box">
-          <form action="">
+
+      <div class="email-box">
+        <div class="email-lhs-box">
+          <p>To be notified of our latest news, register now for our email newsletter.</p>
+        </div>
+        <div class="email-rhs-box">
+          <form action="GET" class="email-input">
             <input type="email" name="email" id="email" placeholder="Your email address">
-            <input type="submit" value=">  Sign up now" id="submit">
+            <button type="submit" id="submit">>  Sign up now</button>
          </form>
         </div>
       </div>
+
       <hr class="v-hr" color="#2e2e2e">
-      <div class="hori-cha">
-        <p>To get the latest updates, follow us and use the following social media platforms.</p>
-        <div class="hori-box">
+
+      <div class="social-m-box">
+        <div class="social-m-lhs">
+          <p>To get the latest updates, follow us and use the following social media platforms.</p>
+        </div> 
+        <div class="social-m-rhs">
           <a href="#"><i class="fab fa-facebook-f"></i>Facebook</a>
-          <hr class="sm-v-hr" color="#2e2e2e">
+            <hr class="sm-v-hr" color="#2e2e2e">
           <a href="#"><i class="fab fa-twitter"></i>Twitter</a>
-          <hr class="sm-v-hr" color="#2e2e2e">
+            <hr class="sm-v-hr" color="#2e2e2e">
           <a href="#"><i class="fab fa-linkedin-in"></i>Linkedin</a>
         </div>
       </div>
+
     </div>
       <hr color="#2e2e2e" class="lg-hr lg-hr-two">
 
@@ -510,12 +518,12 @@
           nav:false,
         },
         425:{
-            dots:false,
+            dots:true,
             items:1,
             nav:false,
         },
         768:{
-            dots:false,
+            dots:true,
             margin:0,
             items:2,
             nav:false,
@@ -550,6 +558,7 @@
         },
         1000:{
             items:1,
+            nav:true,
         }
     }
 });
@@ -568,12 +577,12 @@
         },
         425:{
             items:1,
-            dots:false,
+            dots:true,
             nav:false,
         },
         768:{
             items:2,
-            dots:false,
+            dots:true,
             nav:false,
         },
         1024:{
