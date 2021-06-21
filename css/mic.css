@@ -1010,7 +1010,7 @@ label #btn,label #cancel
         display: flex;
         flex-direction: row;
         background-color: black;
-        margin-top: -43px;
+        margin-top: -50px;
     }
     .num-l-box{
         margin-left: 20px;
@@ -1232,7 +1232,7 @@ label #btn,label #cancel
         margin-top: 10px;
     }
     .num-box {
-        margin-top: -42px;
+        margin-bottom: 22px;
     }
     .email-rhs-box a {
         margin-left: 10px;
