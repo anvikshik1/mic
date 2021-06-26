@@ -82,6 +82,14 @@ li,a{
     display: inline-block;
     padding: 0px 15px;
 }
+.nav-links li.sub-menu::before{
+    content: '\f0d7';
+    font-family: fontAwesome;
+    position: absolute;
+    color: #fff;
+    right: 3px;
+    top: 5px;
+}
 .nav-links li a{
     transition: all 0.3s ease 0s ;
     font-family: 'Open Sans', sans-serif;
