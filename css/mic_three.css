@@ -25,7 +25,7 @@ header{
     width: 100%;
     height: 80px;
     display: flex;
-    background-color: rgb(0, 0, 0,0.8);
+    background-color: rgba(0, 0, 0, 0.8);
     opacity: 0.8;
     flex-wrap: wrap;
 }
@@ -550,6 +550,11 @@ footer{
 .fa-angle-up:hover{
     color: #00adef;
 }
+.lg-hr-three{
+    width: 92%;
+    margin-top: 20px;
+    height: 1px;
+}
 .cpy-rite{
     color: #6e6e6e ;
     padding-bottom: 50px;
@@ -595,9 +600,6 @@ footer{
     }
 }
 
-
-
-
 @media(max-width:991px){
     .email-rhs-box {
         text-align: center;
@@ -628,4 +630,247 @@ footer{
         font-size: 13px;
     }
 
+}
+@media(max-width:768px){
+    nav ul li{
+        display: none;
+    }
+    label #btn{
+        display: block;
+    }
+    ul{
+        position: absolute;
+        width: 100%;
+        height: 100vh;
+        background: #000000;
+        left: -100%;
+        top: 100px;
+        text-align: center;
+        transition: all .5s;
+    }
+    .nav-links li{
+        display: block;
+        padding: 10px;
+    }
+    .nav-links li:hover ul{
+        position: relative;
+        background: #000000;
+        height: auto;
+    }
+    .nav-links li ul{
+        width: 100%;
+    }
+    #check:checked ~ ul{
+        left: 0;
+    }
+    #check:checked ~ label #btn{
+        display: none;
+    }
+    #check:checked ~ label #cancel{
+        display: block;
+    }
+    .nav-links li ul li {
+        background-color: #1e1e1e;
+    }
+    label #btn, label #cancel {
+        margin-right: 20px;
+    }
+    li, a {
+        font-size: 1.7vw;
+    }
+    .mic-logo img {
+        margin-top: -30px;
+        margin-left: 50px;
+        width: 35vw;
+    }
+    .top-navbar {
+        height: 100px;
+        flex-wrap: wrap;
+    }
+    .mic-logo {
+        width: 50%;
+    }
+    .nav-names {
+        width: 50%;
+        justify-content: flex-end;
+        display: flex;
+        align-items: flex-end;
+    }
+    .num-box {
+        flex-direction: row;
+        position: relative;
+        top: -40px;
+    }
+    .num-l-box h4{
+        margin-left: 57px;
+        font-size: 2vw;
+    }
+    .num-r-box a{
+        font-size: 2vw;
+    }
+    .num-r-box{
+        font-size: 1.8vw;
+        display: flex;
+        justify-content: flex-end;
+    }
+    .lan-lhs-box {
+        width: 50%;
+    }
+    .nav-links li ul {
+        top: 10px;
+    }
+    .slide-content span {
+        font-size: 5vw;
+    }
+    .slide-content p {
+        font-size: 2.5vw;
+    }
+    .slide-content button {
+        width: 15vw;
+        padding: 6px;
+        font-size: 2.3vw;
+    }
+    .social-m-rhs i {
+        font-size: 2vw;
+    }
+    .social-m-rhs a {
+        margin-right: 10px;
+        font-size: 13px;
+    }
+    .lng-box a {
+        font-size: 1.7vw;
+    }
+}
+
+@media(max-width:575px){
+    .company-brands div {
+        width: 300px;
+    }
+    .assistance a {
+        font-size: 2rem;
+    }
+    .mic-logo img {
+        width: 40vw;
+    }
+    .enquiry p {
+        font-size: 1.5rem;
+    }
+    .st-info {
+        font-size: 3rem;
+    }
+    .ver-box {
+        display: block;
+    }
+    .email-box, .social-m-box {
+        width: 100%;
+
+    }
+    .v-hr {
+        display: none;
+    }
+    .email-lhs-box p, .social-m-box p {
+        text-align: center;
+    }
+    .social-m-box p{
+        margin-top: 10px;
+    }
+    .social-m-rhs{
+        display: flex;
+        justify-content: center;
+        text-align: center;
+    }
+    .email-input {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .email-rhs-box #email {
+        width: 80vw;
+    }
+    .lng-box {
+        display: block;
+    }
+    .lng-box div {
+        margin-top: 0;
+        width: 100%;
+        justify-content: center;
+        text-align: center;
+    }
+    .foo-cont .lg-hr {
+        margin-top: 27px;
+    }
+    .lng-box a {
+        font-size: 1.2rem;
+    }
+    .lg-hr-three{
+        margin-top: 35px;
+    }
+
+}
+@media(max-width:425px){
+    .num-l-box h4 {
+        margin-left:10px ;
+        font-size: 3.4vw;
+    }
+    .num-r-box a {
+        font-size: 3vw;
+    }
+    .mic-logo img {
+        width: 55vw;
+    }
+    li, a {
+        font-size: 3.2vw;
+    }
+
+    .slide-content {
+        top: 175px;
+        left: 80px;
+    }
+    .slide-content button {
+        width: 27vw;
+        font-size: 3.5vw;
+    }  
+    .slide-content span {
+        font-size: 7vw;
+    } 
+    .feilds-cont p {
+        font-size: 1.5rem;
+    } 
+    .overview-brand-box div {
+        margin-left: 0px;
+    }
+    .overview-brand-box {
+        justify-content: center;
+    }
+    
+    .foo-cont .lg-hr {
+        margin-top: 10px;
+    }
+    .lg-hr-three{
+            margin-top: 55px;
+    }
+}
+
+@media(max-width:425px){
+    .brand-title p {
+        font-size: 2.5vw;
+    }
+    .brand-title h1 {
+        font-size: 3.5vw;
+    }
+    .enquiry {
+        flex-direction: column;
+    }
+    .enquiry button {
+    margin-left: 0px;
+    }
+    .social-m-rhs i {
+        font-size: 4vw;
+    }
+}
+@media (max-width:320px){
+    .slide-content {
+        left: 60px;
+    }
 }

@@ -26,7 +26,7 @@ header{
     width: 100%;
     height: 80px;
     display: flex;
-    background-color:rgba(0, 0, 0,0.8) ;
+    background-color:rgba(0, 0, 0, 0.8);
     flex-wrap: wrap;
     max-width: 1680px;
     margin: 0 auto;
@@ -652,6 +652,7 @@ footer{
         width: 35vw;
     }
     .top-navbar {
+        height: 100px;
         flex-wrap: wrap;
     }
     .mic-logo {
@@ -660,11 +661,13 @@ footer{
     .nav-names {
         width: 50%;
         justify-content: flex-end;
+        display: flex;
+        align-items: flex-end;
     }
     .num-box {
-        margin-top:-38px ;
         flex-direction: row;
-        background-color: black;
+        position: relative;
+        top: -40px;
     }
     .num-l-box h4{
         margin-left: 50px;
@@ -677,13 +680,15 @@ footer{
         font-size: 1.8vw;
         display: flex;
         justify-content: flex-end;
-        margin-right: 15px;
     }
     .lan-lhs-box {
         width: 50%;
     }
+    label #btn, label #cancel {
+        margin-right: 20px;
+    }
     li, a {
-        font-size: 2vw;
+        font-size: 1.7vw;
     }
     .nav-links li ul {
         top: 10px;
@@ -692,12 +697,12 @@ footer{
         font-size: 5vw;
     }
     .slide-content p {
-        font-size: 2vw;
+        font-size: 2.5vw;
     }
     .slide-content button {
-        width: 14vw;
+        width: 15vw;
         padding: 6px;
-        font-size: 2vw;
+        font-size: 2.3vw;
     }
     .lhs h1 {
         font-size: 1.5rem;
@@ -714,21 +719,6 @@ footer{
         font-size: 1.7vw;
     }
     
-    .num-l-box h4 {
-        margin-left: 50px;
-        font-size: 2.4vw;
-    }
-    .slide-content p {
-        font-size: 2.5vw;
-    }
-    .slide-content button {
-        width: 15vw;
-        padding: 6px;
-        font-size: 2.3vw;
-    }
-    li, a {
-        font-size: 2.2vw;
-    }
     
 }
 
