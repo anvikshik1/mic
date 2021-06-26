@@ -713,11 +713,7 @@ footer{
     .lng-box a {
         font-size: 1.7vw;
     }
-}
-@media(max-width:768px){
-    .mic-logo img {
-        width: 50vw;
-    }
+    
     .num-l-box h4 {
         margin-left: 50px;
         font-size: 2.4vw;
