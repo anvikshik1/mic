@@ -624,7 +624,7 @@ footer{
         position: absolute;
         width: 100%;
         height: 100vh;
-        background: #000000;
+        background: rgba(0,0,0,0.8);
         left: -100%;
         top: 100px;
         text-align: center;
@@ -636,7 +636,6 @@ footer{
     }
     .nav-links li:hover ul{
         position: relative;
-        background: #000000;
         height: auto;
     }
     .nav-links li ul{
@@ -696,7 +695,7 @@ footer{
         margin-right: 20px;
     }
     li, a {
-        font-size: 1.7vw;
+        font-size: 2.2vw;
     }
     .nav-links li ul {
         top: 10px;
