@@ -1118,11 +1118,12 @@ label #btn,label #cancel
     li, a {
         font-size: 2.2vw;
     }
-
+    label #btn, label #cancel {
+        margin-right: 10px;
+    }
     .bg-gray-box .item {
         width: 31.5vw;
     }
-    
     .bg-gray-box h5 {
         font-size: 2vw;
     }
@@ -1154,7 +1155,6 @@ label #btn,label #cancel
     .lan-lhs-box {
         width: 60%;
     }
-    /* new */
     .st-info {
         font-size: 3rem;
     }
@@ -1163,7 +1163,6 @@ label #btn,label #cancel
     }
     .email-box, .social-m-box {
         width: 100%;
-
     }
     .v-hr {
         display: none;

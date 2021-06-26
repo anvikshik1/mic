@@ -731,6 +731,9 @@ footer{
 }
 
 @media(max-width:575px){
+    label #btn, label #cancel {
+        margin-right: 10px;
+    }
     .electronic-devices-box {
         flex-direction: column-reverse;
     }
@@ -760,7 +763,6 @@ footer{
         flex-direction: column-reverse;
     }
 
-    /* footer media query */
     .st-info {
         font-size: 3rem;
     }

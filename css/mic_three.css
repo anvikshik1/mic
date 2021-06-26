@@ -761,6 +761,9 @@ footer{
     .mic-logo img {
         width: 40vw;
     }
+    label #btn, label #cancel {
+        margin-right: 10px;
+    }
     .enquiry p {
         font-size: 1.5rem;
     }
