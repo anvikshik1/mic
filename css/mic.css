@@ -26,7 +26,7 @@ header{
     background-color: rgba(0, 0, 0, 0.8);
     flex-wrap: wrap;
     max-width: 1680px;
-    top: 0;
+    margin: 0 auto;
 }
 .top-navbar div{
     flex-grow: 1;
@@ -750,7 +750,7 @@ label #btn,label #cancel
     }
     .mic-logo img{
         margin-left: 80px;
-        width: 250px;
+        width: 17rem;
     }
     li, a {
         font-size: 14px;
@@ -990,6 +990,7 @@ label #btn,label #cancel
         width: 35vw;
     }
     .top-navbar {
+        height: 100px;
         flex-wrap: wrap;
     }
     .mic-logo {
@@ -998,11 +999,13 @@ label #btn,label #cancel
     .nav-names {
         width: 50%;
         justify-content: flex-end;
+        display: flex;
+        align-items: flex-end;
     }
     .num-box {
-        margin-top:-30px ;
+        top: -40px;
+        position: relative;
         flex-direction: row;
-        background-color: black;
     }
     .num-l-box h4{
         margin-left: 50px;
@@ -1072,7 +1075,6 @@ label #btn,label #cancel
     .bg-gray-box-three {
         height: 530px;
     }
-    
     .email-rhs-box {
         text-align: center;
         margin-top: 10px;

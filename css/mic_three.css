@@ -27,6 +27,8 @@ header{
     display: flex;
     background-color: rgba(0, 0, 0, 0.8);
     flex-wrap: wrap;
+    max-width: 1680px;
+    margin: 0 auto;
 }
 .top-navbar div{
     flex-grow: 1;
