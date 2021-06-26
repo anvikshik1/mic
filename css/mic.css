@@ -6,6 +6,7 @@
 }
 
 /*----------------navbar----------------- */
+
 body{
     background-color: rgb(0, 0, 0);
     max-width: 1680px;
@@ -25,6 +26,8 @@ header{
     background-color: black;
     opacity: 0.8;
     flex-wrap: wrap;
+    max-width: 1680px;
+    top: 0;
 }
 .top-navbar div{
     flex-grow: 1;
@@ -35,29 +38,14 @@ header{
     align-items: center;
 }
 .mic-logo img{
-    margin-left: 100px;
+    margin-left: 80px;
+    width: 25rem;
 }
 .mic-name{
     margin-left: 3px;
     display: block;
 }
-.mic-logo h4{
-    margin-bottom: -30px;
-    color: white;
-    font-size: 15px;
-    font-family: 'Open Sans', sans-serif;
-    font-weight: 400;
-}
-.mic-name .sm-hr{
-    width: 225px;
-    height: 1px;
-}
-.mic-logo h5{
-    color: white;
-    font-size: 11px;
-    margin-top: 4px;
-    font-family: 'Source Sans Pro', sans-serif;
-}
+
 li,a{
     text-decoration: none;
     color: white;
@@ -68,13 +56,19 @@ li,a{
     align-items: flex-end;
     margin-bottom: 15px;
 }
-.nav-links{
-    list-style: none;
-}
 .nav-links li{
     position: relative;
     display: inline-block;
     padding: 0px 15px;
+    list-style: none;
+}
+.nav-links li.sub-menu::before{
+    content: '\f0d7';
+    font-family: fontAwesome;
+    position: absolute;
+    color: #fff;
+    right: 3px;
+    top: 5px;
 }
 .nav-links li a{
     transition: all 0.3s ease 0s ;
@@ -85,7 +79,7 @@ li,a{
 }
 .nav-links li ul {
     position: absolute;
-    top: 25px;
+    top: 20px;
     left: 0px;
     background-color: rgb(0, 0, 0);
     width: 170px;
@@ -93,12 +87,10 @@ li,a{
     transition: 0.5s;
     border-bottom-left-radius:10px ;
     border-bottom-right-radius: 10px;
-    visibility: hidden;
-    opacity: 0;
+    display: none;
 }
 .nav-links li:hover ul{
-    visibility: visible;
-    opacity: 1;
+    display: block;
 }
 .nav-links li ul li {
     padding: 7px;
@@ -106,6 +98,10 @@ li,a{
     width: 100%;
     padding: 10px;
 }
+.nav-links li ul li:nth-child(4) {
+    border-bottom:none;
+}
+
 .num-box{
     display: flex;
     flex-direction: column;
@@ -121,10 +117,7 @@ li,a{
 
 
 /* -----------------------------images slider --------------------- */
-section{
-    position: relative;
-    z-index: 1;
-}
+
 #slider, .wrap, .slide-content{
     width: 100%;
     height: 820px;
@@ -286,14 +279,17 @@ section{
     justify-content: center;
     align-items: center;
     margin:20px 3px;
-    height: 280px;
-    width: 480px;
+    height: 230px;
+    width: 370px;
 }
 .tech-imgs img{
     position: absolute;
-    height: 280px;
-    width: 480px;
-    display: flex;
+    height: 230px;
+    width: 370px;
+}
+.tech-imgs img {
+    height: 230px;
+    width: 370px;
 }
 .tech-imgs h3{
     position: relative;
@@ -305,9 +301,9 @@ section{
 .tech-imgs p{
     position: relative;
     color: white;
-    font-size: 16px;
+    font-size: 12px;
     display: flex;
-    top: 60px;
+    top: 50px;
     font-family: 'Open Sans', sans-serif;
     text-align: left;
     padding: 0 15px;
@@ -320,7 +316,7 @@ section{
 /* -----------------------slick slider------------------------- */
 .bg-gray-box{
     width: 85%;
-    height: 340px;
+    height: 350px;
     margin-top: 100px;
     background-color: rgb(46, 46, 46);
     display: flex;
@@ -730,7 +726,7 @@ label #btn,label #cancel
     color: white;
     font-size: 30px;
     float: right;
-    margin-right: 40px;
+    margin-right: 45px;
     line-height: 80px;
     display: none;
     cursor: pointer;
@@ -741,23 +737,20 @@ label #btn,label #cancel
 
 /* ------------------------------Media query--------------------- */
 @media screen and (max-width: 1680px){
+    
     .bg-gray-box-three {
-        height: 370px;
+        height: 350px;
+    }
+    .mic-logo{
+        display: flex;
+        justify-content: flex-start;
     }
     .mic-logo img{
-        margin-left: 15px;
-    }
-    .mic-logo h4 {
-        font-size: 11px;
-    }
-    .mic-name .sm-hr {
-        width: 166px;
-    }
-    .mic-logo h5 {
-        font-size: 8px;
+        margin-left: 80px;
+        width: 250px;
     }
     li, a {
-        font-size: 12px;
+        font-size: 14px;
     }
     .search-box{
         height: 80px;
@@ -772,19 +765,19 @@ label #btn,label #cancel
         padding: 5px;
         font-size: 13px;
     }
-    .tech-imgs div{
-        height: 200px;
-        width: 300px;
+    .tech-imgs div {
+        height: 230px;
+        width: 370px;
     }
-    .tech-imgs img{
-        height: 200px;
-        width: 300px;
+    .tech-imgs img {
+        height: 230px;
+        width: 370px;
     }
     .tech-imgs h3{
         font-size: 22px;
     }
     .tech-imgs p {
-        top: 35px;
+        top: 50px;
     }
     .title-container p{
         font-size: 13px;
@@ -867,13 +860,43 @@ label #btn,label #cancel
     }
 }
 
-@media screen and (max-width: 1024px){
+@media screen and (max-width: 1199px){
+    .mic-logo img {
+        margin-left: 50px;
+        width: 20vw;
+    }
+    li, a {
+        font-size: 1.2vw;
+    }
+    .num-box h4, i {
+        font-size: 1.2vw;
+    }
+    .slide-content span {
+        font-size: 3vw;
+    }
+    .slide-content p {
+        font-size: 1.5vw;
+    }
+    .slide-content button {
+        width: 12vw;
+        padding: 4px;
+        font-size: 1.7vw;
+    }
+    .bg-gray-box .item {
+        width: 16vw;
+    }
+    .carou-cen p {
+        font-size: 1vw;
+    }
+    .bg-gray-box h5 {
+        font-size: 1vw;
+    }
     .carou-th-cen .item{
         width: 260px;
         height: 240px;
     }
     .bg-gray-box-three {
-        height: 560px;
+        height: 370px;
     }
     .carou-th-cen h1 {
         margin: 15px 30px;
@@ -882,49 +905,20 @@ label #btn,label #cancel
         font-size: 11px;
     }
 }
-@media screen and (max-width: 812px){
-    .mic-logo h4 {
-        font-size: 10px;
-    }
-    .mic-name .sm-hr {
-        width: 150px;
-    }
-    .mic-logo h5 {
-        font-size: 7.4px;
-    }
-    .nav-links li {
-        padding: 0px 7px;
-    }
-    li, a {
-        font-size: 10.5px;
-    }
-    .nav-names {
-        margin-bottom: 23px;
-    }
+@media screen and (max-width: 992px){
     .mic-logo img {
-        width: 50px;
-    }
-    .slide-content span {
-        font-size: 32px;
-    }
-    .slide-content p {
-        font-size: 16px;
-    }
-    .slide-content button {
-        width: 130px;
-        font-size: 19px;
-    }
-    .title-container p {
-        font-size: 11px;
-    }
-    .title-container h5 {
-        font-size: 15px;
+        margin-left: 15px;
+        width: 20vw;
     }
     .bg-gray-box .item {
-        margin-left: 50px;
+        width: 20vw;
+        margin-left: 5px;
     }
-    .carou-th-cen .item {
-        margin-left: 25px;
+    .bg-gray-box h5 {
+        font-size: 1.2vw;
+    }
+    .bg-gray-box-three {
+        height: 35rem;
     }
     .social-m-rhs a {
         font-size: 13px;
@@ -949,6 +943,7 @@ label #btn,label #cancel
     .lan-lhs-box{
         width: 34%;
     }
+@media screen and (max-width: 768px){
     nav ul li{
         display: none;
     }
@@ -956,7 +951,7 @@ label #btn,label #cancel
         display: block;
     }
     ul{
-        position: fixed;
+        position: absolute;
         width: 100%;
         height: 100vh;
         background: #000000;
@@ -969,12 +964,13 @@ label #btn,label #cancel
         display: block;
         padding: 10px;
     }
-    .nav-links li ul {
-        display: none;
-    }
     .nav-links li:hover ul{
-        visibility: visible;
-        opacity: 1;
+        position: relative;
+        background: #000000;
+        height: auto;
+    }
+    .nav-links li ul{
+        width: 100%;
     }
     #check:checked ~ ul{
         left: 0;
@@ -985,113 +981,65 @@ label #btn,label #cancel
     #check:checked ~ label #cancel{
         display: block;
     }
-    .nav-names{
-        width: 30%;
-        display: flex;
-        justify-content: flex-end;
-    }
-    .mic-logo{
-        width: 70%;
-        height: 80px;
-    }
     .mic-logo img {
-        height: 50px;
+        margin-top: -30px;
+        margin-left: 50px;
+        width: 35vw;
     }
     .top-navbar {
-        height: 65px;
+        flex-wrap: wrap;
+    }
+    .mic-logo {
+        width: 50%;
+    }
+    .nav-names {
+        width: 50%;
+        justify-content: flex-end;
     }
     .num-box {
-        display: flex;
+        margin-top:-30px ;
         flex-direction: row;
         background-color: black;
-        margin-top: -50px;
     }
-    .num-l-box{
-        margin-left: 20px; 
-        display: flex;
-        justify-content: flex-start;
-        align-items: center;
+    .num-l-box h4{
+        margin-left: 50px;
+        font-size: 2vw;
+    }
+    .num-r-box a{
+        font-size: 2vw;
     }
     .num-r-box{
+        font-size: 1.8vw;
         display: flex;
         justify-content: flex-end;
-        margin-right: 20px;
-        align-items: center;
+        margin-right: 15px;
+    }
+    .slide-content span {
+        font-size: 5vw;
+    }
+    .slide-content p {
+        font-size: 2vw;
+    }
+    .slide-content button {
+        width: 14vw;
+        padding: 6px;
+        font-size: 2vw;
+    }
+    .sec-box {
+        height: 250px;
+    }
+    .sec-box .item {
+        height: 250px;
     }
 
-}
-@media screen and (max-width: 768px){
-    /* nav ul li{
-        display: none;
-    }
-    label #btn{
-        display: block;
-    }
-    ul{
-        position: fixed;
-        width: 100%;
-        height: 100vh;
-        background: #000000;
-        left: -100%;
-        top: 100px;
-        text-align: center;
-        transition: all .5s;
-    }
-    .nav-links li{
-        display: block;
-        padding: 10px;
-    }
-    .nav-links li ul {
-        display: none;
-    }
-    .nav-links li:hover ul{
-        visibility: visible;
-        opacity: 1;
-    }
-    #check:checked ~ ul{
-        left: 0;
-    }
-    #check:checked ~ label #btn{
-        display: none;
-    }
-    #check:checked ~ label #cancel{
-        display: block;
-    }
-    .nav-names{
-        width: 30%;
-        display: flex;
-        justify-content: flex-end;
-    }
-    .mic-logo{
-        width: 70%;
-        height: 80px;
-    }
-    .mic-logo img {
-        height: 50px;
-    }
-    .top-navbar {
-        height: 65px;
-    }
-    .num-box {
-        display: flex;
-        flex-direction: row;
-        background-color: black;
-        margin-top: -50px;
-    }
-    .num-l-box{
-        margin-left: 20px;
-        display: flex;
-        justify-content: flex-start;
-        align-items: center;
-    }
-    .num-r-box{
-        display: flex;
-        justify-content: flex-end;
-        margin-right: 20px;
-        align-items: center;
-    } */
     .bg-gray-box .item {
-        margin-left: 40px;
+        width: 24.5vw;
+    }
+    .bg-gray-box h5 {
+        font-size: 1.5vw;
+    }
+    .carou-cen p {
+        font-size: 1.3vw;
     }
     .rhs-box p {
         font-size: 15px;
@@ -1103,7 +1051,10 @@ label #btn,label #cancel
         height: 250px;
     }
     .bg-gray-box-two {
-        height: 285px;
+        height: 16rem;
+    }
+    .bg-gray-box {
+        height: 340px;
     }
     .carou-th-cen .item {
         margin-left: 12px;
@@ -1141,17 +1092,78 @@ label #btn,label #cancel
     .lan-lhs-box{
         width: 40%;
     }
-    
-    
-    
 }
-@media screen and (max-width: 650px){
-.bg-gray-box-three {
-    height: 57rem;
-}
+
+@media (max-width: 575px){
+    .mic-logo img {
+        width: 50vw;
+    }
+    .num-l-box h4 {
+        margin-left: 50px;
+        font-size: 2.4vw;
+    }
+    .slide-content p {
+        font-size: 2.5vw;
+    }
+    .slide-content button {
+        width: 15vw;
+        padding: 6px;
+        font-size: 2.3vw;
+    }
+    li, a {
+        font-size: 2.2vw;
+    }
+
+    .bg-gray-box .item {
+        width: 31.5vw;
+    }
+    
+    .bg-gray-box h5 {
+        font-size: 2vw;
+    }
+    .sec-box .item div{
+        width: 99%;
+    }
+    .sec-box .item {
+        height: 500px;
+    }
+    .bg-gray-box-two {
+        height: 31rem;
+    }
+    .rhs-box button {
+        margin: 20px 60px;
+    }
+    .carou-cen p {
+        font-size: 1.9vw;
+    }
+    .bg-gray-box-three {
+        height: 68rem;
+    }
+    .carou-th-cen .item {
+        width: 300px;
+        margin-left: 75px;
+    }
+    .carou-th-cen p {
+        font-size: 13px;
+    }
+    .lan-lhs-box {
+        width: 60%;
+    }
+
 }
 
 @media screen and (max-width: 425px){
+    .mic-logo img {
+        margin-left: 20px;
+        width: 57vw;
+    }
+    .num-l-box h4 {
+        margin-left: 20px;
+        font-size: 3.4vw;
+    }
+    .num-box i {
+        font-size: 4vw;
+    }
     .slide-content {
         top: 180px;
         left: 40px;
@@ -1179,11 +1191,19 @@ label #btn,label #cancel
         text-align: center;
     }
     .bg-gray-box .item {
-        margin-left: 55px;
+        margin-left: 65px;
+        width: 12.5rem;
     }
-    .sec-box .item div{
-        width: 99%;
+    .bg-gray-box h5 {
+        font-size: 3vw;
     }
+    .carou-cen p {
+        font-size: 2.5vw;
+    }
+    li, a {
+        font-size: 3.2vw;
+    }
+    
     .bg-gray-box-three {
         height: 68rem;
     }
@@ -1209,7 +1229,7 @@ label #btn,label #cancel
         width: 118px;
     }
     .carou-th-cen .item {
-        margin-left: 35px;
+        margin-left: 17px;
     }
     .sm-bg-gray-box {
         height: 245px;
@@ -1270,6 +1290,9 @@ label #btn,label #cancel
 
 }
 @media screen and (max-width: 375px){
+    .tech-imgs img {
+        width: 340px;
+    }
     .slide-content span {
         font-size: 25px;
     } 
@@ -1277,7 +1300,7 @@ label #btn,label #cancel
         font-size: 11px;
     } 
     .bg-gray-box .item {
-        margin-left: 37px;
+        margin-left: 46px;
     }
     .title-container .sm-hr {
         width: 110px;
@@ -1286,7 +1309,11 @@ label #btn,label #cancel
         font-size: 13px;
     }
     .carou-th-cen .item {
-        margin-left: 15px;
+        width: 280px;
+        margin-left: 7px;
+    }
+    .carou-th-cen p{
+        font-size: 12px;
     }
     .foo-cont .lg-hr-three {
         margin-top: 0;
@@ -1312,26 +1339,40 @@ label #btn,label #cancel
 }
 
 @media screen and (max-width: 320px){
+    .tech-imgs img {
+        width: 280px;
+        height: 200px;
+
+    }
+    .mic-logo img {
+        width: 60vw ;
+    }
+    .tech-imgs div {
+        width: 280px;
+        height: 200px;
+
+    }
+    .tech-imgs p{
+        font-size: 9px;
+    }
     .slide-content {
         left: 20px;
     }
     .bg-gray-box .item {
-        margin-left: 16px;
+        margin-left: 25px;
     }
-    .item .lhs-box .blue-img {
-        height: 225px;
+    .bg-gray-box h5 {
+        font-size: 4vw;
     }
-    .rhs-box {
-        margin-top: -50px;
-    }
-    .sec-box .item div{
-        width: 99%;
-    }
+    .email-rhs-box #email {
+        width: 90%;
+    }   
     .bg-gray-box-two {
         height: 490px;
     }
     .carou-th-cen .item{
         margin-left: 0px;
+        width: 250px;
     }
     .sm-v-hr {
         margin-right: 3px;
@@ -1344,18 +1385,4 @@ label #btn,label #cancel
         margin-right: 5px;
         font-size: 12px;
     }
-
 }
-
-        
-        
-        
-    
-
-
-
-
-
-
-
-
