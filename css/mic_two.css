@@ -727,10 +727,10 @@ footer{
         margin-top: 0;
     }
     .social-m-rhs i {
-        font-size: 2vw;
+        font-size: 3vw;
     }
     .social-m-rhs a {
-        margin-right: 10px;
+        margin-right: 3px;
         font-size: 13px;
     }
     .lng-box a {
@@ -884,6 +884,10 @@ footer{
         margin-right: 5px;
         font-size: 13px;
     }
+    .social-m-rhs a {
+        margin-right: 0px;
+        font-size: 12px;
+    }
 }
 @media (max-width:320px){
     .slide-content {
@@ -892,5 +896,9 @@ footer{
     .sm-v-hr {
         margin-right: 4px;
         margin-left: 0;
+    }
+    .social-m-rhs a {
+        margin-right: 10px;
+        font-size: 12px;
     }
 }

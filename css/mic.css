@@ -58,16 +58,15 @@ li,a{
 .nav-links li{
     position: relative;
     display: inline-block;
-    padding: 0px 15px;
+    padding: 0px 10px;
     list-style: none;
 }
-.nav-links li.sub-menu::before{
+.nav-links li.sub-menu > a::after{
     content: '\f0d7';
     font-family: fontAwesome;
-    position: absolute;
     color: #fff;
-    right: 3px;
-    top: 5px;
+    position: relative;
+    left: 4px;
 }
 .nav-links li a{
     transition: all 0.3s ease 0s ;
@@ -988,9 +987,15 @@ label #btn,label #cancel
     .nav-links li ul li {
         background-color: #1e1e1e;
     }
+    .nav-links li.sub-menu > a::after{
+        content: '\f0d7';
+        font-family: fontAwesome;
+        color: rgb(255, 255, 255);
+        margin-top: 3px;
+    }
     .mic-logo img {
-        margin-top: -30px;
-        margin-left: 50px;
+        margin-top: -7px;
+        margin-left: 20px;
         width: 35vw;
     }
     .top-navbar {
@@ -1001,7 +1006,7 @@ label #btn,label #cancel
         width: 50%;
     }
     .nav-names {
-        width: 50%;
+        width: 20%;
         justify-content: flex-end;
         display: flex;
         align-items: flex-end;
@@ -1010,12 +1015,12 @@ label #btn,label #cancel
         font-size: 2.2vw;
     }
     .num-box {
-        top: -40px;
+        top: -30px;
         position: relative;
         flex-direction: row;
     }
     .num-l-box h4{
-        margin-left: 50px;
+        margin-left: 20px;
         font-size: 2vw;
     }
     .num-r-box a{
@@ -1025,7 +1030,7 @@ label #btn,label #cancel
         font-size: 1.8vw;
         display: flex;
         justify-content: flex-end;
-        margin-right: 15px;
+        margin-right: 20px;
     }
     .slide-content span {
         font-size: 5vw;
@@ -1092,6 +1097,9 @@ label #btn,label #cancel
     .social-m-rhs a {
         margin-right: 10px;
         font-size: 13px;
+    }
+    .social-m-rhs i {
+        font-size: 3vw;
     }
     .email-rhs-box #submit {
         padding: 5px 10px;
@@ -1213,13 +1221,11 @@ label #btn,label #cancel
     .lg-hr-three{
         margin-top: 35px;
     }
-
 }
-
 @media(max-width: 425px){
     .mic-logo img {
-        margin-left: 20px;
-        width: 57vw;
+        margin-top: -25px;
+        width: 100%;
     }
     .num-l-box h4 {
         margin-left: 20px;
