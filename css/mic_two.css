@@ -80,15 +80,14 @@ li,a{
 .nav-links li{
     position: relative;
     display: inline-block;
-    padding: 0px 15px;
+    padding: 0 10px;
 }
-.nav-links li.sub-menu::before{
+.nav-links li.sub-menu > a::after{
     content: '\f0d7';
     font-family: fontAwesome;
-    position: absolute;
     color: #fff;
-    right: 3px;
-    top: 5px;
+    position: relative;
+    left: 4px;
 }
 .nav-links li a{
     transition: all 0.3s ease 0s ;
@@ -533,7 +532,11 @@ footer{
 .fa-angle-up:hover{
     color: #00adef;
 }
-
+.lg-hr-three{
+    width: 92%;
+    margin-top: 20px;
+    height: 1px;
+}
 .cpy-rite{
     color: #6e6e6e ;
     padding-bottom: 50px;
@@ -653,9 +656,15 @@ footer{
     .nav-links li ul li {
         background-color: #1e1e1e;
     }
+    .nav-links li.sub-menu > a::after{
+        content: '\f0d7';
+        font-family: fontAwesome;
+        color: rgb(255, 255, 255);
+        margin-top: 3px;
+    }
     .mic-logo img {
-        margin-top: -30px;
-        margin-left: 50px;
+        margin-top: -7px;
+        margin-left: 20px;
         width: 35vw;
     }
     .top-navbar {
@@ -666,7 +675,7 @@ footer{
         width: 50%;
     }
     .nav-names {
-        width: 50%;
+        width: 20%;
         justify-content: flex-end;
         display: flex;
         align-items: flex-end;
@@ -674,10 +683,10 @@ footer{
     .num-box {
         flex-direction: row;
         position: relative;
-        top: -40px;
+        top: -30px;
     }
     .num-l-box h4{
-        margin-left: 50px;
+        margin-left: 20px;
         font-size: 2vw;
     }
     .num-r-box a{
@@ -687,12 +696,14 @@ footer{
         font-size: 1.8vw;
         display: flex;
         justify-content: flex-end;
+        margin-right: 20px;
     }
     .lan-lhs-box {
         width: 50%;
     }
     label #btn, label #cancel {
         margin-right: 20px;
+        margin-top: -12px;
     }
     li, a {
         font-size: 2.2vw;
@@ -716,7 +727,7 @@ footer{
         margin-top: 0;
     }
     .social-m-rhs i {
-        font-size: 3vw;
+        font-size: 2vw;
     }
     .social-m-rhs a {
         margin-right: 10px;
@@ -808,13 +819,12 @@ footer{
         justify-content: center;
         text-align: center;
     }
-    .foo-cont .lg-hr {
-        margin-top: 27px;
-    }
     .lng-box a {
         font-size: 1.2rem;
     }
-
+    .lg-hr-three{
+        margin-top: 35px;
+    }
 }
 @media(max-width:425px){
     .num-l-box h4 {
@@ -825,7 +835,9 @@ footer{
         font-size: 3vw;
     }
     .mic-logo img {
-        width: 55vw;
+        width: 100%;
+        margin-top: -25px;
+        
     }
     li, a {
         font-size: 3.2vw;
@@ -854,13 +866,11 @@ footer{
     .lhs p {
         text-align: center;
     }
-    .foo-cont .lg-hr {
-        margin-top: 10px;
-    }
     .lg-hr-three{
-            width: 92%;
-            margin-top: 55px;
-            height: 1px;
+        margin-top: 55px;
+    }
+    .social-m-rhs i {
+        font-size: 3.1vw;
     }
 }
 @media (max-width:375px){
@@ -868,7 +878,7 @@ footer{
         font-size: 4vw;
     }
     .social-m-rhs i {
-        font-size: 5vw;
+        font-size: 4vw;
     }
     .social-m-rhs a {
         margin-right: 5px;
@@ -883,6 +893,4 @@ footer{
         margin-right: 4px;
         margin-left: 0;
     }
-    
-    
 }

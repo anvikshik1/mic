@@ -739,7 +739,7 @@ label #btn,label #cancel
 }
 
 /* ------------------------------Media query--------------------- */
-@media screen and (max-width: 1680px){
+@media(max-width: 1680px){
     
     .bg-gray-box-three {
         height: 350px;
@@ -863,7 +863,7 @@ label #btn,label #cancel
     }
 }
 
-@media screen and (max-width: 1199px){
+@media (max-width: 1199px){
     .mic-logo img {
         margin-left: 50px;
         width: 20vw;
@@ -908,7 +908,7 @@ label #btn,label #cancel
         font-size: 11px;
     }
 }
-@media screen and (max-width: 992px){
+@media(max-width: 991px){
     .mic-logo img {
         margin-left: 15px;
         width: 20vw;
@@ -946,7 +946,9 @@ label #btn,label #cancel
     .lan-lhs-box{
         width: 34%;
     }
-@media screen and (max-width: 768px){
+
+
+@media(max-width: 768px){
     nav ul li{
         display: none;
     }
@@ -1102,6 +1104,9 @@ label #btn,label #cancel
     .lan-lhs-box{
         width: 40%;
     }
+    .lng-box a {
+        font-size: 1.7vw;
+    }
 }
 
 @media (max-width: 575px){
@@ -1201,11 +1206,9 @@ label #btn,label #cancel
         justify-content: center;
         text-align: center;
     }
-    .foo-cont .lg-hr {
-        margin-top: 27px;
-    }
+    
     .lng-box a {
-        font-size: 1.2rem;
+        font-size: .8rem;
     }
     .lg-hr-three{
         margin-top: 35px;
@@ -1213,7 +1216,7 @@ label #btn,label #cancel
 
 }
 
-@media screen and (max-width: 425px){
+@media(max-width: 425px){
     .mic-logo img {
         margin-left: 20px;
         width: 57vw;
@@ -1327,21 +1330,12 @@ label #btn,label #cancel
         display: flex;
         justify-content: center;
     }
-    .foo-cont .lg-hr-one{
-        margin-top: 10px;
-    }
-    .foo-cont .lg-hr-three{
+    
+    .lg-hr-three{
         margin-top: 0;
     }
-    .lng-box a {
-        font-size: 11px;
-    }
-    .lg-hr-three{
-        margin-top: 55px;
-    }
-
 }
-@media screen and (max-width: 375px){
+@media(max-width: 375px){
     .tech-imgs img {
         width: 340px;
     }
@@ -1370,7 +1364,7 @@ label #btn,label #cancel
     
 }
 
-@media screen and (max-width: 320px){
+@media(max-width: 320px){
     .tech-imgs img {
         width: 280px;
         height: 200px;

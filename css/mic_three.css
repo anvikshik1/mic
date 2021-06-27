@@ -812,9 +812,7 @@ footer{
         justify-content: center;
         text-align: center;
     }
-    .foo-cont .lg-hr {
-        margin-top: 27px;
-    }
+    
     .lng-box a {
         font-size: 1.2rem;
     }
@@ -874,14 +872,12 @@ footer{
         justify-content: center;
     }
     
-    .foo-cont .lg-hr {
-        margin-top: 10px;
-    }
+    
     .sm-v-hr {
         margin-left: 12px;
     }
     .lg-hr-three{
-            margin-top: 55px;
+        margin-top: 55px;
     }
 }
 
