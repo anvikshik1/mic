@@ -6,7 +6,7 @@
 }
 
 /*----------------navbar----------------- */
-
+ 
 body{
     background-color: rgb(0, 0, 0);
     max-width: 1680px;
@@ -330,7 +330,8 @@ li,a{
     justify-content: space-evenly;
 }
 .carou-cen .item{
-    width: 240px;
+    position: relative;
+    width: 255px;
     height: 390px;
     background-color: rgb(255, 255, 255);
     display: flex;
@@ -338,45 +339,69 @@ li,a{
     align-items: center;
     flex-direction: column;
 }
-.carou-cen .item:hover{
-    border-bottom: 4px solid #00adef ;
+.add-cart{
+    position: absolute;
+    top:0;
+    right: 0;
+    height: 0;
+    width: 0;
+    margin-top:1px;
+    margin-right:2px;
+    border: 25px solid transparent;
+    border-top-color: rgb(37, 37, 37);
+    border-right-color: rgb(37, 37, 37);
 }
-.carou-cen .item img{
-    width: 150px;
-    height: 120px;
-    margin-top: 30px;
+.add-cart .cart-img{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 20px;
+}
+
+.carou-cen .item:hover .add-cart{
+    border-top-color: rgb(0, 160, 223);
+    border-right-color: rgb(0, 160, 223);
+}
+.carou-cen .item .prod-img{
+    margin-top: 25px;
+    width: 130px;
 }
 .carou-cen h5{
     color: rgb(32, 32, 32);
     margin-top: 20px;
     font-family: 'Nunito Sans', sans-serif;
-    font-size: 15px;
-
+    font-size: 20px;
+    text-align: center;
 }
 .carou-cen p{
-    color: rgb(32, 32, 32);
+    color: rgb(83, 83, 83);
     font-size: 14px;
-    margin-top: 10px;
+    margin: 10px;
     font-family: 'Source Sans Pro', sans-serif;
     text-align: center;
 }
-.carou-cen button{
-    padding: 10px;
+.carou-cen a{
+    padding: 5px 15px;
     margin-top: 20px;
-    background-color: black;
-    color: white;
-    border: 0;
-    font-size: 17px;
+    background-color: rgb(255, 255, 255);
+    border: 2px solid black;
+    font-size: 13px;
+    color: rgb(0, 0, 0);
     font-family: 'Source Sans Pro', sans-serif;
 }
-.carou-cen button:hover{
-    text-shadow: 1px 1px 0 #00adef ;
+
+.carou-cen a:hover{
+    color: rgb(255, 255, 255);
+    background-color: black;
 }
+
 .carou-cen .white-bg{
     background-color: white;
     width: 80%;
     height: 302px;
     margin-top: -75px;
+    display: flex;
+    justify-content: center;
 }
 /* -------------------------------SHAPING THE FUTURE-------------------------------- */
 .bg-gray-box-two{
@@ -408,6 +433,7 @@ li,a{
 }
 .item .lhs-box .blue-img{
     height: 380px;
+    width: 100%;
     border: 1px solid white;
     margin-top:0;
 }
@@ -798,6 +824,7 @@ label #btn,label #cancel
     }
     .item .lhs-box .blue-img{
         height: 330px;
+        width: 100%;
     }
     .rhs-box h1 {
         font-size: 23px;
@@ -806,9 +833,9 @@ label #btn,label #cancel
         width: 92%;
         height: 330px;
     }
-    .bg-gray-box .item {
-        width: 218px;
-        height: 327px;
+    .carou-cen .item {
+        width: 206px;
+        height: 350px;
     }
     .bg-gray-box-two{
         height: 380px;
@@ -833,11 +860,12 @@ label #btn,label #cancel
     .carou-th-cen p {
         font-size: 15px;
     }
-    .bg-gray-box h5{
-        font-size: 12px;
+    .carou-cen h5{
+        font-size: 17px;
+        text-align: center;
     }
-    .bg-gray-box button {
-        font-size: 15px;
+    .carou-cen button a {
+        font-size: 12px;
     }
     .sm-bg-gray-box {
         height: 250px;
@@ -884,15 +912,7 @@ label #btn,label #cancel
         padding: 4px;
         font-size: 1.7vw;
     }
-    .bg-gray-box .item {
-        width: 16vw;
-    }
-    .carou-cen p {
-        font-size: 1vw;
-    }
-    .bg-gray-box h5 {
-        font-size: 1vw;
-    }
+    
     .carou-th-cen .item{
         width: 260px;
         height: 240px;
@@ -907,18 +927,22 @@ label #btn,label #cancel
         font-size: 11px;
     }
 }
+@media(max-width: 1024px){
+    .carou-cen .item {
+        width: 195px;
+        height: 350px;
+    }
+}
 @media(max-width: 991px){
     .mic-logo img {
         margin-left: 15px;
         width: 20vw;
     }
-    .bg-gray-box .item {
-        width: 20vw;
-        margin-left: 5px;
+    .carou-cen .item {
+        width: 200px;
+        margin-left: 2.5vw;
     }
-    .bg-gray-box h5 {
-        font-size: 1.2vw;
-    }
+    
     .bg-gray-box-three {
         height: 35rem;
     }
@@ -945,7 +969,7 @@ label #btn,label #cancel
     .lan-lhs-box{
         width: 34%;
     }
-
+}
 
 @media(max-width: 768px){
     nav ul li{
@@ -1014,6 +1038,10 @@ label #btn,label #cancel
     li, a {
         font-size: 2.2vw;
     }
+    .carou-cen .item {
+        width: 195px;
+        margin-left: 0;
+    }
     .num-box {
         top: -30px;
         position: relative;
@@ -1049,21 +1077,12 @@ label #btn,label #cancel
     .sec-box .item {
         height: 250px;
     }
-
-    .bg-gray-box .item {
-        width: 24.5vw;
-    }
-    .bg-gray-box h5 {
-        font-size: 1.5vw;
-    }
-    .carou-cen p {
-        font-size: 1.3vw;
-    }
     .rhs-box p {
         font-size: 15px;
     }
     .item .lhs-box .blue-img {
         height: 250px;
+        width: 100%;
     }
     .sec-box .item div {
         height: 250px;
@@ -1139,11 +1158,9 @@ label #btn,label #cancel
     label #btn, label #cancel {
         margin-right: 10px;
     }
-    .bg-gray-box .item {
-        width: 31.5vw;
-    }
-    .bg-gray-box h5 {
-        font-size: 2vw;
+    
+    .carou-cen .item {
+        margin-left: 2.5vw;
     }
     .sec-box .item div{
         width: 99%;
@@ -1157,9 +1174,7 @@ label #btn,label #cancel
     .rhs-box button {
         margin: 20px 60px;
     }
-    .carou-cen p {
-        font-size: 1.9vw;
-    }
+    
     .bg-gray-box-three {
         height: 68rem;
     }
@@ -1223,6 +1238,9 @@ label #btn,label #cancel
     }
 }
 @media(max-width: 425px){
+    .carou-cen .item {
+        margin-left: 15.5vw;
+    }
     .mic-logo img {
         margin-top: -25px;
         width: 100%;
@@ -1237,7 +1255,7 @@ label #btn,label #cancel
     .slide-content {
         top: 180px;
         left: 40px;
-        width: 365px
+        width: 285px;
     }
     .slide-content span {
         font-size: 30px;
@@ -1260,16 +1278,7 @@ label #btn,label #cancel
         font-size: 12px;
         text-align: center;
     }
-    .bg-gray-box .item {
-        margin-left: 65px;
-        width: 12.5rem;
-    }
-    .bg-gray-box h5 {
-        font-size: 3vw;
-    }
-    .carou-cen p {
-        font-size: 2.5vw;
-    }
+    
     li, a {
         font-size: 3.2vw;
     }
@@ -1343,7 +1352,10 @@ label #btn,label #cancel
 }
 @media(max-width: 375px){
     .tech-imgs img {
-        width: 340px;
+        width: 90vw;
+    }
+    .tech-imgs div {
+        width: 90vw;
     }
     .slide-content span {
         font-size: 25px;
@@ -1351,9 +1363,10 @@ label #btn,label #cancel
     .slide-content p {
         font-size: 11px;
     } 
-    .bg-gray-box .item {
-        margin-left: 46px;
+    .carou-cen .item {
+        margin-left: 13.5vw;
     }
+    
     .title-container .sm-hr {
         width: 110px;
     } 
@@ -1389,11 +1402,8 @@ label #btn,label #cancel
     .slide-content {
         left: 20px;
     }
-    .bg-gray-box .item {
-        margin-left: 25px;
-    }
-    .bg-gray-box h5 {
-        font-size: 4vw;
+    .carou-cen .item {
+        margin-left: 8.5vw;
     }
     .bg-gray-box-two {
         height: 490px;
