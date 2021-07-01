@@ -1,4 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Nunito+Sans&family=Open+Sans:wght@300;400&display=swap');
+
+@font-face{
+    font-family: KlavikaMedium;
+    src: url('../fonts/KlavikaMedium-TF.otf');
+}
+@font-face{
+    font-family: KlavikaLight;
+    src: url('../fonts/KlavikaLight-Plain.otf');
+}
+
+
+
 *{
     margin: 0;
     padding: 0;
@@ -44,11 +57,12 @@ header{
     margin-left: 3px;
     display: block;
 }
-
-li,a{
+.nav-links li a{
+    transition: all 0.3s ease 0s ;
+    font-family: klavikaLight;
     text-decoration: none;
     color: white;
-    font-size: 17px;
+    font-size: 15px;
 }
 .nav-names{
     display: flex;
@@ -68,10 +82,7 @@ li,a{
     position: relative;
     left: 4px;
 }
-.nav-links li a{
-    transition: all 0.3s ease 0s ;
-    font-family: 'Open Sans', sans-serif;
-}
+
 .nav-links li a:hover{
     color: #00adef;
 }
@@ -79,7 +90,7 @@ li,a{
     position: absolute;
     top: 20px;
     left: 0px;
-    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.8);
     width: 170px;
     padding: 2px;
     transition: 0.5s;
@@ -99,7 +110,6 @@ li,a{
 .nav-links li ul li:nth-child(4) {
     border-bottom:none;
 }
-
 .num-box{
     display: flex;
     flex-direction: column;
@@ -107,12 +117,11 @@ li,a{
 .num-box h4,i{
     color: white;
     padding: 7px;
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Noto Sans', sans-serif;
 }
 .num-box i{
     color: white;
 }
-
 
 /* -----------------------------images slider --------------------- */
 
@@ -155,24 +164,23 @@ li,a{
 .slide-content span{
     color: white;
     font-size: 37px;
-    font-family: 'Nunito Sans', sans-serif;
-
+    font-family: KlavikaMedium;
 }
 .slide-content p{
     color: white;
     font-size: 20px;
     padding: 15px 0px;
-    font-family: 'Open Sans', sans-serif;
+    font-family: KlavikaLight;
 }
-.slide-content button{
-    width: 150px;
-    border: 0;
-    background-color: #1e1e1e;
+.slide-content button {
+    width: 140px;
+    border: 2px solid #a7a7a7;
+    background-color: rgba(30, 30, 30,0.5);
     padding: 5px;
     color: white;
-    font-size: 23px;
+    font-size: 20px;
     cursor: pointer;
-    font-family: 'Open Sans', sans-serif;
+    font-family: "Noto Sans", sans-serif;
 }
 .arrow{
     cursor: pointer;
@@ -199,7 +207,7 @@ li,a{
     position: relative;
     width: 100%;
     height: 90px;
-    background-color: rgb(46, 46, 46);
+    background-color:#141414;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -222,7 +230,9 @@ li,a{
     outline: none;
     border: 0;
 }
+
 /* ----------------------Test and measurement------------------------ */
+
 .black-bg{
     height: auto;
     width: 100%;
@@ -239,20 +249,19 @@ li,a{
     align-items: center;
 }
 .title-container h4{
-    border: 2px solid #00adef;
     margin-top:35px;
     border-radius: 17px;
-    color: #00adef;
+    color: #ffffff;
     padding: 7px 40px;
-    font-size: 15px;
-    font-family: 'Nunito Sans', sans-serif;
+    font-size: 30px;
+    font-family: KlavikaMedium;
 }
 .title-container p{
     color: #ffffff;
     font-size: 20px;
     margin-top:17px;
     text-align: center;
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Noto Sans', sans-serif;
 }
 .title-container .sm-hr{
     margin-top: 15px;
@@ -263,7 +272,7 @@ li,a{
     color: #6e6e6e;
     font-size: 16px;
     margin-top: 5px;
-    font-family: 'Nunito Sans', sans-serif;
+    font-family: 'Nuto Sans', sans-serif;
 }
 .tech-imgs {
     display: flex;
@@ -271,7 +280,9 @@ li,a{
     flex-flow: wrap;
     justify-content: center;
 }
-.tech-imgs div{
+.tech-imgs .t-img{
+    position: relative;
+    overflow: hidden;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -282,10 +293,7 @@ li,a{
 }
 .tech-imgs img{
     position: absolute;
-    height: 230px;
-    width: 370px;
-}
-.tech-imgs img {
+    overflow: hidden;
     height: 230px;
     width: 370px;
 }
@@ -293,45 +301,56 @@ li,a{
     position: relative;
     color: white;
     font-size: 30px;
-    font-family: 'Nunito Sans', sans-serif;
+    font-family: 'Nuto Sans', sans-serif;
     font-weight: normal;
 }
 .tech-imgs p{
-    position: relative;
+    position:relative;
     color: white;
-    font-size: 12px;
-    display: flex;
-    top: 50px;
-    font-family: 'Open Sans', sans-serif;
+    top: 60px;
+    font-size: 12.5px;
+    font-family: 'Nuto Sans', sans-serif;
     text-align: left;
     padding: 0 15px;
+    display: none;
 }
+
+.tech-imgs .t-img:hover p{
+    display: block;
+}
+
+.tech-imgs .t-img:hover img{
+    transform: scale(1.1) translate3d(0px, -10px, 0px);
+    transition: all .2s ease-out !important;
+    cursor: pointer;
+} 
 .btn h5{
     color: #6e6e6e;
     margin-top: 5px;
     font-family: 'Nunito Sans', sans-serif;
 }
+
 /* -----------------------slick slider------------------------- */
-.bg-gray-box{
+.first-gray-box{
     width: 85%;
-    height: 350px;
+    height: auto;
+    padding: 50px 0;
     margin-top: 100px;
-    background-color: rgb(46, 46, 46);
+    background-color: #141414;
     display: flex;
     justify-content: center;
 }
-.carou-cen{
+.carousel-one{
     width: 92%;
-    height: 375px;
-    margin-top: -75px;
+    height: auto;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-evenly;
+    align-items: center;
+    justify-content:center;
 }
-.carou-cen .item{
+.carousel-one .item{
     position: relative;
-    width: 255px;
     height: 390px;
     background-color: rgb(255, 255, 255);
     display: flex;
@@ -358,78 +377,74 @@ li,a{
     width: 20px;
 }
 
-.carou-cen .item:hover .add-cart{
+.carousel-one .item:hover .add-cart{
     border-top-color: rgb(0, 160, 223);
     border-right-color: rgb(0, 160, 223);
 }
-.carou-cen .item .prod-img{
+.carousel-one .item .prod-img{
     margin-top: 25px;
     width: 130px;
 }
-.carou-cen h5{
+.carousel-one h5{
     color: rgb(32, 32, 32);
     margin-top: 20px;
-    font-family: 'Nunito Sans', sans-serif;
+    font-family: 'Nuto Sans', sans-serif;
     font-size: 20px;
     text-align: center;
 }
-.carou-cen p{
+.carousel-one p{
     color: rgb(83, 83, 83);
     font-size: 14px;
     margin: 10px;
-    font-family: 'Source Sans Pro', sans-serif;
+    font-family: 'Nuto Sans', sans-serif;
     text-align: center;
 }
-.carou-cen a{
+.carousel-one a{
     padding: 5px 15px;
     margin-top: 20px;
+    text-decoration: none;
     background-color: rgb(255, 255, 255);
     border: 2px solid black;
     font-size: 13px;
     color: rgb(0, 0, 0);
-    font-family: 'Source Sans Pro', sans-serif;
+    font-family: 'Nuto Sans', sans-serif;
 }
 
-.carou-cen a:hover{
+.carousel-one a:hover{
     color: rgb(255, 255, 255);
     background-color: black;
 }
 
-.carou-cen .white-bg{
-    background-color: white;
-    width: 80%;
-    height: 302px;
-    margin-top: -75px;
-    display: flex;
-    justify-content: center;
-}
+
 /* -------------------------------SHAPING THE FUTURE-------------------------------- */
-.bg-gray-box-two{
+.second-gray-box{
     width: 85%;
-    height: 435px;
+    height: auto;
+    padding: 50px 0;
     margin-top: 100px;
-    background-color: rgb(46, 46, 46);
+    background-color:#141414;
     display: flex;
     justify-content: center;
 }
 
-.sec-box{
+.carousel-two{
     width: 92%;
-    height: 360px;
+    height: auto;
     display: flex;
-    margin-top: -60px;
+    justify-content: center;
     flex-direction: column;
     align-items: center;
 }
-.sec-box .item{
+.carousel-two .item{
     width: 100%;
     height: 380px;
     margin: 0px 0px;
     display: flex;
     flex-wrap: wrap;
 }
-.sec-box .item div{
+.carousel-two .item div {
     width: 50%;
+    height: 330px;
 }
 .item .lhs-box .blue-img{
     height: 380px;
@@ -448,14 +463,14 @@ li,a{
     font-size: 40px;
     margin-left: 65px;
     padding: 10px;
-    font-family: 'Nunito Sans', sans-serif;
+    font-family: KlavikaMedium;
 }
 .rhs-box p{
-    font-size: 27px;
+    font-size: 25px;
     text-align: left;
     margin-left: 65px;
     padding: 10px;
-    font-family: 'Source Sans Pro', sans-serif
+    font-family: KlavikaLight;
 }
 .rhs-box button{
     width: 140px;
@@ -467,15 +482,14 @@ li,a{
     cursor: pointer;
     margin: 20px 80px;
 }
-.rhs-box button:hover{
-    text-shadow:none ;
- }
+
 .owl-prev span, .owl-next span{
     color: white;
     background-color: #6e6e6e;
-    padding: 8px 17px;
-    font-size: 25px;
-    margin: 0 -4.5px
+    padding: 0 15px;
+    font-size: 40px;
+    margin: 0 -5.7px;
+    border:1px solid wheat
  }
 .owl-prev span:hover, .owl-next span:hover{
     background-color: #00adef;
@@ -483,19 +497,20 @@ li,a{
 
 /* -----------------------------HELPING YOU CONNECT----------------------------- */
 
-.bg-gray-box-three{
+.third-gray-box {
     width: 85%;
-    height: 500px;
+    height: auto;
+    padding: 50px 0;
     margin-top: 100px;
-    background-color: rgb(46, 46, 46);
+    background-color: #141414;
     display: flex;
     justify-content: center;
+    align-items: center;
 }
 
 .third-tech-images{
     width: 92%;
-    height: 378px;
-    margin-top: -75px;
+    height: 408px;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -503,8 +518,10 @@ li,a{
     align-items: center;
 }
 .third-tech-images div{
-    height: 225px;
-    width: 430px;
+    position: relative;
+    overflow: hidden;
+    height: 200px;
+    width: 340px;
     margin: 2px;
     display: flex;
     justify-content: center;
@@ -514,36 +531,40 @@ li,a{
 .third-tech-images img {
     position: absolute;
     margin-top: 0px;
-    height: 225px;
-    width: 430px;
+    height: 200px;
+    width: 340px;
 }
+.third-tech-images div:hover img{
+    transform: scale(1.1) translate3d(0px, -10px, 0px);
+    transition: all .2s ease-out !important;
+    cursor: pointer;
+} 
 .third-tech-images h1{
     position: relative;
     color: white;
-    font-family: 'Source Sans Pro', sans-serif;
-    font-weight: normal;
+    font-family: 'Nuto Sans', sans-serif;
+    font-weight: 100;
 }
 
 /* --------------------------BACK TO BASICS------------------------------ */
 
-.sm-bg-gray-box{
+.fourth-gray-box{
     width: 85%;
-    height: 300px;
+    height:auto;
+    padding: 50px 0;
     margin-top: 100px;
-    background-color: rgb(46, 46, 46);
+    background-color:#141414;
     display: flex;
     justify-content: center;
 }
-.carou-th-cen{
+.carousel-three{
     width: 92%;
     height: 290px;
-    margin-top: -55px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
 }
-.carou-th-cen .item{
-    width: 425px;
+.carousel-three .item{
     height: 285px;
     background-color: white;
     display: flex;
@@ -551,24 +572,24 @@ li,a{
     justify-content: flex-start;
     align-items: flex-start;
 }
-.carou-th-cen h1 {
+.carousel-three h1 {
     color: #00adef;
     margin: 20px 30px;
     font-size: 35px;
-    font-family: 'Open Sans', sans-serif;
+    font-family: KlavikaMedium;
 }
-.carou-th-cen h2 {
+.carousel-three h2 {
     color: #00adef;
     margin: 10px 30px;
     font-size: 25px;
-    font-family: 'Open Sans', sans-serif;
+    font-family: KlavikaLight;
 }
-.carou-th-cen p {
+.carousel-three p {
     text-align: left;
     color: black;
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Nuto Sans', sans-serif;
     margin: 10px 30px;
-    font-size: 17px;
+    font-size: 16px;
 }
 
 .cont-btn{
@@ -582,7 +603,34 @@ li,a{
     cursor: pointer;
 }
 
+/* ------------------------------Valued Partners-------------------------- */
+
+.fifth-gray-box{
+    width: 85%;
+    height: auto;
+    padding: 50px 0;
+    margin: 70px 0;
+    background-color: #141414;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.carousel-four{
+    width: 92%;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.carousel-four .item{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
 /* ------------------------------footer code-------------------------- */
+
 footer{
     width: 100%;
     background-color: black;
@@ -602,7 +650,7 @@ footer{
     font-size: 35px;
     color: white;
     margin-top:20px;
-    font-family: 'Source Sans Pro', sans-serif;
+    font-family: KlavikaMedium;
 }
 .sm-hr{
     margin-top: 15px;
@@ -621,7 +669,6 @@ footer{
     display: flex;
     flex-direction: column;
 }
-
 .email-lhs-box,.email-rhs-box{
     width: 100%;
 }
@@ -685,18 +732,19 @@ footer{
     justify-content: center;
     align-items: center;
 }
-.social-m-rhs a{
+.social-m-rhs a {
     margin-right: 20px;
     font-family: 'Open Sans', sans-serif;
     color: #6e6e6e;
+    text-decoration: none;
     font-size:15px;
+    
 }
-.social-m-rhs i{
+.social-m-rhs i {
     color: #6e6e6e;
     font-size:15px;
 }
-
-.lng-box{
+.lng-box {
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -713,10 +761,10 @@ footer{
     color: #6e6e6e;
     margin: 5px;
     font-family: 'Open Sans', sans-serif;
+    text-decoration: none;
 }
  .lng-box a:hover {
     color: #00adef;
-   
 }
 .lng-box p{
     color: #6e6e6e ;
@@ -766,9 +814,6 @@ label #btn,label #cancel
 /* ------------------------------Media query--------------------- */
 @media(max-width: 1680px){
     
-    .bg-gray-box-three {
-        height: 350px;
-    }
     .mic-logo{
         display: flex;
         justify-content: flex-start;
@@ -791,33 +836,27 @@ label #btn,label #cancel
     }
     .num-box h4, i {
         padding: 5px;
-        font-size: 13px;
+        font-size: 15px;
     }
-    .tech-imgs div {
+    .tech-imgs .t-img {
         height: 230px;
         width: 370px;
     }
-    .tech-imgs img {
-        height: 230px;
-        width: 370px;
-    }
+    
     .tech-imgs h3{
         font-size: 22px;
     }
     .tech-imgs p {
-        top: 50px;
+        top: 65px;
     }
     .title-container p{
-        font-size: 13px;
+        font-size: 17px;
     }
-    .bg-gray-box .white-bg {
+    .first-gray-box .white-bg {
         height: 273px;
         width: 780px;
     }
-    .sec-box .item div {
-        width: 50%;
-        height: 330px;
-    }
+   
     .white-bg img {
         height: 271px;
         width: 396px;
@@ -826,61 +865,44 @@ label #btn,label #cancel
         height: 330px;
         width: 100%;
     }
-    .rhs-box h1 {
-        font-size: 23px;
+    .rhs-box h1{
+        font-size: 34px;
     }
-    .sec-box{
-        width: 92%;
-        height: 330px;
-    }
-    .carou-cen .item {
-        width: 206px;
-        height: 350px;
-    }
-    .bg-gray-box-two{
-        height: 380px;
-    }
+    
+    
+    
     .owl-theme .owl-nav {
         margin-top: 27px;
     }
-    .carou-th-cen{
+    .carousel-three{
         width: 92%;
         height: 290px;
     }
-    .carou-th-cen .item{
-        width: 337px;
-        height: 250px;
+   
+    .carousel-three h1{
+        font-size: 35px;
     }
-    .carou-th-cen h1 {
-        font-size: 27px;
+    .carousel-three h2 {
+        font-size: 25px;
     }
-    .carou-th-cen h2 {
-        font-size: 23px;
-    }
-    .carou-th-cen p {
-        font-size: 15px;
-    }
-    .carou-cen h5{
+    
+    .carousel-one h5{
         font-size: 17px;
         text-align: center;
     }
-    .carou-cen button a {
+    .carousel-one button a {
         font-size: 12px;
     }
-    .sm-bg-gray-box {
-        height: 250px;
-    }
-    
     .third-tech-images{
-        height: 308px;
+        height: 408px;
     }
     .third-tech-images img {
-        height: 180px;
-        width: 290px;
+        height: 200px;
+        width: 340px;
     }
     .third-tech-images div {
-        height: 180px;
-        width: 290px;
+        height: 200px;
+        width: 340px;
     }
     .third-tech-images h1 {
         font-size: 20px;
@@ -913,39 +935,34 @@ label #btn,label #cancel
         font-size: 1.7vw;
     }
     
-    .carou-th-cen .item{
-        width: 260px;
-        height: 240px;
+    
+    
+    .third-tech-images {
+        height: auto;
     }
-    .bg-gray-box-three {
-        height: 370px;
+    .third-tech-images div {
+        height: 160px;
+        width: 290px;
     }
-    .carou-th-cen h1 {
+    .carousel-three h1 {
         margin: 15px 30px;
     }
-    .carou-th-cen p {
-        font-size: 11px;
-    }
+    
+    
 }
-@media(max-width: 1024px){
-    .carou-cen .item {
-        width: 195px;
-        height: 350px;
-    }
-}
+
 @media(max-width: 991px){
     .mic-logo img {
         margin-left: 15px;
         width: 20vw;
     }
-    .carou-cen .item {
-        width: 200px;
-        margin-left: 2.5vw;
+    .nav-links li a{
+        font-size: 1.5vw
+    }
+    .nav-links li{
+        padding: 0px 6px;
     }
     
-    .bg-gray-box-three {
-        height: 35rem;
-    }
     .social-m-rhs a {
         font-size: 13px;
     }
@@ -1038,10 +1055,7 @@ label #btn,label #cancel
     li, a {
         font-size: 2.2vw;
     }
-    .carou-cen .item {
-        width: 195px;
-        margin-left: 0;
-    }
+    
     .num-box {
         top: -30px;
         position: relative;
@@ -1071,10 +1085,8 @@ label #btn,label #cancel
         padding: 6px;
         font-size: 2vw;
     }
-    .sec-box {
-        height: 250px;
-    }
-    .sec-box .item {
+    
+    .carousel-two .item {
         height: 250px;
     }
     .rhs-box p {
@@ -1084,28 +1096,17 @@ label #btn,label #cancel
         height: 250px;
         width: 100%;
     }
-    .sec-box .item div {
+    .carousel-two .item div {
         height: 250px;
-    }
-    .bg-gray-box-two {
-        height: 16rem;
-    }
-    .bg-gray-box {
-        height: 340px;
     }
     .carou-th-cen .item {
         margin-left: 12px;
-    }
-    .sm-bg-gray-box {
-        height: 270px;
     }
     .rhs-box button {
         font-size: 18px;
         margin: 20px 75px;
     }
-    .bg-gray-box-three {
-        height: 530px;
-    }
+    
     .email-rhs-box {
         text-align: center;
         margin-top: 10px;
@@ -1144,13 +1145,14 @@ label #btn,label #cancel
         margin-left: 50px;
         font-size: 2.4vw;
     }
+    
     .slide-content p {
         font-size: 2.5vw;
     }
     .slide-content button {
-        width: 15vw;
-        padding: 6px;
-        font-size: 2.3vw;
+        width: 20vw;
+        padding: 7px;
+        font-size: 2.5vw;
     }
     li, a {
         font-size: 2.2vw;
@@ -1159,32 +1161,20 @@ label #btn,label #cancel
         margin-right: 10px;
     }
     
-    .carou-cen .item {
-        margin-left: 2.5vw;
-    }
-    .sec-box .item div{
+    
+    .carousel-two .item div{
         width: 99%;
     }
-    .sec-box .item {
+    .carousel-two .item {
         height: 500px;
     }
-    .bg-gray-box-two {
-        height: 31rem;
-    }
+    
     .rhs-box button {
         margin: 20px 60px;
     }
     
-    .bg-gray-box-three {
-        height: 68rem;
-    }
-    .carou-th-cen .item {
-        width: 300px;
-        margin-left: 75px;
-    }
-    .carou-th-cen p {
-        font-size: 13px;
-    }
+    
+    
     .lan-lhs-box {
         width: 60%;
     }
@@ -1238,9 +1228,7 @@ label #btn,label #cancel
     }
 }
 @media(max-width: 425px){
-    .carou-cen .item {
-        margin-left: 15.5vw;
-    }
+    
     .mic-logo img {
         margin-top: -25px;
         width: 100%;
@@ -1256,6 +1244,9 @@ label #btn,label #cancel
         top: 180px;
         left: 40px;
         width: 285px;
+    }
+    .first-gray-box{
+        padding: 50px 50px;
     }
     .slide-content span {
         font-size: 30px;
@@ -1283,16 +1274,11 @@ label #btn,label #cancel
         font-size: 3.2vw;
     }
     
-    .bg-gray-box-three {
-        height: 68rem;
-    }
     .item .rhs-box{
         height: 460px;
     }
-    .bg-gray-box-two {
-        height: 525px;
-    }
-    .sec-box .item {
+    
+    .carousel-two .item {
         height: 500px;
     }
     .rhs-box h1 {
@@ -1307,12 +1293,8 @@ label #btn,label #cancel
         margin: 20px 10px;
         width: 118px;
     }
-    .carou-th-cen .item {
-        margin-left: 17px;
-    }
-    .sm-bg-gray-box {
-        height: 245px;
-    }
+   
+    
     .title-container p {
         padding: 0px 10px;
     }
@@ -1354,7 +1336,7 @@ label #btn,label #cancel
     .tech-imgs img {
         width: 90vw;
     }
-    .tech-imgs div {
+    .tech-imgs .t-img {
         width: 90vw;
     }
     .slide-content span {
@@ -1363,23 +1345,16 @@ label #btn,label #cancel
     .slide-content p {
         font-size: 11px;
     } 
-    .carou-cen .item {
-        margin-left: 13.5vw;
+    .first-gray-box{
+        padding: 50px 20px;
     }
-    
     .title-container .sm-hr {
         width: 110px;
     } 
     .title-container h5 {
         font-size: 13px;
     }
-    .carou-th-cen .item {
-        width: 280px;
-        margin-left: 7px;
-    }
-    .carou-th-cen p{
-        font-size: 12px;
-    }
+    
     
 }
 
@@ -1391,26 +1366,15 @@ label #btn,label #cancel
     .mic-logo img {
         width: 60vw ;
     }
-    .tech-imgs div {
+    .tech-imgs .t-img {
         width: 280px;
         height: 200px;
-
     }
     .tech-imgs p{
         font-size: 9px;
     }
     .slide-content {
         left: 20px;
-    }
-    .carou-cen .item {
-        margin-left: 8.5vw;
-    }
-    .bg-gray-box-two {
-        height: 490px;
-    }
-    .carou-th-cen .item{
-        margin-left: 0px;
-        width: 250px;
     }
     .sm-v-hr {
         margin-right: 3px;

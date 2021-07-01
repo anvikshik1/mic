@@ -154,19 +154,19 @@
        </div>
 
       <div class="tech-imgs">
-        <div>
+        <div class="t-img">
           <img src="images/1.jpg" alt="1.jpg">
           <h3>Advanced Technologies</h3>
-          <p>T&M instruments and systems for aerospace and defense,
+            <p>T&M instruments and systems for aerospace and defense,
             automotive, research and industrial electronics applications</p>
         </div>
-        <div>
+        <div class="t-img">
           <img src="images/2.jpg" alt="2.jpg">
           <h3>Breakthrough solutions</h3>
           <p>T&M instruments and systems for aerospace and defense,
             automotive, research and industrial electronics applications</p>
         </div>
-        <div>
+        <div class="t-img">
           <img src="images/3.jpg" alt="3.jpg">
           <h3>precise mesuerments</h3>
         </div>
@@ -180,8 +180,8 @@
         <h5>See All Products</h5>
     </div>  
 
-    <div class="bg-gray-box">
-      <div class="carou-cen">
+    <div class="first-gray-box">
+      <div class="carousel-one">
       <div class="owl-carousel owl-theme ">
         <div class="item">
           <div class="add-cart"><img class="cart-img" src="images/shopping-cart.png" alt="shopping-cart.png"></div>
@@ -236,8 +236,8 @@
         <hr color="#00adef" class="sm-hr">
       </div>
 
-      <div class="bg-gray-box-two">
-        <div class="sec-box">
+      <div class="second-gray-box">
+        <div class="carousel-two">
          <div class="owl-carousel owl-theme">
 
            <div class="item">
@@ -287,7 +287,7 @@
         <hr color="#00adef" class="sm-hr">
       </div>
 
-      <div class="bg-gray-box bg-gray-box-three">
+      <div class="third-gray-box ">
       <div class="third-tech-images">
         <div>
            <img src="images/tech1.jpg" alt="tech1.jpg">
@@ -324,8 +324,8 @@
         <hr color="#00adef" class="sm-hr">
       </div>
 
-      <div class="sm-bg-gray-box">
-      <div class="carou-th-cen">
+      <div class="fourth-gray-box">
+      <div class="carousel-three">
           <div class="owl-carousel owl-theme ">
             <div class="item">
               <h1>5G</h1>
@@ -357,11 +357,48 @@
       </div> 
       
       <div class="title-container">  
-        <h4>TESTING & MEASUREMENT SOLUTIONS</h4>
-        <p>Solving complex tests and measurement challenges requires innovative solutions from a reliable partner</p>
+        <h4>Valued Partners</h4>
         <hr color="#00adef" class="sm-hr">
-        <a href=""><button class="cont-btn">Contact Us</button></a>
       </div>
+
+    <div class="fifth-gray-box">
+      <div class="carousel-four">
+        <div class="owl-carousel owl-theme">
+            <div class="item">
+              <img src="images/partner1.jpg" alt="">
+                <br>
+              <img src="images/partner2.jpg" alt=""> 
+            </div>
+            <div class="item">
+              <img src="images/partner3.jpg" alt="">
+                <br>
+              <img src="images/partner4.jpg" alt=""> 
+            </div>
+            <div class="item">
+              <img src="images/partner5.jpg" alt="">
+                <br>
+              <img src="images/partner6.jpg" alt=""> 
+            </div>
+            <div class="item">
+              <img src="images/partner7.jpg" alt="">
+                <br>
+              <img src="images/partner8.jpg" alt=""> 
+            </div>
+            <div class="item">
+              <img src="images/partner9.jpg" alt="">
+                <br>
+              <img src="images/partner10.jpg" alt=""> 
+            </div>
+            <div class="item">
+              <img src="images/partner1.jpg" alt="">
+                <br>
+              <img src="images/partner2.jpg" alt=""> 
+            </div>
+        </div>
+      </div>
+    </div>
+
+
   </div>
 </section>
 
@@ -485,11 +522,11 @@
 
 <script>
   $(document).ready(function(){
-  $('.carou-cen .owl-carousel').owlCarousel({
+  $('.carousel-one .owl-carousel').owlCarousel({
     loop:true,
     dots: true,
     nav:false,
-    margin:5,
+    margin:10,
     items:5,
     responsiveClass:true,
     responsive:{
@@ -522,7 +559,6 @@
             loop:true,
         },
         1199:{
-            margin:7,
             items:4,
         },
         1200:{
@@ -530,7 +566,7 @@
         }
     }
 });
-  $('.sec-box .owl-carousel').owlCarousel({
+  $('.carousel-two .owl-carousel').owlCarousel({
     loop:true,
     margin:10,
     dots:false,
@@ -547,7 +583,7 @@
         },
         768:{
             items:1,
-            nav:false,
+            nav:true,
         },
         1000:{
             items:1,
@@ -556,7 +592,7 @@
     }
 });
 
-  $('.carou-th-cen .owl-carousel').owlCarousel({
+  $('.carousel-three .owl-carousel').owlCarousel({
     loop:true,
     nav:false,
     margin:20,
@@ -587,6 +623,47 @@
             margin:10,
             loop:true,
         }
+    }
+});
+  $('.carousel-four .owl-carousel').owlCarousel({
+    loop:true,
+    nav:false,
+    margin:5,
+    dots:true,
+    items:5,
+    responsiveClass:true,
+    responsive:{
+        0:{
+            items:1,
+            dots:true,
+            nav:false,
+        },
+        575:{
+            items:2,
+            dots:true,
+            nav:false,
+        },
+        768:{
+            items:3,
+            dots:true,
+            nav:false,
+        },
+        992:{
+            items:4,
+            loop:true,
+        },
+        1024:{
+            items:4,
+            loop:true,
+        },
+        1024:{
+            items:4,
+            loop:true,
+        },
+        1200:{
+            items:5,
+            loop:true,
+        },
     }
 });
 });
