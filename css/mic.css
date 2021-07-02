@@ -67,7 +67,6 @@ header{
     display: flex;
     padding: 4px 0;
     flex-wrap: wrap;
-    background-color: black;
 }
 .top-navbar div{
     flex-grow: 1;
