@@ -536,7 +536,7 @@ header{
 
 .third-tech-images{
     width: 92%;
-    height: 408px;
+    height: auto;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -894,6 +894,7 @@ label #btn,label #cancel
     
     
     
+    
     .owl-theme .owl-nav {
         margin-top: 27px;
     }
@@ -978,7 +979,7 @@ label #btn,label #cancel
         width: 20vw;
     }
     .nav-links li a{
-        font-size: 1.5vw
+        font-size: 1rem;
     }
     .nav-links li{
         padding: 0px 6px;
@@ -1022,7 +1023,7 @@ label #btn,label #cancel
         height: 100vh;
         background: rgba(0,0,0,0.8);
         left: -100%;
-        top: 100px;
+        top: 127px;
         text-align: center;
         transition: all .5s;
     }
@@ -1144,8 +1145,9 @@ label #btn,label #cancel
 }
 
 @media (max-width: 575px){
-    .mic-logo img {
-        width: 50vw;
+    
+    .cart-icon {
+        margin-right: 10px;
     }
     
     .slide-content p {
@@ -1230,12 +1232,6 @@ label #btn,label #cancel
     }
 }
 @media(max-width: 425px){
-    
-    .mic-logo img {
-        margin-top: -25px;
-        width: 100%;
-    }
-    
     
     .slide-content {
         top: 180px;
@@ -1330,9 +1326,7 @@ label #btn,label #cancel
     }
 }
 @media(max-width: 375px){
-    .tech-imgs img {
-        width: 90vw;
-    }
+    
     .tech-imgs .t-img {
         width: 90vw;
     }
@@ -1361,7 +1355,7 @@ label #btn,label #cancel
         height: 200px;
     }
     .mic-logo img {
-        width: 60vw ;
+        width: 14rem ;
     }
     .tech-imgs .t-img {
         width: 280px;
