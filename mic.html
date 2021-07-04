@@ -11,7 +11,6 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
     <link rel="stylesheet" href="css/owl.carousel.min.css">
     <link rel="stylesheet" href="css/owl.theme.default.min.css">
-    <link rel="stylesheet" href="css/navbar.css">
     <link rel="stylesheet" href="css/ionicon.min.css">
     <title>Document</title>
 </head>
@@ -127,7 +126,7 @@
                 </div>
               </li>
               <li>
-                <a href="#">STANDARDS</a>
+                <a href="#">CATEGORIES</a>
               </li>
 
               <li>
@@ -255,7 +254,7 @@
                 </div>
               </div>
               </li>
-              <li><a href="#">STANDARDS HOME</a></li>
+              <li><a href="#">PRODUCT FINDER</a></li>
             </ul>
           </nav>
         </div>
@@ -659,205 +658,5 @@
 <script src="js/jquery-3.6.0.min.js"></script>
 <script src="js/owl.carousel.min.js"></script>
 <script src="js/script.js" defer></script>
-
-<script>
-  let sliderImages = document.querySelectorAll('.slide'),
-      arrowLeft = document.querySelector('#arrow-left'),
-      arrowRight = document.querySelector('#arrow-right'),
-      current = 0;
-
-      //Clear all images
-      function reset(){
-        for(let i = 0; i < sliderImages.length; i++){
-          sliderImages[i].style.display = 'none';
-        }
-      }
-
-      //Initial slider
-      function startSlide(){
-        reset();
-        sliderImages[0].style.display = 'block';
-      }
-
-      //show prev
-      function slideLeft(){
-        reset()
-        sliderImages[current -1].style.display = 'block';
-        current--;
-      }
-
-      //show next
-      function slideRight(){
-        reset()
-        sliderImages[current +1].style.display = 'block';
-        current++;
-      }
-      
-      //left arrow click
-      arrowLeft.addEventListener('click', function(){
-        if(current === 0){
-          current.sliderImages.length;
-        }
-        slideLeft();
-      });
-      //Right arrow click
-      arrowRight.addEventListener('click', function(){
-        if(current === sliderImages.length -1){
-          current= -1;
-        }
-        slideRight();
-      });
-        startSlide();
-</script>
-
-<script>
-  $(document).ready(function(){
-  $('.carousel-one .owl-carousel').owlCarousel({
-    loop:true,
-    dots: true,
-    nav:false,
-    margin:10,
-    items:5,
-    responsiveClass:true,
-    responsive:{
-        0:{
-          dots:true,
-          items:1,
-          nav:false,
-        },
-        425:{
-            dots:true,
-            items:1,
-            nav:false,
-        },
-        575:{
-            dots:true,
-            items:2,
-            nav:false,
-        },
-        768:{
-            dots:true,
-            items:3,
-            nav:false,
-        },
-        992:{
-            items:3,
-            loop:true,
-        },
-        1024:{
-            items:4,
-            loop:true,
-        },
-        1199:{
-            items:4,
-        },
-        1200:{
-            items:5,
-        }
-    }
-});
-  $('.carousel-two .owl-carousel').owlCarousel({
-    loop:true,
-    margin:10,
-    dots:false,
-    nav:true,
-    responsiveClass:true,
-    responsive:{
-        0:{
-            items:1,
-            nav:false,
-        },
-        425:{
-            items:1,
-            nav:false,
-        },
-        768:{
-            items:1,
-            nav:true,
-        },
-        1000:{
-            items:1,
-            nav:true,
-        }
-    }
-});
-
-  $('.carousel-three .owl-carousel').owlCarousel({
-    loop:true,
-    nav:false,
-    margin:20,
-    dots:true,
-    responsiveClass:true,
-    responsive:{
-        0:{
-            items:1,
-            dots:true,
-            nav:false,
-        },
-        425:{
-            items:1,
-            dots:true,
-            nav:false,
-        },
-        768:{
-            items:2,
-            dots:true,
-            nav:false,
-        },
-        992:{
-            items:3,
-            loop:true,
-        },
-        1440:{
-            items:3,
-            margin:10,
-            loop:true,
-        }
-    }
-});
-  $('.carousel-four .owl-carousel').owlCarousel({
-    loop:true,
-    nav:false,
-    margin:5,
-    dots:true,
-    items:5,
-    responsiveClass:true,
-    responsive:{
-        0:{
-            items:1,
-            dots:true,
-            nav:false,
-        },
-        575:{
-            items:2,
-            dots:true,
-            nav:false,
-        },
-        768:{
-            items:3,
-            dots:true,
-            nav:false,
-        },
-        992:{
-            items:4,
-            loop:true,
-        },
-        1024:{
-            items:4,
-            loop:true,
-        },
-        1024:{
-            items:4,
-            loop:true,
-        },
-        1200:{
-            items:5,
-            loop:true,
-        },
-    }
-});
-});
-</script>
-
 </body>
 </html>

@@ -1,4 +1,13 @@
-@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans&family=Open+Sans:wght@300;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap');
+
+@font-face{
+    font-family: KlavikaMedium;
+    src: url('../fonts/KlavikaMedium-TF.otf');
+}
+@font-face{
+    font-family: KlavikaLight;
+    src: url('../fonts/KlavikaLight-Plain.otf');
+}
 *{
     margin: 0;
     padding: 0;
@@ -12,221 +21,12 @@ body{
     width: 100%;
     margin: 0 auto;
 }
-html{
-    font-size: 10px;
-}
 header{
     position: absolute;
     width: 100%;
     z-index: 2;
 }
-.top-navbar{
-    position: fixed;
-    width: 100%;
-    height: 80px;
-    display: flex;
-    background-color: rgba(0, 0, 0, 0.8);
-    flex-wrap: wrap;
-    max-width: 1680px;
-    margin: 0 auto;
-}
-.top-navbar div{
-    flex-grow: 1;
-}
-.mic-logo{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.mic-logo img{
-    margin-left: 80px;
-    width: 27rem;
-}
-.mic-name{
-    margin-left: 3px;
-    display: block;
-}
-.mic-logo h4{
-    margin-bottom: -23px;
-    color: white;
-    font-size: 1.3rem;
-    font-family: 'Open Sans', sans-serif;
-    font-weight: 400;
-}
-.mic-name .sm-hr{
-    width: 20rem;
-    height: 1px;
-}
-.mic-logo h5{
-    color: white;
-    font-size: 1rem;
-    margin-top: 4px;
-    font-family: 'Source Sans Pro', sans-serif;
-}
-li,a{
-    text-decoration: none;
-    color: white;
-    font-size: 1.4rem;
-}
-.nav-names{
-    display: flex;
-    align-items: flex-end;
-    margin-bottom: 15px;
-}
-.nav-links{
-    list-style: none;
-}
-.nav-links li{
-    position: relative;
-    display: inline-block;
-    padding: 0px 10px;
-}
-.nav-links li.sub-menu > a::after{
-    content: '\f0d7';
-    font-family: fontAwesome;
-    color: #fff;
-    position: relative;
-    left: 4px;
-}
-.nav-links li a{
-    transition: all 0.3s ease 0s ;
-    font-family: 'Open Sans', sans-serif;
-}
-.nav-links li a:hover{
-    color: #00adef;
-}
-.nav-links li ul {
-    position: absolute;
-    top: 25px;
-    left: 0px;
-    background-color: rgb(0, 0, 0);
-    width: 170px;
-    padding: 2px;
-    transition: 0.5s;
-    border-bottom-left-radius:10px ;
-    border-bottom-right-radius: 10px;
-    visibility: hidden;
-    opacity: 0;
-}
-.nav-links li:hover ul{
-    visibility: visible;
-    opacity: 1;
-}
-.nav-links li ul li {
-    padding: 7px;
-    border-bottom: 1px solid rgb(124, 124, 124);
-    width: 100%;
-    padding: 10px;
-}
-.nav-links li ul li:nth-child(4) {
-    border-bottom:none;
-}
-.num-box{
-    display: flex;
-    flex-direction: column;
-}
-.num-box h4,i{
-    color: white;
-    padding: 7px;
-    font-family: 'Open Sans', sans-serif;
-}
-.num-box h4{
-    font-size: 1.4rem;
-}
-.num-box i{
-    color: white;
-}
-label #btn,label #cancel
-{
-    color: white;
-    font-size: 30px;
-    float: right;
-    margin-right: 40px;
-    line-height: 80px;
-    display: none;
-    cursor: pointer;
-}
-#check{
-    display: none;
-}
 
-/* -----------------------img slider-------------------------- */
-
-#slider, .wrap, .slide-content{
-    width: 100%;
-    height: 100vh;
-    overflow: hidden;
-}
-.wrap{
-    position: relative;
-}
-.slide{
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-}
-.slide1{
-    background-image: url('../images/p_2_image1.jpg');
-}
-.slide2{
-    background-image: url('../images/p_2_image2.jpg');
-}
-.slide3{
-    background-image: url('../images/p_2_image3.jpg');
-}
-.slide4{
-    background-image: url('../images/p_2_image4.jpg');
-}
-
-.slide-content{
-    display: flex;
-    flex-direction: column;
-    position: relative;
-    top: 200px;
-    left: 150px;
-}
-.slide-content span{
-    color: white;
-    font-size: 4rem;
-    font-family: 'Nunito Sans', sans-serif;
-
-}
-.slide-content p{
-    color: white;
-    font-size: 2rem;
-    padding: 15px 0px;
-    font-family: 'Open Sans', sans-serif;
-}
-.slide-content button{
-    width: 13rem;
-    border: 0;
-    background-color: #1e1e1e;
-    padding: 5px;
-    color: white;
-    font-size: 2rem;
-    cursor: pointer;
-    font-family: 'Open Sans', sans-serif;
-}
-.arrow{
-    cursor: pointer;
-    position: absolute;
-    top: 50%;
-    width: 0;
-    height: 0;
-    border-style: solid;
-}
-#arrow-left{
-    border-width: 20px 20px 20px 0px;
-    border-color: transparent #fff transparent transparent;
-    left: 0;
-    margin-left: 30px;
-}
-#arrow-right{
-    border-width: 20px 0px 20px 20px;
-    border-color: transparent transparent transparent #fff ;
-    right: 0;
-    margin-right: 30px;
-}
  /* --------------------------Overview & brands box----------------------------  */
 
 .overview-brand-box{
@@ -243,15 +43,16 @@ label #btn,label #cancel
 .overview-brand-box a{
     margin: 10px;
     padding: 16px 5px;
-    font-size:1.8rem ;
-    font-family: 'Nunito Sans', sans-serif;
+    font-size:1.3rem ;
+    color: white;
+    font-family: 'Noto Sans', sans-serif;
 }
 .overview-brand-box a:hover{
     border-bottom: 3px solid #00adef;
 }
 /* -----------------------------Brands----------------------------- */
 
-.container{
+.heading-container{
     margin-top: 50px;
     width: 100%;
     height: auto;
@@ -269,15 +70,15 @@ label #btn,label #cancel
     text-align: left;
 }
 .brand-title h1{
-    font-size: 4rem;
-    font-family: 'Nunito Sans', sans-serif;
+    font-size: 2.5rem;
+    font-family: KlavikaMedium;
     font-weight: 500;
     color: white;
 }
 .brand-title p{
     margin-top: 10px;
-    font-size: 2rem;
-    font-family: 'Open Sans', sans-serif;
+    font-size: 1.3rem;
+    font-family: KlavikaLight;
     color: white;
     font-weight: normal;
 }
@@ -334,14 +135,14 @@ label #btn,label #cancel
 .company-brands h2{
     margin: 20px;
     color: #00adef;
-    font-family:'Open Sans', sans-serif;
-    font-size: 1.9rem;
+    font-family:KlavikaLight;
+    font-size: 1.2rem;
 }
 .company-brands p{
     margin: 5px 20px;
     color: #ffffff;
-    font-family:'Open Sans', sans-serif;
-    font-size: 1.2rem;
+    font-family:'Noto Sans', sans-serif;
+    font-size: .7rem;
 }
 /*  ---------------------------------need assistance-------------------------- */
 
@@ -356,11 +157,10 @@ label #btn,label #cancel
 }
 .assistance a {
     color: white;
-    font-size: 2.2rem;
-    font-family: 'Open Sans', sans-serif;
+    font-size: 1.7rem;
+    font-family: KlavikaMedium;
     width: 24rem;
     border: 1.5px solid white;
-    padding: 3px;
     border-radius: 15px;
 }
 .enquiry{
@@ -372,228 +172,29 @@ label #btn,label #cancel
 }
 .enquiry p {
     color: white;
-    font-size: 2.5rem;
-    font-family: 'Open Sans', sans-serif;
+    font-size: 1.5rem;
+    font-family: KlavikaLight;
     padding: 3px;
 }
-.enquiry button{
+.enquiry button {
     border: 0;
     background-color: #1e1e1e;
-    font-size: 1.6rem;
+    font-size: 1rem;
     color: white;
     margin-left: 20px;
-    width: 150px;
-    height: 30px;
+    padding: 3px 12px;
     cursor: pointer;
-    
+    font-family: 'Noto Sans', sans-serif;
 }
 .u-line{
     width: 15rem;
-    height: 2px;
-    margin-top: 20px;
+    margin: 30px 0;
     background-color: #00adef;
     display: flex;
     align-self: center;
 }
 
-/* ------------------------footer---------------------------- */
-
-
-footer{
-    width: 100%;
-    height: auto;
-    background-color: black;
-    margin-top: 10px;
-}
-.foo-cont{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-}
-.foo-cont .lg-hr{
-    width: 92%;
-    margin-top: 20px;
-    height: 1px;
-}
-.st-info{
-    font-size: 4rem;
-    color: white;
-    margin-top:20px;
-    font-family: 'Source Sans Pro', sans-serif;
-}
-.sm-hr{
-    margin-top: 15px;
-    width: 150px;
-    height: 2px;
-}
-.ver-box{
-    width: 90%;
-    margin-top: 20px;
-    display: flex;
-    align-items: flex-start;
-}
-.email-box,.social-m-box{
-    width: 50%;
-    height: auto;
-    display: flex;
-    flex-direction: column;
-}
-
-.email-lhs-box,.email-rhs-box{
-    width: 100%;
-}
-.email-lhs-box p, .social-m-box p {
-    color:#6e6e6e;
-    font-weight: bold;
-    font-family: 'Nunito Sans', sans-serif;
-    font-size: 1.3rem;
-    text-align: left;
-}
-.email-rhs-box,.social-m-rhs{
-    margin-top: 20px;
-    display: flex;
-}
-.email-rhs-box{
-    display: flex;
-    flex-direction: row;
-}
-.email-input {
-    width: 100%;
-}
-.email-rhs-box #email{
-    width: 40rem;
-    height: 30px;
-    background-color: rgb(54, 54, 54) ;
-    border: 0;
-    outline: none;
-}
-.email-rhs-box #submit{
-    width: 13rem;
-    font-size: 1.5rem;
-    height: 30px;
-    padding: 5px 10px;
-    background-color: rgb(54, 54, 54) ;
-    color: white;
-    border: 0;
-    outline: none;
-    cursor: pointer;
-    font-family: 'Open Sans', sans-serif;
-}
-.email-rhs-box #submit:hover{
-    color: #00adef;
-}
-::placeholder{
-    color: white;
-    font-style: italic;
-    font-size: 1.6rem;
-    padding-left: 20px;
-}
-.v-hr{
-    height: 70px;
-    text-align: center;
-}
-.sm-v-hr{
-    height: 25px;
-    margin-right: 20px;
-}
-.social-m-lhs, .social-m-rhs{
-    width: 90%;
-}
-.social-m-box{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.social-m-rhs a{
-    margin-right: 20px;
-    font-family: 'Open Sans', sans-serif;
-    color: #6e6e6e;
-    font-size:1.5rem;
-}
-.social-m-rhs i{
-    color: #6e6e6e;
-    font-size:2rem;
-}
-
-.lng-box{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    width: 90%;
-    height: 50px;
-}
-.lng-box div{
-    margin-top: 20px;
-    flex-grow: 1;
-    display: flex;
-    flex-direction: row;
-}
-.lan-lhs-box{
-    width: 100px;
-}
-.lng-box h4, .lng-box a{
-    color: #6e6e6e;
-    margin: 5px;
-    font-family: 'Open Sans', sans-serif;
-}
- .lng-box a:hover {
-    color: #00adef;
-}
-.lng-box p{
-    color: #6e6e6e ;
-    margin: 10px;
-    font-family: 'Nunito Sans', sans-serif;
-}
-.lng-box a{
-    font-size: 1.5rem;
-}
-.lng-box .web-fun{
-    display: flex;
-    justify-content: flex-end;
-}
-.fa-angle-up{
-    color: #6e6e6e ;
-}
-.fa-angle-up:hover{
-    color: #00adef;
-}
-.lg-hr-three{
-    width: 92%;
-    margin-top: 20px;
-    height: 1px;
-}
-.cpy-rite{
-    color: #6e6e6e ;
-    padding-bottom: 50px;
-    font-family: 'Nunito Sans', sans-serif;
-    font-weight: bold;
-    font-size: 10px;
-    margin-top: 1px;
-}
-
 @media(max-width:1199px){
-    .mic-logo img {
-        margin-left: 2vw;
-    }
-    li, a {
-        font-size: 1.2vw;
-    }
-    .mic-logo h4{
-        font-size: 1.2vw;
-    }
-    .mic-name .sm-hr {
-        width: 18vw;
-    }
-    .mic-logo h5 {
-        font-size: .9vw;
-    }
-    .company-brands div {
-        margin-left: 1vw;
-    }
-    .email-rhs-box #email{
-        width: 30vw;
-    }
     .lhs p {
         font-size: 1.5vw;
     }
@@ -603,158 +204,13 @@ footer{
     .brand-title p {
         font-size: 1.7vw;
     }
-    .lan-lhs-box{
-        width: 19%;
-    }
 }
 
 @media(max-width:991px){
-    .email-rhs-box {
-        text-align: center;
-    }
-    .nav-links li {
-        padding: 0px 10px;
-    }
-    li, a {
-        font-size: 1.1vw;
-    }
-    .num-box h4 {
-        font-size: 1.2vw;
-    }
-    .email-rhs-box #submit {
-        margin-top: 10px;
-    }
-    .email-rhs-box #email {
-        width: 38vw;
-    }
-    ::placeholder{
-        text-align: center;
-    }
-    .lan-lhs-box{
-        width: 40%;
-    }
-    .social-m-rhs a {
-        margin-right: 10px;
-        font-size: 13px;
-    }
 
 }
 @media(max-width:768px){
-    nav ul li{
-        display: none;
-    }
-    label #btn{
-        display: block;
-    }
-    ul{
-        position: absolute;
-        width: 100%;
-        height: 100vh;
-        background: rgba(0,0,0,0.8);
-        left: -100%;
-        top: 100px;
-        text-align: center;
-        transition: all .5s;
-    }
-    .nav-links li{
-        display: block;
-        padding: 10px;
-    }
-    .nav-links li:hover ul{
-        position: relative;
-        height: auto;
-    }
-    .nav-links li ul{
-        width: 100%;
-    }
-    #check:checked ~ ul{
-        left: 0;
-    }
-    #check:checked ~ label #btn{
-        display: none;
-    }
-    #check:checked ~ label #cancel{
-        display: block;
-    }
-    .nav-links li ul li {
-        background-color: #1e1e1e;
-    }
-    .nav-links li.sub-menu > a::after{
-        content: '\f0d7';
-        font-family: fontAwesome;
-        color: rgb(255, 255, 255);
-        margin-top: 3px;
-    }
-    label #btn, label #cancel {
-        margin-right: 20px;
-        margin-top: -12px;
-    }
-    li, a {
-        font-size: 2.2vw;
-    }
-    .mic-logo img {
-        margin-top: -7px;
-        margin-left: 20px;
-        width: 35vw;
-    }
-    .top-navbar {
-        height: 100px;
-        flex-wrap: wrap;
-    }
-    .mic-logo {
-        width: 50%;
-    }
-    .nav-names {
-        width: 20%;
-        justify-content: flex-end;
-        display: flex;
-        align-items: flex-end;
-    }
-    .num-box {
-        flex-direction: row;
-        position: relative;
-        top: -30px;
-    }
-    .num-l-box h4{
-        margin-left: 27px;
-        font-size: 2vw;
-    }
-    .num-r-box a{
-        font-size: 2vw;
-    }
-    .num-r-box{
-        font-size: 1.8vw;
-        display: flex;
-        justify-content: flex-end;
-        margin-right: 20px;
-    }
-    .lan-lhs-box {
-        width: 50%;
-    }
-    .nav-links li ul {
-        top: 10px;
-    }
-    .slide-content span {
-        font-size: 5vw;
-    }
-    .slide-content p {
-        font-size: 2.5vw;
-    }
-    .slide-content button {
-        width: 15vw;
-        padding: 6px;
-        font-size: 2.3vw;
-    }
-    .social-m-rhs i {
-        font-size: 3vw;
-    }
-    .social-m-rhs a {
-        margin-right: 10px;
-        font-size: 13px;
-    }
-    .lng-box a {
-        font-size: 1.7vw;
-    }
+   
 }
 
 @media(max-width:575px){
@@ -767,66 +223,10 @@ footer{
     .mic-logo img {
         width: 40vw;
     }
-    label #btn, label #cancel {
-        margin-right: 10px;
-    }
     .enquiry p {
         font-size: 1.5rem;
     }
-    .st-info {
-        font-size: 3rem;
-    }
-    .ver-box {
-        display: block;
-    }
-    .email-box, .social-m-box {
-        width: 100%;
-
-    }
-    .v-hr {
-        display: none;
-    }
-    .email-lhs-box p, .social-m-box p {
-        text-align: center;
-    }
-    .social-m-box p{
-        margin-top: 10px;
-    }
-    .social-m-rhs{
-        display: flex;
-        justify-content: center;
-        text-align: center;
-    }
-    .sm-v-hr {
-        margin-right: 20px;
-        margin-left: 20px;
-    }
-    .email-input {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
-    .email-rhs-box #email {
-        width: 80vw;
-    }
-    .lng-box {
-        display: block;
-    }
-    .lng-box div {
-        margin-top: 0;
-        width: 100%;
-        justify-content: center;
-        text-align: center;
-    }
     
-    .lng-box a {
-        font-size: 1.2rem;
-    }
-    .lg-hr-three{
-        margin-top: 35px;
-    }
-
 }
 @media(max-width:425px){
     .brand-title p {
@@ -841,48 +241,11 @@ footer{
     .enquiry button {
     margin-left: 0px;
     }
-    .social-m-rhs i {
-        font-size: 4vw;
-    }
-    .num-l-box h4 {
-        margin-left:10px ;
-        font-size: 3.4vw;
-    }
-    .num-r-box a {
-        font-size: 3vw;
-    }
-    .mic-logo img {
-        width: 100%;
-        margin-top: -25px;
-    }
-    li, a {
-        font-size: 3.2vw;
-    }
-
-    .slide-content {
-        top: 175px;
-        left: 80px;
-    }
-    .slide-content button {
-        width: 27vw;
-        font-size: 3.5vw;
-    }  
-    .slide-content span {
-        font-size: 7vw;
-    } 
-    .feilds-cont p {
-        font-size: 1.5rem;
-    } 
     .overview-brand-box div {
         margin-left: 0px;
     }
     .overview-brand-box {
         justify-content: center;
-    }
-    
-    
-    .sm-v-hr {
-        margin-left: 12px;
     }
     .lg-hr-three{
         margin-top: 55px;
@@ -890,22 +253,9 @@ footer{
 }
 
 @media (max-width:375px){
-    .sm-v-hr {
-        margin-right: 5px;
-        margin-left: 12px;
-    }
+  
 }
 
 @media (max-width:320px){
-    .slide-content {
-        left: 60px;
-    }
-    .social-m-rhs a {
-        margin-right: 9px;
-        font-size: 12px;
-    }
-    .sm-v-hr {
-        margin-right: 4px;
-        margin-left: 2px;
-    }
+   
 }
