@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/mic_two.css">
+    <link rel="stylesheet" href="css/common.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
     <title>Overview</title>
@@ -14,78 +15,77 @@
       <!-- ---------------------header navbar-------------------- -->
   
 <header>
-    <div class="top-navbar">
-      <div class="mic-logo">
-        <img src="images/logo.png" alt="mic_logo.png">
-        <div class="mic-name">
-        </div>
-      </div>
-  
-      <div class="nav-names">
-        <nav>
-         <input type="checkbox" name="" id="check">
-          <label for="check">
-          <i class="fas fa-bars" id="btn"></i>
-          <i class="fas fa-times" id="cancel"></i>
-        </label>
-          <ul class="nav-links">
-            <li class="sub-menu"><a href="#">BRANDS</a>
-              <ul>
-                <li><a href="#">BRANDS 1</a></li>
-                <li><a href="#">BRANDS 2</a></li>
-                <li><a href="#">BRANDS 3</a></li>
-                <li><a href="#">BRANDS 4</a></li>
-              </ul>
-            </li>
-            <li class="sub-menu"><a href="#">CATEGORIES</a>
-              <ul>
-                <li><a href="#">CATEGORIES 1</a></li>
-                <li><a href="#">CATEGORIES 2</a></li>
-                <li><a href="#">CATEGORIES 3</a></li>
-                <li><a href="#">CATEGORIES 4</a></li>
-              </ul>
-            </li>
-            <li class="sub-menu"><a href="#">APPLICATION</a>
-              <ul>
-                <li><a href="#">APPLICATION 1</a></li>
-                <li><a href="#">APPLICATION 2</a></li>
-                <li><a href="#">APPLICATION 3</a></li>
-                <li><a href="#">APPLICATION 4</a></li>
-              </ul>
-            </li>
-            <li class="sub-menu"><a href="#">INDUSTRIES</a>
-              <ul>
-                <li><a href="#">INDUSTRIES 1</a></li>
-                <li><a href="#">INDUSTRIES 2</a></li>
-                <li><a href="#">INDUSTRIES 3</a></li>
-                <li><a href="#">INDUSTRIES 4</a></li>
-              </ul>
-            </li>
-            <li class="sub-menu"><a href="#">STANDARDS</a>
-              <ul>
-                <li><a href="#">STANDARDS 1</a></li>
-                <li><a href="#">STANDARDS 2</a></li>
-                <li><a href="#">STANDARDS 3</a></li>
-                <li><a href="#">STANDARDS 4</a></li>
-              </ul>
-            </li>
-            <li><a href="#">PRODUCT FINDER</a></li>
-          </ul>
-        </nav>
-      </div>
-  
-        <div class="num-box">
-        <div class="num-l-box">
-            <h4>+9 901816532</h4>
-        </div>
-        <div class="num-r-box">
-            <a href="#"><i class="fas fa-shopping-cart fa-lg"></i></a>
-            <a href="#"><i class="fas fa-edit fa-lg"></i></a>
-            <a href="#"><i class="fas fa-search fa-lg"></i></a>
-        </div>
-      </div>
+  <div class="top-navbar">
+    <div class="thin-navbar">
+          <i class="fa fa-phone-alt"></i>
+          <h4>+1 (877) 224 8337</h4>
+          <a href="#">English</a>
     </div>
-  </header>
+    <div class="thick-navbar">
+    <div class="mic-logo">
+      <img src="images/logo.png" alt="mic_logo.png">
+    </div>
+    
+    <div class="nav-names">
+      <nav>
+       <input type="checkbox" name="" id="check">
+        <label for="check">
+        <i class="fa fa-bars" aria-hidden="true" id="btn"></i>
+        <i class="fas fa-times" id="cancel"></i>
+      </label>
+        <ul class="nav-links" id="nav-links">
+          <li class="sub-menu" onclick="myFunction()"><a href="#">BRANDS</a>
+            <ul  id="myDropdown" class="dropdown">
+              <li><a href="#">BRANDS 1</a></li>
+              <li><a href="#">BRANDS 2</a></li>
+              <li><a href="#">BRANDS 3</a></li>
+              <li><a href="#">BRANDS 4</a></li>
+            </ul>
+          </li>
+          <li class="sub-menu" onclick="myFunction()"><a href="#">CATEGORIES</a>
+            <ul id="myDropdown" class="dropdown">
+              <li><a href="#">CATEGORIES 1</a></li>
+              <li><a href="#">CATEGORIES 2</a></li>
+              <li><a href="#">CATEGORIES 3</a></li>
+              <li><a href="#">CATEGORIES 4</a></li>
+            </ul>
+          </li>
+          <li class="sub-menu" onclick="myFunction()"><a href="#">APPLICATION</a>
+            <ul id="myDropdown" class="dropdown">
+              <li><a href="#">APPLICATION 1</a></li>
+              <li><a href="#">APPLICATION 2</a></li>
+              <li><a href="#">APPLICATION 3</a></li>
+              <li><a href="#">APPLICATION 4</a></li>
+            </ul>
+          </li>
+          <li class="sub-menu" onclick="myFunction()"><a href="#">INDUSTRIES</a>
+            <ul id="myDropdown" class="dropdown">
+              <li><a href="#">INDUSTRIES 1</a></li>
+              <li><a href="#">INDUSTRIES 2</a></li>
+              <li><a href="#">INDUSTRIES 3</a></li>
+              <li><a href="#">INDUSTRIES 4</a></li>
+            </ul>
+          </li>
+          <li class="sub-menu" onclick="myFunction()"><a href="#">STANDARDS</a>
+            <ul  id="myDropdown" class="dropdown">
+              <li><a href="#">STANDARDS 1</a></li>
+              <li><a href="#">STANDARDS 2</a></li>
+              <li><a href="#">STANDARDS 3</a></li>
+              <li><a href="#">STANDARDS 4</a></li>
+            </ul>
+          </li>
+          <li><a href="#">PRODUCT FINDER</a></li>
+        </ul>
+      </nav>
+    </div>
+
+      <div class="cart-icon">
+          <a href="#"><i class="fa fa-search" aria-hidden="true"></i></a>
+          <a href="#"><img src="images/shopping-cart.png" alt=""></a>
+    </div>
+   </div>
+  </div>
+</header>
 
   <!-- -----------------img slider-------------------- -->
 <section>
