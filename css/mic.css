@@ -1,5 +1,4 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans&family=Open+Sans:wght@300;400&display=swap');
 
 @font-face{
     font-family: KlavikaMedium;
@@ -34,13 +33,14 @@ body{
     align-items: center;
 }
 .search-box div{
-    width: 80%;
+    width: 78%;
     height: 40px;
     outline: none;
     background-color: white;
     display: flex;
     justify-content: center;
     align-items: center;
+    border-radius: 8px;
 }
 .search-box i{
     color: rgb(0, 0, 0);
@@ -75,14 +75,17 @@ body{
     color: #ffffff;
     padding: 7px 40px;
     font-size: 30px;
-    font-family: KlavikaMedium;
+    font-family: KlavikaLight;
+    font-weight: 500;
 }
 .title-container p{
     color: #ffffff;
     font-size: 20px;
     margin-top:17px;
     text-align: center;
-    font-family: 'Noto Sans', sans-serif;
+    font-family: "Noto Sans", sans-serif;
+    font-weight: 400;
+
 }
 .title-container .sm-hr{
     margin-top: 15px;
@@ -91,9 +94,9 @@ body{
 }
 .title-container h5{
     color: #6e6e6e;
-    font-size: 16px;
+    font-size: 1rem;
     margin-top: 5px;
-    font-family: 'Nuto Sans', sans-serif;
+    font-family: "Noto Sans", sans-serif;
 }
 .tech-imgs {
     display: flex;
@@ -108,29 +111,31 @@ body{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin:20px 3px;
+    margin:20px 8px;
     height: 230px;
-    width: 370px;
+    width: 385px;
+    border-radius: 8px;
 }
 .tech-imgs img{
     position: absolute;
     overflow: hidden;
     height: 230px;
-    width: 370px;
+    width: 385px;
+    border-radius: 8px;
 }
 .tech-imgs h3{
     position: relative;
     color: white;
     font-size: 30px;
-    font-family: 'Nuto Sans', sans-serif;
+    font-family: KlavikaMedium;
     font-weight: normal;
 }
 .tech-imgs p{
     position:relative;
     color: white;
     top: 60px;
-    font-size: 12.5px;
-    font-family: 'Nuto Sans', sans-serif;
+    font-size: 12px;
+    font-family: "Noto Sans", sans-serif;
     text-align: left;
     padding: 0 15px;
     display: none;
@@ -142,8 +147,9 @@ body{
 
 .tech-imgs .t-img:hover img{
     transform: scale(1.1) translate3d(0px, -10px, 0px);
-    transition: all .2s ease-out !important;
+    transition: all .2s ease-out;
     cursor: pointer;
+    border-radius: 8px;
 } 
 .btn h5{
     color: #6e6e6e;
@@ -156,13 +162,14 @@ body{
     width: 85%;
     height: auto;
     padding: 50px 0;
-    margin-top: 100px;
+    margin-top: 140px;
     background-color: #141414;
     display: flex;
     justify-content: center;
 }
 .carousel-one{
     width: 92%;
+    margin-top: -110px;
     height: auto;
     display: flex;
     flex-direction: row;
@@ -172,12 +179,13 @@ body{
 }
 .carousel-one .item{
     position: relative;
-    height: 390px;
+    height: 370px;
     background-color: rgb(255, 255, 255);
     display: flex;
     justify-content: flex-start;
     align-items: center;
     flex-direction: column;
+    border-radius: 8px;
 }
 .add-cart{
     position: absolute;
@@ -190,6 +198,17 @@ body{
     border: 25px solid transparent;
     border-top-color: rgb(37, 37, 37);
     border-right-color: rgb(37, 37, 37);
+    display: none;
+    border-top-right-radius: 8px;
+
+}
+.carousel-one .item:hover .add-cart{
+    display: block;
+    cursor: pointer;
+}
+.add-cart:hover{
+    border-top-color: rgb(0, 160, 223);
+    border-right-color: rgb(0, 160, 223);
 }
 .add-cart .cart-img{
     position: absolute;
@@ -197,18 +216,21 @@ body{
     bottom: 0;
     width: 20px;
 }
-.carousel-one .item:hover .add-cart{
-    border-top-color: rgb(0, 160, 223);
-    border-right-color: rgb(0, 160, 223);
-}
+
 .carousel-one .item .prod-img{
     margin-top: 25px;
     width: 130px;
 }
+.prod-img:hover {
+    transform: scale(1) translate3d(0px, -10px, 0px);
+    transition: all .2s ease-out;
+    cursor: pointer;
+    border-radius: 8px;
+} 
 .carousel-one h5{
     color: rgb(32, 32, 32);
     margin-top: 20px;
-    font-family: 'Nuto Sans', sans-serif;
+    font-family: "Noto Sans", sans-serif;
     font-size: 20px;
     text-align: center;
 }
@@ -216,9 +238,10 @@ body{
     color: rgb(83, 83, 83);
     font-size: 14px;
     margin: 10px;
-    font-family: 'Nuto Sans', sans-serif;
+    font-family: "Noto Sans", sans-serif;
     text-align: center;
 }
+
 .carousel-one a{
     padding: 5px 15px;
     margin-top: 20px;
@@ -227,9 +250,8 @@ body{
     border: 2px solid black;
     font-size: 13px;
     color: rgb(0, 0, 0);
-    font-family: 'Nuto Sans', sans-serif;
+    font-family: "Noto Sans", sans-serif;
 }
-
 .carousel-one a:hover{
     color: rgb(255, 255, 255);
     background-color: black;
@@ -240,8 +262,8 @@ body{
 .second-gray-box{
     width: 85%;
     height: auto;
-    padding: 50px 0;
-    margin-top: 100px;
+    padding: 30px 0;
+    margin-top: 140px;
     background-color:#141414;
     display: flex;
     justify-content: center;
@@ -251,6 +273,7 @@ body{
     width: 92%;
     height: auto;
     display: flex;
+    margin-top: -110px;
     justify-content: center;
     flex-direction: column;
     align-items: center;
@@ -264,13 +287,14 @@ body{
 }
 .carousel-two .item div {
     width: 50%;
-    height: 330px;
+    height: 380px;
 }
 .item .lhs-box .blue-img{
     height: 380px;
     width: 100%;
     border: 1px solid white;
     margin-top:0;
+    border-radius: 10px 0 0 10px;
 }
 .rhs-box{
     background-color: #ffffff;
@@ -278,6 +302,7 @@ body{
     flex-direction: column;
     justify-content: flex-start;
     align-items: flex-start;
+    border-radius: 0 10px 10px 0;
 }
 .rhs-box h1{
     font-size: 40px;
@@ -298,15 +323,16 @@ body{
     background-color: #1e1e1e;
     padding: 7px;
     color: white;
-    font-size: 24px;
+    font-size: 21px;
     cursor: pointer;
     margin: 20px 80px;
+    font-family: "Noto Sans", sans-serif;
 }
 
 .owl-prev span, .owl-next span{
     color: white;
     background-color: #6e6e6e;
-    padding: 0 15px;
+    padding: 0 15px 6px;
     font-size: 40px;
     margin: 0 -5.7px;
     border:1px solid wheat
@@ -321,7 +347,7 @@ body{
     width: 85%;
     height: auto;
     padding: 50px 0;
-    margin-top: 100px;
+    margin-top: 140px;
     background-color: #141414;
     display: flex;
     justify-content: center;
@@ -332,6 +358,7 @@ body{
     width: 92%;
     height: auto;
     display: flex;
+    margin-top: -110px;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
@@ -340,19 +367,21 @@ body{
 .third-tech-images div{
     position: relative;
     overflow: hidden;
-    height: 200px;
-    width: 340px;
-    margin: 2px;
+    height: 240px;
+    width: 433px;
+    margin: 2.3px;
     display: flex;
     justify-content: center;
     align-items: center;
+    border-radius: 8px;
 }
 
 .third-tech-images img {
     position: absolute;
     margin-top: 0px;
-    height: 200px;
-    width: 340px;
+    height: 240px;
+    width: 430px;
+    border-radius: 8px;
 }
 .third-tech-images div:hover img{
     transform: scale(1.1) translate3d(0px, -10px, 0px);
@@ -362,7 +391,7 @@ body{
 .third-tech-images h1{
     position: relative;
     color: white;
-    font-family: 'Nuto Sans', sans-serif;
+    font-family: KlavikaMedium;
     font-weight: 100;
 }
 
@@ -372,14 +401,15 @@ body{
     width: 85%;
     height:auto;
     padding: 50px 0;
-    margin-top: 100px;
+    margin-top: 140px;
     background-color:#141414;
     display: flex;
     justify-content: center;
 }
 .carousel-three{
     width: 92%;
-    height: 290px;
+    height: auto;
+    margin-top: -110px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
@@ -391,6 +421,7 @@ body{
     flex-direction: column;
     justify-content: flex-start;
     align-items: flex-start;
+    border-radius: 8px;
 }
 .carousel-three h1 {
     color: #00adef;
@@ -407,9 +438,9 @@ body{
 .carousel-three p {
     text-align: left;
     color: black;
-    font-family: 'Nuto Sans', sans-serif;
+    font-family: "Noto Sans", sans-serif;
     margin: 10px 30px;
-    font-size: 16px;
+    font-size: 15px;
 }
 
 /* ------------------------------Valued Partners-------------------------- */
@@ -440,6 +471,10 @@ body{
 
 /* ------------------------------Media query--------------------- */
 @media(max-width: 1680px){
+    .carousel-two .item div {
+        width: 50%;
+        height: 330px;
+    }
     .search-box{
         height: 80px;
     }
@@ -480,10 +515,6 @@ body{
     .owl-theme .owl-nav {
         margin-top: 27px;
     }
-    .carousel-three{
-        width: 92%;
-        height: 290px;
-    }
     .carousel-three h1{
         font-size: 35px;
     }
@@ -497,16 +528,13 @@ body{
     .carousel-one button a {
         font-size: 12px;
     }
-    .third-tech-images{
-        height: 408px;
-    }
     .third-tech-images img {
         height: 200px;
-        width: 340px;
+        width: 347px;
     }
     .third-tech-images div {
         height: 200px;
-        width: 340px;
+        width: 347px;
     }
     .third-tech-images h1 {
         font-size: 20px;
@@ -518,8 +546,8 @@ body{
         height: auto;
     }
     .third-tech-images div {
-        height: 160px;
-        width: 290px;
+        height: 190px;
+        width: 307px;
     }
     .carousel-three h1 {
         margin: 15px 30px;
@@ -539,11 +567,13 @@ body{
     }
 }
 @media(max-width: 768px){
+    
     .carousel-two .item {
         height: 250px;
     }
     .rhs-box p {
         font-size: 15px;
+        margin-left: 20px;
     }
     .item .lhs-box .blue-img {
         height: 250px;
@@ -552,15 +582,19 @@ body{
     .carousel-two .item div {
         height: 250px;
     }
-    .carou-th-cen .item {
-        margin-left: 12px;
+    .rhs-box h1 {
+        margin-left: 20px;
+        font-size: 25px;
     }
     .rhs-box button {
         font-size: 18px;
-        margin: 20px 75px;
+        margin: 20px 32px;
     }
 }
 @media (max-width: 575px){
+    .search-box input {
+        width: 94%;
+    }
     .carousel-two .item div{
         width: 99%;
     }
@@ -569,6 +603,12 @@ body{
     }
     .rhs-box button {
         margin: 20px 60px;
+    }
+    .item .lhs-box .blue-img {
+        border-radius: 10px 10px 0 0; 
+    }
+    .rhs-box{
+        border-radius: 0 0 10px 10px;
     }
 }
 @media(max-width: 425px){
@@ -608,6 +648,9 @@ body{
     }
 }
 @media(max-width: 375px){
+    .search-box input {
+        width: 92%;
+    }
     .tech-imgs .t-img {
         width: 90vw;
     }

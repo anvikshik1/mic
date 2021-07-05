@@ -1,5 +1,4 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans&family=Open+Sans:wght@300;400&display=swap');
 
 @font-face{
     font-family: KlavikaMedium;
@@ -8,6 +7,10 @@
 @font-face{
     font-family: KlavikaLight;
     src: url('../fonts/KlavikaLight-Plain.otf');
+}
+@font-face{
+    font-family: HelveticaNow;
+    src: url('../fonts/HelveticaNowDisplayXBlk.otf');
 }
 *{
     margin: 0;
@@ -104,11 +107,18 @@ a, button {
 }
 .header-item-left img{
     display: block;
-    width: 17rem;
+    width: 3.5rem;
     height: auto;
-    padding: 7px;
+    padding: 7px 0;
     -o-object-fit: cover;
     object-fit: cover;
+}
+.header-item-left h1{
+    font-size: .8rem;
+    color: white;
+    font-family: HelveticaNow;
+    margin-left: 10px;
+    padding-bottom: 15px;
 }
 .container {
     width: 100%;
@@ -126,7 +136,7 @@ a, button {
     margin: 0 auto;
     z-index: 999;
     outline: none;
-    background: rgb(0, 0, 0);
+    background: rgba(0, 0, 0,0.9);
     
 }
 .header .wrapper {
@@ -135,6 +145,7 @@ a, button {
     display: flex;
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
+    justify-content: flex-start;
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
@@ -144,6 +155,7 @@ a, button {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    align-items: flex-end;
     -webkit-box-flex: 0;
     -ms-flex: 0 0 17%;
     flex: 0 0 17%}
@@ -151,6 +163,8 @@ a, button {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    align-items: flex-end;
+    padding-top: 20px;
     -webkit-box-flex: 0;
     -ms-flex: 0 0 62%;
     flex: 0 0 62%
@@ -160,14 +174,15 @@ a, button {
     display: -ms-flexbox;
     display: flex;
     -webkit-box-flex: 0;
-    -ms-flex: 0 0 7%;
-    flex: 0 0 7%;
+    -ms-flex: 0 0 5%;
+    flex: 0 0 5%;
     -webkit-box-align: center;
     -ms-flex-align: center;
-    align-items: center;
+    align-items: flex-end;
     -webkit-box-pack: end;
     -ms-flex-pack: end;
     justify-content: flex-end;
+    padding-top: 20px;
 }
 .header-item-right .menu-icon {
     font-size: 1.35rem;
@@ -193,15 +208,15 @@ a, button {
 }
 .header .menu>ul>li>a {
     position: relative;
-    font-family: KlavikaLight;
-    font-size: 1em;
-    font-weight: 500;
+    font-size: .9em;
     line-height: 1.25;
     border: none;
     outline: none;
     color: #dfdfdf;
     text-transform: capitalize;
     text-rendering: optimizeLegibility;
+    font-family: "Noto Sans", sans-serif;
+    font-weight: 700;
 }
 .header .menu>ul>li .menu-subs {
     position: absolute;
@@ -216,7 +231,7 @@ a, button {
     visibility: hidden;
     border-radius: 0.25rem;
     border-top: 3px solid #00adef;
-    background:#2e2e2e;
+    background: rgb(0,0,0,0.9);
 }
 .header .menu>ul>li .menu-subs>ul>li {
     line-height: 1;
@@ -254,7 +269,7 @@ a, button {
 .header .menu>ul>li .menu-subs.menu-mega>.list-item>ul>li>a {
     display: inline-block;
     font-family: "Noto Sans", sans-serif;
-    font-size: 1rem;
+    font-size: .9rem;
     font-weight: 500;
     line-height: 1.25;
     padding: 0.2rem 0;
@@ -280,7 +295,7 @@ a, button {
     -webkit-box-flex: 0;
     -ms-flex: 0 0 18%;
     flex: 0 0 18%;
-    padding: 1.2rem 1rem;
+    padding: 1.2rem 0;
 }
 .header .menu>ul>li .menu-subs.menu-column-4>.list-item .title {
     font-family: inherit;
@@ -321,6 +336,7 @@ a, button {
     flex-direction:  row;
     align-content:  center;
     justify-content:  flex-end;
+    flex-wrap: wrap;
     align-items:  center;
     width:  100%;
     margin:  0 auto;
@@ -335,29 +351,34 @@ header .container {
 .thin-bar div{
     display:  flex;
     flex-direction:  row;
-    align-content:  center;
+    align-items: center;
 }
 .thin-bar div i{
     color: white;
     padding: 2px 10px;
+    display: flex;
+    align-items: center;
 }
 .thin-bar h4{
     color: white;
-    margin-right:20px;
+    margin-right:5vw;
     font-size: 13px;
     font-family:'Noto Sans', sans-serif;
+    font-weight: normal;
 }
-.thin-bar a{
+.thin-bar h3{
     color: white;
-    text-decoration: none;
-    margin-right:10vw;
+    margin-right:10px;
     font-size: 12px;
     font-family:'Noto Sans', sans-serif;
+    font-weight: normal;
 }
 .menu-icon i{
     color: white;
     font-size: 22px;
+    position: relative;
 }
+
 .list-name {
     display: flex;
     flex-direction: row;
@@ -394,12 +415,12 @@ header .container {
 }
 .list-item>ul>li>a {
     font-family:'Noto Sans', sans-serif;
-    font-size: .9rem !important;
+    font-size: .9rem ;
 }
 .owl-box{
     display: flex;
     justify-content: center !important;
-    padding: 15px;
+    padding: 15px 0;
 }
 .menu-mobile-arrow i, .menu-mobile-close i{
     color: white;
@@ -408,9 +429,6 @@ header .container {
 nav .owl-theme .owl-dots .owl-dot span {
     width: 60px;
     height: 3px;
-}
-@media only screen and (max-width: 768px) {
- 
 }
 
 /* -----------------------------images slider --------------------- */
@@ -442,24 +460,31 @@ nav .owl-theme .owl-dots .owl-dot span {
 }
 .slide-content span{
     color: white;
-    font-size: 37px;
+    font-size: 2.5rem;
     font-family: KlavikaMedium;
+    font-weight: 500;
 }
 .slide-content p{
     color: white;
-    font-size: 20px;
+    font-size: 1.5rem;
     padding: 15px 0px;
-    font-family: KlavikaLight;
+    font-family:KlavikaLight;
+    font-weight: 500;
 }
 .slide-content button {
     width: 140px;
-    border: 2px solid #a7a7a7;
+    border: 2px solid #f3f3f3;
     background-color: rgba(30, 30, 30,0.5);
-    padding: 5px;
+    padding: 8px;
     color: white;
-    font-size: 20px;
+    font-size: 1rem;
     cursor: pointer;
     font-family: "Noto Sans", sans-serif;
+    font-weight: 700;
+}
+.slide-content button:hover {
+    border: 2px solid #000000;
+    background-color: rgba(143, 143, 143, 0.5);
 }
 .arrow{
     cursor: pointer;
@@ -497,7 +522,7 @@ footer{
     flex-direction: column;
 }
 .foo-cont .lg-hr{
-    width: 92%;
+    width: 85%;
     height: 1px;
 }
 .st-info{
@@ -511,7 +536,7 @@ footer{
     width: 150px;
 }
 .ver-box{
-    width: 90%;
+    width: 85%;
     margin: 20px 0;
     display: flex;
     align-items: flex-start;
@@ -528,7 +553,7 @@ footer{
 .email-lhs-box p, .social-m-box p {
     color:#6e6e6e;
     font-weight: bold;
-    font-family: 'Nunito Sans', sans-serif;
+    font-family: 'Noto Sans', sans-serif;
     font-size: 13px;
     text-align: left;
 }
@@ -558,7 +583,7 @@ footer{
     border: 0;
     outline: none;
     cursor: pointer;
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Noto Sans', sans-serif;
 }
 .email-rhs-box #submit:hover{
     color: #00adef;
@@ -582,7 +607,8 @@ footer{
     align-items: center;
 }
 .social-m-rhs a {
-    font-family: 'Open Sans', sans-serif;
+    font-family: "Noto Sans", sans-serif;
+    font-weight: 400;
     color: #6e6e6e;
     text-decoration: none;
     font-size:15px;
@@ -597,7 +623,7 @@ footer{
     display: flex;
     flex-direction: row;
     align-items: center;
-    width: 90%;
+    width: 85%;
     height: 50px;
     margin: 10px 0;
 }
@@ -610,7 +636,7 @@ footer{
 .lng-box h4, .lng-box a{
     color: #6e6e6e;
     margin: 5px;
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Noto Sans', sans-serif;
     text-decoration: none;
 }
  .lng-box a:hover {
@@ -635,13 +661,13 @@ footer{
     color: #00adef;
 }
 .lg-hr-three{
-    width: 92%;
+    width: 85%;
     height: 1px;
 }
 .cpy-rite{
     color: #6e6e6e ;
     padding-bottom: 50px;
-    font-family: 'Nunito Sans', sans-serif;
+    font-family: 'Noto Sans', sans-serif;
     font-weight: bold;
     font-size: 10px;
     margin-top: 1px;
@@ -650,11 +676,14 @@ footer{
 /* ---------------------header css------------------------- */
 
 @media (max-width: 1199px){
+    .header-item-left {
+        flex: 0 0 21%;
+    }
     .list-name a{
-    font-size: 1.1em;
+    font-size: 1.1vw;
     }
     .header .menu>ul>li>a {
-        font-size: 1.3vw;
+        font-size: 1.1vw;
     }
     .slide-content span {
         font-size: 3vw;
@@ -673,7 +702,7 @@ footer{
 }
 @media only screen and (min-width: 993px) {
     .header .menu>ul>li.menu-item-has-children:hover .menu-subs {
-    margin-top: 0.5rem;
+    margin-top: 0rem;
     opacity: 1;
     visibility: visible;
     display: flex;
@@ -681,6 +710,12 @@ footer{
     }
 }
 @media(max-width: 991px){
+    .header-item-center {
+        padding-top: 0;
+    }
+    .header-item-right {
+        padding-top: 0;
+    }
     .header-item-center {
         -webkit-box-flex: 0;
         -ms-flex: 0 0 100%;
@@ -1035,7 +1070,7 @@ footer{
 }
 @media (max-width: 575px){
     .header-item-left img{
-        width:45vw;
+        width:10vw;
     }
     .thin-bar{
         justify-content: center ;
@@ -1116,7 +1151,7 @@ footer{
         padding: 13px 0px;
     }
     .slide-content button {
-        width: 100px;
+        width: 110px;
         font-size: 15px;
     }
     .st-info {
