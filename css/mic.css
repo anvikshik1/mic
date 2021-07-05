@@ -75,7 +75,7 @@ body{
     color: #ffffff;
     padding: 7px 40px;
     font-size: 30px;
-    font-family: KlavikaLight;
+    font-family: KlavikaMedium;
     font-weight: 500;
 }
 .title-container p{
@@ -97,6 +97,7 @@ body{
     font-size: 1rem;
     margin-top: 5px;
     font-family: "Noto Sans", sans-serif;
+    font-weight: 400;
 }
 .tech-imgs {
     display: flex;
@@ -128,7 +129,7 @@ body{
     color: white;
     font-size: 30px;
     font-family: KlavikaMedium;
-    font-weight: normal;
+    font-weight: 500;
 }
 .tech-imgs p{
     position:relative;
@@ -230,7 +231,8 @@ body{
 .carousel-one h5{
     color: rgb(32, 32, 32);
     margin-top: 20px;
-    font-family: "Noto Sans", sans-serif;
+    font-family: KlavikaMedium;
+    font-weight: 500;
     font-size: 20px;
     text-align: center;
 }
@@ -309,6 +311,7 @@ body{
     margin-left: 65px;
     padding: 10px;
     font-family: KlavikaMedium;
+    font-weight: 500;
 }
 .rhs-box p{
     font-size: 25px;
@@ -392,7 +395,7 @@ body{
     position: relative;
     color: white;
     font-family: KlavikaMedium;
-    font-weight: 100;
+    font-weight: 500;
 }
 
 /* --------------------------BACK TO BASICS------------------------------ */
@@ -428,6 +431,7 @@ body{
     margin: 20px 30px;
     font-size: 35px;
     font-family: KlavikaMedium;
+    font-weight: 500;
 }
 .carousel-three h2 {
     color: #00adef;

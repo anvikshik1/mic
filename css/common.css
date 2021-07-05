@@ -568,24 +568,26 @@ footer{
 .email-input {
     width: 100%;
 }
-.email-rhs-box #email{
+.email-rhs-box .email{
     width: 70%;
     height: 30px;
     background-color: rgb(54, 54, 54) ;
     border: 0;
     outline: none;
 }
-.email-rhs-box #submit{
+.email-rhs-box .submit{
     width: 130px;
-    padding: 5px 10px;
+    height: 30px;
+    font-size: 15px;
     background-color: rgb(54, 54, 54) ;
     color: white;
     border: 0;
     outline: none;
     cursor: pointer;
     font-family: 'Noto Sans', sans-serif;
+    font-weight: 400;
 }
-.email-rhs-box #submit:hover{
+.email-rhs-box .submit:hover{
     color: #00adef;
 }
 ::placeholder{
@@ -593,6 +595,7 @@ footer{
     font-style: italic;
     font-size: 15px;
     padding-left: 20px;
+    font-family: "Noto Sans", sans-serif;
 }
 .v-hr{
     height: 70px;
@@ -645,7 +648,7 @@ footer{
 .lng-box p{
     color: #6e6e6e ;
     margin: 10px;
-    font-family: 'Nunito Sans', sans-serif;
+    font-family: 'Noto Sans', sans-serif;
 }
 .lng-box a{
     font-size: 15px;
@@ -1004,7 +1007,7 @@ footer{
     .email-rhs-box {
         text-align: center;
     }
-    .email-rhs-box #submit {
+    .email-rhs-box .submit {
         margin-top: 10px;
     }
 }
@@ -1052,7 +1055,7 @@ footer{
         text-align: center;
     }
     
-    .email-rhs-box #submit {
+    .email-rhs-box .submit {
         padding: 5px 10px;
         margin-top: 10px;
     }
@@ -1116,7 +1119,7 @@ footer{
         justify-content: center;
         align-items: center;
     }
-    .email-rhs-box #email {
+    .email-rhs-box .email {
         width: 80vw;
     }
     .lng-box {
