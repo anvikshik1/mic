@@ -87,10 +87,11 @@ body{
     font-weight: 400;
 
 }
-.title-container .sm-hr{
+.title-container .sm-hr,.foo-cont .sm-hr{
     margin-top: 15px;
     width: 150px;
     height: 2px;
+    background-color: #00adef;
 }
 .title-container h5{
     color: #6e6e6e;
@@ -113,15 +114,15 @@ body{
     justify-content: center;
     align-items: center;
     margin:20px 8px;
-    height: 230px;
-    width: 385px;
+    height: 300px;
+    width: 500px;
     border-radius: 8px;
 }
 .tech-imgs img{
     position: absolute;
     overflow: hidden;
-    height: 230px;
-    width: 385px;
+    height: 300px;
+    width: 500px;
     border-radius: 8px;
 }
 .tech-imgs h3{
@@ -160,7 +161,7 @@ body{
 
 /* -----------------------slick slider------------------------- */
 .first-gray-box{
-    width: 85%;
+    width: 100%;
     height: auto;
     padding: 50px 0;
     margin-top: 140px;
@@ -235,6 +236,7 @@ body{
     font-weight: 500;
     font-size: 20px;
     text-align: center;
+    padding: 5px;
 }
 .carousel-one p{
     color: rgb(83, 83, 83);
@@ -262,7 +264,7 @@ body{
 
 /* -------------------------------SHAPING THE FUTURE-------------------------------- */
 .second-gray-box{
-    width: 85%;
+    width: 100%;
     height: auto;
     padding: 30px 0;
     margin-top: 140px;
@@ -347,7 +349,7 @@ body{
 /* -----------------------------HELPING YOU CONNECT----------------------------- */
 
 .third-gray-box {
-    width: 85%;
+    width: 100%;
     height: auto;
     padding: 50px 0;
     margin-top: 140px;
@@ -370,8 +372,8 @@ body{
 .third-tech-images div{
     position: relative;
     overflow: hidden;
-    height: 240px;
-    width: 433px;
+    height: 275px;
+    width: 510px;
     margin: 2.3px;
     display: flex;
     justify-content: center;
@@ -382,8 +384,8 @@ body{
 .third-tech-images img {
     position: absolute;
     margin-top: 0px;
-    height: 240px;
-    width: 430px;
+    height: 275px;
+    width: 510px;
     border-radius: 8px;
 }
 .third-tech-images div:hover img{
@@ -401,7 +403,7 @@ body{
 /* --------------------------BACK TO BASICS------------------------------ */
 
 .fourth-gray-box{
-    width: 85%;
+    width: 100%;
     height:auto;
     padding: 50px 0;
     margin-top: 140px;
@@ -450,7 +452,7 @@ body{
 /* ------------------------------Valued Partners-------------------------- */
 
 .fifth-gray-box{
-    width: 85%;
+    width: 100%;
     height: auto;
     padding: 50px 0;
     margin: 70px 0;
@@ -489,8 +491,12 @@ body{
         height: 29px;
     }
     .tech-imgs .t-img {
-        height: 230px;
-        width: 370px;
+        height: 227px;
+        width: 402px;
+    }
+    .tech-imgs img {
+        height: 232px;
+        width: 402px;
     }
     .tech-imgs h3{
         font-size: 22px;
@@ -528,17 +534,18 @@ body{
     .carousel-one h5{
         font-size: 17px;
         text-align: center;
+        padding: 5px
     }
     .carousel-one button a {
         font-size: 12px;
     }
     .third-tech-images img {
-        height: 200px;
-        width: 347px;
+        height: 230px;
+        width: 409px;
     }
     .third-tech-images div {
-        height: 200px;
-        width: 347px;
+        height: 230px;
+        width: 409px;
     }
     .third-tech-images h1 {
         font-size: 20px;
