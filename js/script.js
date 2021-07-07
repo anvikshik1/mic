@@ -521,7 +521,7 @@ $(document).ready(function () {
     $('.carousel-four .owl-carousel').owlCarousel({
         loop: true,
         nav: false,
-        margin: 5,
+        margin: 10,
         dots: true,
         items: 5,
         responsiveClass: true,

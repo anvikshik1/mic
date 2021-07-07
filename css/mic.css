@@ -163,7 +163,7 @@ body{
 .first-gray-box{
     width: 100%;
     height: auto;
-    padding: 50px 0;
+    padding: 20px 0;
     margin-top: 140px;
     background-color: #141414;
     display: flex;
@@ -405,7 +405,7 @@ body{
 .fourth-gray-box{
     width: 100%;
     height:auto;
-    padding: 50px 0;
+    padding: 20px 0;
     margin-top: 140px;
     background-color:#141414;
     display: flex;
@@ -451,10 +451,10 @@ body{
 
 /* ------------------------------Valued Partners-------------------------- */
 
-.fifth-gray-box{
-    width: 100%;
+.fifth-gray-box {
+    width: 92%;
     height: auto;
-    padding: 50px 0;
+    padding: 15px 0;
     margin: 70px 0;
     background-color: #141414;
     display: flex;
