@@ -165,6 +165,7 @@ a, button {
     display: -ms-flexbox;
     display: flex;
     align-items: flex-end;
+    margin-left: 150px;
     padding-top: 20px;
     -webkit-box-flex: 0;
     -ms-flex: 0 0 62%;
@@ -882,7 +883,11 @@ hr {
 }
 
 /* ---------------------header css------------------------- */
-
+@media (max-width: 1366px){
+    .header-item-center {
+        margin-left: 0;
+    }
+}
 @media (max-width: 1199px){
     .header-item-left {
         flex: 0 0 21%;
