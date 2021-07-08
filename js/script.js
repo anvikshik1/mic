@@ -370,7 +370,8 @@ $('.carousel').carousel({
 
 
 
-
+const right = '<img src="./images/right-arrow-angle.png">'
+const left = '<img src="./images/left-arrow-line-symbol.png">'
 
 // **********owl-carousel***********
 $(document).ready(function () {
@@ -413,7 +414,7 @@ $(document).ready(function () {
         loop: true,
         dots: true,
         nav: false,
-        margin: 40,
+        margin: 15,
         items: 5,
         responsiveClass: true,
         responsive: {
@@ -461,26 +462,27 @@ $(document).ready(function () {
     });
     $('.carousel-two .owl-carousel').owlCarousel({
         loop: true,
-        margin: 10,
+        margin: 15,
         dots: false,
-        nav: true,
+        nav:true,
+        navText:[
+            left,
+            right
+        ], 
         responsiveClass: true,
         responsive: {
             0: {
                 items: 1,
-                nav: false
+                nav: true,
             },
             425: {
                 items: 1,
-                nav: false
             },
             768: {
                 items: 1,
-                nav: true
             },
             1000: {
                 items: 1,
-                nav: true
             }
         }
     });
@@ -488,7 +490,7 @@ $(document).ready(function () {
     $('.carousel-three .owl-carousel').owlCarousel({
         loop: true,
         nav: false,
-        margin: 20,
+        margin: 15,
         dots: true,
         responsiveClass: true,
         responsive: {
@@ -513,7 +515,7 @@ $(document).ready(function () {
             },
             1440: {
                 items: 3,
-                margin: 10,
+                margin: 15,
                 loop: true
             }
         }
@@ -521,7 +523,7 @@ $(document).ready(function () {
     $('.carousel-four .owl-carousel').owlCarousel({
         loop: true,
         nav: false,
-        margin: 10,
+        margin:15,
         dots: true,
         items: 5,
         responsiveClass: true,
@@ -559,6 +561,5 @@ $(document).ready(function () {
             }
         }
     });
-
 });
 

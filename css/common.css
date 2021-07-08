@@ -1,12 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap');
 
 @font-face{
-    font-family: KlavikaMedium;
-    src: url('../fonts/KlavikaMedium-TF.otf');
+    font-family: Klavika-MediumCondensed;
+    src: url('../fonts/Klavika-MediumCondensed.ttf');
 }
 @font-face{
-    font-family: KlavikaLight;
-    src: url('../fonts/KlavikaLight-Plain.otf');
+    font-family: Klavika-LightCondensed;
+    src: url('../fonts/Klavika-LightCondensed.ttf');
 }
 @font-face{
     font-family: HelveticaNow;
@@ -19,7 +19,13 @@
 }
  
 /*----------------navbar----------------- */
- 
+html {
+    font-size: 100%;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family: 'Noto Sans', sans-serif;
+}
 body{
     background-color: rgb(0, 0, 0) !important;
     max-width: 1680px;
@@ -77,12 +83,7 @@ header{
     transform: translateX(100%);
 }
 }
-html {
-    font-size: 100%;
-    -webkit-box-sizing: border-box;
-    box-sizing: border-box;
-    scroll-behavior: smooth;
-}
+
 *, *::before, *::after {
     padding: 0;
     margin: 0;
@@ -114,7 +115,7 @@ a, button {
     object-fit: cover;
 }
 .header-item-left h1{
-    font-size: .8rem;
+    font-size: .9rem;
     color: white;
     font-family: HelveticaNow;
     margin-left: 10px;
@@ -159,7 +160,8 @@ a, button {
     align-items: flex-end;
     -webkit-box-flex: 0;
     -ms-flex: 0 0 17%;
-    flex: 0 0 17%}
+    flex: 0 0 17%
+}
 .header-item-center {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -396,21 +398,20 @@ header .container {
     color: white;
     font-family:'Noto Sans', sans-serif;
 }
-
 .list-name {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     width: 100%;
     border-bottom: 1px solid rgb(78, 78, 78);
-    margin-left: 5vw;
+    margin-left: 5%;
     margin-right: 70px;
 }
 .list-name h4{
     color: rgb(255, 255, 255);
-    margin-right: 7vw;
+    margin-right: 10%;
     font-size: 1.2vw;
-    font-family: klavikaLight;
+    font-family: Klavika-LightCondensed;
 }
 .list-name a{
     color: #7a7a7a;
@@ -420,7 +421,7 @@ header .container {
 }
 .list-name a:hover{
     color: #ffffff;
-    border-bottom: 1px solid rgb(24, 149, 233);
+    border-bottom: 1px solid #00adef;
 }
 .item a{
   color: #7a7a7a; 
@@ -566,8 +567,8 @@ nav .owl-theme .owl-dots .owl-dot span {
 
 .carousel-control {
     position: absolute;
-    top: 0;
-    bottom: 0;
+    top: 50%;
+    bottom:50%;
     left: 0;
     width: 10%;
     font-size: 20px;
@@ -587,7 +588,16 @@ nav .owl-theme .owl-dots .owl-dot span {
     z-index: 5;
     display: inline-block;
     margin-top: -10px;
-    font-size: 40px;
+    font-size: 30px;
+}
+.carousel-control .glyphicon-chevron-left:hover,
+.carousel-control .glyphicon-chevron-right:hover {
+   color: #c5c5c5;
+   transition: .3s;
+}
+.carousel-control .glyphicon-chevron-left:active,
+.carousel-control .glyphicon-chevron-right:active {
+   color: #00adef;
 }
 .carousel-control .icon-prev,
 .carousel-control .glyphicon-chevron-left {
@@ -623,9 +633,9 @@ nav .owl-theme .owl-dots .owl-dot span {
     text-align: left;
 }
 .carousel-inner .carousel-caption h1{
-    font-family: KlavikaMedium;
+    font-family: Klavika-MediumCondensed;
     font-weight: 500 ;
-    font-size: 2.5rem;
+    font-size: 2.4rem;
     opacity: 0;
     -webkit-transition: transform .5s ease-out,opacity .5s ease-out;
     -webkit-transition: opacity .5s ease-out,-webkit-transform .5s ease-out;
@@ -639,7 +649,7 @@ nav .owl-theme .owl-dots .owl-dot span {
     transition-delay: .5s
 }
 .carousel-inner .carousel-caption p{
-    font-family: KlavikaLight;
+    font-family: Klavika-LightCondensed;
     font-weight: 500 ;
     font-size: 1.5rem;
     opacity: 0;
@@ -658,13 +668,12 @@ nav .owl-theme .owl-dots .owl-dot span {
     position: absolute;
     font-family: "Noto Sans", sans-serif;
     font-weight: 700 ;
-    font-size: 1rem;
+    font-size: 1.2rem;
     background-color: rgb(0, 0, 0,0.4);
     border:1px  solid rgb(255, 255, 255);
     color: white;
     margin-top: 20px;
     padding: 7px 15px;
-    /* animation: textdown 7s linear infinite; */
     opacity: 0;
     -webkit-transition: transform .5s ease-out,opacity .5s ease-out;
     -webkit-transition: opacity .5s ease-out,-webkit-transform .5s ease-out;
@@ -687,7 +696,7 @@ nav .owl-theme .owl-dots .owl-dot span {
 }
 .carousel-caption a:hover{
     background-color: rgba(117, 117, 117, 0.4);
-    border:1px  solid rgb(0, 0, 0);
+    border:2px  solid rgb(0, 0, 0);
     color: white;
     margin-top: 20px;
     padding: 7px 15px;
@@ -695,16 +704,6 @@ nav .owl-theme .owl-dots .owl-dot span {
     transform: translateY(-20px);
     animation-delay: .6s;
     opacity: 0;
-}
-@keyframes textdown{
-    10%{
-        transform: translateY(0px);
-        opacity: 1;
-    }
-    100%{
-        transform: translateY(0px);
-        opacity: 1;
-    }
 }
 
 /* ------------------------------footer code-------------------------- */
@@ -721,17 +720,19 @@ footer{
 }
 hr {
     background: #1e1e1e;
-    width: 92%;
+    width: 100%;
     height: 2px !important;
     margin: 0;
     border: 0;
 }
 
 .st-info{
-    font-size: 35px;
+    font-size: 2rem;
     color: white;
     margin-top:20px;
-    font-family: KlavikaMedium;
+    font-family: Klavika-MediumCondensed;
+    font-weight: 500;
+    text-transform: capitalize;
 }
 .sm-hr{
     background-color: #00adef;
@@ -739,8 +740,8 @@ hr {
     width: 150px;
 }
 .ver-box{
-    width: 92%;
-    margin: 20px 0;
+    width: 100%;
+    padding: 50px 25px 20px;
     display: flex;
     align-items: flex-start;
 }
@@ -770,27 +771,34 @@ hr {
 }
 .email-input {
     width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: flex-start;
+    align-items: center;
 }
 .email-rhs-box .email{
     width: 70%;
-    height: 30px;
-    background-color: rgb(54, 54, 54) ;
+    height: 32px;
+    background-color: #1e1e1e ;
     border: 0;
     outline: none;
+    border-radius: 5px;
+
 }
-.email-rhs-box .submit{
-    width: 130px;
-    height: 30px;
-    font-size: 15px;
-    background-color: rgb(54, 54, 54) ;
+.btnsubmit{
+    background: #1e1e1e;
     color: white;
-    border: 0;
-    outline: none;
-    cursor: pointer;
+    padding: 7px 15px;
+    text-align: center;
+    justify-content: center;
     font-family: 'Noto Sans', sans-serif;
     font-weight: 400;
+    margin: 0 2px 0 5px;
+    border-radius: 5px;
 }
-.email-rhs-box .submit:hover{
+.btnsubmit:hover{
     color: #00adef;
 }
 ::placeholder{
@@ -821,7 +829,7 @@ hr {
     padding: 0 15px;
 }
 .border-right{
-    border-right: 2px solid gray;
+    border-right: 1px solid gray;
 }
 .social-m-rhs i {
     color: #6e6e6e;
@@ -831,10 +839,10 @@ hr {
 .lng-box {
     display: flex;
     flex-direction: row;
-    align-items: center;
-    width: 92%;
-    height: 50px;
-    margin: 10px 0;
+    align-items: flex-start;
+    width: 100%;
+    height: auto;
+    padding: 0px 15px;
 }
 .lng-box div{
     flex-grow: 1;
@@ -869,20 +877,26 @@ hr {
 .fa-angle-up:hover{
     color: #00adef;
 }
-.lg-hr-three{
-    width: 92%;
-    height: 2px;
-}
-.cpy-rite{
+.cpy-right{
     color: #6e6e6e ;
     padding-bottom: 50px;
     font-family: 'Noto Sans', sans-serif;
     font-weight: bold;
-    font-size: 10px;
+    font-size: 11px;
     margin-top: 1px;
+    display: flex;
+    justify-self: right;
+    padding-right: 30px;
+}
+.copyright-line{
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
 }
 
 /* ---------------------header css------------------------- */
+
+
 @media (max-width: 1366px){
     .header-item-center {
         margin-left: 0;
@@ -1075,7 +1089,7 @@ hr {
         background-color: #3c3c3c;
     }
     .header .menu .menu-mobile-header .menu-mobile-title {
-        font-family: KlavikaLight;
+        font-family: Klavika-LightCondensed;
         font-size: 1rem;
         font-weight: 500;
         line-height: inherit;
@@ -1217,9 +1231,19 @@ hr {
     .email-rhs-box {
         text-align: center;
     }
-    .email-rhs-box .submit {
+    .email-rhs-box .email {
+        width: 91%;
+    }
+    .email-input {
+        justify-content: center;
+    }
+    .btnsubmit {
         margin-top: 10px;
     }
+    ::placeholder{
+        text-align: center;
+    }
+    
 }
 @media(max-width: 767px){
     .carousel-control .glyphicon-chevron-left,
@@ -1261,21 +1285,18 @@ hr {
         padding: 0 10px;
         text-align: center;
     }
-    
-    .email-rhs-box .submit {
-        padding: 5px 10px;
-        margin-top: 10px;
-    }
-    ::placeholder{
-        padding-left: 0;
-        text-align: center;
-    }
-    
     .social-m-rhs a {
         text-align: center;
     }
     .lng-box a {
         font-size: .9rem;
+    }
+    .copyright-line {
+        justify-content: center;
+        text-align: center;
+    }
+    .cpy-right {
+        padding-right: 0;
     }
 }
 @media (max-width: 575px){
