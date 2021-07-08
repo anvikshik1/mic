@@ -115,7 +115,7 @@ a, button {
     object-fit: cover;
 }
 .header-item-left h1{
-    font-size: .9rem;
+    font-size: 1.2rem;
     color: white;
     font-family: HelveticaNow;
     margin-left: 10px;
@@ -595,10 +595,6 @@ nav .owl-theme .owl-dots .owl-dot span {
    color: #c5c5c5;
    transition: .3s;
 }
-.carousel-control .glyphicon-chevron-left:active,
-.carousel-control .glyphicon-chevron-right:active {
-   color: #00adef;
-}
 .carousel-control .icon-prev,
 .carousel-control .glyphicon-chevron-left {
     left: 50%;
@@ -692,7 +688,10 @@ nav .owl-theme .owl-dots .owl-dot span {
     opacity: 1;
     -khtml-transform: translate(0);
     -webkit-transform: translate(0);
-    transform: translate(0)
+    transform: translate(0);
+}
+.carousel-inner .active .carousel-caption a {
+    transition: 0.3s;
 }
 .carousel-caption a:hover{
     background-color: rgba(117, 117, 117, 0.4);
@@ -700,10 +699,6 @@ nav .owl-theme .owl-dots .owl-dot span {
     color: white;
     margin-top: 20px;
     padding: 7px 15px;
-    animation: textdown 7s linear infinite;
-    transform: translateY(-20px);
-    animation-delay: .6s;
-    opacity: 0;
 }
 
 /* ------------------------------footer code-------------------------- */
