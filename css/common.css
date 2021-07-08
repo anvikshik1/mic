@@ -139,7 +139,7 @@ a, button {
     z-index: 999;
     outline: none;
     background: rgba(0, 0, 0,0.9);
-    
+    border-bottom: 4px solid rgb(207, 207, 207);
 }
 .header .wrapper {
     display: -webkit-box;
@@ -348,12 +348,12 @@ a, button {
     width:  100%;
     margin:  0 auto;
     padding: 5px 0;
+    border-bottom: 2px solid rgb(77, 77, 77);
 }
 header .thin-bar,
 header .container {
     max-width: 1680px;
     margin: 0 auto;
-    border-bottom: 1px solid rgb(192, 192, 192);
 }
 .thin-bar div{
     display:  flex;
@@ -368,7 +368,7 @@ header .container {
 }
 .thin-bar h4{
     color: white;
-    margin-right:5vw;
+    margin-right:2rem;
     margin-bottom: 0;
     font-size: 13px;
     font-family:'Noto Sans', sans-serif;
@@ -1018,7 +1018,7 @@ hr {
         height: 100%;
         z-index: 1099;
         overflow: hidden;
-        background: #2e2e2e;
+        background: #191919;
         -webkit-transform: translate(-100%);
         -ms-transform: translate(-100%);
         transform: translate(-100%);
@@ -1039,7 +1039,7 @@ hr {
         line-height: 3.125rem;
         height: 3.125rem;
         padding: 0 3.125rem 0 1rem;
-        border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+        border-bottom: 1px solid rgba(255, 255, 255, 0.1);
     }
     .header .menu>ul>li>a i.ion {
         position: absolute;
@@ -1250,10 +1250,14 @@ hr {
     .carousel-control .glyphicon-chevron-right,
     .carousel-control .icon-prev,
     .carousel-control .icon-next {
-        width: 30px;
-        height: 30px;
+        width: 20px;
+        height: 25px;
         margin-top: -15px;
         font-size: 20px;
+    }
+    .carousel-control {
+        top: 33%;
+         bottom: 67%;
     }
     .carousel-control .glyphicon-chevron-left,
     .carousel-control .icon-prev {
@@ -1274,9 +1278,7 @@ hr {
     .carousel-inner .carousel-caption p {
         font-size: 1.1rem;
     }
-    .carousel-control {
-        bottom: 11rem;
-    }
+    
     .email-rhs-box {
         text-align: center;
         margin-top: 10px;
@@ -1300,6 +1302,10 @@ hr {
     }
 }
 @media (max-width: 575px){
+    .carousel-control {
+        top: 30%;
+        bottom: 70%;
+    }
     .header-item-left img{
         width:10vw;
     }
@@ -1371,6 +1377,10 @@ hr {
     }
 }
 @media(max-width: 425px){
+    .carousel-control {
+        top: 25%;
+        bottom: 75%;
+    }
     .arrow {
         top: 21%;
     }

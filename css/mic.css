@@ -23,7 +23,7 @@ body{
     align-items: center;
 }
 .search-box div{
-    width: 78%;
+    width: 85%;
     height: 40px;
     outline: none;
     background-color: white;
@@ -154,7 +154,7 @@ body{
 .first-gray-box{
     width: 100%;
     height: auto;
-    padding: 15px 0;
+    padding: 16px 0;
     margin-top: 110px;
     background-color: #1e1e1e;
     display: flex;
@@ -252,6 +252,9 @@ body{
 .carousel-one a:hover{
     color: rgb(255, 255, 255);
     background-color: black;
+}
+.owl-theme .owl-dots .owl-dot span {
+    margin: 12px 7px;
 }
 
 /* -------------------------------SHAPING THE FUTURE-------------------------------- */
@@ -356,8 +359,8 @@ body{
 .third-gray-box {
     width: 100%;
     height: auto;
-    padding: 55px 0;
-    margin-top: 110px;
+    padding: 65px 0;
+    margin-top: 125px;
     background-color: #1e1e1e;
     display: flex;
     justify-content: center;
@@ -368,7 +371,7 @@ body{
     width: 92%;
     height: auto;
     display: flex;
-    margin-top: -120px;
+    margin-top: -135px;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
@@ -410,7 +413,7 @@ body{
 .fourth-gray-box{
     width: 100%;
     height:auto;
-    padding: 15px 0;
+    padding: 16px 0;
     margin-top: 110px;
     background-color:#1e1e1e;
     display: flex;
@@ -549,21 +552,18 @@ body{
         top: 65px;
         font-size: .8rem;
     }
+    .first-gray-box {
+        padding: 15px 0;
+    }
     .title-container p{
         font-size: 19px;
     }
-    .first-gray-box .white-bg {
-        height: 273px;
-        width: 780px;
+    .owl-theme .owl-dots .owl-dot span {
+        margin: 5px 7px;
     }
-    .white-bg img {
-        height: 271px;
-        width: 396px;
+    .third-gray-box {
+        padding: 55px 0;
     }
-    .owl-theme .owl-nav {
-        margin-top: 27px;
-    }
-    
     .third-tech-images img {
         height: 230px;
         width: 397px;
@@ -575,8 +575,10 @@ body{
     .third-tech-images h1 {
         font-size: 20px;
     }
+    .fourth-gray-box {
+        padding: 15px 0
+    }
 }
-
 @media (max-width: 1199px){
     .third-tech-images {
         height: auto;
@@ -595,7 +597,7 @@ body{
     }
     .carousel-two .item div {
         height: 300px;
-    }
+    } 
     .rhs-box p {
         font-size: 16px;
         margin-left: 50px;
@@ -608,7 +610,12 @@ body{
     }
 }
 @media(max-width: 768px){
-   
+    .search-box div{
+        width: 92%;
+    }
+    .search-box input {
+        width: 90%;
+    }
     .carousel-two .item {
         height: 250px;
     }
@@ -651,6 +658,22 @@ body{
     }
 }
 @media(max-width: 425px){
+    .tech-imgs .t-img {
+        height: 215px;
+        width: 91vw;
+    }
+    .tech-imgs img {
+        height: 215px;
+        width: 91vw;
+    }
+    .third-tech-images div {
+        height: 180px;
+        width: 375px;
+    }
+    .third-tech-images img {
+        height: 180px;
+        width: 375px;
+    }
     .title-container h4 {
         font-size: 22px;
     }
@@ -691,6 +714,10 @@ body{
     }
     .tech-imgs .t-img {
         width: 90vw;
+        height: 180px;
+    }
+    .tech-imgs p {
+        top: 45px;
     }
     .first-gray-box{
         padding: 50px 20px;
@@ -703,20 +730,27 @@ body{
     }
 }
 @media(max-width: 320px){
+    .header-item-left h1 {
+        font-size: .8rem;
+    }
     .tech-imgs img {
         width: 280px;
-        height: 200px;
+        height: 170px;
     }
     .tech-imgs .t-img {
         width: 280px;
-        height: 200px;
+        height: 170px;
     }
     .tech-imgs p{
         font-size: 9px;
     }
     .third-tech-images img {
-        height: 175px;
-        width: 250px;
+        height: 150px;
+        width: 272px;
+    }
+    .third-tech-images div {
+        height: 150px;
+        width: 272px;
     }
     
 }
