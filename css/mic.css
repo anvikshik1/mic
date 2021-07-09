@@ -175,7 +175,7 @@ body{
 }
 .carousel-one .item{
     position: relative;
-    height: 450px;
+    height: 440px;
     background-color: rgb(255, 255, 255);
     display: flex;
     justify-content: flex-start;
@@ -242,7 +242,7 @@ body{
 
 .carousel-one a{
     padding: 7px 15px;
-    margin-top: 77px;
+    margin-top: 61px;
     text-decoration: none;
     background-color: rgb(255, 255, 255);
     border: 2px solid black;
@@ -387,13 +387,15 @@ body{
     overflow: hidden;
     height: 275px;
     width: 499px;
-    margin: 8px;
+    margin: 0 15px 15px 0;
     display: flex;
     justify-content: center;
     align-items: center;
     border-radius: 8px;
 }
-
+.third-tech-images div:nth-last-child(3n+1){
+    margin: 0 0px 15px 0;
+}
 .third-tech-images img {
     position: absolute;
     margin-top: 0px;
@@ -503,6 +505,9 @@ body{
 
 /* ------------------------------Media query--------------------- */
 @media(max-width: 1680px){
+    .carousel-one a{
+        margin-top: 76px;
+    }
     .carousel-one h5{
         font-size: 18px;
         text-align: center;
@@ -580,11 +585,11 @@ body{
     }
     .third-tech-images img {
         height: 230px;
-        width: 397px;
+        width: 403px;
     }
     .third-tech-images div {
         height: 230px;
-        width: 397px;
+        width: 403px;
     }
     
     .fourth-gray-box {
