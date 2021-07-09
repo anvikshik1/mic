@@ -78,12 +78,7 @@ body{
     font-weight: 400;
 
 }
-.title-container .sm-hr,.foo-cont .sm-hr{
-    margin-top: 15px;
-    width: 150px;
-    height: 2px;
-    background-color: #00adef;
-}
+
 .title-container h5{
     color: #6e6e6e;
     font-size: 1rem;
@@ -490,7 +485,7 @@ body{
     width: 173px;
     height: 90px;
     border-radius: 8px;
-    padding: 0;
+    margin: 5px;
     box-shadow: 4px 6px 3px #001;
 }
 

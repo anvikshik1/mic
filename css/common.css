@@ -115,7 +115,7 @@ a, button {
     object-fit: cover;
 }
 .header-item-left h1{
-    font-size: 1.2rem;
+    font-size: 15px;
     color: white;
     font-family: HelveticaNow;
     margin-left: 10px;
@@ -732,6 +732,7 @@ hr {
 .sm-hr{
     background-color: #00adef;
     margin-top: 15px;
+    height: 2px;
     width: 150px;
 }
 .ver-box{
