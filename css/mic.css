@@ -22,6 +22,11 @@ body{
     justify-content: center;
     align-items: center;
 }
+.search-box-top {
+    width: 100%;
+    position: relative;
+    top: -50px;
+}
 .search-box div{
     width: 73%;
     height: 40px;
@@ -283,17 +288,19 @@ body{
 .carousel-two .owl-prev i,
 .carousel-two .owl-next i {
     color: white;
-    padding: 8px 10px;
-    margin: -4.5px;
+    padding: 12px 14px;
+    margin: 3.5px;
     font-size: 17px;
     border: 1px solid #595959;
+    border-radius: 5px;
 }
 .carousel-two .owl-prev i:hover,
 .carousel-two .owl-next i:hover {
-       color: #00adef;
-       
+    color: #00adef;
 }
-
+.owl-theme .owl-nav [class*=owl-]:hover {
+    background: none;
+}
 .carousel-two .item{
     width: 100%;
     height: auto;
@@ -543,6 +550,7 @@ body{
     .rhs-box p {
         font-size: 1.7rem;
     }
+    
     .search-box{
         height: 80px;
     }
