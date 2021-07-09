@@ -269,7 +269,7 @@ body{
 .second-gray-box{
     width: 100%;
     height: auto;
-    padding: 15px 0;
+    padding: 6px 0;
     margin-top: 120px;
     background-color:#1e1e1e;
     display: flex;
@@ -288,7 +288,7 @@ body{
 .carousel-two .owl-prev i,
 .carousel-two .owl-next i {
     color: white;
-    padding: 12px 14px;
+    padding: 9px 12px;
     margin: 3.5px;
     font-size: 17px;
     border: 1px solid #595959;
