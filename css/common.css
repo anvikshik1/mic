@@ -120,7 +120,7 @@ a, button {
     font-family: HelveticaNow;
     margin-left: 10px;
     margin-bottom: 0;
-    padding-bottom: 15px;
+    padding-bottom: 14px;
 }
 .container {
     width: 100%;
@@ -210,7 +210,7 @@ a, button {
 }
 .header .menu>ul>li {
     display: inline-block;
-    line-height: 2.125rem;
+    line-height: 2.625rem;
     margin-left: 1rem;
 }
 .header .menu>ul>li>a {
@@ -410,13 +410,13 @@ header .container {
 .list-name h4{
     color: rgb(255, 255, 255);
     margin-right: 10%;
-    font-size: 1.2vw;
-    font-family: Klavika-LightCondensed;
+    font-size: 1.1rem;
+    font-family:'Noto Sans', sans-serif ;
 }
 .list-name a{
     color: #7a7a7a;
     font-family:'Noto Sans', sans-serif ;
-    margin: 0 15px;
+    margin: -1px 15px;
     font-size: 1rem;
 }
 .list-name a:hover{
@@ -434,7 +434,7 @@ header .container {
 }
 .list-item>ul>li>a {
     font-family:'Noto Sans', sans-serif;
-    font-size: .9rem ;
+    font-size: .8rem ;
 }
 .owl-box{
     display: flex;
@@ -621,9 +621,8 @@ nav .owl-theme .owl-dots .owl-dot span {
 }
 .carousel-caption {
     position: absolute;
-    top: 10%;
-    left: 15%;
-    padding: 20px;
+    top: 5rem;
+    left: 12.5rem;
     z-index: 10;
     color: #fff;
     text-align: left;
@@ -631,7 +630,7 @@ nav .owl-theme .owl-dots .owl-dot span {
 .carousel-inner .carousel-caption h1{
     font-family: Klavika-MediumCondensed;
     font-weight: 500 ;
-    font-size: 2.4rem;
+    font-size: 2.9rem;
     opacity: 0;
     -webkit-transition: transform .5s ease-out,opacity .5s ease-out;
     -webkit-transition: opacity .5s ease-out,-webkit-transform .5s ease-out;
@@ -647,7 +646,7 @@ nav .owl-theme .owl-dots .owl-dot span {
 .carousel-inner .carousel-caption p{
     font-family: Klavika-LightCondensed;
     font-weight: 500 ;
-    font-size: 1.5rem;
+    font-size: 2rem;
     opacity: 0;
     -webkit-transition: transform .5s ease-out,opacity .5s ease-out;
     -webkit-transition: opacity .5s ease-out,-webkit-transform .5s ease-out;
@@ -667,8 +666,9 @@ nav .owl-theme .owl-dots .owl-dot span {
     font-size: 1.2rem;
     background-color: rgb(0, 0, 0,0.4);
     border:1px  solid rgb(255, 255, 255);
+    border-radius: 7px;
     color: white;
-    margin-top: 20px;
+    margin-top: 38px;
     padding: 7px 15px;
     opacity: 0;
     -webkit-transition: transform .5s ease-out,opacity .5s ease-out;
@@ -690,9 +690,7 @@ nav .owl-theme .owl-dots .owl-dot span {
     -webkit-transform: translate(0);
     transform: translate(0);
 }
-.carousel-inner .active .carousel-caption a {
-    transition: 0.3s;
-}
+
 .carousel-caption a:hover{
     background-color: rgba(117, 117, 117, 0.4);
     border:2px  solid rgb(0, 0, 0);
@@ -731,9 +729,9 @@ hr {
 }
 .sm-hr{
     background-color: #00adef;
-    margin-top: 15px;
+    margin-top: 35px;
     height: 2px;
-    width: 150px;
+    width: 120px;
 }
 .ver-box{
     width: 100%;
@@ -752,9 +750,8 @@ hr {
 }
 .email-lhs-box p, .social-m-box p {
     color:#6e6e6e;
-    font-weight: bold;
     font-family: 'Noto Sans', sans-serif;
-    font-size: 13px;
+    font-size: 14px;
     text-align: left;
 }
 .email-rhs-box,.social-m-rhs{
@@ -821,7 +818,7 @@ hr {
     font-weight: 400;
     color: #6e6e6e;
     text-decoration: none;
-    font-size:15px;
+    font-size:14px;
     padding: 0 15px;
 }
 .border-right{
@@ -861,7 +858,7 @@ hr {
     font-family: 'Noto Sans', sans-serif;
 }
 .lng-box a{
-    font-size: 15px;
+    font-size: 13px;
 }
 .lng-box .web-fun{
     display: flex;
@@ -877,8 +874,7 @@ hr {
     color: #6e6e6e ;
     padding-bottom: 50px;
     font-family: 'Noto Sans', sans-serif;
-    font-weight: bold;
-    font-size: 11px;
+    font-size: 13px;
     margin-top: 1px;
     display: flex;
     justify-self: right;
@@ -896,6 +892,9 @@ hr {
 @media (max-width: 1366px){
     .header-item-center {
         margin-left: 0;
+    }
+    .list-name h4 {
+        margin-right: 6%;
     }
 }
 @media (max-width: 1199px){
@@ -925,7 +924,7 @@ hr {
 }
 @media only screen and (min-width: 993px) {
     .header .menu>ul>li.menu-item-has-children:hover .menu-subs {
-    margin-top: 5px;
+    margin-top: 1px;
     opacity: 1;
     visibility: visible;
     display: flex;

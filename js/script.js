@@ -370,8 +370,9 @@ $('.carousel').carousel({
 
 
 
-const right = '<img src="./images/right-arrow-angle.png">'
-const left = '<img src="./images/left-arrow-line-symbol.png">'
+const left = '<i class="fa fa-chevron-left" aria-hidden="true"></i>'
+const right = '<i class="fa fa-chevron-right" aria-hidden="true"></i>'
+
 
 // **********owl-carousel***********
 $(document).ready(function () {
@@ -405,7 +406,7 @@ $(document).ready(function () {
                 loop: true
             },
             1200: {
-                items: 4
+                items: 5
             }
         }
     })

@@ -23,7 +23,7 @@ body{
     align-items: center;
 }
 .search-box div{
-    width: 85%;
+    width: 73%;
     height: 40px;
     outline: none;
     background-color: white;
@@ -64,15 +64,15 @@ body{
     border-radius: 17px;
     color: #ffffff;
     padding: 0 40px;
-    font-size: 2rem;
+    font-size: 36px;
     font-family: Klavika-MediumCondensed;
     font-weight: 500;
     text-transform:capitalize;
 }
 .title-container p{
     color: #ffffff;
-    font-size: 23px;
-    margin-top:17px;
+    font-size: 20px;
+    margin-top:35px;
     text-align: center;
     font-family: "Noto Sans", sans-serif;
     font-weight: 400;
@@ -91,8 +91,7 @@ body{
     flex-direction: row;
     flex-flow: wrap;
     justify-content: center;
-    margin-top: 40px;
-
+    margin-top: 50px;
 }
 .tech-imgs .t-img{
     position: relative;
@@ -101,10 +100,13 @@ body{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin:8px 8px;
+    margin:0 15px 0 0;
     height: 300px;
-    width: 500px;
+    width: 505px;
     border-radius: 8px;
+}
+.tech-imgs .t-img:last-child{
+    margin:0;
 }
 .tech-imgs img{
     position: absolute;
@@ -112,9 +114,14 @@ body{
     height: 300px;
     width: 500px;
     border-radius: 8px;
+    overflow: hidden;
 }
+
 .tech-imgs h3{
-    position: relative;
+    position: absolute;
+    background: rgba(0,0,0, 0.3);
+    padding: 5px 20px;
+    border-radius: 5px;
     color: white;
     font-size: 30px;
     font-family: Klavika-MediumCondensed;
@@ -123,20 +130,16 @@ body{
 .tech-imgs p{
     position:relative;
     color: white;
-    top: 60px;
-    font-size: 16px;
+    top: 12rem;
+    font-size: 17.4px;
     font-family: "Noto Sans", sans-serif;
     text-align: left;
-    padding: 0 15px;
-    display: none;
+    padding: 20px 15px;
+    transition: all .3s ease-out;
+    background-color: rgba(0, 0, 0, 0.4);
 }
 .tech-imgs .t-img:hover p{
-    display: block;
-    width: 100%;
-    height: 100%;
-    padding-top: 150px;
-    top: 0;
-    background: rgba(0, 0, 0, 0.3);
+    top: 7rem;
 }
 .tech-imgs .t-img:hover img{
     transform: scale(1.1) translate3d(0px, -10px, 0px);
@@ -154,15 +157,15 @@ body{
 .first-gray-box{
     width: 100%;
     height: auto;
-    padding: 16px 0;
-    margin-top: 110px;
+    padding: 15px 0;
+    margin-top: 120px;
     background-color: #1e1e1e;
     display: flex;
     justify-content: center;
 }
 .carousel-one{
     width: 92%;
-    margin-top: -80px;
+    margin-top: -86px;
     height: auto;
     display: flex;
     flex-direction: row;
@@ -172,7 +175,7 @@ body{
 }
 .carousel-one .item{
     position: relative;
-    height: 410px;
+    height: 450px;
     background-color: rgb(255, 255, 255);
     display: flex;
     justify-content: flex-start;
@@ -209,9 +212,8 @@ body{
     bottom: 0;
     width: 20px;
 }
-
 .carousel-one .item .prod-img{
-    margin-top: 25px;
+    margin-top: 35px;
     width: 130px;
 }
 .prod-img:hover {
@@ -240,10 +242,11 @@ body{
 
 .carousel-one a{
     padding: 7px 15px;
-    margin-top: 20px;
+    margin-top: 77px;
     text-decoration: none;
     background-color: rgb(255, 255, 255);
     border: 2px solid black;
+    border-radius: 7px;
     font-size: 1.2rem;
     color: rgb(0, 0, 0);
     font-family: "Noto Sans", sans-serif;
@@ -261,8 +264,8 @@ body{
 .second-gray-box{
     width: 100%;
     height: auto;
-    padding: 18px 0;
-    margin-top: 110px;
+    padding: 15px 0;
+    margin-top: 120px;
     background-color:#1e1e1e;
     display: flex;
     justify-content: center;
@@ -272,21 +275,23 @@ body{
     width: 92%;
     height: auto;
     display: flex;
-    margin-top: -80px;
+    margin-top: -86px;
     justify-content: center;
     flex-direction: column;
     align-items: center;
 }
-.carousel-two .owl-prev img,
-.carousel-two .owl-next img {
-        width: 42px;
-        background: white;
-        padding: 12px;
-        margin: -4.5px;
+.carousel-two .owl-prev i,
+.carousel-two .owl-next i {
+    color: white;
+    padding: 8px 10px;
+    margin: -4.5px;
+    font-size: 17px;
+    border: 1px solid #595959;
 }
-.carousel-two .owl-prev img:hover,
-.carousel-two .owl-next img:hover {
-        background: #00adef;
+.carousel-two .owl-prev i:hover,
+.carousel-two .owl-next i:hover {
+       color: #00adef;
+       
 }
 
 .carousel-two .item{
@@ -333,6 +338,7 @@ body{
     margin: 20px 30px;
     text-decoration: none;
     border: 2px solid black;
+    border-radius: 7px;
     font-size: 1.2rem;
     color: rgb(0, 0, 0);
     font-family: "Noto Sans", sans-serif;
@@ -366,7 +372,6 @@ body{
     justify-content: center;
     align-items: center;
 }
-
 .third-tech-images{
     width: 92%;
     height: auto;
@@ -401,12 +406,18 @@ body{
     transition: all .2s ease-out !important;
     cursor: pointer;
 } 
-.third-tech-images h1{
-    position: relative;
+.third-tech-images h1 {
+    position: absolute;
+    font-size: 20px;
+    background: rgba(0,0,0, 0.6);
+    padding: 5px 20px;
+   
+    border-radius: 7px;
     color: white;
     font-family: Klavika-MediumCondensed;
     font-weight: 500;
 }
+
 
 /* --------------------------BACK TO BASICS------------------------------ */
 
@@ -414,7 +425,7 @@ body{
     width: 100%;
     height:auto;
     padding: 16px 0;
-    margin-top: 110px;
+    margin-top: 120px;
     background-color:#1e1e1e;
     display: flex;
     justify-content: center;
@@ -422,7 +433,7 @@ body{
 .carousel-three{
     width: 92%;
     height: auto;
-    margin-top: -80px;
+    margin-top: -85px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
@@ -444,17 +455,17 @@ body{
     font-weight: 500;
 }
 .carousel-three h2 {
-    color: #00adef;
+    color: black;
     margin: 10px 30px;
     font-size: 2rem;
-    font-family: Klavika-LightCondensed;
+    font-family: Klavika-MediumCondensed;
 }
 .carousel-three p {
     text-align: left;
     color: black;
     font-family: "Noto Sans", sans-serif;
     margin: 10px 30px;
-    font-size: 1.5rem;
+    font-size: 21px;
 }
 
 /* ------------------------------Valued Partners-------------------------- */
@@ -463,7 +474,7 @@ body{
     width: 100%;
     height: auto;
     padding: 15px 0;
-    margin: 45px 0;
+    margin: 50px 0;
     background-color: #1e1e1e;
     display: flex;
     justify-content: center;
@@ -474,6 +485,7 @@ body{
     height: auto;
     display: flex;
     justify-content: space-between;
+    padding: 45px 0 0 0
 }
 .carousel-four .item{
     display: flex;
@@ -536,38 +548,30 @@ body{
     }
     .search-box div {
         height: 35px;
+        width: 85%;
     }
     .search-box input {
         height: 29px;
     }
     .tech-imgs .t-img {
         height: 227px;
-        width: 402px;
+        width: 405px;
     }
     .tech-imgs img {
         height: 232px;
         width: 402px;
     }
-    .tech-imgs h3{
-        font-size: 1.7rem;
-        position: absolute;
-        font-size: 20px;
-        background: rgba(0,0,0, 0.7);
-        padding: 10px 20px;
-        top: 10px;
-        left: 10px;
-        border-radius: 7px;
-    }
     .tech-imgs p {
-        top: 65px;
-        font-size: .8rem;
+        top: 11rem;
+        font-size: 13px;
+    }
+    .tech-imgs .t-img:hover p{
+        top: 5.5rem;
     }
     .first-gray-box {
         padding: 15px 0;
     }
-    .title-container p{
-        font-size: 19px;
-    }
+    
     .owl-theme .owl-dots .owl-dot span {
         margin: 5px 7px;
     }
@@ -582,15 +586,7 @@ body{
         height: 230px;
         width: 397px;
     }
-    .third-tech-images h1 {
-        position: absolute;
-        font-size: 20px;
-        background: rgba(0,0,0, 0.7);
-        padding: 10px 20px;
-        top: 10px;
-        left: 10px;
-        border-radius: 7px;
-    }
+    
     .fourth-gray-box {
         padding: 15px 0
     }
@@ -682,6 +678,9 @@ body{
         height: 215px;
         width: 91vw;
     }
+    .tech-imgs h3{
+        font-size: 25px;
+    }
     .third-tech-images div {
         height: 185px;
         width: 375px;
@@ -733,7 +732,10 @@ body{
         height: 180px;
     }
     .tech-imgs p {
-        top: 45px;
+        top: 10rem;
+    }
+    .tech-imgs .t-img:hover p{
+        top: 4rem;
     }
     .first-gray-box{
         padding: 50px 20px;
