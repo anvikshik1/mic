@@ -621,8 +621,8 @@ nav .owl-theme .owl-dots .owl-dot span {
 }
 .carousel-caption {
     position: absolute;
-    top: 5rem;
-    left: 12.5rem;
+    top: 73px;
+    left: 200px;
     z-index: 10;
     color: #fff;
     text-align: left;
