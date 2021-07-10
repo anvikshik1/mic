@@ -35,10 +35,11 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    border-radius: 8px;
+    border-radius: 4px;
 }
 .search-box i{
     color: rgb(0, 0, 0);
+    margin-right: 10px;
 }
 .search-box input{
     width: 97%;
@@ -66,7 +67,6 @@ body{
 }
 .title-container h4{
     margin-top:30px;
-    border-radius: 17px;
     color: #ffffff;
     padding: 0 40px;
     font-size: 36px;
@@ -76,14 +76,14 @@ body{
 }
 .title-container p{
     color: #ffffff;
-    font-size: 20px;
-    margin-top:25px;
+    font-size: 1rem; 
+    margin-top: 25px;
+    padding: 0 10px;
     text-align: center;
     font-family: "Noto Sans", sans-serif;
     font-weight: 400;
 
 }
-
 .title-container h5{
     color: #6e6e6e;
     font-size: 1rem;
@@ -105,10 +105,10 @@ body{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin:0 15px 0 0;
+    margin:0 15px 15px 0;
     height: 300px;
     width: 505px;
-    border-radius: 8px;
+    border-radius: 4px;
 }
 .tech-imgs .t-img:last-child{
     margin:0;
@@ -118,15 +118,14 @@ body{
     overflow: hidden;
     height: 300px;
     width: 500px;
-    border-radius: 8px;
+    border-radius: 4px;
     overflow: hidden;
 }
-
 .tech-imgs h3{
     position: absolute;
-    background: rgba(0,0,0, 0.3);
+    background: rgba(0,0,0, 0.6);
     padding: 5px 20px;
-    border-radius: 5px;
+    border-radius: 4px;
     color: white;
     font-size: 30px;
     font-family: Klavika-MediumCondensed;
@@ -141,7 +140,7 @@ body{
     text-align: left;
     padding: 20px 15px;
     transition: all .3s ease-out;
-    background-color: rgba(0, 0, 0, 0.4);
+    background-color: rgba(0, 0, 0, 0.6);
 }
 .tech-imgs .t-img:hover p{
     top: 7rem;
@@ -150,7 +149,7 @@ body{
     transform: scale(1.1) translate3d(0px, -10px, 0px);
     transition: all .2s ease-out;
     cursor: pointer;
-    border-radius: 8px;
+    border-radius: 4px;
 } 
 .btn h5{
     color: #6e6e6e;
@@ -162,7 +161,7 @@ body{
 .first-gray-box{
     width: 100%;
     height: auto;
-    padding: 15px 0;
+    padding: 11px 0;
     margin-top: 120px;
     background-color: #1e1e1e;
     display: flex;
@@ -186,7 +185,7 @@ body{
     justify-content: flex-start;
     align-items: center;
     flex-direction: column;
-    border-radius: 8px;
+    border-radius: 4px;
 }
 .add-cart{
     position: absolute;
@@ -225,7 +224,7 @@ body{
     transform: scale(1) translate3d(0px, -10px, 0px);
     transition: all .2s ease-out;
     cursor: pointer;
-    border-radius: 8px;
+    border-radius: 4px;
 } 
 .carousel-one h5{
     color: rgb(32, 32, 32);
@@ -246,13 +245,13 @@ body{
 }
 
 .carousel-one a{
-    padding: 7px 15px;
-    margin-top: 61px;
+    padding: 10px 15px;
+    margin-top: 50px;
     text-decoration: none;
     background-color: rgb(255, 255, 255);
     border: 2px solid black;
-    border-radius: 7px;
-    font-size: 1.2rem;
+    border-radius: 4px;
+    font-size: 16px;
     color: rgb(0, 0, 0);
     font-family: "Noto Sans", sans-serif;
     font-weight: 700;
@@ -269,7 +268,7 @@ body{
 .second-gray-box{
     width: 100%;
     height: auto;
-    padding: 6px 0;
+    padding: 14px 0;
     margin-top: 120px;
     background-color:#1e1e1e;
     display: flex;
@@ -280,7 +279,7 @@ body{
     width: 92%;
     height: auto;
     display: flex;
-    margin-top: -86px;
+    margin-top: -84px;
     justify-content: center;
     flex-direction: column;
     align-items: center;
@@ -289,10 +288,10 @@ body{
 .carousel-two .owl-next i {
     color: white;
     padding: 9px 12px;
-    margin: 3.5px;
     font-size: 17px;
     border: 1px solid #595959;
-    border-radius: 5px;
+    margin: -5px;
+    border-radius: 4px;
 }
 .carousel-two .owl-prev i:hover,
 .carousel-two .owl-next i:hover {
@@ -317,7 +316,7 @@ body{
     width: 100%;
     border: 1px solid white;
     margin-top:0;
-    border-radius: 10px 0 0 10px;
+    border-radius: 4px 0 0 4px;
 }
 .rhs-box{
     background-color: #ffffff;
@@ -325,7 +324,7 @@ body{
     flex-direction: column;
     justify-content: flex-start;
     align-items: flex-start;
-    border-radius: 0 10px 10px 0;
+    border-radius: 0 4px 4px 0;
 }
 .rhs-box h1{
     font-size: 3.2rem;
@@ -341,12 +340,12 @@ body{
     font-family: Klavika-LightCondensed;
 }
 .rhs-box a{
-    padding:7px 15px;
+    padding:9px 15px;
     margin: 20px 30px;
     text-decoration: none;
     border: 2px solid black;
-    border-radius: 7px;
-    font-size: 1.2rem;
+    border-radius: 4px;
+    font-size: 14px;
     color: rgb(0, 0, 0);
     font-family: "Noto Sans", sans-serif;
     font-weight: 700;
@@ -372,8 +371,8 @@ body{
 .third-gray-box {
     width: 100%;
     height: auto;
-    padding: 65px 0;
-    margin-top: 125px;
+    padding: 54px 0;
+    margin-top: 122px;
     background-color: #1e1e1e;
     display: flex;
     justify-content: center;
@@ -383,7 +382,7 @@ body{
     width: 92%;
     height: auto;
     display: flex;
-    margin-top: -135px;
+    margin-top: -125px;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
@@ -393,12 +392,12 @@ body{
     position: relative;
     overflow: hidden;
     height: 275px;
-    width: 499px;
+    width: 504px;
     margin: 0 15px 15px 0;
     display: flex;
     justify-content: center;
     align-items: center;
-    border-radius: 8px;
+    border-radius: 4px;
 }
 .third-tech-images div:nth-last-child(3n+1){
     margin: 0 0px 15px 0;
@@ -408,7 +407,7 @@ body{
     margin-top: 0px;
     height: 275px;
     width: 510px;
-    border-radius: 8px;
+    border-radius:4px;
 }
 .third-tech-images div:hover img{
     transform: scale(1.1) translate3d(0px, -10px, 0px);
@@ -417,11 +416,10 @@ body{
 } 
 .third-tech-images h1 {
     position: absolute;
-    font-size: 20px;
+    font-size: 30px;
     background: rgba(0,0,0, 0.6);
     padding: 5px 20px;
-   
-    border-radius: 7px;
+    border-radius: 4px;
     color: white;
     font-family: Klavika-MediumCondensed;
     font-weight: 500;
@@ -433,8 +431,8 @@ body{
 .fourth-gray-box{
     width: 100%;
     height:auto;
-    padding: 16px 0;
-    margin-top: 120px;
+    padding: 11px 0;
+    margin-top: 122px;
     background-color:#1e1e1e;
     display: flex;
     justify-content: center;
@@ -454,7 +452,7 @@ body{
     flex-direction: column;
     justify-content: flex-start;
     align-items: flex-start;
-    border-radius: 8px;
+    border-radius: 4px;
 }
 .carousel-three h1 {
     color: #00adef;
@@ -468,6 +466,7 @@ body{
     margin: 10px 30px;
     font-size: 2rem;
     font-family: Klavika-MediumCondensed;
+    font-weight: 500;
 }
 .carousel-three p {
     text-align: left;
@@ -494,7 +493,7 @@ body{
     height: auto;
     display: flex;
     justify-content: space-between;
-    padding: 45px 0 0 0
+    padding: 50px 0 0 0
 }
 .carousel-four .item{
     display: flex;
@@ -503,17 +502,18 @@ body{
     align-items: center;
 }
 .carousel-four img{
-    width: 173px;
-    height: 90px;
-    border-radius: 8px;
-    margin: 5px;
-    box-shadow: 4px 6px 3px #001;
+    width: 100%;
+    border-radius: 4px;
+    margin:0 5px;
+    padding: 0 40px;
+    background: #141414;
 }
 
 /* ------------------------------Media query--------------------- */
+
 @media(max-width: 1680px){
     .carousel-one a{
-        margin-top: 76px;
+        margin-top: 68px;
     }
     .carousel-one h5{
         font-size: 18px;
@@ -555,7 +555,6 @@ body{
     .rhs-box p {
         font-size: 1.7rem;
     }
-    
     .search-box{
         height: 80px;
     }
@@ -572,7 +571,7 @@ body{
     }
     .tech-imgs img {
         height: 232px;
-        width: 402px;
+        width: 410px;
     }
     .tech-imgs p {
         top: 11rem;
@@ -584,7 +583,6 @@ body{
     .first-gray-box {
         padding: 15px 0;
     }
-    
     .owl-theme .owl-dots .owl-dot span {
         margin: 5px 7px;
     }
@@ -599,21 +597,43 @@ body{
         height: 230px;
         width: 403px;
     }
-    
     .fourth-gray-box {
         padding: 15px 0
     }
 }
-@media (max-width: 1199px){
-    .third-tech-images {
-        height: auto;
+@media(max-width: 1330px){
+    .third-tech-images img {
+        height: 210px;
+        width: 29.8vw;
     }
+    .third-tech-images div{
+        height: 210px;
+        width: 29.8vw;
+    }
+}
+@media (max-width: 1199px){
+   
     .third-tech-images div {
         height: 190px;
-        width: 307px;
+        width: 355px;
+    }
+    .third-tech-images img {
+        height: 190px;
+        width: 355px;
     }
     .carousel-three h1 {
         margin: 15px 30px;
+    }
+}
+@media (max-width: 1190px){
+    .third-tech-images div:nth-child(3n){
+        margin: 0 15px 15px 0;
+    }
+    .third-tech-images div:nth-child(even){
+        margin: 0 0 15px 0;
+    }
+    .tech-imgs .t-img:nth-child(n){
+        margin:8px;
     }
 }
 @media(max-width: 991px){
@@ -624,7 +644,7 @@ body{
         height: 300px;
     } 
     .rhs-box p {
-        font-size: 16px;
+        font-size: 23px;
         margin-left: 50px;
     }
     .rhs-box h1 {
@@ -634,15 +654,23 @@ body{
         margin: 20px 50px
     }
 }
+@media(max-width: 788px){
+    .third-tech-images div:nth-child(n){
+        margin:8px;
+    }
+}
 @media(max-width: 768px){
     .search-box div{
         width: 92%;
     }
     .search-box input {
-        width: 90%;
+        width: 95%;
     }
     .carousel-two .item {
         height: 250px;
+    }
+    .third-tech-images h1 {
+        font-size: 25px;
     }
     .rhs-box p {
         font-size: 15px;
@@ -658,7 +686,9 @@ body{
     .carousel-two .item div {
         height: 250px;
     }
-    
+    .carousel-four img {
+        width: 233px;
+    }
     .rhs-box h1 {
         margin-left: 20px;
         font-size: 25px;
@@ -676,10 +706,10 @@ body{
     }
     
     .item .lhs-box .blue-img {
-        border-radius: 10px 10px 0 0; 
+        border-radius: 4px 4px 0 0; 
     }
     .rhs-box{
-        border-radius: 0 0 10px 10px;
+        border-radius: 0 0 4px 4px;
     }
 }
 @media(max-width: 425px){
@@ -759,6 +789,9 @@ body{
     .title-container h5 {
         font-size: 13px;
     }
+    .carousel-three p {
+        font-size: 1rem;
+    }
 }
 @media(max-width: 320px){
     .header-item-left h1 {
@@ -782,6 +815,9 @@ body{
     .third-tech-images div {
         height: 150px;
         width: 272px;
+    }
+    .carousel-three p {
+        font-size: .9rem;
     }
     
 }

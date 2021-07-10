@@ -115,7 +115,7 @@ a, button {
     object-fit: cover;
 }
 .header-item-left h1{
-    font-size: 15px;
+    font-size: 14px;
     color: white;
     font-family: HelveticaNow;
     margin-left: 10px;
@@ -663,13 +663,13 @@ nav .owl-theme .owl-dots .owl-dot span {
     position: absolute;
     font-family: "Noto Sans", sans-serif;
     font-weight: 700 ;
-    font-size: 1.2rem;
+    font-size: 14px;
     background-color: rgb(0, 0, 0,0.4);
     border:1px  solid rgb(255, 255, 255);
-    border-radius: 7px;
+    border-radius: 4px;
     color: white;
     margin-top: 38px;
-    padding: 7px 15px;
+    padding: 11px 15px;
     opacity: 0;
     -webkit-transition: transform .5s ease-out,opacity .5s ease-out;
     -webkit-transition: opacity .5s ease-out,-webkit-transform .5s ease-out;
@@ -694,8 +694,6 @@ nav .owl-theme .owl-dots .owl-dot span {
 .carousel-caption a:hover{
     background-color: rgba(117, 117, 117, 0.4);
     border:2px  solid rgb(0, 0, 0);
-    color: white;
-    padding: 7px 15px;
 }
 
 /* ------------------------------footer code-------------------------- */
@@ -717,7 +715,6 @@ hr {
     margin: 0;
     border: 0;
 }
-
 .st-info{
     font-size: 2rem;
     color: white;
@@ -771,15 +768,14 @@ hr {
     align-items: center;
 }
 .email-rhs-box .email{
-    width: 70%;
+    width: 68%;
     height: 32px;
     background-color: #1e1e1e ;
     border: 0;
     outline: none;
-    border-radius: 5px;
-
+    border-radius: 4px;
 }
-.btnsubmit{
+.btn-submit{
     background: #1e1e1e;
     color: white;
     padding: 7px 15px;
@@ -787,10 +783,10 @@ hr {
     justify-content: center;
     font-family: 'Noto Sans', sans-serif;
     font-weight: 400;
-    margin: 0 2px 0 5px;
-    border-radius: 5px;
+    margin: 0 2px 0 12px;
+    border-radius: 4px;
 }
-.btnsubmit:hover{
+.btn-submit:hover{
     color: #00adef;
 }
 ::placeholder{
@@ -1231,7 +1227,7 @@ hr {
     .email-input {
         justify-content: center;
     }
-    .btnsubmit {
+    .btn-submit {
         margin-top: 10px;
     }
     ::placeholder{
@@ -1264,7 +1260,8 @@ hr {
     .carousel-caption {
         position: relative;
         height: 11rem;
-        left: 0;
+        left: 15px;
+        top: 15px;
     }
     .carousel-inner .carousel-caption h1 {
         font-size: 2rem;
