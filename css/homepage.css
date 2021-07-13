@@ -13,6 +13,9 @@ body{
 }
 
 /*----------------------------- search box--------------------------- */
+section{
+    padding-bottom: 50px;
+}
 .search-box{
     position: relative;
     width: 100%;
@@ -482,7 +485,7 @@ body{
     width: 100%;
     height: auto;
     padding: 15px 0;
-    margin: 50px 0;
+    margin: 50px 0 0 0;
     background-color: #1e1e1e;
     display: flex;
     justify-content: center;

@@ -17,6 +17,7 @@ header{
 section{
     background-color: #f2f2f2;
     overflow: hidden;
+    padding-bottom: 70px;
 }
  /* --------------------------Overview & brands box----------------------------  */
 .overview-brand-box{
@@ -37,7 +38,12 @@ section{
     font-family: "Noto Sans", sans-serif;
     color: white;
 }
-.overview-brand-box a:hover{
+
+.overview-brand-box .industries-overview,
+.overview-brand-box .brands-overview,
+.overview-brand-box .standard-overview,
+.overview-brand-box .application-overview,
+.overview-brand-box .categories-overview{
     border-bottom: 3px solid #00adef;
 }
 /* --------------------------feild content box----------------------------*/
@@ -79,97 +85,64 @@ section{
 
 /* --------------------------electronic-devices box---------------------------- */
 
-.feilds-cont-box{
-    margin-top: 50px;
-    width: 100%;
-    height: auto;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
-
-}
-.electronic-devices-box{
+.cont-feilds{
     width: 92%;
-    height: auto;
-    display: flex;
-    flex-direction: row;
-    text-align: center;
+    margin: auto;
+    overflow: hidden;
 }
-.lhs{
-    width: 40%;
+.cont-feilds>.card>img{
+    border-radius: 4px;
+    width: 100%;
 }
-.lhs div{
-    display: flex;
-    justify-content: flex-start;
-    flex-direction: column;
-    width: 85%;
-    height: 100%;
+.cont-feilds .card{
+    display: grid;
+    grid-template-columns:39% 57%;
+    grid-gap: 3rem;
+    margin-top: 50px;
 }
-.rhs{
-    width: 60%;
-}
-.lhs h1{
-    margin-top: 20px;
+.cont-feilds .card h1{
+    padding-top: 20px;
     font-weight: 600;
     font-size:30px;
     text-align: left;
     font-family: Klavika-LightCondensed;
 }
-.lhs p{
-    margin-top: 15px;
+.cont-feilds .card p{
+    margin-top: 20px;
     font-size: 16px;
     text-align: left;
     font-family: 'Noto Sans', sans-serif;
 }
- .rhs img{
-    width: 100%;
-    border-radius: 4px;
+.card:nth-child(even) div{
+    order:2;
 }
-/* ---------------------------heaalthcare box------------------------------ */
-
-.healthcare-box{
-    width: 92%;
-    height: auto;
-    display: flex;
-    flex-direction: row-reverse;
-    text-align: center;
-}
-.healthcare-box .lhs{
-    display: flex;
-    justify-content:flex-end;
+.card:nth-child(even){
+    grid-template-columns:60% 36%;
 }
 
-/* ---------------------------Autonomous Driving Technology box------------------------------ */
-.autonomous-driving-box{
-    width: 92%;
-    height: auto;
-    display: flex;
-    flex-direction: row;
-    text-align: center;
-}
 
-/* ---------------------------power-management box------------------------------ */
-.power-management-box{
-    width: 92%;
-    height: auto;
-    display: flex;
-    flex-direction: row-reverse;
-    text-align: center;
-    padding-bottom: 50px;
-}
-.power-management-box .lhs{
-    display: flex;
-    justify-content:flex-end;
-}
 /* ---------------------------footer box------------------------------ */
 
-@media(max-width:1199px){
-    .lhs p {
-        font-size: 1.5vw;
-    }
-}
+
 @media(max-width:767px){
+    .cont-feilds .card{
+        display: block;
+        display: flex;
+        justify-content: center;
+        flex-direction: column-reverse;
+        grid-gap: 0;
+    }
+    .cont-feilds .card h1{
+        text-align: center;
+        font-size: 1.5rem;
+    }
+    .cont-feilds .card p{
+        text-align: center;
+        margin-top: 15px;
+    }
+    .card:nth-child(even) img{
+        order:2;
+    }
     .carousel-caption h1{
         color: #2e2e2e ;
     }
@@ -184,40 +157,9 @@ section{
         border:2px solid black;
         color: black;
     }
-    .lhs h1 {
-        font-size: 1.5rem;
-        margin-top: 0;
-    }
+    
 }
 @media(max-width:575px){
-    .electronic-devices-box {
-        flex-direction: column-reverse;
-    }
-    .rhs, .lhs {
-        width: 100%;
-    }
-    .lhs div 
-    {
-        width: 100%;
-        justify-content: center;
-        align-items: center;
-    }
-    .lhs p {
-        font-size: 1rem;
-        text-align: center;
-    }
-    .lhs h1 {
-        margin-top: 15px;
-    }
-    .healthcare-box {
-        flex-direction: column-reverse;
-    }
-    .autonomous-driving-box {
-        flex-direction: column-reverse;
-    }
-    .power-management-box {
-        flex-direction: column-reverse;
-    }
     .ver-box {
         display: block;
     }
