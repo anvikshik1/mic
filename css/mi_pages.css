@@ -118,7 +118,7 @@ header{
 /* ----------------------------- company brands----------------------------- */
 
 .company-brands{
-    width: 93%;
+    width: 92%;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-gap: 15px;
