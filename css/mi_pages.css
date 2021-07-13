@@ -422,6 +422,10 @@ header{
     
 }
 @media(max-width:425px){
+    .overview-brand-box a {
+        padding: 16px 5px;
+        font-size: 1rem;
+    }
     .gray-box {
         padding: 20px 50px;
     }

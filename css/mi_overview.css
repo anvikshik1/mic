@@ -168,6 +168,10 @@ section{
     }
 }
 @media(max-width:425px){
+    .overview-brand-box a {
+        padding: 16px 5px;
+        font-size: 1rem;
+    }
     .feilds-cont p {
         font-size: 1rem;
     } 
