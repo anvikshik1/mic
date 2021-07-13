@@ -375,6 +375,9 @@ header{
     
 }
 @media(max-width:425px){
+    .gray-box {
+        padding: 20px 50px;
+    }
     .search-brand input {
         width: 90%;
     }
@@ -399,7 +402,9 @@ header{
     .company-brands div {
         width: auto;
     }
-  
+    .gray-box {
+        padding: 20px 20px;
+    }
 }
 
 @media (max-width:320px){
