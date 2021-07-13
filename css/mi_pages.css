@@ -45,6 +45,7 @@ header{
 .overview-brand-box .industries,
 .overview-brand-box .brands,
 .overview-brand-box .categories,
+.overview-brand-box .standards,
 .overview-brand-box .applications{
     border-bottom: 3px solid #00adef;
 }
@@ -92,7 +93,7 @@ header{
 .search-brand{
     margin-top:40px;
     width: 75%;
-    height: 30px;
+    height: 35px;
     outline: none;
     background-color: white;
     display: flex;
@@ -422,10 +423,7 @@ header{
     
 }
 @media(max-width:425px){
-    .overview-brand-box a {
-        padding: 16px 5px;
-        font-size: 1rem;
-    }
+    
     .gray-box {
         padding: 20px 50px;
     }
