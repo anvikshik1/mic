@@ -1,0 +1,407 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/*----------------navbar----------------- */
+
+body{
+    background-color: #000000;
+    max-width: 1680px;
+    width: 100%;
+    margin: 0 auto;
+}
+header{
+    position: absolute;
+    width: 100%;
+    z-index: 2;
+}
+
+ /* --------------------------Overview & brands box----------------------------  */
+
+.overview-brand-box{
+    width: 100%;
+    height: 60px;
+    background-color: rgb(46, 46, 46);
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.overview-brand-box div{
+    margin-left: 3%;
+}
+.overview-brand-box a{
+    margin: 10px;
+    padding: 13px 5px;
+    font-size:1.3rem ;
+    color: white;
+    font-family: 'Noto Sans', sans-serif;
+}
+.overview-brand-box a:hover{
+    border-bottom: 3px solid #00adef;
+}
+
+/* -----------------------------Brands----------------------------- */
+
+.heading-container{
+    margin-top: 50px;
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+.brand-title{
+    width: 92%;
+    height: auto;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    text-align: left;
+}
+.brand-title h1{
+    font-size: 2.5rem;
+    font-family: Klavika-MediumCondensed;
+    font-weight: 500;
+    color: white;
+}
+.brand-title p{
+    margin-top: 10px;
+    font-size: 1.9rem;
+    font-family: Klavika-LightCondensed;
+    color: white;
+    font-weight: normal;
+}
+.heading-container h3{
+    color: #6e6e6e;
+    font-size: 14px;
+    margin-top: 5px;
+}
+
+/* -----------------------------Brands search box------------------------------ */
+
+.search-brand{
+    margin-top:40px;
+    width: 75%;
+    height: 30px;
+    outline: none;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 4px;
+}
+.search-brand i{
+    color: rgb(0, 0, 0);
+}
+.search-brand input{
+    width: 97%;
+    height: 28px;
+    outline: none;
+    border: 0;
+}
+::placeholder{
+    color: gray;
+    font-style: normal;
+}
+
+/* ----------------------------- company brands----------------------------- */
+
+.company-brands{
+    width: 93%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 15px;
+}
+.company-brands div{
+    background-color: #1e1e1e;
+    height: 315px;
+    border-radius: 4px;
+}
+.company-brands div:hover{
+    border-bottom: 2px solid #00adef;
+}
+.company-brands img{
+    width: 120px;
+    margin: 20px;
+}
+.company-brands h2{
+    margin: 20px;
+    color: #00adef;
+    font-family:Klavika-LightCondensed;
+    font-size: 1.7rem;
+}
+.company-brands p{
+    margin: 5px 20px;
+    color: #ffffff;
+    font-family:'Noto Sans', sans-serif;
+    font-size: 1.1rem;
+}
+
+
+/*  ---------------------------------need assistance-------------------------- */
+
+.assistance{
+    width: 92%;
+    height: auto;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    flex-direction: row;
+    text-align: center;
+}
+.assistance a {
+    color: white;
+    font-size: 1.7rem;
+    font-family: klavika-MediumCondensed;
+    width: 24rem;
+    border: 1.5px solid white;
+    border-radius: 15px;
+}
+.enquiry{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    margin-top: 30px;
+}
+.enquiry p {
+    color: white;
+    font-size: 1.5rem;
+    font-family: Klavika-LightCondensed;
+    padding: 3px;
+}
+.enquiry button {
+    border: 0;
+    background-color: #1e1e1e;
+    font-size: 1rem;
+    color: white;
+    margin-left: 20px;
+    padding: 7px 12px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-family: 'Noto Sans', sans-serif;
+}
+.u-line{
+    width: 120px;
+    margin: 30px 0 0 0;
+    background-color: #00adef;
+    display: flex;
+    align-self: center;
+}
+
+/* -------------------app carosel-------------------- */
+.gray-box{
+    width: 100%;
+    height: auto;
+    padding: 11px 0;
+    margin-top: 120px;
+    background-color: #1e1e1e;
+    display: flex;
+    justify-content: center;
+}
+.carousel-app{
+    width: 92%;
+    margin-top: -86px;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content:center;
+}
+.carousel-app .item{
+    position: relative;
+    height: 440px;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 4px;
+}
+.add-cart{
+    position: absolute;
+    top:0;
+    right: 0;
+    height: 0;
+    width: 0;
+    margin-top:1px;
+    margin-right:2px;
+    border: 25px solid transparent;
+    border-top-color: rgb(37, 37, 37);
+    border-right-color: rgb(37, 37, 37);
+    display: none;
+    border-top-right-radius: 8px;
+
+}
+.carousel-app .item:hover .add-cart{
+    display: block;
+    cursor: pointer;
+}
+.add-cart:hover{
+    border-top-color: rgb(0, 160, 223);
+    border-right-color: rgb(0, 160, 223);
+}
+.add-cart .cart-img{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 20px;
+}
+.carousel-app .item .prod-img{
+    margin-top: 35px;
+    width: 130px;
+}
+.prod-img:hover {
+    transform: scale(1) translate3d(0px, -10px, 0px);
+    transition: all .2s ease-out;
+    cursor: pointer;
+    border-radius: 4px;
+} 
+.carousel-app h5{
+    color: rgb(32, 32, 32);
+    margin-top: 20px;
+    font-family: Klavika-MediumCondensed;
+    font-weight: 500;
+    font-size:1.5rem;
+    text-align: center;
+    padding: 10px;
+}
+.carousel-app p{
+    color: rgb(83, 83, 83);
+    font-size: 18px;
+    margin: 10px;
+    font-family: "Noto Sans", sans-serif;
+    text-align: center;
+    padding: 0 10px;
+}
+
+.carousel-app a{
+    padding: 10px 15px;
+    margin-top: 50px;
+    text-decoration: none;
+    background-color: rgb(255, 255, 255);
+    border: 2px solid black;
+    border-radius: 4px;
+    font-size: 16px;
+    color: rgb(0, 0, 0);
+    font-family: "Noto Sans", sans-serif;
+    font-weight: 700;
+}
+.carousel-app a:hover{
+    color: rgb(255, 255, 255);
+    background-color: black;
+}
+.owl-theme .owl-dots .owl-dot span {
+    margin: 12px 7px;
+}
+
+
+@media(max-width:1680px){
+    .company-brands div{
+        height: 270px;
+    }
+    .company-brands p {
+        font-size: .8rem;
+    }
+    .company-brands h2{
+        font-size: 1.5rem;
+    }
+}
+@media(max-width:1199px){
+    .lhs p {
+        font-size: 1.5vw;
+    }
+    .brand-title h1 {
+        font-size: 2.2rem;
+    }
+    .brand-title p {
+        font-size: 1.15rem;
+    }
+}
+@media(max-width:991px){
+    .company-brands{
+       grid-template-columns: repeat(3, 1fr);
+    }
+}
+@media(max-width:768px){
+    .search-brand input {
+        width: 95%;
+    }
+    .company-brands{
+        grid-template-columns: repeat(2, 1fr);
+     }
+}
+@media(max-width:575px){
+    .company-brands{
+        grid-template-columns: repeat(1, 1fr);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+     }
+    .brand-title h1 {
+        font-size: 2rem;
+        text-align: center;
+    }
+    .brand-title p {
+        font-size: 1rem;
+        text-align: center;
+    }
+    .search-brand input {
+        width: 93%;
+    }
+    .company-brands div {
+        width: 300px;
+    }
+    .assistance a {
+        font-size: 2rem;
+    }
+    .mic-logo img {
+        width: 40vw;
+    }
+    .enquiry{
+        flex-direction: column;
+    }
+    .enquiry button{
+        margin-left: 0;
+        margin-top: 30px;
+    }
+    .enquiry p {
+        font-size: 1.5rem;
+    }
+    
+}
+@media(max-width:425px){
+    .search-brand input {
+        width: 90%;
+    }
+    .brand-title p {
+        font-size: 1rem;
+    }
+    .brand-title h1 {
+        font-size: 1.5rem;
+    }
+    .overview-brand-box div {
+        margin-left: 0px;
+    }
+    .overview-brand-box {
+        justify-content: center;
+    }
+    .lg-hr-three{
+        margin-top: 55px;
+    }
+}
+
+@media (max-width:375px){
+    .company-brands div {
+        width: auto;
+    }
+  
+}
+
+@media (max-width:320px){
+   
+}

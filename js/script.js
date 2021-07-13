@@ -68,9 +68,7 @@ window.onresize = function () {
     }
 };
 
-
 // -------------- image slider ------------------------
-
 + function($) {
     'use strict';
 
@@ -91,7 +89,6 @@ window.onresize = function () {
                 }
             }
         }
-
         return false 
     }
 
@@ -111,9 +108,7 @@ window.onresize = function () {
 
     $(function() {
         $.support.transition = transitionEnd()
-
         if (!$.support.transition) return
-
         $.event.special.bsTransitionEnd = {
             bindType: $.support.transition.end,
             delegateType: $.support.transition.end,
@@ -415,7 +410,7 @@ $(document).ready(function () {
         loop: true,
         dots: true,
         nav: false,
-        margin: 15,
+        margin: 16,
         items: 5,
         responsiveClass: true,
         responsive: {
@@ -463,7 +458,7 @@ $(document).ready(function () {
     });
     $('.carousel-two .owl-carousel').owlCarousel({
         loop: true,
-        margin: 15,
+        margin: 16,
         dots: false,
         nav:true,
         navText:[
@@ -491,7 +486,7 @@ $(document).ready(function () {
     $('.carousel-three .owl-carousel').owlCarousel({
         loop: true,
         nav: false,
-        margin: 15,
+        margin: 16,
         dots: true,
         responsiveClass: true,
         responsive: {
@@ -524,7 +519,7 @@ $(document).ready(function () {
     $('.carousel-four .owl-carousel').owlCarousel({
         loop: true,
         nav: false,
-        margin:15,
+        margin:16,
         dots: true,
         items: 5,
         responsiveClass: true,
@@ -562,5 +557,54 @@ $(document).ready(function () {
             }
         }
     });
+    // ------------------Aplications page Carousel---------------
+    $('.carousel-app .owl-carousel').owlCarousel({
+        loop: true,
+        dots: true,
+        nav: false,
+        margin: 16,
+        items: 5,
+        responsiveClass: true,
+        responsive: {
+            0: {
+                dots: true,
+                items: 1,
+                nav: false
+            },
+            425: {
+                dots: true,
+                items: 1,
+                nav: false
+            },
+            426: {
+                dots: true,
+                items: 2,
+                nav: false
+            },
+            575: {
+                dots: true,
+                items: 2,
+                nav: false
+            },
+            768: {
+                dots: true,
+                items: 3,
+                nav: false
+            },
+            992: {
+                items: 3,
+                loop: true
+            },
+            1024: {
+                items: 5,
+                loop: true
+            },
+        }
+    });
 });
 
+// --------------brand page fade animation-----------------------
+
+AOS.init({
+  duration:1000,
+});
