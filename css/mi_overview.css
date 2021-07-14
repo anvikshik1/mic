@@ -57,7 +57,7 @@ section{
     flex-direction: column;
 }
 .feilds-cont div{
-    width: 92%;
+    width: 85%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -86,18 +86,18 @@ section{
 /* --------------------------electronic-devices box---------------------------- */
 
 .cont-feilds{
-    width: 92%;
+    width: 85%;
     margin: auto;
     overflow: hidden;
 }
 .cont-feilds>.card>img{
     border-radius: 4px;
-    width: 100%;
+    width: 98%;
 }
 .cont-feilds .card{
     display: grid;
     grid-template-columns:39% 57%;
-    grid-gap: 3rem;
+    grid-gap: 3.5rem;
     margin-top: 50px;
 }
 .cont-feilds .card h1{
