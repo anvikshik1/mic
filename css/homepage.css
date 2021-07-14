@@ -73,7 +73,7 @@ section{
     color: #ffffff;
     padding: 0 40px;
     font-size: 36px;
-    font-family: Klavika-MediumCondensed;
+    font-family: Maxim-Klavika-MediumCondensed; 
     font-weight: 500;
     text-transform:capitalize;
 }
@@ -131,7 +131,7 @@ section{
     border-radius: 4px;
     color: white;
     font-size: 30px;
-    font-family: Klavika-MediumCondensed;
+    font-family:  Maxim-Klavika-MediumCondensed;
     font-weight: 500;
 }
 .tech-imgs p{
@@ -232,7 +232,7 @@ section{
 .carousel-one h5{
     color: rgb(32, 32, 32);
     margin-top: 20px;
-    font-family: Klavika-MediumCondensed;
+    font-family:  Maxim-Klavika-MediumCondensed;
     font-weight: 500;
     font-size:1.5rem;
     text-align: center;
@@ -333,14 +333,14 @@ section{
     font-size: 3.2rem;
     margin-left: 65px;
     margin:30px 0 0 30px;
-    font-family: Klavika-MediumCondensed;
+    font-family:  Maxim-Klavika-MediumCondensed;
     font-weight: 500;
 }
 .rhs-box p{
     font-size: 2.2rem;
     text-align: left;
     margin:15px 0 0 30px;
-    font-family: Klavika-LightCondensed;
+    font-family:  Maxim-Klavika-LightCondensed;
 }
 .rhs-box a{
     padding:9px 15px;
@@ -424,7 +424,7 @@ section{
     padding: 5px 20px;
     border-radius: 4px;
     color: white;
-    font-family: Klavika-MediumCondensed;
+    font-family:  Maxim-Klavika-MediumCondensed;
     font-weight: 500;
 }
 
@@ -461,14 +461,14 @@ section{
     color: #00adef;
     margin: 30px 0 10px 30px;
     font-size: 3rem;
-    font-family: Klavika-MediumCondensed;
+    font-family:  Maxim-Klavika-MediumCondensed;
     font-weight: 500;
 }
 .carousel-three h2 {
     color: black;
     margin: 10px 30px;
     font-size: 2rem;
-    font-family: Klavika-MediumCondensed;
+    font-family:  Maxim-Klavika-MediumCondensed;
     font-weight: 500;
 }
 .carousel-three p {
@@ -485,18 +485,18 @@ section{
     width: 100%;
     height: auto;
     padding: 15px 0;
-    margin: 50px 0 0 0;
+    margin-top: 120px;
     background-color: #1e1e1e;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 .carousel-four{
+    margin-top: -86px;
     width: 92%;
     height: auto;
     display: flex;
     justify-content: space-between;
-    padding: 50px 0 0 0
 }
 .carousel-four .item{
     display: flex;
@@ -508,7 +508,7 @@ section{
     width: 100%;
     border-radius: 4px;
     margin:0 5px;
-    padding: 0 40px;
+    padding: 15px 40px;
     background: #141414;
 }
 

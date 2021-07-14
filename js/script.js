@@ -1,3 +1,8 @@
+
+
+
+
+// ----------------header----------------------------
 const menu = document.querySelector('.menu');
 const menuSection = menu.querySelector('.menu-section');
 const menuArrow = menu.querySelector('.menu-mobile-arrow');
