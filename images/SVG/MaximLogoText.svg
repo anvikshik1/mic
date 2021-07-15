@@ -1,1 +1,58 @@
-<svg id="Layer_2" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2263.15 551.91"><defs><style>.cls-1{fill:#1f338e;}.cls-2{fill:#2776ea;}.cls-3{fill:#828894;}.cls-4{fill:#d7d7d7;}.cls-5{fill:#aaaaaf;}.cls-6{fill:#3a27ea;}.cls-7{font-size:160px;fill:#fff;font-family:HelveticaNowDisplay-XBlk, Helvetica Now Display;}.cls-8{letter-spacing:-0.01em;}.cls-9{letter-spacing:0em;}.cls-10{letter-spacing:0em;}.cls-11{letter-spacing:0em;}.cls-12{letter-spacing:-0.02em;}.cls-13{letter-spacing:0em;}</style></defs><polygon class="cls-1" points="0 270.38 205.21 0 257.55 91.4 119.36 270.11 0 270.38"/><polygon class="cls-2" points="620.22 270.38 415 0 362.67 91.4 500.86 270.11 620.22 270.38"/><polygon class="cls-3" points="237 270.38 119.36 270.11 257.55 91.4 309.38 181.91 237 270.38"/><polygon class="cls-4" points="383.26 270.38 500.9 270.11 362.7 91.4 310.88 181.91 383.26 270.38"/><polygon class="cls-5" points="257.55 91.4 362.67 91.4 310.88 181.91 309.38 181.91 257.55 91.4"/><polygon class="cls-6" points="205.21 0 415 0 362.67 91.4 257.55 91.4 205.21 0"/><polygon class="cls-1" points="620.22 281.53 415 551.91 362.67 460.51 500.86 281.8 620.22 281.53"/><polygon class="cls-2" points="0 281.53 205.21 551.91 257.55 460.51 119.36 281.8 0 281.53"/><polygon class="cls-3" points="383.22 281.53 500.86 281.8 362.67 460.51 310.83 370 383.22 281.53"/><polygon class="cls-4" points="236.96 281.53 119.31 281.8 257.51 460.51 309.34 370 236.96 281.53"/><polygon class="cls-5" points="362.67 460.51 257.55 460.51 309.34 370 310.83 370 362.67 460.51"/><polygon class="cls-6" points="415 551.91 205.21 551.91 257.55 460.51 362.67 460.51 415 551.91"/><text class="cls-7" transform="translate(733.56 440.2)"><tspan class="cls-8">M</tspan><tspan class="cls-9" x="145.44" y="0">ax</tspan><tspan x="335.2" y="0">im In</tspan><tspan class="cls-10" x="711.2" y="0">s</tspan><tspan class="cls-11" x="798.08" y="0">t</tspan><tspan class="cls-10" x="865.28" y="0">r</tspan><tspan x="934.24" y="0">ume</tspan><tspan class="cls-12" x="1277.91" y="0">n</tspan><tspan class="cls-13" x="1373.91" y="0">t</tspan><tspan x="1441.91" y="0">s</tspan></text></svg>
+<svg id="Layer_2" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2263.15 551.91">
+    <defs>
+        <style>
+            .cls-1 {
+                fill: #1f338e;
+            }
+            .cls-2 {
+                fill: #2776ea;
+            }
+            .cls-3 {
+                fill: #828894;
+            }
+            .cls-4 {
+                fill: #d7d7d7;
+            }
+            .cls-5 {
+                fill: #aaaaaf;
+            }
+            .cls-6 {
+                fill: #3a27ea;
+            }
+            .cls-7 {
+                font-size: 160px;
+                fill: #fff;
+                font-family: Maxim-HelveticaNowDisplay;
+            }
+            .cls-8 {
+                letter-spacing: -0.01em;
+            }
+            .cls-9 {
+                letter-spacing: 0;
+            }
+            .cls-10 {
+                letter-spacing: 0;
+            }
+            .cls-11 {
+                letter-spacing: 0;
+            }
+            .cls-12 {
+                letter-spacing: -0.02em;
+            }
+            .cls-13 {
+                letter-spacing: 0;
+            }
+        </style>
+    </defs><polygon class="cls-1" points="0 270.38 205.21 0 257.55 91.4 119.36 270.11 0 270.38"/><polygon class="cls-2" points="620.22 270.38 415 0 362.67 91.4 500.86 270.11 620.22 270.38"/><polygon class="cls-3" points="237 270.38 119.36 270.11 257.55 91.4 309.38 181.91 237 270.38"/><polygon class="cls-4" points="383.26 270.38 500.9 270.11 362.7 91.4 310.88 181.91 383.26 270.38"/><polygon class="cls-5" points="257.55 91.4 362.67 91.4 310.88 181.91 309.38 181.91 257.55 91.4"/><polygon class="cls-6" points="205.21 0 415 0 362.67 91.4 257.55 91.4 205.21 0"/><polygon class="cls-1" points="620.22 281.53 415 551.91 362.67 460.51 500.86 281.8 620.22 281.53"/><polygon class="cls-2" points="0 281.53 205.21 551.91 257.55 460.51 119.36 281.8 0 281.53"/><polygon class="cls-3" points="383.22 281.53 500.86 281.8 362.67 460.51 310.83 370 383.22 281.53"/><polygon class="cls-4" points="236.96 281.53 119.31 281.8 257.51 460.51 309.34 370 236.96 281.53"/><polygon class="cls-5" points="362.67 460.51 257.55 460.51 309.34 370 310.83 370 362.67 460.51"/><polygon class="cls-6" points="415 551.91 205.21 551.91 257.55 460.51 362.67 460.51 415 551.91"/><text class="cls-7" transform="translate(733.56 440.2)">
+        <tspan class="cls-8">M</tspan>
+        <tspan class="cls-9" x="145.44" y="0">ax</tspan>
+        <tspan x="335.2" y="0">im In</tspan>
+        <tspan class="cls-10" x="711.2" y="0">s</tspan>
+        <tspan class="cls-11" x="798.08" y="0">t</tspan>
+        <tspan class="cls-10" x="865.28" y="0">r</tspan>
+        <tspan x="934.24" y="0">ume</tspan>
+        <tspan class="cls-12" x="1277.91" y="0">n</tspan>
+        <tspan class="cls-13" x="1373.91" y="0">t</tspan>
+        <tspan x="1441.91" y="0">s</tspan>
+    </text>
+</svg>

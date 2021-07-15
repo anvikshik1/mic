@@ -9,7 +9,7 @@
     src: url('../fonts/Klavika-LightCondensed.ttf');
 }
 @font-face{
-    font-family: HelveticaNowDisplay-XBlk;
+    font-family: Maxim-HelveticaNowDisplay;
     src: url('../fonts/HelveticaNowDisplayXBlk.otf');
 }
 *{
@@ -31,12 +31,6 @@ body{
     max-width: 1680px;
     width: 100%;
     margin: 0 auto !important;
-}
-header{
-    position: absolute;
-    width: 100%;
-    z-index: 2;
-    transition: top 0.5s ease-in-out, height 0.5s ease-in-out;
 }
 
 @-webkit-keyframes slideLeft {
@@ -109,17 +103,16 @@ a, button {
 }
 .header-item-left img{
     display: block;
-    width: 3.5rem;
     height: auto;
     padding: 7px 0;
     -o-object-fit: cover;
     object-fit: cover;
-    font-family: HelveticaNowDisplay-XBlk;
+    /* font-family: Maxim-HelveticaNowDisplay; */
 }
 .header-item-left h1{
     font-size: 14px;
     color: white;
-    font-family: HelveticaNowDisplay-XBlk;
+    /* font-family: Maxim-HelveticaNowDisplay; */
     margin-left: 10px;
     margin-bottom: 0;
     padding-bottom: 14px;
@@ -131,8 +124,7 @@ a, button {
     margin: 0 auto;
 }
 .header {
-    position: relative;
-    display: block;
+    position: sticky;
     top: 0;
     left: 0;
     width: 100%;
@@ -142,6 +134,14 @@ a, button {
     outline: none;
     background: rgba(0, 0, 0,0.9);
     border-bottom: 4px solid rgb(207, 207, 207);
+    animation-delay: 5s;
+    transition: all ease .75s;
+    transform: translateY(0);
+}
+.scroll{
+    transition: all ease .75s;
+    animation-delay: 5s;
+    transform: translateY(-108px);
 }
 .header .wrapper {
     display: -webkit-box;
