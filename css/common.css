@@ -103,6 +103,7 @@ a, button {
 }
 .header-item-left img{
     display: block;
+    width: 3.5rem;
     height: auto;
     padding: 7px 0;
     -o-object-fit: cover;
@@ -124,19 +125,18 @@ a, button {
     margin: 0 auto;
 }
 .header {
-    position: sticky;
+    position:sticky;
     top: 0;
     left: 0;
     width: 100%;
     height: auto;
     margin: 0 auto;
-    z-index: 999;
+    z-index:999;
     outline: none;
     background: rgba(0, 0, 0,0.9);
     border-bottom: 4px solid rgb(207, 207, 207);
     animation-delay: 5s;
     transition: all ease .75s;
-    transform: translateY(0);
 }
 .scroll{
     transition: all ease .75s;
@@ -400,28 +400,28 @@ header .container {
     color: white;
     font-family:'Noto Sans', sans-serif;
 }
-.list-name {
+.list-name{
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
     width: 100%;
     border-bottom: 1px solid rgb(78, 78, 78);
     margin-left: 5%;
-    margin-right: 70px;
 }
-.list-name h4{
+.list-name .title{
     color: rgb(255, 255, 255);
-    margin-right: 10%;
+    margin-right: 5%;
     font-size: 1.1rem;
     font-family:'Noto Sans', sans-serif ;
 }
-.list-name a{
+
+.list-name .list-anchor-tags a{
     color: #7a7a7a;
     font-family:'Noto Sans', sans-serif ;
-    margin: -1px 15px;
+    margin: 0px 10px;
     font-size: 1rem;
+    padding: 10px 0;
 }
-.list-name a:hover{
+.list-name .list-anchor-tags a:hover{
     color: #ffffff;
     border-bottom: 1px solid #00adef;
 }
@@ -892,7 +892,7 @@ hr {
     .header-item-center {
         margin-left: 0;
     }
-    .list-name h4 {
+    .list-name .title {
         margin-right: 6%;
     }
 }
@@ -900,8 +900,15 @@ hr {
     .header-item-left {
         flex: 0 0 21%;
     }
-    .list-name a{
+    .list-anchor-tags{
+        padding: 10px;
+    }
+   .list-name{
+    flex-wrap: wrap;
+    }
+   .list-name .list-anchor-tags a{
     font-size: 1.1vw;
+    padding: 10px;
     }
     .header .menu>ul>li>a {
         font-size: 1.1vw;
@@ -1201,7 +1208,7 @@ hr {
         margin-right: 70px;
         padding: 13px 0px;
     }
-    .list-name a{
+    .list-name .list-anchor-tags a{
         padding: 7px 5px;
         font-size: 0.9em;
     }
