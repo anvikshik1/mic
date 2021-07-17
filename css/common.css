@@ -168,8 +168,8 @@ a, button {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    justify-content: center;
     align-items: flex-end;
-    margin-left: 150px;
     padding-top: 20px;
     -webkit-box-flex: 0;
     -ms-flex: 0 0 62%;
@@ -180,8 +180,8 @@ a, button {
     display: -ms-flexbox;
     display: flex;
     -webkit-box-flex: 0;
-    -ms-flex: 0 0 5%;
-    flex: 0 0 5%;
+    -ms-flex: 0 0 75%;
+    flex: 0 0 7%;
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: flex-end;
@@ -409,8 +409,8 @@ header .container {
 }
 .list-name .title{
     color: rgb(255, 255, 255);
-    margin-right: 5%;
-    font-size: 1.1rem;
+    margin-right: 10.1%;
+    font-size: 1rem;
     font-family:'Noto Sans', sans-serif ;
 }
 
@@ -667,11 +667,11 @@ nav .owl-theme .owl-dots .owl-dot span {
     font-weight: 700 ;
     font-size: 14px;
     background-color: rgb(0, 0, 0,0.4);
-    border:1px  solid rgb(255, 255, 255);
+    border:2px  solid rgb(255, 255, 255);
     border-radius: 4px;
     color: white;
     margin-top: 38px;
-    padding: 11px 15px;
+    padding: 12px 20px;
     opacity: 0;
     -webkit-transition: transform .5s ease-out,opacity .5s ease-out;
     -webkit-transition: opacity .5s ease-out,-webkit-transform .5s ease-out;
@@ -889,11 +889,9 @@ hr {
 
 
 @media (max-width: 1366px){
-    .header-item-center {
-        margin-left: 0;
-    }
+    
     .list-name .title {
-        margin-right: 6%;
+        margin-right: 8%;
     }
 }
 @media (max-width: 1199px){

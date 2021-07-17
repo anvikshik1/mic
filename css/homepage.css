@@ -25,11 +25,6 @@ section{
     justify-content: center;
     align-items: center;
 }
-.search-box-top {
-    width: 100%;
-    position: relative;
-    top: -50px;
-}
 .search-box div{
     width: 73%;
     height: 40px;
@@ -124,11 +119,17 @@ section{
     border-radius: 4px;
     overflow: hidden;
 }
-.tech-imgs h3{
+.t-img div{
     position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background: rgba(0,0,0, 0.6);
-    padding: 5px 20px;
+    height: 60px;
+    width: 300px;
     border-radius: 4px;
+}
+.tech-imgs h3{
     color: white;
     font-size: 30px;
     font-family:  Maxim-Klavika-MediumCondensed;
@@ -137,20 +138,16 @@ section{
 .tech-imgs p{
     position:relative;
     color: white;
-    top: 12rem;
+    top: 7rem;
     font-size: 16.5px;
     font-family: "Noto Sans", sans-serif;
     text-align: left;
     padding: 20px 15px;
-    transition: all .3s ease-out;
-    background-color: rgba(0, 0, 0, 0.6);
 }
-.tech-imgs .t-img:hover p{
-    top: 7rem;
-}
+
 .tech-imgs .t-img:hover img{
     transform: scale(1.1) translate3d(0px, -10px, 0px);
-    transition: all .2s ease-out;
+    transition: all .6s ease-out;
     cursor: pointer;
     border-radius: 4px;
 } 
@@ -166,7 +163,7 @@ section{
     height: auto;
     padding: 11px 0;
     margin-top: 120px;
-    background-color: #1e1e1e;
+    background-color: #141414;
     display: flex;
     justify-content: center;
 }
@@ -197,12 +194,12 @@ section{
     height: 0;
     width: 0;
     margin-top:1px;
-    margin-right:2px;
+    margin-right:1px;
     border: 25px solid transparent;
     border-top-color: rgb(37, 37, 37);
     border-right-color: rgb(37, 37, 37);
     display: none;
-    border-top-right-radius: 8px;
+    border-top-right-radius: 4px;
 
 }
 .carousel-one .item:hover .add-cart{
@@ -230,7 +227,7 @@ section{
     border-radius: 4px;
 } 
 .carousel-one h5{
-    color: rgb(32, 32, 32);
+    color: #333333;
     margin-top: 20px;
     font-family:  Maxim-Klavika-MediumCondensed;
     font-weight: 500;
@@ -239,7 +236,7 @@ section{
     padding: 10px;
 }
 .carousel-one p{
-    color: rgb(83, 83, 83);
+    color: #333333;
     font-size: 18px;
     margin: 10px;
     font-family: "Noto Sans", sans-serif;
@@ -273,7 +270,7 @@ section{
     height: auto;
     padding: 14px 0;
     margin-top: 120px;
-    background-color:#1e1e1e;
+    background-color:#141414;
     display: flex;
     justify-content: center;
 }
@@ -343,12 +340,12 @@ section{
     font-family:  Maxim-Klavika-LightCondensed;
 }
 .rhs-box a{
-    padding:9px 15px;
-    margin: 20px 30px;
+    padding:10px 14px;
+    margin: 35px 30px;
     text-decoration: none;
     border: 2px solid black;
     border-radius: 4px;
-    font-size: 14px;
+    font-size: 16px;
     color: rgb(0, 0, 0);
     font-family: "Noto Sans", sans-serif;
     font-weight: 700;
@@ -376,7 +373,7 @@ section{
     height: auto;
     padding: 54px 0;
     margin-top: 122px;
-    background-color: #1e1e1e;
+    background-color: #141414;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -414,15 +411,22 @@ section{
 }
 .third-tech-images div:hover img{
     transform: scale(1.1) translate3d(0px, -10px, 0px);
-    transition: all .2s ease-out !important;
+    transition: all .6s ease-out !important;
     cursor: pointer;
 } 
+.third-tech-images .tech-bg-box {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(0,0,0, 0.6);
+    height: 60px;
+    width: 300px;
+    border-radius: 4px;
+}
 .third-tech-images h1 {
     position: absolute;
     font-size: 30px;
-    background: rgba(0,0,0, 0.6);
-    padding: 5px 20px;
-    border-radius: 4px;
     color: white;
     font-family:  Maxim-Klavika-MediumCondensed;
     font-weight: 500;
@@ -436,7 +440,7 @@ section{
     height:auto;
     padding: 11px 0;
     margin-top: 122px;
-    background-color:#1e1e1e;
+    background-color:#141414;
     display: flex;
     justify-content: center;
 }
@@ -467,7 +471,7 @@ section{
 .carousel-three h2 {
     color: black;
     margin: 10px 30px;
-    font-size: 2rem;
+    font-size: 36px;
     font-family:  Maxim-Klavika-MediumCondensed;
     font-weight: 500;
 }
@@ -476,7 +480,7 @@ section{
     color: black;
     font-family: "Noto Sans", sans-serif;
     margin: 10px 30px;
-    font-size: 21px;
+    font-size: 16px;
 }
 
 /* ------------------------------Valued Partners-------------------------- */
@@ -486,7 +490,7 @@ section{
     height: auto;
     padding: 15px 0;
     margin-top: 120px;
-    background-color: #1e1e1e;
+    background-color: #141414;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -539,12 +543,6 @@ section{
     .carousel-three h1{
         font-size: 35px;
     }
-    .carousel-three h2 {
-        font-size: 2rem;
-    }
-    .carousel-three p {
-        font-size: 1.1rem;
-    }
     .carousel-three .item {
         height: 280px;
     }
@@ -577,12 +575,10 @@ section{
         width: 410px;
     }
     .tech-imgs p {
-        top: 11rem;
+        top: 5rem;
         font-size: 13px;
     }
-    .tech-imgs .t-img:hover p{
-        top: 5.5rem;
-    }
+    
     .first-gray-box {
         padding: 15px 0;
     }
@@ -778,13 +774,13 @@ section{
         height: 180px;
     }
     .tech-imgs p {
-        top: 10rem;
+        top: 4rem;
     }
     .tech-imgs .t-img:hover p{
         top: 4rem;
     }
     .first-gray-box{
-        padding: 50px 20px;
+        padding: 15px 20px;
     }
     .title-container .sm-hr {
         width: 110px;
