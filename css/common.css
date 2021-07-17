@@ -108,15 +108,15 @@ a, button {
     padding: 7px 0;
     -o-object-fit: cover;
     object-fit: cover;
-    /* font-family: Maxim-HelveticaNowDisplay; */
 }
 .header-item-left h1{
     font-size: 14px;
     color: white;
-    /* font-family: Maxim-HelveticaNowDisplay; */
+    font-family: Maxim-HelveticaNowDisplay;
     margin-left: 10px;
     margin-bottom: 0;
     padding-bottom: 14px;
+    letter-spacing: .5px;
 }
 .container {
     width: 100%;
@@ -180,8 +180,8 @@ a, button {
     display: -ms-flexbox;
     display: flex;
     -webkit-box-flex: 0;
-    -ms-flex: 0 0 75%;
-    flex: 0 0 7%;
+    -ms-flex: 0 0 12%;
+    flex: 0 0 12%;
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: flex-end;
