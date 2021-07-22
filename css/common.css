@@ -751,6 +751,9 @@ hr {
     font-size: 14px;
     text-align: left;
 }
+.social-m-box p{
+    margin-left: 15px;
+}
 .email-rhs-box,.social-m-rhs{
     margin-top: 20px;
     display: flex;
@@ -777,7 +780,7 @@ hr {
     border-radius: 4px 0 0 4px;
 }
 .btn-submit{
-    background: linear-gradient(0deg,#1e1e1e ,rgb(41, 41, 41));
+    background: linear-gradient(0deg,#141414 ,#1e1e1e);
     color: white;
     padding: 7px 15px;
     text-align: center;

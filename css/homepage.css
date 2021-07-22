@@ -108,7 +108,7 @@ section{
     align-items: center;
     margin:0 15px 15px 0;
     height: 300px;
-    width: 505px;
+    width: 504px;
     border-radius: 4px;
 }
 .tech-imgs .t-img:last-child{
@@ -196,9 +196,7 @@ section{
     right: 0;
     height: 0;
     width: 0;
-    margin-top:1px;
-    margin-right:1px;
-    border: 25px solid transparent;
+    border: 30px solid transparent;
     border-top-color: rgb(37, 37, 37);
     border-right-color: rgb(37, 37, 37);
     display: none;
@@ -516,6 +514,7 @@ section{
     margin:0 5px;
     padding: 15px 40px;
     background: #1e1e1e;
+    height: 120px;
 }
 
 /* ------------------------------Media query--------------------- */
