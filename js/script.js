@@ -426,6 +426,7 @@ $(document).ready(function () {
         loop: true,
         dots: true,
         nav: false,
+        autoplay:false,
         margin: 15,
         items: 5,
         responsiveClass: true,
@@ -433,22 +434,28 @@ $(document).ready(function () {
             0: {
                 dots: true,
                 items: 1,
-                nav: false
+                nav: false,
+                autoplay:true,
+                dots: false,
             },
             425: {
                 dots: true,
                 items: 1,
-                nav: false
+                nav: false,
+                autoplay:true,
+                dots: false,
             },
             426: {
                 dots: true,
                 items: 2,
-                nav: false
+                nav: false,
+                autoplay:true,
+                dots: false,
             },
             575: {
                 dots: true,
                 items: 2,
-                nav: false
+                nav: false,
             },
             768: {
                 dots: true,
@@ -504,36 +511,39 @@ $(document).ready(function () {
         nav: false,
         margin: 16,
         dots: true,
+        autoplay:false,
         responsiveClass: true,
         responsive: {
             0: {
                 items: 1,
                 dots: true,
-                nav: false
+                nav: false,
+                autoplay:true,
             },
             425: {
                 items: 1,
                 dots: true,
-                nav: false
+                nav: false,
+                dots:false,
+                autoplay:true,
+            },
+            575:{
+                items: 2,
             },
             768: {
                 items: 2,
-                dots: true,
-                nav: false
             },
             992: {
                 items: 3,
-                loop: true
             },
             1440: {
                 items: 3,
-                margin: 15,
-                loop: true
             }
         }
     });
     $('.carousel-four .owl-carousel').owlCarousel({
         loop: true,
+        autoplay:false,
         nav: false,
         margin:16,
         dots: true,
@@ -543,17 +553,19 @@ $(document).ready(function () {
             0: {
                 items: 1,
                 dots: true,
-                nav: false
+                nav: false,
+                dots:false,
+                autoplay:true,
             },
             575: {
                 items: 2,
                 dots: true,
-                nav: false
+                nav: false,
             },
             768: {
                 items: 3,
                 dots: true,
-                nav: false
+                nav: false,
             },
             992: {
                 items: 4,
@@ -601,7 +613,7 @@ $(document).ready(function () {
                 dots: true,
                 items: 2,
                 nav: false,
-                loop:false,
+                
             },
             768: {
                 dots: true,

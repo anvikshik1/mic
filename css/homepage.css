@@ -198,10 +198,10 @@ section{
     height: 0;
     width: 0;
     margin: 1px;
-    border-top: 30px solid rgb(37, 37, 37);
-    border-right: 30px solid rgb(37, 37, 37);
-    border-bottom: 30px solid transparent;
-    border-left: 30px solid transparent;
+    border-top: 25px solid rgb(37, 37, 37);
+    border-right: 25px solid rgb(37, 37, 37);
+    border-bottom: 25px solid transparent;
+    border-left: 25px solid transparent;
     display: none;
     border-top-right-radius: 4px;
 }
@@ -219,7 +219,7 @@ section{
     position: absolute;
     left: 0;
     bottom: 0;
-    width: 25px;
+    width: 22px;
 }
 .carousel-one .item .prod-img{
     margin-top: 35px;
@@ -710,6 +710,15 @@ section{
     }
     .rhs-box{
         border-radius: 0 0 4px 4px;
+    }
+    .first-gray-box {
+        padding: 15px 0 58px 0;
+    }
+    .fourth-gray-box {
+        padding: 15px 0 58px 0;
+    }
+    .fifth-gray-box {
+        padding: 15px 0 58px 0;
     }
 }
 @media(max-width: 425px){
