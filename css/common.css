@@ -103,13 +103,13 @@ a, button {
 }
 .header-item-left img{
     display: block;
-    height:66px;
+    width: 3.5rem;
     padding: 7px 0;
     -o-object-fit: cover;
     object-fit: cover;
 }
 .header-item-left h1{
-    font-size: 14px;
+    font-size: 13px;
     color: white;
     font-family: Maxim-HelveticaNowDisplay;
     margin-left: 10px;
@@ -204,7 +204,6 @@ a, button {
     margin-left: 1rem;
     border: none;
     outline: none;
-    color: #121212;
 }
 .header .menu>ul {
     margin-bottom: 0;
@@ -387,6 +386,12 @@ header .container {
     color: white;
     font-size: 22px;
     position: relative;
+}
+.menu-icon img{
+    color: white;
+    width: 25px;
+    position: relative;
+    margin-bottom: 3px;
 }
 .add-num{
     position: absolute;
@@ -663,7 +668,7 @@ nav .owl-theme .owl-dots .owl-dot span {
 .carousel-inner .carousel-caption a{
     position: absolute;
     font-family: "Noto Sans", sans-serif;
-    font-weight: 700 ;
+    font-weight: 700;
     font-size: 14px;
     background-color: rgb(0, 0, 0,0.4);
     border:2px  solid rgb(255, 255, 255);
@@ -684,7 +689,7 @@ nav .owl-theme .owl-dots .owl-dot span {
     transition-delay: .8s
 }
 .carousel-caption a:hover{
-    background-color: rgba(117, 117, 117, 0.4);
+    background-color: rgba(117, 117, 117, 0.);
     border:2px  solid rgb(0, 0, 0);
 }
 .carousel-inner .active .carousel-caption h1 ,
@@ -782,11 +787,12 @@ hr {
 .btn-submit{
     background: linear-gradient(0deg,#141414 ,#1e1e1e);
     color: white;
-    padding: 7px 15px;
+    padding: 8px 15px;
     text-align: center;
     justify-content: center;
     font-family: 'Noto Sans', sans-serif;
     font-weight: 400;
+    font-size: 14px;
     margin: 0 4px 0 0;
     border-radius: 0 4px 4px 0;
 }
@@ -874,7 +880,7 @@ hr {
 }
 .cpy-right{
     color: #6e6e6e ;
-    padding-bottom: 50px;
+    padding-bottom: 20px;
     font-family: 'Noto Sans', sans-serif;
     font-size: 12px;
     margin-top: 1px;
@@ -910,6 +916,10 @@ hr {
    .list-name .list-anchor-tags a{
     font-size: 1.1vw;
     padding: 10px;
+    }
+    .carousel-caption {
+        top: 76px;
+        left: 11vw;
     }
     .header .menu>ul>li>a {
         font-size: 1.1vw;
@@ -1310,9 +1320,6 @@ hr {
     .carousel-control {
         top: 30%;
         bottom: 70%;
-    }
-    .header-item-left img{
-        width:10vw;
     }
     .thin-bar{
         justify-content: center ;

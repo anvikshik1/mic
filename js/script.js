@@ -358,7 +358,6 @@ window.onresize = function () {
         if (slideIndex) {
             $target.data('bs.carousel').to(slideIndex)
         }
-
         e.preventDefault()
     }
 
@@ -377,7 +376,7 @@ window.onresize = function () {
 
 
 $('.carousel').carousel({
-    interval: 4000
+    interval: 6000
 })
 
 
@@ -427,7 +426,7 @@ $(document).ready(function () {
         loop: true,
         dots: true,
         nav: false,
-        margin: 16,
+        margin: 15,
         items: 5,
         responsiveClass: true,
         responsive: {
@@ -586,22 +585,23 @@ $(document).ready(function () {
             0: {
                 dots: true,
                 items: 1,
-                nav: false
+                nav: false,
             },
             425: {
                 dots: true,
                 items: 1,
-                nav: false
+                nav: false,
             },
             426: {
                 dots: true,
                 items: 2,
-                nav: false
+                nav: false,
             },
             575: {
                 dots: true,
                 items: 2,
-                nav: false
+                nav: false,
+                loop:false,
             },
             768: {
                 dots: true,
@@ -623,5 +623,5 @@ $(document).ready(function () {
 // --------------brand page fade animation-----------------------
 
 AOS.init({
-  duration:1000,
+  duration:800,
 });

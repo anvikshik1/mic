@@ -23,7 +23,7 @@ section{
     align-items: center;
 }
 .search-box div{
-    width: 73%;
+    width: 74%;
     height: 40px;
     outline: none;
     background-color: white;
@@ -46,7 +46,8 @@ section{
 .search-box input::placeholder{
     color: gray;
     font-size: 14px;
-    font-style:normal ;
+    font-style:normal;
+    padding-left: 0;
 }
 
 /* ----------------------Test and measurement------------------------ */
@@ -79,7 +80,7 @@ section{
     color: #ffffff;
     font-size: 1rem; 
     margin-top: 40px;
-    padding: 0 10px;
+    width: 408px;
     text-align: center;
     font-family: "Noto Sans", sans-serif;
     font-weight: 400;
@@ -196,26 +197,29 @@ section{
     right: 0;
     height: 0;
     width: 0;
-    border: 30px solid transparent;
-    border-top-color: rgb(37, 37, 37);
-    border-right-color: rgb(37, 37, 37);
+    margin: 1px;
+    border-top: 30px solid rgb(37, 37, 37);
+    border-right: 30px solid rgb(37, 37, 37);
+    border-bottom: 30px solid transparent;
+    border-left: 30px solid transparent;
     display: none;
     border-top-right-radius: 4px;
-
 }
 .carousel-one .item:hover .add-cart{
     display: block;
     cursor: pointer;
 }
-.add-cart:hover{
+
+.item img:hover .add-cart{
     border-top-color: rgb(0, 160, 223);
     border-right-color: rgb(0, 160, 223);
+   
 }
 .add-cart .cart-img{
     position: absolute;
     left: 0;
     bottom: 0;
-    width: 20px;
+    width: 25px;
 }
 .carousel-one .item .prod-img{
     margin-top: 35px;
@@ -249,7 +253,7 @@ section{
     margin-top: 50px;
     text-decoration: none;
     background-color: rgb(255, 255, 255);
-    border: 2px solid black;
+    border: 2px solid #141414;
     border-radius: 4px;
     font-size: 16px;
     color: rgb(0, 0, 0);
@@ -258,7 +262,7 @@ section{
 }
 .carousel-one a:hover{
     color: rgb(255, 255, 255);
-    background-color: black;
+    background-color: #141414;
 }
 .owl-theme .owl-dots .owl-dot span {
     margin: 12px 7px;
@@ -343,7 +347,7 @@ section{
     padding:10px 14px;
     margin: 35px 30px;
     text-decoration: none;
-    border: 2px solid black;
+    border: 2px solid #141414;
     border-radius: 4px;
     font-size: 16px;
     color: rgb(0, 0, 0);
@@ -352,7 +356,7 @@ section{
 }
 .rhs-box a:hover{
     color: rgb(255, 255, 255);
-    background-color: black;
+    background-color: #141414;
 }
 .owl-prev span, .owl-next span{
     color: white;
@@ -528,12 +532,7 @@ section{
         text-align: center;
         padding: 10px
     }
-    .carousel-one a {
-        font-size: 16px;
-    }
-    .carousel-one p {
-    font-size: 16px;
-    }
+   
     .carousel-one button a {
         font-size: 12px;
     }
@@ -738,6 +737,7 @@ section{
     }
     .title-container p {
         font-size: 13px;
+        width: 90%;
     }
     .tech-imgs p {
         font-size: 12px;
@@ -762,9 +762,6 @@ section{
     }
     .rhs-box a {
         margin: 20px 15px
-    }
-    .title-container p {
-        padding: 0px 10px;
     }
 }
 @media(max-width: 375px){
@@ -820,5 +817,12 @@ section{
     .carousel-three p {
         font-size: .9rem;
     }
-    
+    .t-img div{
+        height: 50px;
+        width: 250px;
+    }
+    .third-tech-images .tech-bg-box {
+        height: 50px;
+        width: 250px;
+    }
 }
