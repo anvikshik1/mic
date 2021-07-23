@@ -516,7 +516,7 @@ $(document).ready(function () {
         responsive: {
             0: {
                 items: 1,
-                dots: true,
+                dots: false,
                 nav: false,
                 autoplay:true,
             },
