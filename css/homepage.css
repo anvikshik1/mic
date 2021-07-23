@@ -43,7 +43,7 @@ section{
     outline: none;
     border: 0;
 }
-.search-box input::placeholder{
+.search-box>div>input::placeholder{
     color: gray;
     font-size: 14px;
     font-style:normal;

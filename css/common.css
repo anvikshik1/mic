@@ -785,7 +785,7 @@ hr {
     border-radius: 4px 0 0 4px;
 }
 .btn-submit{
-    background: linear-gradient(0deg,#141414 ,#1e1e1e);
+    background: linear-gradient(0deg,#141414 ,#2e2e2e);
     color: white;
     padding: 8px 15px;
     text-align: center;
@@ -1256,6 +1256,7 @@ hr {
     }
     ::placeholder{
         text-align: center;
+        padding-left: 0px;
     }
     
 }
