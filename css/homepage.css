@@ -190,36 +190,32 @@ section{
     align-items: center;
     flex-direction: column;
     border-radius: 4px;
+    border: solid 1px #fff;
+    overflow: hidden;
 }
 .add-cart{
     position: absolute;
-    top:0;
-    right: 0;
-    height: 0;
-    width: 0;
-    margin: 1px;
-    border-top: 25px solid rgb(37, 37, 37);
-    border-right: 25px solid rgb(37, 37, 37);
-    border-bottom: 25px solid transparent;
-    border-left: 25px solid transparent;
+    top: -26px;
+    right: -41px;
+    height: 60px;
+    width: 100px;
+    background-color: #141414;
+    -webkit-transform: rotate(45deg);
     display: none;
-    border-top-right-radius: 4px;
+}
+.cart-img{
+    position: relative;
+    -webkit-transform: rotate(313deg);
+    width: 25px;
+    right: -44px;
+    top: 35px;
 }
 .carousel-one .item:hover .add-cart{
     display: block;
     cursor: pointer;
 }
-
-.item img:hover .add-cart{
-    border-top-color: rgb(0, 160, 223);
-    border-right-color: rgb(0, 160, 223);
-   
-}
-.add-cart .cart-img{
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    width: 22px;
+.add-cart:hover{
+    background-color: #00adef;
 }
 .carousel-one .item .prod-img{
     margin-top: 35px;
@@ -241,13 +237,13 @@ section{
 }
 .carousel-one p{
     color: #333333;
+    width: 210px;
     font-size: 16px;
     margin: 10px;
     font-family: "Noto Sans", sans-serif;
     text-align:left;
     padding: 0 10px;
 }
-
 .carousel-one a{
     padding: 10px 15px;
     margin-top: 50px;
@@ -278,7 +274,6 @@ section{
     display: flex;
     justify-content: center;
 }
-
 .carousel-two{
     width: 92%;
     height: auto;
@@ -436,7 +431,6 @@ section{
     font-weight: 500;
 }
 
-
 /* --------------------------BACK TO BASICS------------------------------ */
 
 .fourth-gray-box{
@@ -532,7 +526,6 @@ section{
         text-align: center;
         padding: 10px
     }
-   
     .carousel-one button a {
         font-size: 12px;
     }
@@ -578,7 +571,6 @@ section{
         top: 5rem;
         font-size: 13px;
     }
-    
     .first-gray-box {
         padding: 15px 0;
     }
@@ -744,11 +736,11 @@ section{
     .title-container h4 {
         font-size: 22px;
     }
-    .title-container p {
+    .title-container p{
         font-size: 13px;
         width: 90%;
     }
-    .tech-imgs p {
+    .tech-imgs p{
         font-size: 12px;
         text-align: center;
     }
@@ -769,8 +761,8 @@ section{
         margin-left: 1rem;
         font-size: 20px;
     }
-    .rhs-box a {
-        margin: 20px 15px
+    .rhs-box a{
+        margin: 20px 15px;
     }
 }
 @media(max-width: 375px){

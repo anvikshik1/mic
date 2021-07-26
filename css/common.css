@@ -103,10 +103,8 @@ a, button {
 }
 .header-item-left img{
     display: block;
-    width: 3.5rem;
+    width: 13.5rem;
     padding: 7px 0;
-    -o-object-fit: cover;
-    object-fit: cover;
 }
 .header-item-left h1{
     font-size: 13px;
@@ -417,6 +415,9 @@ header .container {
     font-size: 1rem;
     font-family:'Noto Sans', sans-serif ;
 }
+.list-name .title:hover{
+    color:#00adef;
+}
 
 .list-name .list-anchor-tags a{
     color: #7a7a7a;
@@ -473,7 +474,7 @@ nav .owl-theme .owl-dots .owl-dot span {
 .carousel-inner>.item>img,
 .carousel-inner>.item>a>img {
     display: block;
-    width: 100%;
+    width: 100%; 
     background-size: contain;
 }
 /* //carousel start */
@@ -799,7 +800,7 @@ hr {
 .btn-submit:hover{
     color: #00adef;
 }
-::placeholder{
+.email-input input::placeholder{
     color: white;
     font-style: italic;
     font-size: 15px;
@@ -1254,7 +1255,7 @@ hr {
         margin-top: 10px;
         border-radius: 4px
     }
-    ::placeholder{
+    .email-input input::placeholder{
         text-align: center;
         padding-left: 0px;
     }
