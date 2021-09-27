@@ -103,7 +103,7 @@ a, button {
 }
 .header-item-left img{
     display: block;
-    width: 13.5rem;
+    width: 3.5rem;
     padding: 7px 0;
 }
 .header-item-left h1{
@@ -726,6 +726,13 @@ hr {
     font-size: 2rem;
     color: white;
     margin-top:40px;
+    font-family:  Maxim-Klavika-MediumCondensed;
+    font-weight: 500;
+    text-transform: capitalize;
+}
+.st-info-wm{
+    font-size: 2rem;
+    color: white;
     font-family:  Maxim-Klavika-MediumCondensed;
     font-weight: 500;
     text-transform: capitalize;
