@@ -1,22 +1,27 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
+
+
 /*----------------navbar----------------- */
 
-body{
+body {
     background-color: #000000;
     max-width: 1680px;
     width: 100%;
     margin: 0 auto;
 }
- /* --------------------------Overview & brands box----------------------------  */
- section{
-     margin-bottom: 50px;
- }
 
-.overview-brand-box{
+
+/* --------------------------Overview & brands box----------------------------  */
+
+section {
+    margin-bottom: 50px;
+}
+
+.overview-brand-box {
     width: 100%;
     height: 60px;
     background-color: rgb(46, 46, 46);
@@ -24,28 +29,31 @@ body{
     justify-content: flex-start;
     align-items: center;
 }
-.overview-brand-box div{
+
+.overview-brand-box div {
     margin-left: 3%;
 }
-.overview-brand-box a{
+
+.overview-brand-box a {
     margin: 10px;
     padding: 13px 5px;
-    font-size:1.3rem ;
+    font-size: 1.3rem;
     color: white;
     font-family: 'Noto Sans', sans-serif;
-    
 }
+
 .overview-brand-box .industries,
 .overview-brand-box .brands,
 .overview-brand-box .categories,
 .overview-brand-box .standards,
-.overview-brand-box .applications{
+.overview-brand-box .applications {
     border-bottom: 3px solid #00adef;
 }
 
+
 /* -----------------------------Brands----------------------------- */
 
-.heading-container{
+.heading-container {
     margin-top: 50px;
     width: 100%;
     height: auto;
@@ -54,7 +62,8 @@ body{
     flex-direction: column;
     align-items: center;
 }
-.brand-title{
+
+.brand-title {
     width: 92%;
     height: auto;
     display: flex;
@@ -62,29 +71,33 @@ body{
     flex-direction: column;
     text-align: left;
 }
-.brand-title h1{
+
+.brand-title h1 {
     font-size: 2.5rem;
-    font-family:  Maxim-Klavika-MediumCondensed;
+    font-family: Maxim-Klavika-MediumCondensed;
     font-weight: 500;
     color: white;
 }
-.brand-title p{
+
+.brand-title p {
     margin-top: 10px;
     font-size: 1.9rem;
-    font-family:  Maxim-Klavika-LightCondensed;
+    font-family: Maxim-Klavika-LightCondensed;
     color: white;
     font-weight: normal;
 }
-.heading-container h3{
+
+.heading-container h3 {
     color: #6e6e6e;
     font-size: 14px;
     margin-top: 5px;
 }
 
+
 /* -----------------------------Brands search box------------------------------ */
 
-.search-brand{
-    margin-top:40px;
+.search-brand {
+    margin-top: 40px;
     width: 75%;
     height: 35px;
     outline: none;
@@ -94,89 +107,105 @@ body{
     align-items: center;
     border-radius: 4px;
 }
-.search-brand i{
+
+.search-brand i {
     color: rgb(0, 0, 0);
 }
-.search-brand input{
+
+.search-brand input {
     width: 97%;
     height: 28px;
     outline: none;
     border: 0;
 }
-::placeholder{
+
+::placeholder {
     color: gray;
     font-style: normal;
 }
 
+
 /* ----------------------------- company brands----------------------------- */
 
-.company-brands{
+.company-brands {
     width: 92%;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-gap: 15px;
 }
-.company-brands div{
+
+.company-brands div {
     background-color: #1e1e1e;
     height: 315px;
     border-radius: 4px;
 }
-.company-brands div:hover{
+
+.company-brands div:hover {
     border-bottom: 2px solid #00adef;
 }
-.company-brands img{
+
+.company-brands img {
     width: 120px;
     margin: 20px;
 }
-.company-brands h2{
+
+.company-brands h2 {
     margin: 20px;
     color: #00adef;
     font-family: Maxim-Klavika-LightCondensed;
     font-size: 1.7rem;
 }
-.company-brands p{
+
+.company-brands p {
     margin: 5px 20px;
     color: #ffffff;
-    font-family:'Noto Sans', sans-serif;
+    font-family: 'Noto Sans', sans-serif;
     font-size: 1.1rem;
 }
+
+
 /*This css is categories-brand page*/
-.categories-brand div:nth-child(n+6){
+
+.categories-brand div:nth-child(n+6) {
     background-color: white;
 }
-.categories-brand div:nth-child(n+6) p{
+
+.categories-brand div:nth-child(n+6) p {
     color: rgb(0, 0, 0);
 }
 
+
 /*  ---------------------------------featured Application categories-------------------------- */
 
-.title-container{
+.title-container {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     margin-top: 50px;
 }
-.title-container h4{
-    margin-top:10px;
+
+.title-container h4 {
+    margin-top: 10px;
     color: #ffffff;
     padding: 0 40px;
     font-size: 30px;
-    font-family:  Maxim-Klavika-MediumCondensed;
+    font-family: Maxim-Klavika-MediumCondensed;
     font-weight: 500;
-    text-transform:capitalize;
+    text-transform: capitalize;
 }
-.title-container p{
+
+.title-container p {
     color: #ffffff;
-    font-size: 1rem; 
+    font-size: 1rem;
     margin-top: 25px;
     padding: 0 20px;
     text-align: center;
     font-family: "Noto Sans", sans-serif;
     font-weight: 400;
-
 }
-.title-container h5{
+
+.title-container h5 {
     color: #6e6e6e;
     font-size: 1rem;
     margin-top: 5px;
@@ -184,8 +213,10 @@ body{
     font-weight: 400;
 }
 
+
 /* -------------------app carosel-------------------- */
-.gray-box{
+
+.gray-box {
     width: 100%;
     height: auto;
     padding: 11px 0;
@@ -194,7 +225,8 @@ body{
     display: flex;
     justify-content: center;
 }
-.carousel-app{
+
+.carousel-app {
     width: 92%;
     margin-top: -86px;
     height: auto;
@@ -202,9 +234,10 @@ body{
     flex-direction: row;
     flex-wrap: wrap;
     align-items: center;
-    justify-content:center;
+    justify-content: center;
 }
-.carousel-app .item{
+
+.carousel-app .item {
     position: relative;
     height: 440px;
     background-color: rgb(255, 255, 255);
@@ -214,6 +247,8 @@ body{
     flex-direction: column;
     border-radius: 4px;
 }
+
+
 /* .add-cart{
     position: absolute;
     top:0;
@@ -229,10 +264,14 @@ body{
     border-top-right-radius: 8px;
 
 } */
+
+
 /* .carousel-app .item:hover .add-cart{
     display: block;
     cursor: pointer;
-} */ */b
+} */
+
+*/b
 /* .add-cart:hover{
     border-top-color: rgb(0, 160, 223);
     border-right-color: rgb(0, 160, 223);
@@ -243,26 +282,32 @@ body{
     bottom: 0;
     width: 20px;
 } */
+
+
 /* .carousel-app .item .prod-img{
     margin-top: 35px;
     width: 130px;
 } */
+
+
 /* .prod-img:hover {
     transform: scale(1) translate3d(0px, -10px, 0px);
     transition: all .2s ease-out;
     cursor: pointer;
     border-radius: 4px;
 }  */
-.carousel-app h5{
+
+.carousel-app h5 {
     color: rgb(32, 32, 32);
     margin-top: 20px;
-    font-family:  Maxim-Klavika-MediumCondensed;
+    font-family: Maxim-Klavika-MediumCondensed;
     font-weight: 500;
-    font-size:1.5rem;
+    font-size: 1.5rem;
     text-align: center;
     padding: 10px;
 }
-.carousel-app p{
+
+.carousel-app p {
     color: rgb(83, 83, 83);
     font-size: 18px;
     margin: 10px;
@@ -271,7 +316,7 @@ body{
     padding: 0 10px;
 }
 
-.carousel-app a{
+.carousel-app a {
     padding: 10px 15px;
     margin-top: 50px;
     text-decoration: none;
@@ -283,43 +328,50 @@ body{
     font-family: "Noto Sans", sans-serif;
     font-weight: 700;
 }
-.carousel-app a:hover{
+
+.carousel-app a:hover {
     color: rgb(255, 255, 255);
     background-color: black;
 }
+
 .owl-theme .owl-dots .owl-dot span {
     margin: 12px 7px;
 }
 
+
 /*  ---------------------------------need assistance-------------------------- */
-.assistance{
+
+.assistance {
     width: 92%;
     height: auto;
     display: flex;
-    justify-content:center;
+    justify-content: center;
     align-items: center;
     flex-direction: column;
     text-align: center;
 }
+
 .assistance a {
     color: white;
     font-size: 30px;
-    font-family:  Maxim-Klavika-MediumCondensed;
+    font-family: Maxim-Klavika-MediumCondensed;
 }
-.enquiry{
+
+.enquiry {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: row;
     margin-top: 30px;
-
 }
+
 .enquiry p {
     color: white;
     font-size: 1.5rem;
-    font-family:  Maxim-Klavika-LightCondensed;
+    font-family: Maxim-Klavika-LightCondensed;
     padding: 3px;
 }
+
 .enquiry button {
     border: 0;
     background-color: #1e1e1e;
@@ -331,7 +383,8 @@ body{
     cursor: pointer;
     font-family: 'Noto Sans', sans-serif;
 }
-.u-line{
+
+.u-line {
     width: 120px;
     margin: 30px 0 0 0;
     background-color: #00adef;
@@ -339,33 +392,40 @@ body{
     align-self: center;
 }
 
+
 /* ------------------product-page-start--------------- */
+
 .half {
-    width:100%;
+    width: 100%;
     margin-top: 60px;
     display: flex;
     justify-content: center;
     position: relative;
     color: white;
 }
-.inner-half{
+
+.inner-half {
     width: 92%;
     display: flex;
     justify-content: space-between;
     flex-direction: row;
 }
+
 .collapse {
     color: white;
     font-size: 14px;
     margin-left: -4px;
 }
-#two .parent{
+
+#two .parent {
     display: inline-block;
 }
-#two .parent:first-letter{
+
+#two .parent:first-letter {
     text-transform: uppercase;
 }
-.parent{
+
+.parent {
     color: white;
     font-family: Maxim-Klavika-LightCondensed;
     font-size: 20px;
@@ -375,179 +435,215 @@ body{
     position: relative;
     width: 20vw;
 }
-#Brands{
+
+#Brands {
     color: white;
-    
 }
-.brand-amplifier{
-    margin-left:27px;
-    margin-top:7px;
+
+.brand-amplifier {
+    margin-left: 27px;
+    margin-top: 7px;
     margin-bottom: 30px;
 }
-.brand-amplifier input{
+
+.brand-amplifier input {
     margin-right: 10px;
 }
-.Categories{
+
+.Categories {
     color: white;
     margin-bottom: 40px;
     margin-top: 10px;
+}
 
+.Categories-parent {
+    margin-left: 27px;
+    margin-top: 7px;
 }
-.Categories-parent{
-    margin-left:27px;
-    margin-top:7px;
-}
-.Categories input{
+
+.Categories input {
     margin-left: 28px;
     margin-top: 12px;
     margin-bottom: 12px;
     margin-right: 10px;
 }
+
+
 /* .Categories-1{
     margin-left:27px;
     margin-top:7px;
 } */
-.Categories-ul{
+
+.Categories-ul {
     margin-left: 26px;
 }
-.Categories-ul li{
+
+.Categories-ul li {
     margin-bottom: -10px;
 }
+
+
 /* #Antennas{
     color: white;
 
 } */
-.categories-antennas{
-    margin-left:27px;
-    margin-top:7px;
+
+.categories-antennas {
+    margin-left: 27px;
+    margin-top: 7px;
     margin-bottom: 36px;
 }
-.categories-antennas input{
-   margin-right: 10px;
-}
-.Applications-li{
-    margin-left:27px;
-    margin-top:7px;
-    margin-bottom: 40px;
-}
-.Applications-li input{
+
+.categories-antennas input {
     margin-right: 10px;
 }
+
+.Applications-li {
+    margin-left: 27px;
+    margin-top: 7px;
+    margin-bottom: 40px;
+}
+
+.Applications-li input {
+    margin-right: 10px;
+}
+
+
 /* #Applications{
     color: white;
     margin-bottom: 40px;
 
 
 } */
-.app-Emmisions{
-    margin-left:27px;
-    margin-top:7px;
+
+.app-Emmisions {
+    margin-left: 27px;
+    margin-top: 7px;
 }
+
+
 /* #Industries{
     color: white;
     margin-bottom: 40px;
 
 
 } */
-#Industries ul li input{
-    margin-right:10px;
-}
-#Industries ul{
-    margin-bottom: 36px;
-}
-.ind-li{
-    margin-left:27px; 
-    margin-top:7px;
-}
-.standards{
-    margin-left:27px;
-    margin-top:7px;
-    
-}
-.standards input{
+
+#Industries ul li input {
     margin-right: 10px;
 }
-.direction{
+
+#Industries ul {
+    margin-bottom: 36px;
+}
+
+.ind-li {
+    margin-left: 27px;
+    margin-top: 7px;
+}
+
+.standards {
+    margin-left: 27px;
+    margin-top: 7px;
+}
+
+.standards input {
+    margin-right: 10px;
+}
+
+.direction {
     display: flex;
     flex-direction: row;
 }
-.direction h5{
+
+.direction h5 {
     margin-left: -5px;
 }
 
-.std-li{
-    margin-left:27px;
-    margin-top:7px; 
+.std-li {
+    margin-left: 27px;
+    margin-top: 7px;
 }
-#click{
+
+#click {
     display: none;
     margin-bottom: 55px;
 }
-.filter-direction{
+
+.filter-direction {
     display: flex;
     flex-direction: row;
     align-items: center;
 }
- label h2{
+
+label h2 {
     margin-bottom: 15px;
     cursor: pointer;
     font-family: Maxim-Klavika-MediumCondensed;
     color: #00adef;
     font-weight: 100;
 }
-label h2 .fas{
+
+label h2 .fas {
     margin-left: 10px;
     display: none;
     color: white;
 }
+
 label {
     position: relative;
 }
+
+
 /* #bars{
     display: none;
 }
 #one .far{
     display: none;
 } */
+
 .accordion::before {
     content: '\2212';
     color: rgb(255, 255, 255);
     font-weight: bold;
     margin: 0px 5px 0px 0px;
-  }
-  .active-plus-minus::before {
-    content: "\002B";
-  }
+}
 
-  .arrow::after {
+.active-plus-minus::before {
+    content: "\002B";
+}
+
+.arrow::after {
     content: '\276F';
     color: rgb(255, 255, 255);
     font-weight: bold;
     position: absolute;
     transform: rotate(90deg);
     right: 0;
-  }
-  .active-arrow::after {
+}
+
+.active-arrow::after {
     content: "\276E";
     transform: rotate(90deg);
-  }
-  
-
+}
 
 
 /* -----------grid-container-start-----------------  */
-.grid-box-container{
-    width:70%;
+
+.grid-box-container {
+    width: 70%;
     height: auto;
     margin-left: 4%;
 }
-.inner-grid{
+
+.inner-grid {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(5, 1fr);
     grid-gap: .5rem;
 }
-.boxes{
+
+.boxes {
     width: 100%;
     border-radius: 4px;
     overflow: hidden;
@@ -556,26 +652,31 @@ label {
     justify-content: center;
     align-items: center;
 }
-.boxes .product-img{
+
+.boxes .product-img {
     width: 40%;
 }
-.text-div{
+
+.text-div {
     width: 100%;
     height: 100px;
     background: #171616;
     padding: 11px 9px;
 }
-.text-div h3{
+
+.text-div h3 {
     margin-bottom: 10px;
     color: #00adef;
     font-family: Maxim-Klavika-LightCondensed;
     font-size: 16px;
 }
-.text-div p{
+
+.text-div p {
     color: white;
     font-size: 14px;
 }
-.cart{
+
+.cart {
     position: absolute;
     top: -26px;
     right: -44px;
@@ -585,24 +686,28 @@ label {
     -webkit-transform: rotate(45deg);
     display: none;
 }
-.cart .img-cart{
+
+.cart .img-cart {
     position: relative;
     -webkit-transform: rotate(315deg);
     width: 25px;
     right: -41px;
     top: 36px;
 }
-.boxes:hover .cart{
+
+.boxes:hover .cart {
     display: block;
     cursor: pointer;
 }
-.cart:hover{
+
+.cart:hover {
     background-color: #00adef;
 }
-.boxes .image-div{
+
+.boxes .image-div {
     border: 1px solid white;
     background-color: white;
-    height:100px;
+    height: 100px;
     display: flex;
     border-top-left-radius: 4px;
     border-top-right-radius: 4px;
@@ -615,23 +720,23 @@ label {
 
 
 /* -----------grid-container-end----------------- */
+
+
 /* ------------------product-page-end--------------- */
 
-
-
-
-@media(max-width:1680px){
-    .company-brands div{
+@media(max-width:1680px) {
+    .company-brands div {
         height: 270px;
     }
     .company-brands p {
         font-size: .8rem;
     }
-    .company-brands h2{
+    .company-brands h2 {
         font-size: 1.5rem;
     }
 }
-@media(max-width:1199px){
+
+@media(max-width:1199px) {
     .lhs p {
         font-size: 1.5vw;
     }
@@ -641,35 +746,35 @@ label {
     .brand-title p {
         font-size: 1.15rem;
     }
-    .inner-grid{
+    .inner-grid {
         grid-template-columns: repeat(3, 1fr);
     }
 }
-@media(max-width:991px){
-    .company-brands{
-       grid-template-columns: repeat(3, 1fr);
+
+@media(max-width:991px) {
+    .company-brands {
+        grid-template-columns: repeat(3, 1fr);
     }
-    .inner-grid{
+    .inner-grid {
         grid-template-columns: repeat(2, 1fr);
-    
     }
 }
-@media(max-width:767px){
+
+@media(max-width:767px) {
     .search-brand input {
         width: 95%;
     }
-    .company-brands{
+    .company-brands {
         grid-template-columns: repeat(2, 1fr);
-     }
-     .inner-grid{
+    }
+    .inner-grid {
         grid-template-columns: repeat(1, 1fr);
-    
     }
     .boxes .image-div {
         width: 100%;
     }
-    .brand-amplifier{
-       font-size:12px;
+    .brand-amplifier {
+        font-size: 12px;
     }
     .Categories {
         font-size: 12px;
@@ -686,15 +791,15 @@ label {
     .standards {
         font-size: 12px;
     }
-    
 }
-@media(max-width:575px){
-    .company-brands{
+
+@media(max-width:575px) {
+    .company-brands {
         grid-template-columns: repeat(1, 1fr);
         display: flex;
         flex-direction: column;
         align-items: center;
-     }
+    }
     .brand-title h1 {
         font-size: 2rem;
         text-align: center;
@@ -715,43 +820,41 @@ label {
     .mic-logo img {
         width: 40vw;
     }
-    .enquiry{
+    .enquiry {
         flex-direction: column;
     }
-    .enquiry button{
+    .enquiry button {
         margin-left: 0;
         margin-top: 30px;
     }
     .enquiry p {
         font-size: 1.5rem;
     }
-    .collaps-container ol{
+    .collaps-container ol {
         position: absolute;
-        height:auto;
-        background-color: rgb(0,0,0);
+        height: auto;
+        background-color: rgb(0, 0, 0);
         width: 100%;
-        left:-100%;
+        left: -100%;
         text-align: left;
         z-index: 2;
         transition: 0.5s;
         padding-left: 15px;
     }
-    .inner-half{
+    .inner-half {
         display: block;
     }
-    label h2 .fas{
+    label h2 .fas {
         display: block;
         position: absolute;
         top: 5px;
         left: 65px;
         color: #00adef;
     }
-    
-    .inner-grid{
+    .inner-grid {
         grid-template-columns: repeat(1, 1fr);
-    
     }
-    #click:checked ~ ol{
+    #click:checked~ol {
         left: 0%;
         padding-bottom: 35px;
         border-bottom: 2px solid #00adef;
@@ -765,25 +868,25 @@ label {
         width: 100%;
         margin-left: 0;
     }
-    .brand-amplifier{
-        font-size:16px;
-     }
-     .Categories {
-         font-size: 16px;
-     }
-     .categories-antennas {
-         font-size: 16px;
-     }
-     .Applications-li {
-         font-size: 16px;
-     }
-     #Industries ul {
-         font-size: 16px;
-     }
-     .standards {
-         font-size: 16px;
-     }
-     .parent{
+    .brand-amplifier {
+        font-size: 16px;
+    }
+    .Categories {
+        font-size: 16px;
+    }
+    .categories-antennas {
+        font-size: 16px;
+    }
+    .Applications-li {
+        font-size: 16px;
+    }
+    #Industries ul {
+        font-size: 16px;
+    }
+    .standards {
+        font-size: 16px;
+    }
+    .parent {
         width: 80vw;
     }
     .arrow-R-L-bar::after {
@@ -793,13 +896,13 @@ label {
         color: #00adef;
         margin-left: 7px;
         font-size: 20px;
-      }
-      .active-R-L-bar::after {
+    }
+    .active-R-L-bar::after {
         content: "\276E";
-      }
+    }
 }
-@media(max-width:425px){
-    
+
+@media(max-width:425px) {
     .gray-box {
         padding: 20px 50px;
     }
@@ -818,16 +921,15 @@ label {
     .overview-brand-box {
         justify-content: center;
     }
-    .lg-hr-three{
+    .lg-hr-three {
         margin-top: 55px;
     }
     .enquiry p {
         text-align: center;
     }
-    
 }
 
-@media (max-width:375px){
+@media (max-width:375px) {
     .company-brands div {
         width: auto;
     }
@@ -835,4 +937,3 @@ label {
         padding: 20px 20px;
     }
 }
-
