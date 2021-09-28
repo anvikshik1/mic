@@ -103,11 +103,11 @@ a, button {
 }
 .header-item-left img{
     display: block;
-    width: 3.5rem;
+    width: 4.5rem;
     padding: 7px 0;
 }
 .header-item-left h1{
-    font-size: 13px;
+    font-size: 16px;
     color: white;
     font-family: Maxim-HelveticaNowDisplay;
     margin-left: 10px;
@@ -151,6 +151,8 @@ a, button {
     -ms-flex-align: center;
     align-items: center;
     justify-content: space-between;
+    height: 87px;
+
 }
 .header-item-left {
     display: -webkit-box;
@@ -210,6 +212,7 @@ a, button {
     display: inline-block;
     line-height: 2.625rem;
     margin-left: 1rem;
+    font-size: 18px;
 }
 .header .menu>ul>li>a {
     position: relative;
@@ -347,6 +350,7 @@ a, button {
     margin:  0 auto;
     padding: 5px 0;
     border-bottom: 2px solid rgb(77, 77, 77);
+    height: 45px;
 }
 header .thin-bar,
 header .container {
