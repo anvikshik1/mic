@@ -19,6 +19,7 @@ body {
 
 section {
     margin-bottom: 50px;
+    /* position: relative; */
 }
 
 .overview-brand-box {
@@ -28,6 +29,8 @@ section {
     display: flex;
     justify-content: flex-start;
     align-items: center;
+    position: sticky;
+    top: -1px;
 }
 
 .overview-brand-box div {
@@ -400,7 +403,7 @@ section {
     margin-top: 60px;
     display: flex;
     justify-content: center;
-    position: relative;
+    /* position: relative; */
     color: white;
 }
 
@@ -432,7 +435,7 @@ section {
     display: flex;
     justify-content: space-between;
     cursor: pointer;
-    position: relative;
+    /* position: relative; */
     width: 20vw;
 }
 
@@ -590,9 +593,10 @@ label h2 .fas {
     color: white;
 }
 
-label {
+
+/* label {
     position: relative;
-}
+} */
 
 
 /* #bars{
@@ -614,17 +618,14 @@ label {
 }
 
 .arrow::after {
-    content: '\276F';
+    content: '\1F893';
     color: rgb(255, 255, 255);
     font-weight: bold;
-    position: absolute;
-    transform: rotate(90deg);
-    right: 0;
 }
 
 .active-arrow::after {
-    content: "\276E";
-    transform: rotate(90deg);
+    content: "\1F891";
+    /* transform: rotate(90deg); */
 }
 
 
@@ -714,7 +715,7 @@ label {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    position: relative;
+    /* position: relative; */
     overflow: hidden;
 }
 
