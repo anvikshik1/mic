@@ -362,6 +362,10 @@ body{
     /* margin-left: -4px; */
     font-size: 18px;
 }
+.collaps-container{
+    width: 300px;
+}
+
 #two .parent{
     display: inline-block;
 }
@@ -537,7 +541,7 @@ label {
     font-weight: bold;
     position: absolute;
     transform: rotate(90deg);
-    right: 0;
+    right: 30px;
   }
   .active-arrow::after {
     content: "\276E";
@@ -551,13 +555,14 @@ label {
 .grid-box-container{
     width:70%;
     height: auto;
-    margin-left: 4%;
+    /* margin-left: 4%; */
 }
 .inner-grid{
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(3, 300px);
     grid-template-rows: repeat(6, 1fr);
-    grid-gap: 1.3rem;
+    grid-gap: 2.3rem;
+    margin-left: -6.1%;
 }
 .boxes{
     width: 100%;
@@ -653,6 +658,16 @@ label {
         font-size: 1.5rem;
     }
 }
+@media(max-width:1400px){
+    .inner-grid{
+        grid-template-columns: repeat(2, auto);
+        margin-left: 1px;
+    }
+    .collaps-container {
+        width: 377px;
+        margin-right: 35px;
+    }
+}
 @media(max-width:1199px){
     .lhs p {
         font-size: 1.5vw;
@@ -664,7 +679,7 @@ label {
         font-size: 1.15rem;
     }
     .inner-grid{
-        grid-template-columns: repeat(3, 1fr);
+        grid-template-columns: repeat(2, 306px);
     }
     .Categories-ul {
         font-size: 12px;
@@ -687,6 +702,9 @@ label {
     .std-li {
         font-size: 12px;
     }
+    .collaps-container{
+        margin-right: 35px;
+    }
 }
 @media(max-width:991px){
     .company-brands{
@@ -695,6 +713,10 @@ label {
     .inner-grid{
         grid-template-columns: repeat(2, 1fr);
     
+    }
+    .collaps-container {
+        margin-right: 35px;
+        width: 265px;
     }
 }
 @media(max-width:767px){
@@ -707,6 +729,10 @@ label {
      .inner-grid{
         grid-template-columns: repeat(1, 1fr);
     
+    }
+    .collaps-container {
+        margin-right: 35px;
+        width: 440px;
     }
     .boxes .image-div {
         width: 100%;
@@ -727,6 +753,12 @@ label {
         font-size: 12px;
     }
     .standards {
+        font-size: 14px;
+    }
+    .header-item-left img {
+        width: 3.5rem;
+    }
+    .header-item-left h1 {
         font-size: 14px;
     }
     
@@ -768,6 +800,7 @@ label {
     .enquiry p {
         font-size: 1.5rem;
     }
+    
     .collaps-container ol{
         position: absolute;
         height:auto;
@@ -889,6 +922,10 @@ label {
     }
     .gray-box {
         padding: 20px 20px;
+    }
+    .header-item-right {
+       position: absolute;
+       right: 0;
     }
 }
 
