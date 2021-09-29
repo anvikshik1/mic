@@ -148,10 +148,13 @@ section{
     text-align: left;
     padding: 20px 15px;
 }
-
+.tech-imgs .t-img img{
+    transition: transform .7s;
+}
 .tech-imgs .t-img:hover img{
-    transform: scale(1.1) translate3d(0px, -10px, 0px);
-    transition: all .6s ease-out;
+    -ms-transform: scale(1.5);
+  -webkit-transform: scale(1.5);
+  transform: scale(1.2); 
     cursor: pointer;
     border-radius: 4px;
 } 
@@ -221,9 +224,13 @@ section{
     margin-top: 35px;
     width: 130px;
 }
+.item .prod-img{
+    transition: transform .5s;
+}
 .prod-img:hover {
-    transform: scale(1.1) translate3d(0px, -10px, 0px);
-    transition: all .5s ease-out;
+    -ms-transform: scale(1.5);
+  -webkit-transform: scale(1.5);
+  transform: scale(1.2); 
     cursor: pointer;
 } 
 .carousel-one h5{

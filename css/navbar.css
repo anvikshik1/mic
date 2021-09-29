@@ -119,6 +119,7 @@ a, button {
     -ms-flex-align: center;
     align-items: center;
     justify-content: space-between;
+    
 }
 .header-item-left {
     display: -webkit-box;

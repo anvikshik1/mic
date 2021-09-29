@@ -18,18 +18,20 @@ body{
 
 .overview-brand-box{
     width: 100%;
-    height: 60px;
+    height: 80px;
     background-color: rgb(46, 46, 46);
     display: flex;
-    justify-content: flex-start;
+    justify-content: center;
     align-items: center;
 }
 .overview-brand-box div{
-    margin-left: 3%;
+}
+.inneroverview{
+    width: 83%;
 }
 .overview-brand-box a{
-    margin: 10px;
-    padding: 13px 5px;
+    margin-right: 20px;
+    padding: 24px 2px;
     font-size:1.3rem ;
     color: white;
     font-family: 'Noto Sans', sans-serif;
@@ -55,7 +57,7 @@ body{
     align-items: center;
 }
 .brand-title{
-    width: 92%;
+    width: 83%;
     height: auto;
     display: flex;
     justify-content: flex-start;
@@ -85,7 +87,7 @@ body{
 
 .search-brand{
     margin-top:40px;
-    width: 75%;
+    width: 83%;
     height: 35px;
     outline: none;
     background-color: white;
@@ -349,15 +351,16 @@ body{
     color: white;
 }
 .inner-half{
-    width: 92%;
+    width: 83%;
     display: flex;
     justify-content: space-between;
     flex-direction: row;
 }
-.collapse {
+.collapse accordion {
     color: white;
     font-size: 14px;
-    margin-left: -4px;
+    /* margin-left: -4px; */
+    font-size: 18px;
 }
 #two .parent{
     display: inline-block;
@@ -368,7 +371,7 @@ body{
 .parent{
     color: white;
     font-family: Maxim-Klavika-LightCondensed;
-    font-size: 20px;
+    font-size: 24px;
     display: flex;
     justify-content: space-between;
     cursor: pointer;
@@ -411,7 +414,7 @@ body{
     margin-left: 26px;
 }
 .Categories-ul li{
-    margin-bottom: -10px;
+    /* margin-bottom: -10px; */
 }
 /* #Antennas{
     color: white;
@@ -433,6 +436,11 @@ body{
 .Applications-li input{
     margin-right: 10px;
 }
+.categories-antennas ul li{
+    margin-left:27px; 
+    margin-top:7px;
+    margin-bottom: 16px;
+}
 /* #Applications{
     color: white;
     margin-bottom: 40px;
@@ -442,6 +450,7 @@ body{
 .app-Emmisions{
     margin-left:27px;
     margin-top:7px;
+    margin-bottom: 16px;
 }
 /* #Industries{
     color: white;
@@ -458,6 +467,7 @@ body{
 .ind-li{
     margin-left:27px; 
     margin-top:7px;
+    margin-bottom: 16px;
 }
 .standards{
     margin-left:27px;
@@ -478,6 +488,7 @@ body{
 .std-li{
     margin-left:27px;
     margin-top:7px; 
+    margin-bottom: 16px;
 }
 #click{
     display: none;
@@ -494,6 +505,7 @@ body{
     font-family: Maxim-Klavika-MediumCondensed;
     color: #00adef;
     font-weight: 100;
+    font-size: 27px;
 }
 label h2 .fas{
     margin-left: 10px;
@@ -543,9 +555,9 @@ label {
 }
 .inner-grid{
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(5, 1fr);
-    grid-gap: .5rem;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+    grid-gap: 1.3rem;
 }
 .boxes{
     width: 100%;
@@ -557,11 +569,21 @@ label {
     align-items: center;
 }
 .boxes .product-img{
+    transition: transform .5s;
+
+}
+.boxes .product-img:hover{
+    -ms-transform: scale(1.5);
+  -webkit-transform: scale(1.5);
+  transform: scale(1.2); 
+}
+
+.boxes .product-img{
     width: 40%;
 }
 .text-div{
     width: 100%;
-    height: 100px;
+    height: 150px;
     background: #171616;
     padding: 11px 9px;
 }
@@ -569,7 +591,7 @@ label {
     margin-bottom: 10px;
     color: #00adef;
     font-family: Maxim-Klavika-LightCondensed;
-    font-size: 16px;
+    font-size: 20px;
 }
 .text-div p{
     color: white;
@@ -602,7 +624,7 @@ label {
 .boxes .image-div{
     border: 1px solid white;
     background-color: white;
-    height:100px;
+    height:150px;
     display: flex;
     border-top-left-radius: 4px;
     border-top-right-radius: 4px;
@@ -644,6 +666,27 @@ label {
     .inner-grid{
         grid-template-columns: repeat(3, 1fr);
     }
+    .Categories-ul {
+        font-size: 12px;
+    }
+    .categories-antennas ul li {
+        font-size: 12px;
+    }
+    .collapse accordion {
+        font-size: 16px;
+    }
+    .brand-amplifier {
+        font-size: 12px;
+    }
+    .app-Emmisions {
+        font-size: 12px;
+    }
+    #Industries ul {
+        font-size: 12px;
+    }
+    .std-li {
+        font-size: 12px;
+    }
 }
 @media(max-width:991px){
     .company-brands{
@@ -672,19 +715,19 @@ label {
        font-size:12px;
     }
     .Categories {
-        font-size: 12px;
+        font-size: 14px;
     }
     .categories-antennas {
-        font-size: 12px;
+        font-size: 14px;
     }
     .Applications-li {
-        font-size: 12px;
+        font-size: 14px;
     }
     #Industries ul {
         font-size: 12px;
     }
     .standards {
-        font-size: 12px;
+        font-size: 14px;
     }
     
 }
@@ -766,25 +809,38 @@ label {
         margin-left: 0;
     }
     .brand-amplifier{
-        font-size:16px;
+        font-size:15px;
      }
      .Categories {
-         font-size: 16px;
+         font-size: 17px;
+     }
+     .Categories-ul{
+         font-size: 15px;
      }
      .categories-antennas {
-         font-size: 16px;
+         font-size: 18px;
      }
+     .categories-antennas ul li {
+        font-size: 15px;
+    }
      .Applications-li {
-         font-size: 16px;
+         font-size: 18px;
      }
+     .app-Emmisions {
+        font-size: 15px;
+    }
      #Industries ul {
-         font-size: 16px;
+         font-size: 15px;
      }
      .standards {
-         font-size: 16px;
+         font-size: 18px;
      }
+     .std-li {
+        font-size: 15px;
+    }
      .parent{
         width: 80vw;
+        font-size: 24px;
     }
     .arrow-R-L-bar::after {
         content: '\276F';
