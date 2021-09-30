@@ -1328,6 +1328,12 @@ hr {
     .cpy-right {
         padding-right: 0;
     }
+    .header-item-left img {
+        width: 3.5rem;
+    }
+    .header-item-left h1 {
+        font-size: 14px;
+    }
 }
 @media (max-width: 575px){
     .carousel-control {
@@ -1449,6 +1455,9 @@ hr {
     .lg-hr-three{
         margin-top: 0;
     }
+    .header-item-left h1 {
+        font-size: 12px;
+    }
 }
 @media(max-width: 375px){
     .slide-content span {
@@ -1465,13 +1474,26 @@ hr {
         font-size: 12px;
         padding: 0 10px;
     }
+    .header-item-left img {
+        width: 3rem;
+        margin-top: 10px;
+    }
+    .header-item-left h1 {
+        font-size: 12px;
+    }
+}
+@media(max-width: 341px){
+    .header-item-right {
+        position: absolute;
+        right: 10px;
+    }
 }
 @media(max-width: 320px){
     .slide-content {
         left: 20px;
     }
     .header-item-left h1 {
-        font-size: 13px;
+        font-size: 12px;
     }
     .social-m-rhs a {
         margin-right: 5px;
