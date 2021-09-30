@@ -158,7 +158,7 @@ button {
 .scroll {
     transition: all ease .75s;
     animation-delay: 5s;
-    transform: translateY(-158px);
+    transform: translateY(-138px);
 }
 
 .header .wrapper {
