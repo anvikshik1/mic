@@ -648,7 +648,14 @@ label {
 
 
 
-
+@media(min-width:1680px){
+    .inner-grid{
+        grid-gap: 4.3rem;
+    }
+    .arrow::after {
+        right: 231px;
+    }
+}
 @media(max-width:1680px){
     .company-brands div{
         height: 270px;
@@ -765,11 +772,7 @@ label {
     }
     
 }
-/* @media(max-width:527px){
-    label h2 {
-        width: 100%;
-    }
-} */
+
 @media(max-width:575px){
     .company-brands{
         grid-template-columns: repeat(1, 1fr);
