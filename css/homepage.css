@@ -414,10 +414,13 @@ section{
     height: 275px;
     width: 510px;
     border-radius:4px;
+    transition: transform .5s;
+
 }
 .third-tech-images div:hover img{
-    transform: scale(1.1) translate3d(0px, -10px, 0px);
-    transition: all .6s ease-out !important;
+    -ms-transform: scale(1.5);
+  -webkit-transform: scale(1.5);
+  transform: scale(1.2); 
     cursor: pointer;
 } 
 .third-tech-images .tech-bg-box {
@@ -800,9 +803,9 @@ section{
     }
 }
 @media(max-width: 320px){
-    .header-item-left h1 {
+    /* .header-item-left h1 {
         font-size: .8rem;
-    }
+    } */
     .tech-imgs img {
         width: 280px;
         height: 170px;

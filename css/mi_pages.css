@@ -356,6 +356,10 @@ body{
     display: flex;
     justify-content: space-between;
 }
+.collaps-container{
+    width: 300px;
+}
+.
 .collapse .accordion {
     color: white;
     font-size: 14px;
@@ -597,6 +601,8 @@ label {
 .text-div p{
     color: white;
     font-size: 16px;
+    margin-top: 15px;
+
 }
 .cart{
     position: absolute;
@@ -642,7 +648,14 @@ label {
 
 
 
-
+@media(min-width:1680px){
+    .inner-grid{
+        grid-gap: 4.3rem;
+    }
+    .arrow::after {
+        right: 231px;
+    }
+}
 @media(max-width:1680px){
     .company-brands div{
         height: 270px;
@@ -660,7 +673,7 @@ label {
         margin-left: 1px;
     }
     .collaps-container {
-        width: 377px;
+        width: 385px;
         margin-right: 35px;
     }
 }
@@ -759,11 +772,7 @@ label {
     }
     
 }
-/* @media(max-width:527px){
-    label h2 {
-        width: 100%;
-    }
-} */
+
 @media(max-width:575px){
     .company-brands{
         grid-template-columns: repeat(1, 1fr);
