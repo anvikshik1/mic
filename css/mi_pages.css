@@ -24,8 +24,7 @@ body{
     justify-content: center;
     align-items: center;
 }
-.overview-brand-box div{
-}
+
 .inneroverview{
     width: 83%;
 }
@@ -87,7 +86,7 @@ body{
 
 .search-brand{
     margin-top:40px;
-    width: 83%;
+    width: 74%;
     height: 35px;
     outline: none;
     background-color: white;
@@ -357,9 +356,10 @@ body{
     justify-content: space-between;
 }
 .collaps-container{
-    width: 300px;
+    width: 313px;
+    /* border: 1px solid; */
 }
-.
+
 .collapse .accordion {
     color: white;
     font-size: 14px;
@@ -418,13 +418,6 @@ body{
 .Categories-ul{
     margin-left: 26px;
 }
-.Categories-ul li{
-    /* margin-bottom: -10px; */
-}
-/* #Antennas{
-    color: white;
-
-} */
 .categories-antennas{
     margin-left:27px;
     margin-top:7px;
@@ -542,7 +535,7 @@ label {
     font-weight: bold;
     position: absolute;
     transform: rotate(90deg);
-    right: 30px;
+    right: 30px !important;
   }
   .active-arrow::after {
     content: "\276E";
@@ -646,14 +639,21 @@ label {
 /* -----------grid-container-end----------------- */
 /* ------------------product-page-end--------------- */
 
-
+@media(max-width:2560px){
+    /* .arrow::after {
+        right: 213px !important;
+    } */
+}
 
 @media(min-width:1680px){
     .inner-grid{
-        grid-gap: 4.3rem;
+        grid-gap: 2.8rem;
     }
-    .arrow::after {
-        right: 231px;
+    /* .arrow::after {
+        right: 213px !important;
+    } */
+    .parent {
+        width: 13vw;
     }
 }
 @media(max-width:1680px){
@@ -667,14 +667,63 @@ label {
         font-size: 1.5rem;
     }
 }
+@media(max-width:1583px){
+    .boxes {
+        width: 97%;
+    }
+    .arrow::after {
+        right: 31px !important;
+    }
+}
 @media(max-width:1400px){
     .inner-grid{
         grid-template-columns: repeat(2, auto);
         margin-left: 1px;
+        grid-gap: 0.8rem !important;
     }
-    .collaps-container {
-        width: 385px;
+    /* .collaps-container {
         margin-right: 35px;
+    } */
+    .arrow::after{
+        right:-5px !important;
+    }
+    .boxes {
+        width: 90% !important;
+    }
+}
+@media(max-width:1440px){
+    .inner-grid {
+        margin-left: -22px;
+        grid-gap: 0;
+    }
+    
+    .collaps-container {
+        width: 350px;
+    }
+    .arrow::after {
+        right: 15px !important;
+    }
+    .Categories-ul li {
+        font-size: 14px;
+    }
+    .brand-amplifier {
+        font-size: 14px;
+    }
+    .categories-antennas ul li {
+        font-size: 14px;
+    }
+    .app-Emmisions {
+        font-size: 14px;
+    }
+    #Industries ul {
+        margin-bottom: 36px;
+        font-size: 14px;
+    }
+    .std-li {
+        font-size: 14px;
+    }
+    .boxes {
+        width: 84%;
     }
 }
 @media(max-width:1199px){
@@ -687,34 +736,54 @@ label {
     .brand-title p {
         font-size: 1.15rem;
     }
-    .inner-grid{
+    /* .inner-grid{
         grid-template-columns: repeat(2, 306px);
-    }
+    } */
     .Categories-ul {
         font-size: 12px;
     }
     .categories-antennas ul li {
-        font-size: 12px;
+        font-size: 14px;
     }
     .collapse accordion {
         font-size: 16px;
     }
     .brand-amplifier {
-        font-size: 12px;
+        font-size: 14px;
     }
     .app-Emmisions {
-        font-size: 12px;
+        font-size: 14px;
     }
     #Industries ul {
-        font-size: 12px;
+        font-size: 14px;
     }
     .std-li {
-        font-size: 12px;
+        font-size: 14px;
     }
     .collaps-container{
         margin-right: 35px;
     }
+    .arrow::after {
+        right: -57px !important;
+    }
+    .header-item-left h1 {
+        font-size: 14px;
+    }
 }
+
+    @media(max-width:1024px){
+        .arrow::after {
+            right: -71px !important;
+        }
+    }
+    @media(max-width:1024px){
+        .boxes {
+            width: 93% !important;
+        }
+        .arrow::after {
+            right: -66px !important;
+        }
+    }
 @media(max-width:991px){
     .company-brands{
        grid-template-columns: repeat(3, 1fr);
@@ -727,8 +796,11 @@ label {
         margin-right: 35px;
         width: 265px;
     }
+    .arrow::after {
+        right: -29px !important;
+    }
 }
-@media(max-width:767px){
+@media(max-width:768px){
     .search-brand input {
         width: 95%;
     }
@@ -746,11 +818,14 @@ label {
     .boxes .image-div {
         width: 100%;
     }
-    .brand-amplifier{
-       font-size:12px;
-    }
+    /* .brand-amplifier{
+       font: size 14px!important;
+    } */
     .Categories {
         font-size: 14px;
+    }
+    .Categories-ul li {
+        font-size: 14px !important;
     }
     .categories-antennas {
         font-size: 14px;
@@ -769,6 +844,12 @@ label {
     }
     .header-item-left h1 {
         font-size: 14px;
+    }
+    .arrow::after {
+        right: -110px !important;
+    }
+    .boxes {
+        width: 99% !important;
     }
     
 }
@@ -813,7 +894,6 @@ label {
     .collaps-container{
         width: 100%;
     }
-    
     .collaps-container ol{
         position: absolute;
         height:auto;
@@ -835,10 +915,9 @@ label {
         left: 65px;
         color: #00adef;
     }
-    
     .inner-grid{
         grid-template-columns: repeat(1, 1fr);
-    
+        margin-left: 0;
     }
     #click:checked ~ ol{
         left: 0%;
@@ -902,7 +981,13 @@ label {
       .active-R-L-bar::after {
         content: "\276E";
       }
-}
+      .boxes {
+        width: 100% !important;
+        }
+        .arrow::after {
+            right: -40px !important;
+        }
+    }
 @media(max-width:425px){
     
     .gray-box {

@@ -562,10 +562,10 @@ section{
     .search-box{
         height: 80px;
     }
-    .search-box div {
+    /* .search-box div {
         height: 35px;
         width: 85%;
-    }
+    } */
     .search-box input {
         height: 29px;
     }

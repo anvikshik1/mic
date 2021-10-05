@@ -240,13 +240,17 @@
                                                     justify-content: center;
                                                     align-items: center;
                                                     border-radius: 4px;
-                                                    background: #141414;
+                                                    background: #1e1e1e;
                                                     font-size: 30px;
                                                     font-family: Maxim-Klavika-LightCondensed;
+                                                    position: relative;
                                                 }
                                                 
                                                 .product-categories-text:hover {
                                                     border-bottom: #00adef solid 4px;
+                                                }
+                                                .product-categories-text:hover h4{
+                                                    margin-top: 4px;
                                                 }
                                                 
                                                 @media(min-width:1680px) {

@@ -124,11 +124,11 @@ button {
 }
 
 .header-item-left h1 {
-    font-size: 16px;
+    font-size: 15px;
     color: white;
     font-family: Maxim-HelveticaNowDisplay;
     margin-left: 10px;
-    margin-bottom: 0;
+    margin-bottom: 3px;
     padding-bottom: 14px;
     letter-spacing: .5px;
 }
@@ -298,6 +298,7 @@ button {
 
 .header .menu>ul>li .menu-subs.menu-mega {
     left: 50%;
+    top: 98%;
     -webkit-transform: translateX(-50%);
     -ms-transform: translateX(-50%);
     transform: translateX(-50%);
