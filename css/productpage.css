@@ -13,6 +13,7 @@
     width: 100%;
     display: flex;
     justify-content: center;
+    height: 689px;
 }
 
 .add-cart-main {
@@ -116,6 +117,13 @@
     text-decoration: none;
     color: white;
 }
+#myDIV {
+    width: 100%;
+    padding: 50px 0;
+    text-align: center;
+    background-color: lightblue;
+    margin-top: 20px;
+  }
 
 
 /*------------ Request Product-------- */
@@ -125,7 +133,10 @@
     display: flex;
     justify-content: center;
     background-color: white;
-}
+    height: 689px;
+    display: none;
+    padding-top: 105px;
+}   
 
 .request-main {
     width: 83%;
@@ -133,8 +144,11 @@
 
 .request-main h2 {
     margin: 10px 0px 10px 0px;
+    font-size: 28px;
 }
-
+.request-main h2 span{
+    margin-left: 95px;
+}
 .request-main p {
     margin: 10px 0px 20px 0px;
 }
