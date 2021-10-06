@@ -24,8 +24,7 @@ body{
     justify-content: center;
     align-items: center;
 }
-.overview-brand-box div{
-}
+
 .inneroverview{
     width: 83%;
 }
@@ -341,319 +340,23 @@ body{
     align-self: center;
 }
 
-/* ------------------product-page-start--------------- */
-.half {
-    width:100%;
-    height: auto;
-    margin-top: 60px;
-    display: flex;
-    justify-content: center;
-    position: relative;
-    color: white;
-}
-.inner-half{
-    width: 83%;
-    display: flex;
-    justify-content: space-between;
-}
-.collaps-container{
-    width: 300px;
-}
-.
-.collapse .accordion {
-    color: white;
-    font-size: 14px;
-    /* margin-left: -4px; */
-    font-size: 18px;
-}
-
-#two .parent{
-    display: inline-block;
-}
-#two .parent:first-letter{
-    text-transform: uppercase;
-}
-.parent{
-    color: white;
-    font-family: Maxim-Klavika-LightCondensed;
-    font-size: 24px;
-    display: flex;
-    justify-content: space-between;
-    cursor: pointer;
-    position: relative;
-    width: 20vw;
-}
-#Brands{
-    color: white;
-    
-}
-.brand-amplifier{
-    margin-left:27px;
-    margin-top:7px;
-    margin-bottom: 30px;
-}
-.brand-amplifier input{
-    margin-right: 10px;
-}
-.Categories{
-    color: white;
-    margin-bottom: 40px;
-    margin-top: 10px;
-
-}
-.Categories-parent{
-    margin-left:27px;
-    margin-top:7px;
-}
-.Categories input{
-    margin-left: 28px;
-    margin-top: 12px;
-    margin-bottom: 12px;
-    margin-right: 10px;
-}
-/* .Categories-1{
-    margin-left:27px;
-    margin-top:7px;
-} */
-.Categories-ul{
-    margin-left: 26px;
-}
-.Categories-ul li{
-    /* margin-bottom: -10px; */
-}
-/* #Antennas{
-    color: white;
-
-} */
-.categories-antennas{
-    margin-left:27px;
-    margin-top:7px;
-    margin-bottom: 36px;
-}
-.categories-antennas input{
-   margin-right: 10px;
-}
-.Applications-li{
-    margin-left:27px;
-    margin-top:7px;
-    margin-bottom: 40px;
-}
-.Applications-li input{
-    margin-right: 10px;
-}
-.categories-antennas ul li{
-    margin-left:27px; 
-    margin-top:7px;
-    margin-bottom: 16px;
-}
-/* #Applications{
-    color: white;
-    margin-bottom: 40px;
 
 
-} */
-.app-Emmisions{
-    margin-left:27px;
-    margin-top:7px;
-    margin-bottom: 16px;
+@media(max-width:2560px){
+    /* .arrow::after {
+        right: 213px !important;
+    } */
 }
-/* #Industries{
-    color: white;
-    margin-bottom: 40px;
-
-
-} */
-#Industries ul li input{
-    margin-right:10px;
-}
-#Industries ul{
-    margin-bottom: 36px;
-}
-.ind-li{
-    margin-left:27px; 
-    margin-top:7px;
-    margin-bottom: 16px;
-}
-.standards{
-    margin-left:27px;
-    margin-top:7px;
-    
-}
-.standards input{
-    margin-right: 10px;
-}
-.direction{
-    display: flex;
-    flex-direction: row;
-}
-.direction h5{
-    margin-left: -5px;
-}
-
-.std-li{
-    margin-left:27px;
-    margin-top:7px; 
-    margin-bottom: 16px;
-}
-#click{
-    display: none;
-    margin-bottom: 55px;
-}
-.filter-direction{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-}
- label h2{
-    margin-bottom: 15px;
-    cursor: pointer;
-    font-family: Maxim-Klavika-MediumCondensed;
-    color: #00adef;
-    font-weight: 100;
-    font-size: 27px;
-}
-label h2 .fas{
-    margin-left: 10px;
-    display: none;
-    color: white;
-}
-label {
-    position: relative;
-}
-/* #bars{
-    display: none;
-}
-#one .far{
-    display: none;
-} */
-.accordion::before {
-    content: '\2212';
-    color: rgb(255, 255, 255);
-    font-weight: bold;
-    margin: 0px 5px 0px 0px;
-  }
-  .active-plus-minus::before {
-    content: "\002B";
-  }
-
-  .arrow::after {
-    content: '\276F';
-    color: rgb(255, 255, 255);
-    font-weight: bold;
-    position: absolute;
-    transform: rotate(90deg);
-    right: 30px;
-  }
-  .active-arrow::after {
-    content: "\276E";
-    transform: rotate(90deg);
-  }
-  
-
-
-
-/* -----------grid-container-start-----------------  */
-.grid-box-container{
-    width:70%;
-    height: auto;
-    /* margin-left: 4%; */
-}
-.inner-grid{
-    display: grid;
-    grid-template-columns: repeat(3, 300px);
-    grid-template-rows: repeat(6, 1fr);
-    grid-gap: 2.3rem;
-    margin-left: -6.1%;
-}
-.boxes{
-    width: 100%;
-    border-radius: 4px;
-    overflow: hidden;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-.boxes .product-img{
-    transition: transform .5s;
-
-}
-.boxes .product-img:hover{
-    -ms-transform: scale(1.5);
-  -webkit-transform: scale(1.5);
-  transform: scale(1.2); 
-}
-
-.boxes .product-img{
-    width: 40%;
-}
-.text-div{
-    width: 100%;
-    height: 150px;
-    background: #171616;
-    padding: 20px 10px;
-}
-.text-div h3{
-    color: #00adef;
-    font-family: Maxim-Klavika-LightCondensed;
-    font-size: 20px;
-}
-.text-div p{
-    color: white;
-    font-size: 16px;
-    margin-top: 15px;
-
-}
-.cart{
-    position: absolute;
-    top: -26px;
-    right: -44px;
-    height: 60px;
-    width: 100px;
-    background-color: #141414;
-    -webkit-transform: rotate(45deg);
-    display: none;
-}
-.cart .img-cart{
-    position: relative;
-    -webkit-transform: rotate(315deg);
-    width: 25px;
-    right: -41px;
-    top: 36px;
-}
-.boxes:hover .cart{
-    display: block;
-    cursor: pointer;
-}
-.cart:hover{
-    background-color: #00adef;
-}
-.boxes .image-div{
-    border: 1px solid white;
-    background-color: white;
-    height:150px;
-    display: flex;
-    border-top-left-radius: 4px;
-    border-top-right-radius: 4px;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-    overflow: hidden;
-}
-
-
-/* -----------grid-container-end----------------- */
-/* ------------------product-page-end--------------- */
-
-
 
 @media(min-width:1680px){
     .inner-grid{
-        grid-gap: 4.3rem;
+        grid-gap: 2.8rem;
     }
-    .arrow::after {
-        right: 231px;
+    /* .arrow::after {
+        right: 213px !important;
+    } */
+    .parent {
+        width: 13vw;
     }
 }
 @media(max-width:1680px){
@@ -667,14 +370,63 @@ label {
         font-size: 1.5rem;
     }
 }
+@media(max-width:1583px){
+    .boxes {
+        width: 97%;
+    }
+    .arrow::after {
+        right: 31px !important;
+    }
+}
 @media(max-width:1400px){
     .inner-grid{
         grid-template-columns: repeat(2, auto);
         margin-left: 1px;
+        grid-gap: 0.8rem !important;
     }
-    .collaps-container {
-        width: 385px;
+    /* .collaps-container {
         margin-right: 35px;
+    } */
+    .arrow::after{
+        right:-5px !important;
+    }
+    .boxes {
+        width: 90% !important;
+    }
+}
+@media(max-width:1440px){
+    .inner-grid {
+        margin-left: -22px;
+        grid-gap: 0;
+    }
+    
+    .collaps-container {
+        width: 350px;
+    }
+    .arrow::after {
+        right: 15px !important;
+    }
+    .Categories-ul li {
+        font-size: 14px;
+    }
+    .brand-amplifier {
+        font-size: 14px;
+    }
+    .categories-antennas ul li {
+        font-size: 14px;
+    }
+    .app-Emmisions {
+        font-size: 14px;
+    }
+    #Industries ul {
+        margin-bottom: 36px;
+        font-size: 14px;
+    }
+    .std-li {
+        font-size: 14px;
+    }
+    .boxes {
+        width: 84%;
     }
 }
 @media(max-width:1199px){
@@ -687,34 +439,54 @@ label {
     .brand-title p {
         font-size: 1.15rem;
     }
-    .inner-grid{
+    /* .inner-grid{
         grid-template-columns: repeat(2, 306px);
-    }
+    } */
     .Categories-ul {
         font-size: 12px;
     }
     .categories-antennas ul li {
-        font-size: 12px;
+        font-size: 14px;
     }
     .collapse accordion {
         font-size: 16px;
     }
     .brand-amplifier {
-        font-size: 12px;
+        font-size: 14px;
     }
     .app-Emmisions {
-        font-size: 12px;
+        font-size: 14px;
     }
     #Industries ul {
-        font-size: 12px;
+        font-size: 14px;
     }
     .std-li {
-        font-size: 12px;
+        font-size: 14px;
     }
     .collaps-container{
         margin-right: 35px;
     }
+    .arrow::after {
+        right: -57px !important;
+    }
+    .header-item-left h1 {
+        font-size: 14px;
+    }
 }
+
+    @media(max-width:1024px){
+        .arrow::after {
+            right: -71px !important;
+        }
+    }
+    @media(max-width:1024px){
+        .boxes {
+            width: 93% !important;
+        }
+        .arrow::after {
+            right: -66px !important;
+        }
+    }
 @media(max-width:991px){
     .company-brands{
        grid-template-columns: repeat(3, 1fr);
@@ -727,8 +499,11 @@ label {
         margin-right: 35px;
         width: 265px;
     }
+    .arrow::after {
+        right: -29px !important;
+    }
 }
-@media(max-width:767px){
+@media(max-width:768px){
     .search-brand input {
         width: 95%;
     }
@@ -746,11 +521,14 @@ label {
     .boxes .image-div {
         width: 100%;
     }
-    .brand-amplifier{
-       font-size:12px;
-    }
+    /* .brand-amplifier{
+       font: size 14px!important;
+    } */
     .Categories {
         font-size: 14px;
+    }
+    .Categories-ul li {
+        font-size: 14px !important;
     }
     .categories-antennas {
         font-size: 14px;
@@ -769,6 +547,12 @@ label {
     }
     .header-item-left h1 {
         font-size: 14px;
+    }
+    .arrow::after {
+        right: -110px !important;
+    }
+    .boxes {
+        width: 99% !important;
     }
     
 }
@@ -813,7 +597,6 @@ label {
     .collaps-container{
         width: 100%;
     }
-    
     .collaps-container ol{
         position: absolute;
         height:auto;
@@ -835,10 +618,9 @@ label {
         left: 65px;
         color: #00adef;
     }
-    
     .inner-grid{
         grid-template-columns: repeat(1, 1fr);
-    
+        margin-left: 0;
     }
     #click:checked ~ ol{
         left: 0%;
@@ -902,7 +684,13 @@ label {
       .active-R-L-bar::after {
         content: "\276E";
       }
-}
+      .boxes {
+        width: 100% !important;
+        }
+        .arrow::after {
+            right: -40px !important;
+        }
+    }
 @media(max-width:425px){
     
     .gray-box {
