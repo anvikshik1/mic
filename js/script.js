@@ -375,9 +375,11 @@ window.onresize = function () {
 }(jQuery);
 
 
+
 $('.carousel').carousel({
     interval: 6000
 })
+
 
 
 
@@ -635,86 +637,17 @@ $(document).ready(function () {
 // --------------brand page fade animation-----------------------
 
 AOS.init({
-  duration:600,
+  duration:800,
 });
 
-
-// -----------Product Page-------------->
-// -------------collapsable- start------------->
-//   $(function () {
-//     $('.include').click(function (e) {
-//       var $checks = $("input:checked");
-//       $.each($checks, function (k, v) {
-//         var tempid = $(this).parent().data('id');
-//         var element = $(this).parent().detach();
-//         if (!$('#two #' + tempid + '-2').length) {
-//           var ol = $('<ol></ol>').attr('id', tempid + '-2');
-//           var heading = $('<span />').text(tempid).attr('id', tempid + '-2-heading').addClass('parent');
-//           ol.prepend(heading);
-//           $('#two').append(ol);
-//         }
-//         $('#two #' + tempid + '-2').append(element);
-//         if ($('#two #' + tempid + '-2').children('li').length == 3) {
-//           $('#two #' + tempid + '-2-heading').hide();
-//         } else {
-//           $('#two #' + tempid + '-2-heading').show();
-//         }
-//       });
-//     });
-
-//     $('.exclude').click(function (e) {
-//       var $checks = $("input:checked");
-//       $.each($checks, function (k, v) {
-//         var tempid = $(this).parent().data('id');
-//         var element = $(this).parent().detach();
-//         $('#one').find('#' + tempid + ' ul').append(element);
-//         if ($('#two #' + tempid + '-2').children('li').length == 3) {
-//           $('#two #' + tempid + '-2-heading').hide();
-//         } else {
-//           $('#two #' + tempid + '-2-heading').show();
-//         }
-//       });
-//     });
-
-//     $('#one span.parent').on('click', function () {
-//       var checked = $(this).parent().find('input').prop('checked');
-//       $(this).parent().find('input').prop('checked', !checked);
-//     });
-
-//     $('#one span.collapse').on('click', function () {
-//       $(this).parent().find('ul').slideToggle();
-//     });
-//   });
-// //   -------------collapsable- end------------->
-
-// // ------------toggle-start------->
-// var acc = document.getElementsByClassName("accordion");
-// var i;
-
-// for (i = 0; i < acc.length; i++) {
-//   acc[i].addEventListener("click", function() {
-//     this.classList.toggle("active-plus-minus");
-//   });
-// }
-// // -------------->
-
-// var arr = document.getElementsByClassName("arrow");
-// var i;
-
-// for (i = 0; i < arr.length; i++) {
-//   arr[i].addEventListener("click", function() {
-//     this.classList.toggle("active-arrow");
-//   });
-// }
-
-// // -------------->
-
-// var arr = document.getElementsByClassName("arrow-R-L-bar");
-//   var i;
-  
-//   for (i = 0; i < arr.length; i++) {
-//     arr[i].addEventListener("click", function() {
-//       this.classList.toggle("active-R-L-bar");
-//     });
-//   }
-// //   -------------->
+// -------------------- pop up-------------------
+$(document).ready(function(){
+    $(".myBtn").on("click", function(event) {
+        console.log("my model: ",$(this).parent().siblings(".myModal").show());
+        $(this).parent().siblings(".myModal").show();
+    })
+    $(".close").on("click", function(event) {
+        console.log("my model: ",$(this).parent().siblings(".myModal").show());
+        $(this).parent().parent(".myModal").hide();
+    })
+});
