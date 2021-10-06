@@ -396,7 +396,7 @@ label {
 }
 
 .boxes .product-img{
-    width: 40%;
+    width: 33%;
 }
 .text-div{
     width: 100%;
@@ -800,7 +800,14 @@ label {
         width: 100% !important;
         }
         .arrow::after {
-            right: -40px !important;
+            right: -8px !important;
+        }
+        #Brands {
+            color: white;
+            margin-left: 34px;
+        }
+        .Categories{
+            margin-left: 34px;
         }
     }
 @media(max-width:425px){
