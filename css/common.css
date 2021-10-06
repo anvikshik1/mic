@@ -236,7 +236,7 @@ button {
 
 .header .menu>ul>li {
     display: inline-block;
-    line-height: 2.625rem;
+    line-height: 4rem;
     margin-left: 1rem;
     font-size: 18px;
 }
