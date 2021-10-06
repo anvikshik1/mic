@@ -375,9 +375,11 @@ window.onresize = function () {
 }(jQuery);
 
 
+
 $('.carousel').carousel({
     interval: 6000
 })
+
 
 
 
@@ -636,4 +638,16 @@ $(document).ready(function () {
 
 AOS.init({
   duration:800,
+});
+
+// -------------------- pop up-------------------
+$(document).ready(function(){
+    $(".myBtn").on("click", function(event) {
+        console.log("my model: ",$(this).parent().siblings(".myModal").show());
+        $(this).parent().siblings(".myModal").show();
+    })
+    $(".close").on("click", function(event) {
+        console.log("my model: ",$(this).parent().siblings(".myModal").show());
+        $(this).parent().parent(".myModal").hide();
+    })
 });

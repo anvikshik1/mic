@@ -304,19 +304,13 @@ body{
 
 
 
-@media(max-width:2560px){
-    /* .arrow::after {
-        right: 213px !important;
-    } */
-}
+
 
 @media(min-width:1680px){
     .inner-grid{
         grid-gap: 2.8rem;
     }
-    /* .arrow::after {
-        right: 213px !important;
-    } */
+    
     .parent {
         width: 13vw;
     }
@@ -346,9 +340,7 @@ body{
         margin-left: 1px;
         grid-gap: 0.8rem !important;
     }
-    /* .collaps-container {
-        margin-right: 35px;
-    } */
+    
     .arrow::after{
         right:-5px !important;
     }
@@ -401,9 +393,7 @@ body{
     .brand-title p {
         font-size: 1.15rem;
     }
-    /* .inner-grid{
-        grid-template-columns: repeat(2, 306px);
-    } */
+    
     .Categories-ul {
         font-size: 12px;
     }
@@ -483,9 +473,7 @@ body{
     .boxes .image-div {
         width: 100%;
     }
-    /* .brand-amplifier{
-       font: size 14px!important;
-    } */
+    
     .Categories {
         font-size: 14px;
     }
