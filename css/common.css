@@ -150,7 +150,7 @@ button {
     z-index: 999;
     outline: none;
     background: rgba(0, 0, 0, 0.9);
-    border-bottom: 4px solid rgb(207, 207, 207);
+    border-bottom: 5px solid rgb(207, 207, 207);
     animation-delay: 5s;
     transition: all ease .75s;
 }
@@ -158,7 +158,11 @@ button {
 .scroll {
     transition: all ease .75s;
     animation-delay: 5s;
+<<<<<<< HEAD
     transform: translateY(-138px);
+=======
+    transform: translateY(-134px);
+>>>>>>> 1f5b1fff1e74b76fb1d939ff561be9449ead8340
 }
 
 .header .wrapper {
@@ -394,7 +398,7 @@ button {
     width: 100%;
     margin: 0 auto;
     border-bottom: 2px solid rgb(77, 77, 77);
-    height: 45px;
+    height: 40px;
 }
 
 header .thin-bar,
@@ -1457,7 +1461,6 @@ hr {
         width: 3.5rem;
         padding: 7px 0;
         margin-top: 10px;
-        
     }
     .header-item-left h1 {
         font-size: 14px;
@@ -1611,11 +1614,11 @@ hr {
 
 @media(max-width: 344px) {
     .header-item-right {
-       position: absolute;
-       right: 10px;
+        position: absolute;
+        right: 10px;
     }
-    
 }
+
 @media(max-width: 320px) {
     .slide-content {
         left: 20px;

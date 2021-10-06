@@ -1,0 +1,557 @@
+* {
+    box-sizing: border-box;
+}
+
+.cart-Product-name {
+    color: white;
+    padding: 20px;
+    background-color: black;
+}
+
+.add-cart-container {
+    background-color: white;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.add-cart-main {
+    width: 83%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 60px;
+    margin: 30px 20px;
+}
+
+
+/* product image  */
+
+.image-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.image-container img {
+    width: 324px;
+}
+
+.image-gallery-container {
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+}
+
+.image-gallery {
+    width: 45%;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.image-gallery img {
+    width: 46px;
+    width: 59px;
+    border: 1px solid #ccc;
+    padding: 7px;
+    height: 43px;
+}
+
+.image-gallery img:hover {
+    border: 2px solid black;
+}
+
+
+/*   product description   */
+
+.product.desc h3 {
+    padding: 100px 10px 5px 5px;
+}
+
+.product.desc ul {
+    padding: 34px 10px;
+    font-size: 12px;
+}
+
+.cart-buttons {
+    display: flex;
+}
+
+.btn {
+    margin: 5px 0px 5px 9px;
+    font-weight: bold;
+    font-size: 12px;
+    width: 184px;
+    height: 34px;
+    align-items: center;
+}
+
+.btn-left {
+    border: 2px solid black;
+    display: flex;
+    justify-content: space-between;
+}
+
+.btn-left img {
+    padding: 5px;
+    width: 30px;
+    height: 33px;
+}
+
+.btn-right {
+    border: 2px solid black;
+    background-color: black;
+    padding: 5px;
+    color: white;
+}
+
+.btn-left a {
+    text-decoration: none;
+    color: black;
+    padding: 10px;
+}
+
+.btn-right a {
+    text-decoration: none;
+    color: white;
+}
+
+
+/*------------ Request Product-------- */
+
+.request-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background-color: white;
+}
+
+.request-main {
+    width: 83%;
+}
+
+.request-main h2 {
+    margin: 10px 0px 10px 0px;
+}
+
+.request-main p {
+    margin: 10px 0px 20px 0px;
+}
+
+.form-main {
+    display: grid;
+    width: 100%;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 5px;
+    margin-bottom: 60px;
+}
+
+input[type=email],
+input[type=text],
+select {
+    width: 100%;
+    height: 40px;
+    border: none;
+    padding: 5px;
+    background-color: #f7f7f7;
+    border: 1px solid #ccc;
+}
+
+input[type=number] {
+    border: 1px solid #ccc;
+}
+
+.request-main textarea {
+    width: 100%;
+    border: none;
+    padding: 5px;
+    background-color: #f7f7f7;
+    border: 1px solid #ccc;
+}
+
+.form-main .text-area {
+    grid-column: 1/3;
+}
+
+.checkbox-date {
+    grid-column: 1/3;
+    display: flex;
+    background-color: #f7f7f7;
+    border: 1px solid #ccc;
+    justify-content: space-between;
+}
+
+.form input[type="checkbox"] {
+    width: 20px;
+    height: 20px;
+    border: 1px solid #ccc;
+}
+
+.form-left,
+.form-right {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.form-right input[type=date] {
+    margin: 10px;
+    height: 24px;
+    border: 1px solid #ccc;
+}
+
+.form label {
+    margin: 10px
+}
+
+.form-main .terms {
+    grid-column: 1/3;
+    display: flex;
+    justify-content: center;
+}
+
+[type="button"],
+[type="reset"],
+[type="submit"],
+button {
+    -webkit-appearance: button;
+    width: 105px;
+    border: 1px solid #ccc;
+    margin: 2px;
+    padding: 5px;
+}
+
+[type="submit"] {
+    background-color: #00adef;
+    color: white;
+}
+
+[type="reset"] {
+    background-color: white;
+}
+
+
+/* ---------------specification menu----------- */
+
+.specs-bar {
+    background-color: black;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.inner-specs-bar {
+    width: 83%;
+    height: 60px;
+}
+
+.inner-specs-bar ul {
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.inner-specs-bar ul a {
+    color: white;
+}
+
+.description-container {
+    width: 100%;
+    background-color: #f7f7f7;
+    display: flex;
+    justify-content: center;
+}
+
+.description-main {
+    width: 83%;
+}
+
+.description-main h3 {
+    margin: 25px 0px 7px 0px;
+}
+
+hr {
+    height: 1px;
+    color: lightgray;
+}
+
+h3 {}
+
+.description-main p {
+    margin-top: 20px;
+}
+
+.specification-container {
+    width: 100%;
+    background-color: #f7f7f7;
+    display: flex;
+    justify-content: center;
+}
+
+.specification-main {
+    width: 83%;
+}
+
+.specification-main h3 {
+    margin: 20px 0px 7px 0px;
+}
+
+.specs-table {
+    margin-top: 20px;
+    width: 100%;
+    text-align: left;
+    border-collapse: collapse;
+    border: 10px solid white;
+}
+
+.specs-table tr:nth-child(odd) {
+    background-color: white;
+}
+
+.categories-container {
+    width: 100%;
+    background-color: #f7f7f7;
+    display: flex;
+    justify-content: center;
+}
+
+.categories-main {
+    width: 83%;
+}
+
+.categories-main h3 {
+    margin: 25px 0px 7px 0px;
+}
+
+.categories-main ul {
+    display: flex;
+    margin: 20px 0px 7px 0px;
+}
+
+.categories-main li {
+    margin-right: 20px;
+}
+
+.application-container {
+    width: 100%;
+    background-color: #f7f7f7;
+    display: flex;
+    justify-content: center;
+}
+
+.application-main {
+    width: 83%;
+}
+
+.application-main h3 {
+    margin: 25px 0px 7px 0px;
+}
+
+.application-main ul {
+    display: flex;
+    margin: 25px 0px 7px 0px;
+}
+
+.application-main li {
+    margin-right: 20px;
+}
+
+.industries-container {
+    width: 100%;
+    background-color: #f7f7f7;
+    display: flex;
+    justify-content: center;
+}
+
+.industries-main {
+    width: 83%;
+}
+
+.industries-main h3 {
+    margin: 25px 0px 7px 0px;
+}
+
+.industry-type {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    margin-top: 16px;
+}
+
+.industry a {
+    color: black;
+}
+
+
+/* ----------Standards-Collapsible---------------- */
+
+.standards-container {
+    width: 100%;
+    background-color: #f7f7f7;
+    display: flex;
+    justify-content: center;
+}
+
+.standards-main {
+    width: 83%;
+}
+
+.standards-main h3 {
+    margin: 25px 0px 7px 0px;
+}
+
+.standards-main hr {
+    margin: 25px 0px 7px 0px;
+}
+
+.collapsible {
+    background-color: #cacaca;
+    color: black;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+}
+
+.collapsible.active,
+.collapsible:hover {
+    background-color: #c4c4c4;
+}
+
+.collapsible:after {
+    content: '\002B';
+    color: white;
+    font-weight: bold;
+    float: right;
+    margin-left: 5px;
+}
+
+.collapsible.active:after {
+    content: "\2212";
+}
+
+.content {
+    padding: 0 18px;
+    max-height: 0px;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+    background-color: #f1f1f1;
+}
+
+
+/* --------------------Document------------------- */
+
+.documentation-container {
+    width: 100%;
+    background-color: #f7f7f7;
+    display: flex;
+    justify-content: center;
+}
+
+.documentation-main {
+    width: 83%;
+}
+
+.documentation-main h3 {
+    margin: 25px 0px 7px 0px;
+}
+
+.documentation-main ul {
+    display: flex;
+}
+
+.documentation-main li a {
+    background-color: black;
+    color: white;
+    padding: 20px;
+    margin: 10px;
+}
+
+.document-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 1.5rem;
+    margin-top: 16px;
+}
+
+.doc {
+    background-color: black;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.doc a {
+    color: white;
+}
+
+
+/* ----------------documentation------------ */
+
+.promo-container {
+    width: 100%;
+    background-color: #f7f7f7;
+    display: flex;
+    justify-content: center;
+}
+
+.promo-main {
+    width: 83%;
+}
+
+.promo-main h3 {
+    margin: 25px 0px 7px 0px;
+}
+
+.product-video-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 34px;
+}
+
+.Product-promo-video {
+    width: 100%;
+    height: 600px;
+}
+
+.related-container {
+    width: 100%;
+    background-color: #f7f7f7;
+    display: flex;
+    justify-content: center;
+}
+
+.related-main {
+    width: 83%;
+}
+
+.related-main h3 {
+    margin: 25px 0px 7px 0px;
+}
+
+.related-products {
+    border: 1px solid red;
+    display: flex;
+    justify-content: space-between;
+}
+
+.r-image {
+    border: 1px solid blue;
+    width: 15%;
+}
+
+.r-product-name {
+    border: 1px solid black;
+    width: 70%;
+}
+
+.r-buttton {
+    border: 1px solid blue;
+    width: 15%;
+}
