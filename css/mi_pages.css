@@ -215,45 +215,6 @@ body{
     flex-direction: column;
     border-radius: 4px;
 }
-/* .add-cart{
-    position: absolute;
-    top:0;
-    right: 0;
-    height: 0;
-    width: 0;
-    margin-top:1px;
-    margin-right:2px;
-    border: 25px solid transparent;
-    border-top-color: rgb(37, 37, 37);
-    border-right-color: rgb(37, 37, 37);
-    display: none;
-    border-top-right-radius: 8px;
-
-} */
-/* .carousel-app .item:hover .add-cart{
-    display: block;
-    cursor: pointer;
-} */ */b
-/* .add-cart:hover{
-    border-top-color: rgb(0, 160, 223);
-    border-right-color: rgb(0, 160, 223);
-}
-/* .add-cart .cart-img{
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    width: 20px;
-} */
-/* .carousel-app .item .prod-img{
-    margin-top: 35px;
-    width: 130px;
-} */
-/* .prod-img:hover {
-    transform: scale(1) translate3d(0px, -10px, 0px);
-    transition: all .2s ease-out;
-    cursor: pointer;
-    border-radius: 4px;
-}  */
 .carousel-app h5{
     color: rgb(32, 32, 32);
     margin-top: 20px;
@@ -339,7 +300,6 @@ body{
     display: flex;
     align-self: center;
 }
-
 
 
 @media(max-width:2560px){
