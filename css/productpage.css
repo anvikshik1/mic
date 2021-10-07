@@ -13,7 +13,7 @@
     width: 100%;
     display: flex;
     justify-content: center;
-    height: 689px;
+    height: 500px;
 }
 
 .add-cart-main {
@@ -21,7 +21,6 @@
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 60px;
-    margin: 30px 20px;
 }
 
 
@@ -84,8 +83,9 @@
     font-weight: bold;
     font-size: 12px;
     width: 184px;
-    height: 34px;
+    height: 30px;
     align-items: center;
+    border-radius: 4px;
 }
 
 .btn-left {
@@ -142,9 +142,8 @@
     display: flex;
     justify-content: center;
     background-color: white;
-    height: 689px;
+    height: 561px;
     display: none;
-    padding-top: 105px;
 }
 
 .request-main {
@@ -152,7 +151,7 @@
 }
 
 .request-main h2 {
-    margin: 10px 0px 10px 0px;
+    margin: 40px 0px 15px;
     font-size: 28px;
 }
 
@@ -172,7 +171,7 @@
     margin-bottom: 60px;
 }
 
-input[type=email],
+.form-main input[type=email],
 input[type=text],
 select {
     width: 100%;
@@ -239,12 +238,13 @@ input[type=number] {
 .form-main [type="button"],
 [type="reset"],
 [type="submit"],
-button {
+.form-cancel-btn {
     -webkit-appearance: button;
     width: 105px;
     border: 1px solid #ccc;
     margin: 2px;
     padding: 5px;
+    border-radius: 4px;
 }
 
 .form-main [type="submit"] {
@@ -511,6 +511,15 @@ h3 {}
     height: 600px;
 }
 
+.child-collapsible-content {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+}
+
+.collap-cont {
+    padding: 5px;
+}
+
 
 /* --------------------Document section------------------- */
 
@@ -542,15 +551,16 @@ h3 {}
     display: flex;
     justify-content: center;
     align-items: center;
+    border-radius: 4px;
 }
 
 .doc a {
     color: rgb(153, 153, 153);
-    padding: 24px 100px 24px 100px;
 }
 
-.doc a:hover {
+.doc:hover a {
     color: white;
+    margin-top: 4px;
 }
 
 .doc:hover {
@@ -605,6 +615,10 @@ h3 {}
     margin: 25px 0px 7px 0px;
 }
 
+.related-colap-container {
+    margin-top: 12px;
+}
+
 .related-products {
     display: flex;
     height: 100px;
@@ -638,7 +652,6 @@ h3 {}
     position: absolute;
     top: 24px;
     right: 28px;
-    border-radius: 3px;
 }
 
 .r-button button:hover {
@@ -729,6 +742,10 @@ h3 {}
 
 .pop-description-main {
     width: 95%;
+}
+
+.pop-description-main p {
+    margin-top: 10px;
 }
 
 .pop-specification-container {
