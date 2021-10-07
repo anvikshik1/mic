@@ -471,7 +471,7 @@ h3 {}
 }
 
 
-/* -----------------------collapsible standards/Related-products-------------- */
+/* -----------------------collapsible Related-products-------------- */
 
 .collapsible {
     background-color: #cacaca;
@@ -509,6 +509,55 @@ h3 {}
     transition: max-height 0.2s ease-out;
     background-color: #f1f1f1;
     height: 600px;
+}
+
+
+/* ---------------------collapsible standards------------ */
+
+.collapsible-button {
+    background-color: #cacaca;
+    color: black;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+    margin: 2px;
+}
+
+.collapsible-button.active,
+.collapsible-button:hover {
+    background-color: #c4c4c4;
+}
+
+.collapsible-button:after {
+    content: '\002B';
+    color: white;
+    font-weight: bold;
+    float: right;
+    margin-left: 5px;
+}
+
+.collapsible-button.active:after {
+    content: "\2212";
+    color: #00adef;
+}
+
+.standardcontent {
+    padding: 0 18px;
+    max-height: 0;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+    transition: max-height 0.2s ease-out;
+    background-color: #f1f1f1;
+}
+
+.standardcontent::-webkit-scrollbar {
+    display: none;
 }
 
 .child-collapsible-content {
@@ -685,6 +734,10 @@ h3 {}
     /* Black w/ opacity */
 }
 
+.modal::-webkit-scrollbar {
+    display: none;
+}
+
 
 /*----------- Modal Content -----------------*/
 
@@ -695,6 +748,7 @@ h3 {}
     border: 1px solid #888;
     width: 890px;
     height: auto;
+    margin-bottom: 100px;
 }
 
 

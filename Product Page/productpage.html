@@ -1036,10 +1036,10 @@
             <div class="standards-main">
                 <h3>Standards</h3>
                 <hr>
-                <button class="collapsible"> All Standards </button>
-                <div class="content">
-                    <button class="collapsible">Automotive Standards</button>
-                    <div class="content">
+                <button class="collapsible-button"> All Standards </button>
+                <div class="standardcontent">
+                    <button class="collapsible-button">Automotive Standards</button>
+                    <div class="standardcontent">
                         <div class="child-collapsible-content">
                             <div class="collap-cont">ISO 11452-10</div>
                             <div class="collap-cont">ISO 11452-8</div>
@@ -1050,11 +1050,10 @@
                             <div class="collap-cont">SAE J1113-12</div>
                             <div class="collap-cont">SAE J1113-2</div>
                             <div class="collap-cont">SAE J1455</div>
-
                         </div>
                     </div>
-                    <button class="collapsible">Automotive OEM Standards</button>
-                    <div class="content">
+                    <button class="collapsible-button">Automotive OEM Standards</button>
+                    <div class="standardcontent">
                         <div class="child-collapsible-content">
                             <div class="collap-cont">ISO 11452-10</div>
                             <div class="collap-cont">ISO 11452-8</div>
@@ -1065,11 +1064,10 @@
                             <div class="collap-cont">SAE J1113-12</div>
                             <div class="collap-cont">SAE J1113-2</div>
                             <div class="collap-cont">SAE J1455</div>
-
                         </div>
                     </div>
-                    <button class="collapsible">MIL-STD</button>
-                    <div class="content">
+                    <button class="collapsible-button">MIL-STD</button>
+                    <div class="standardcontent">
                         <div class="child-collapsible-content">
                             <div class="collap-cont">ISO 11452-10</div>
                             <div class="collap-cont">ISO 11452-8</div>
@@ -1080,11 +1078,10 @@
                             <div class="collap-cont">SAE J1113-12</div>
                             <div class="collap-cont">SAE J1113-2</div>
                             <div class="collap-cont">SAE J1455</div>
-
                         </div>
                     </div>
-                    <button class="collapsible">Product Standards</button>
-                    <div class="content">
+                    <button class="collapsible-button">Product Standards</button>
+                    <div class="standardcontent">
                         <div class="child-collapsible-content">
                             <div class="collap-cont">ISO 11452-10</div>
                             <div class="collap-cont">ISO 11452-8</div>
@@ -1095,7 +1092,6 @@
                             <div class="collap-cont">SAE J1113-12</div>
                             <div class="collap-cont">SAE J1113-2</div>
                             <div class="collap-cont">SAE J1455</div>
-
                         </div>
                     </div>
                 </div>
@@ -5490,6 +5486,22 @@
                         content.style.maxHeight = null;
                     } else {
                         content.style.maxHeight = content.scrollHeight + "px";
+                    }
+                });
+            }
+        </script>
+        <script>
+            var collStand = document.getElementsByClassName("collapsible-button");
+            var p;
+
+            for (p = 0; p < collStand.length; p++) {
+                collStand[p].addEventListener("click", function() {
+                    this.classList.toggle("active");
+                    var standardcontent = this.nextElementSibling;
+                    if (standardcontent.style.maxHeight) {
+                        standardcontent.style.maxHeight = null;
+                    } else {
+                        standardcontent.style.maxHeight = standardcontent.scrollHeight + "px";
                     }
                 });
             }
