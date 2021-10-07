@@ -1,0 +1,401 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/*----------------navbar----------------- */
+
+body{
+    background-color: #000000;
+    max-width: 1680px;
+    width: 100%;
+    margin: 0 auto;
+}
+/* -------------hero-image-start------------ */
+.hero-image{
+    width: 100%;
+    height: auto;
+    background-color: rgb(46, 46, 46);
+
+}
+
+.inner-image-div{
+    position: relative;
+}
+.inner-image-div img{
+    width:100%;
+    
+}
+.inner-image-div h1 {
+    color: white;
+    position: absolute;
+    top: 15%;
+    left: 8%;
+    color: black;
+}
+
+/* -----------------hero-image-end---------------- */
+ /* --------------------------Overview & brands box----------------------------  */
+ section{
+     margin-bottom: 0px;
+ }
+
+.overview-brand-box{
+    width: 100%;
+    height: 80px;
+    background-color: rgb(46, 46, 46);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+
+.inneroverview{
+    width: 83%;
+}
+.overview-brand-box a{
+    margin-right: 20px;
+    padding: 24px 2px;
+    font-size:1.3rem ;
+    color: white;
+    font-family: 'Noto Sans', sans-serif;
+    
+}
+.overview-brand-box .industries,
+.overview-brand-box .brands,
+.overview-brand-box .categories,
+.overview-brand-box .standards,
+.overview-brand-box .applications{
+    border-bottom: 3px solid #00adef;
+}
+/* -------------------Overview & brands box------------- */
+
+
+
+/* ----------------------text-container-start-------------- */
+.text-container{
+    width: 100%;
+    height: auto;
+    /* border: 1px solid red; */
+    background:white;
+    display: flex;
+    justify-content: center;
+}
+.inner-text-div{
+    width: 83%;
+    height: 420px;
+    /* border: 1px solid black; */
+    padding-top: 3%;
+}
+
+.para h2{
+    margin-bottom: 35px;
+    text-align: center;
+}
+.para p{
+    font-size: 18px;
+    margin-bottom: 25px;
+}
+.second-para .sub-heading{
+    text-align: center;
+    margin-bottom: 35px;
+}
+.para .second-para{
+    margin-top: 0%;
+}
+
+
+/* ---------------------text-container-end------------ */
+
+/* ----------------images-container-start----------- */
+.images-container{
+    width: 100%;
+    height: auto;
+    /* border: 1px solid red; */
+    display: flex;
+    justify-content: center;
+    padding-top: 50px;
+}
+.inner-img-div{ 
+    width: 83%;
+    /* height: 2000px; */
+    /* border: 1px solid white; */
+}
+.Images{
+    width: 100%;
+    height: 490px;
+    /* border: 1px solid green; */
+    /* padding-bottom:30px ; */
+    position: relative;
+
+}
+.Images img{
+    width: 100%;
+    height: 415px;
+}
+
+.layer-1{
+    width: 32%;
+    height: 415px;
+    /* border: 1px solid red; */
+    position: absolute;
+    top: 0;
+    background-color: #1e1e1e;
+    opacity: 0.8;
+}
+.layer-1 h2{
+    color: white;
+    margin-top: 20%;
+    margin-left: 10%;
+    font-size: 26px;
+}
+.layer-1 p{
+    color: white;
+    margin-top: 12%;
+    margin-left: 10%;
+    font-size: 18px;
+}
+.layer-2{
+    width: 32%;
+    height: 415px;
+    /* border: 1px solid red; */
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: #1e1e1e;
+    opacity: 0.8;
+}
+.layer-2 h2{
+    color: white;
+    margin-top: 22%;
+    margin-left: 8%;
+}
+.layer-2 p{
+    color: white;
+    margin-top: 12%;
+    margin-left: 8%;
+    font-size: 18px;
+}
+
+.layer-3{
+    width: 32%;
+    height: 415px;
+    /* border: 1px solid red; */
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #1e1e1e;
+    opacity: 0.8;
+}
+.layer-3 h2{
+    color: white;
+    margin-top: 20%;
+    margin-left: 10%;
+    font-size: 26px;
+}
+.layer-3 p{
+    color: white;
+    margin-top: 12%;
+    margin-left: 10%;
+    font-size: 18px;
+}
+.layer-4{
+    width: 32%;
+    height: 415px;
+    /* border: 1px solid red; */
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: #1e1e1e;
+    opacity: 0.8;
+}
+.layer-4 h2{
+    color: white;
+    margin-top: 22%;
+    margin-left: 8%;
+}
+.layer-4 p{
+    color: white;
+    margin-top: 12%;
+    margin-left: 8%;
+    font-size: 18px;
+}
+/* ----------------images-container-end----------- */
+
+/* --------footer------------ */
+.st-info {
+    margin-top: 0px;
+}
+
+/* ----------------footer------------ */
+
+@media(max-width:1680px){
+    
+}
+@media(max-width:1199px){
+    .layer p {
+        font-size: 16px;
+    }
+    .layer h2 {
+        font-size: 24px;
+    }
+    .inner-image-div h1 {
+        font-size: 30px;
+    }
+}
+
+@media(max-width:1024px){
+    .para h2 {
+        font-size: 20px;
+    }
+    .para p {
+        font-size: 16px;
+    }
+    .inner-image-div h1 {
+        font-size: 26px;
+    }
+}
+@media(max-width:820px){
+    .para h2 {
+        font-size: 18px;
+    }
+    
+}
+@media(max-width:768px){
+    .Images img {
+        height: 360px;
+    }
+    .layer {
+        height: 360px;
+        width: 38%;
+    }
+    .layer h2 {
+        font-size: 19px;
+    }
+    .layer p {
+        font-size: 14px;
+    }
+    .Images {
+        height: 445px;
+    }
+    .inner-image-div h1 {
+        font-size: 20px;
+    }
+    
+}
+
+@media(max-width:540px){
+    .para h2 {
+        font-size: 16px;
+    }
+    .para p {
+        font-size: 14px;
+    }
+    .Images img {
+        height: 250px;
+    }
+    .layer {
+        height: 250px;
+        width: 42%;
+    }
+    .Images {
+        height: 300px;
+    }
+    .layer h2 {
+        font-size: 16px;
+    }
+    .layer p {
+        font-size: 12px;
+    }
+    .inner-image-div h1 {
+        font-size: 17px;
+    }
+}
+@media(max-width:425px){
+    .overview-brand-box div {
+        margin-left: 0px;
+    }
+    .overview-brand-box {
+        justify-content: center;
+    }
+    .para h2 {
+        font-size: 14px;
+    }
+    .para p {
+        font-size: 12px;
+    }
+    .Images img {
+        height: 230px;
+    }
+    .layer {
+        height: 230px;
+    }
+    .Images {
+        height: 280px;
+    }
+    .inner-image-div h1 {
+        font-size: 15px;
+    }
+    .inner-text-div {
+        padding-top: 8%;
+    }
+
+    
+    
+}
+
+@media (max-width:375px){
+    .header-item-right {
+       position: absolute;
+       right: 10px;
+    }
+    .header-item-left img {
+        width: 3rem;
+        margin-top: 10px;
+    }
+    .header-item-left h1 {
+        font-size: 12px;
+    }
+    .layer h2 {
+        font-size: 14px;
+    }
+    .layer p {
+        font-size: 10px;
+    }
+    .Images img {
+        height: 185px;
+    }
+    .layer {
+        height: 185px;
+    }
+    .Images {
+        height: 230px;
+    }
+    .inner-image-div h1 {
+        font-size: 14px;
+    }
+    .inner-text-div {
+        padding-top: 8% !important;
+    }
+}
+
+@media (max-width:320px){
+    
+    .layer h2 {
+        font-size: 12px;
+    }
+    .layer p {
+        font-size: 10px;
+    }
+    .para p {
+        margin-bottom: 19px;
+    }
+    .inner-text-div {
+        padding-top: 5% !important;
+    }
+    
+}
+
+

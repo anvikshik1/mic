@@ -124,11 +124,11 @@ button {
 }
 
 .header-item-left h1 {
-    font-size: 16px;
+    font-size: 15px;
     color: white;
     font-family: Maxim-HelveticaNowDisplay;
     margin-left: 10px;
-    margin-bottom: 0;
+    margin-bottom: 3px;
     padding-bottom: 14px;
     letter-spacing: .5px;
 }
@@ -150,7 +150,7 @@ button {
     z-index: 999;
     outline: none;
     background: rgba(0, 0, 0, 0.9);
-    border-bottom: 4px solid rgb(207, 207, 207);
+    border-bottom: 5px solid rgb(207, 207, 207);
     animation-delay: 5s;
     transition: all ease .75s;
 }
@@ -158,7 +158,7 @@ button {
 .scroll {
     transition: all ease .75s;
     animation-delay: 5s;
-    transform: translateY(-108px);
+    transform: translateY(-138px);
 }
 
 .header .wrapper {
@@ -236,7 +236,7 @@ button {
 
 .header .menu>ul>li {
     display: inline-block;
-    line-height: 2.625rem;
+    line-height: 4rem;
     margin-left: 1rem;
     font-size: 18px;
 }
@@ -298,6 +298,7 @@ button {
 
 .header .menu>ul>li .menu-subs.menu-mega {
     left: 50%;
+    top: 98%;
     -webkit-transform: translateX(-50%);
     -ms-transform: translateX(-50%);
     transform: translateX(-50%);
@@ -392,9 +393,8 @@ button {
     align-items: center;
     width: 100%;
     margin: 0 auto;
-    padding: 5px 0;
     border-bottom: 2px solid rgb(77, 77, 77);
-    height: 45px;
+    height: 40px;
 }
 
 header .thin-bar,
@@ -1455,6 +1455,8 @@ hr {
     }
     .header-item-left img {
         width: 3.5rem;
+        padding: 7px 0;
+        margin-top: 10px;
     }
     .header-item-left h1 {
         font-size: 14px;
@@ -1584,9 +1586,6 @@ hr {
     .lg-hr-three {
         margin-top: 0;
     }
-    .header-item-left h1 {
-        font-size: 12px;
-    }
 }
 
 @media(max-width: 375px) {
@@ -1604,15 +1603,12 @@ hr {
         font-size: 12px;
         padding: 0 10px;
     }
-    .header-item-left img {
-        width: 3rem;
-        margin-top: 10px;
-    }
     .header-item-left h1 {
         font-size: 12px;
     }
 }
-@media(max-width: 341px){
+
+@media(max-width: 344px) {
     .header-item-right {
         position: absolute;
         right: 10px;
@@ -1624,7 +1620,7 @@ hr {
         left: 20px;
     }
     .header-item-left h1 {
-        font-size: 12px;
+        font-size: 13px;
     }
     .social-m-rhs a {
         margin-right: 5px;
@@ -1632,5 +1628,8 @@ hr {
     }
     .sm-v-hr {
         margin-right: 3px;
+    }
+    .header-item-left h1 {
+        font-size: 10px;
     }
 }

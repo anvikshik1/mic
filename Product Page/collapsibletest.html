@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        .collapsible-button {
+            background-color: #cacaca;
+            color: black;
+            cursor: pointer;
+            padding: 18px;
+            width: 100%;
+            border: none;
+            text-align: left;
+            outline: none;
+            font-size: 15px;
+            margin: 2px;
+        }
+        
+        .collapsible-button.active,
+        .collapsible-button:hover {
+            background-color: #c4c4c4;
+        }
+        
+        .collapsible-button:after {
+            content: '\002B';
+            color: white;
+            font-weight: bold;
+            float: right;
+            margin-left: 5px;
+        }
+        
+        .collapsible-button.active:after {
+            content: "\2212";
+            color: #00adef;
+        }
+        
+        .standardcontent {
+            padding: 0 18px;
+            max-height: 0;
+            overflow-x: hidden;
+            -ms-overflow-style: none;
+            scrollbar-width: none;
+            transition: max-height 0.2s ease-out;
+            background-color: #f1f1f1;
+        }
+        /* .overflow {
+            padding: 0 18px;
+            max-height: 0;
+            -ms-overflow-style: none;
+            scrollbar-width: none;
+            transition: max-height 0.2s ease-out;
+            background-color: #f1f1f1;
+        } */
+        
+        .standardcontent::-webkit-scrollbar {
+            display: none;
+            height: max-height;
+        }
+        
+        .child-collapsible-content {
+            display: grid;
+            grid-template-columns: repeat(6, 1fr);
+        }
+        
+        .collap-cont {
+            padding: 5px;
+        }
+    </style>
+    <title>Document</title>
+</head>
+
+<body>
+
+    <button class="collapsible-button "> All Standards </button>
+    <div class="standardcontent">
+        <button class="collapsible-button overflow">Automotive Standards</button>
+        <div class="standardcontent">
+            <div class="child-collapsible-content">
+                <div class="collap-cont">ISO 11452-10</div>
+                <div class="collap-cont">ISO 11452-8</div>
+                <div class="collap-cont">ISO 16750-2</div>
+                <div class="collap-cont">ISO 7637-2</div>
+                <div class="collap-cont">JASO D001-94</div>
+                <div class="collap-cont">SAE J1113-11</div>
+                <div class="collap-cont">SAE J1113-12</div>
+                <div class="collap-cont">SAE J1113-2</div>
+                <div class="collap-cont">SAE J1455</div>
+            </div>
+        </div>
+        <button class="collapsible-button overflow">Automotive OEM Standards</button>
+        <div class="standardcontent">
+            <div class="child-collapsible-content">
+                <div class="collap-cont">ISO 11452-10</div>
+                <div class="collap-cont">ISO 11452-8</div>
+                <div class="collap-cont">ISO 16750-2</div>
+                <div class="collap-cont">ISO 7637-2</div>
+                <div class="collap-cont">JASO D001-94</div>
+                <div class="collap-cont">SAE J1113-11</div>
+                <div class="collap-cont">SAE J1113-12</div>
+                <div class="collap-cont">SAE J1113-2</div>
+                <div class="collap-cont">SAE J1455</div>
+            </div>
+        </div>
+        <button class="collapsible-button overflow">MIL-STD</button>
+        <div class="standardcontent">
+            <div class="child-collapsible-content">
+                <div class="collap-cont">ISO 11452-10</div>
+                <div class="collap-cont">ISO 11452-8</div>
+                <div class="collap-cont">ISO 16750-2</div>
+                <div class="collap-cont">ISO 7637-2</div>
+                <div class="collap-cont">JASO D001-94</div>
+                <div class="collap-cont">SAE J1113-11</div>
+                <div class="collap-cont">SAE J1113-12</div>
+                <div class="collap-cont">SAE J1113-2</div>
+                <div class="collap-cont">SAE J1455</div>
+            </div>
+        </div>
+        <button class="collapsible-button overflow">Product Standards</button>
+        <div class="standardcontent">
+            <div class="child-collapsible-content">
+                <div class="collap-cont">ISO 11452-10</div>
+                <div class="collap-cont">ISO 11452-8</div>
+                <div class="collap-cont">ISO 16750-2</div>
+                <div class="collap-cont">ISO 7637-2</div>
+                <div class="collap-cont">JASO D001-94</div>
+                <div class="collap-cont">SAE J1113-11</div>
+                <div class="collap-cont">SAE J1113-12</div>
+                <div class="collap-cont">SAE J1113-2</div>
+                <div class="collap-cont">SAE J1455</div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        var collStand = document.getElementsByClassName("collapsible-button");
+        var p;
+
+        for (p = 0; p < collStand.length; p++) {
+            collStand[p].addEventListener("click", function() {
+                this.classList.toggle("active");
+                var standardcontent = this.nextElementSibling;
+                if (standardcontent.style.maxHeight) {
+                    standardcontent.style.maxHeight = null;
+                } else {
+                    standardcontent.style.maxHeight = standardcontent.scrollHeight + "px";
+                }
+            });
+        }
+    </script>
+</body>
+
+</html>
