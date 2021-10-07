@@ -25,7 +25,7 @@
 }
 
 
-/* product image  */
+/*------------- product image ------------------- */
 
 .image-container {
     display: flex;
@@ -89,9 +89,13 @@
 }
 
 .btn-left {
-    border: 2px solid black;
+    border: 1px solid #ccc;
     display: flex;
     justify-content: space-between;
+}
+
+.btn-left:hover {
+    border: 2px solid #ccc;
 }
 
 .btn-left img {
@@ -101,10 +105,14 @@
 }
 
 .btn-right {
-    border: 2px solid black;
+    border: 1px solid black;
     background-color: black;
     padding: 5px;
     color: white;
+}
+
+.btn-right:hover {
+    border: 2px solid #ccc;
 }
 
 .btn-left a {
@@ -117,13 +125,14 @@
     text-decoration: none;
     color: white;
 }
+
 #myDIV {
     width: 100%;
     padding: 50px 0;
     text-align: center;
     background-color: lightblue;
     margin-top: 20px;
-  }
+}
 
 
 /*------------ Request Product-------- */
@@ -136,7 +145,7 @@
     height: 689px;
     display: none;
     padding-top: 105px;
-}   
+}
 
 .request-main {
     width: 83%;
@@ -146,9 +155,11 @@
     margin: 10px 0px 10px 0px;
     font-size: 28px;
 }
-.request-main h2 span{
+
+.request-main h2 span {
     margin-left: 95px;
 }
+
 .request-main p {
     margin: 10px 0px 20px 0px;
 }
@@ -225,7 +236,7 @@ input[type=number] {
     justify-content: center;
 }
 
-[type="button"],
+.form-main [type="button"],
 [type="reset"],
 [type="submit"],
 button {
@@ -236,12 +247,12 @@ button {
     padding: 5px;
 }
 
-[type="submit"] {
+.form-main [type="submit"] {
     background-color: #00adef;
     color: white;
 }
 
-[type="reset"] {
+.form-main [type="reset"] {
     background-color: white;
 }
 
@@ -257,7 +268,6 @@ button {
 
 .inner-specs-bar {
     width: 83%;
-    height: 60px;
 }
 
 .inner-specs-bar ul {
@@ -267,9 +277,18 @@ button {
     align-items: center;
 }
 
-.inner-specs-bar ul a {
-    color: white;
+.inner-specs-bar a {
+    color: rgb(153, 153, 153);
+    padding: 16px 0px 16px 0px;
 }
+
+.inner-specs-bar a:hover {
+    color: white;
+    border-bottom: 3px solid #00adef;
+}
+
+
+/* ----------------description section--------------- */
 
 .description-container {
     width: 100%;
@@ -296,6 +315,9 @@ h3 {}
 .description-main p {
     margin-top: 20px;
 }
+
+
+/* -----------specification -section------------ */
 
 .specification-container {
     width: 100%;
@@ -324,6 +346,9 @@ h3 {}
     background-color: white;
 }
 
+
+/*----------------------- categories section---------------- */
+
 .categories-container {
     width: 100%;
     background-color: #f7f7f7;
@@ -348,6 +373,17 @@ h3 {}
     margin-right: 20px;
 }
 
+.categories-main li a {
+    color: black;
+}
+
+.categories-main li a:hover {
+    color: #00adef;
+}
+
+
+/* --------------------application section------------- */
+
 .application-container {
     width: 100%;
     background-color: #f7f7f7;
@@ -371,6 +407,17 @@ h3 {}
 .application-main li {
     margin-right: 20px;
 }
+
+.application-main li a {
+    color: black;
+}
+
+.application-main li a:hover {
+    color: #00adef;
+}
+
+
+/* ------------industries section------------ */
 
 .industries-container {
     width: 100%;
@@ -397,6 +444,10 @@ h3 {}
     color: black;
 }
 
+.industry a:hover {
+    color: #00adef;
+}
+
 
 /* ----------Standards-Collapsible---------------- */
 
@@ -418,6 +469,9 @@ h3 {}
 .standards-main hr {
     margin: 25px 0px 7px 0px;
 }
+
+
+/* -----------------------collapsible standards/Related-products-------------- */
 
 .collapsible {
     background-color: #cacaca;
@@ -458,7 +512,7 @@ h3 {}
 }
 
 
-/* --------------------Document------------------- */
+/* --------------------Document section------------------- */
 
 .documentation-container {
     width: 100%;
@@ -473,17 +527,6 @@ h3 {}
 
 .documentation-main h3 {
     margin: 25px 0px 7px 0px;
-}
-
-.documentation-main ul {
-    display: flex;
-}
-
-.documentation-main li a {
-    background-color: black;
-    color: white;
-    padding: 20px;
-    margin: 10px;
 }
 
 .document-grid {
@@ -502,7 +545,16 @@ h3 {}
 }
 
 .doc a {
+    color: rgb(153, 153, 153);
+    padding: 24px 100px 24px 100px;
+}
+
+.doc a:hover {
     color: white;
+}
+
+.doc:hover {
+    border-bottom: 4px solid #00adef;
 }
 
 
@@ -560,20 +612,23 @@ h3 {}
 .r-image {
     width: 15%;
 }
-.r-image img{
+
+.r-image img {
     width: 45%;
     margin-top: 18px;
     margin-left: 50px;
 }
+
 .r-product-name {
     width: 70%;
     padding-top: 24px;
 }
-.r-product-name p{
+
+.r-product-name p {
     margin-top: 10px;
 }
 
-.r-button button{
+.r-button button {
     width: 130px;
     height: 40px;
     border: 1px solid #1e1e1e;
@@ -582,82 +637,103 @@ h3 {}
     right: 28px;
     border-radius: 3px;
 }
-.r-button button:hover{
+
+.r-button button:hover {
     background: black;
     color: white;
 }
 
 
 /* model css code starts from here */
+
 .modal {
-    display: none; /* Hidden by default */
-    position: fixed; /* Stay in place */
-    z-index: 1; /* Sit on top */
-    padding-top: 100px; /* Location of the box */
+    display: none;
+    /* Hidden by default */
+    position: fixed;
+    /* Stay in place */
+    z-index: 1;
+    /* Sit on top */
+    padding-top: 100px;
+    /* Location of the box */
     left: 0;
     top: 0;
-    width: 100%; /* Full width */
-    height: 100%; /* Full height */
-    overflow: auto; /* Enable scroll if needed */
-    background-color: rgb(0,0,0); /* Fallback color */
-    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
-  }
-  
-  /* Modal Content */
-  .modal-content {
+    width: 100%;
+    /* Full width */
+    height: 100%;
+    /* Full height */
+    overflow: auto;
+    /* Enable scroll if needed */
+    background-color: rgb(0, 0, 0);
+    /* Fallback color */
+    background-color: rgba(0, 0, 0, 0.4);
+    /* Black w/ opacity */
+}
+
+
+/* Modal Content */
+
+.modal-content {
     background-color: #fefefe;
     margin: auto;
     padding: 20px;
     border: 1px solid #888;
     width: 890px;
-    height:auto;
-  }
-  
-  /* The Close Button */
-  .close {
+    height: auto;
+}
+
+
+/* The Close Button */
+
+.close {
     color: #aaaaaa;
     float: right;
     font-size: 28px;
     font-weight: bold;
-  }
-  
-  .close:hover,
-  .close:focus {
+}
+
+.close:hover,
+.close:focus {
     color: #000;
     text-decoration: none;
     cursor: pointer;
-  }
+}
 
-  .pop-up-add-cart-container {
+.pop-up-add-cart-container {
     background-color: white;
     width: 100%;
     position: relative;
-  }
-  .pop-up-cart-Product-name {
-    color:black;
+}
+
+.pop-up-cart-Product-name {
+    color: black;
     position: absolute;
     left: 16%;
     font-size: 20px;
 }
+
 .pop-add-cart-main {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 60px;
     margin: 30px 20px;
 }
+
 .pop-description-container {
     width: 100%;
     display: flex;
     justify-content: center;
 }
+
 .pop-description-main {
     width: 95%;
 }
+
 .pop-specification-container {
     width: 100%;
     display: flex;
     justify-content: center;
 }
+
 .pop-specification-main {
     width: 95%;
 }
@@ -670,8 +746,9 @@ h3 {}
     border: 10px solid white;
 }
 
-.pop-specs-table tr:nth-child(even){
+.pop-specs-table tr:nth-child(even) {
     background-color: rgb(212, 212, 212);
 }
-  
+
+
 /* model css code ends here */
