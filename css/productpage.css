@@ -15,7 +15,8 @@
 }
 
 h3,
-h2 span {
+h2,
+span {
     font-family: Maxim-Klavika-lightCondensed;
     font-size: 20px;
     font-weight: 1000;
@@ -86,7 +87,6 @@ h2 span {
 
 .product-desc ul {
     padding: 34px 10px;
-    font-size: 13px;
 }
 
 .cart-buttons {
@@ -170,8 +170,13 @@ h2 span {
     font-size: 28px;
 }
 
-.request-main h2 span {
+.request-main span {
     margin-left: 95px;
+}
+
+.request-main h2,
+span {
+    font-size: 30px;
 }
 
 .request-main p {
@@ -366,6 +371,11 @@ hr {
     border: 10px solid white;
 }
 
+.specs-table th,
+td {
+    padding: 5px;
+}
+
 .specs-table tr:nth-child(odd) {
     background-color: white;
 }
@@ -552,11 +562,6 @@ hr {
     margin: 2px;
 }
 
-.collapsible-button.active,
-.collapsible-button:hover {
-    background-color: #c4c4c4;
-}
-
 .collapsible-button:after {
     content: '\002B';
     color: white;
@@ -565,7 +570,8 @@ hr {
     margin-left: 5px;
 }
 
-.collapsible-button.active:after {
+.collapsible-button.active:after,
+.collapsible.active:after {
     content: "\2212";
     color: #00adef;
 }
@@ -579,10 +585,6 @@ hr {
     scrollbar-width: none;
     transition: max-height 0.2s ease-out;
     background-color: #f1f1f1;
-}
-
-.standardcontent::-webkit-scrollbar {
-    display: none;
 }
 
 .child-collapsible-content {
@@ -738,29 +740,20 @@ hr {
 }
 
 
-/* model css code starts from here */
+/* pop-up css code starts from here */
 
 .modal {
     display: none;
-    /* Hidden by default */
     position: fixed;
-    /* Stay in place */
     z-index: 1;
-    /* Sit on top */
     padding-top: 100px;
-    /* Location of the box */
     left: 0;
     top: 0;
     width: 100%;
-    /* Full width */
     height: 100%;
-    /* Full height */
     overflow: auto;
-    /* Enable scroll if needed */
     background-color: rgb(0, 0, 0);
-    /* Fallback color */
     background-color: rgba(0, 0, 0, 0.4);
-    /* Black w/ opacity */
 }
 
 .modal::-webkit-scrollbar {
@@ -775,7 +768,7 @@ hr {
     margin: auto;
     padding: 20px;
     border: 1px solid #888;
-    width: 890px;
+    width: 89%;
     height: auto;
     margin-bottom: 100px;
 }
@@ -849,6 +842,11 @@ hr {
     border: 10px solid white;
 }
 
+.pop-specs-table th,
+td {
+    padding: 5px;
+}
+
 .pop-specs-table tr:nth-child(even) {
     background-color: #f2f2f2;
 }
@@ -869,6 +867,9 @@ hr {
 }
 
 @media(max-width:1119px) {
+    .request-container {
+        height: auto;
+    }
     .inner-specs-bar ul {
         font-size: 14px;
         flex-wrap: wrap;
@@ -908,9 +909,6 @@ hr {
     .specs-table {
         font-size: 12px;
     }
-    .request-container {
-        height: auto;
-    }
     .request-main h2 span {
         margin: 11px 0px 0px -1px;
         display: block;
@@ -932,23 +930,32 @@ hr {
     .checkbox-date {
         justify-content: space-around;
     }
+    .pop-add-cart-main {
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 0px;
+    }
 }
 
 @media(max-width:768px) {
     .add-cart-container {
         height: auto;
     }
+    .cart-Product-name h3 {
+        font-size: 26px;
+    }
     .add-cart-main {
         grid-template-columns: repeat(1, 1fr);
         grid-gap: 0px;
     }
+    .product-desc {
+        padding-bottom: 40px;
+    }
+    .product-desc-content {
+        padding-left: 5%;
+    }
     .product-desc h3 {
         padding: 60px 10px 5px 5px;
         font-size: 24px;
-    }
-    .product-desc {
-        padding-left: 60px;
-        padding-bottom: 40px;
     }
     .cart-buttons {
         justify-content: center;
@@ -992,16 +999,19 @@ hr {
     .r-button button {
         width: 50%;
     }
+    .pop-up-add-cart-container {
+        height: auto;
+    }
+    .add-cart-main {
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 0px;
+    }
     .related-collap-content::-webkit-scrollbar {
         display: none;
     }
 }
 
 @media(max-width:550px) {
-    .product-desc {
-        padding-left: 40px;
-        padding-bottom: 40px;
-    }
     .inner-specs-bar ul {
         height: 100px;
     }
