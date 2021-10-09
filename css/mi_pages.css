@@ -301,20 +301,10 @@ body{
     align-self: center;
 }
 
-
-@media(max-width:2560px){
-    /* .arrow::after {
-        right: 213px !important;
-    } */
-}
-
 @media(min-width:1680px){
     .inner-grid{
         grid-gap: 2.8rem;
     }
-    /* .arrow::after {
-        right: 213px !important;
-    } */
     .parent {
         width: 13vw;
     }
@@ -344,9 +334,6 @@ body{
         margin-left: 1px;
         grid-gap: 0.8rem !important;
     }
-    /* .collaps-container {
-        margin-right: 35px;
-    } */
     .arrow::after{
         right:-5px !important;
     }
