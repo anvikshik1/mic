@@ -17,7 +17,7 @@
 h3,
 h2 span {
     font-family: Maxim-Klavika-lightCondensed;
-    font-size: 30px;
+    font-size: 20px;
     font-weight: 1000;
 }
 
@@ -81,6 +81,7 @@ h2 span {
 
 .product-desc h3 {
     padding: 100px 10px 5px 5px;
+    font-size: 25px;
 }
 
 .product-desc ul {
@@ -695,18 +696,18 @@ hr {
 .related-products {
     display: flex;
     height: 100px;
-    position: relative;
     background: white;
 }
 
 .r-image {
     width: 15%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .r-image img {
     width: 45%;
-    margin-top: 18px;
-    margin-left: 50px;
 }
 
 .r-product-name {
@@ -718,13 +719,17 @@ hr {
     margin-top: 10px;
 }
 
+.r-button {
+    width: 15%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .r-button button {
-    width: 130px;
-    height: 40px;
+    width: 80%;
+    height: 35px;
     border: 1px solid #1e1e1e;
-    position: absolute;
-    top: 24px;
-    right: 28px;
 }
 
 .r-button button:hover {
@@ -964,6 +969,32 @@ hr {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
     }
+    .related-products {
+        display: flex;
+        height: auto;
+        flex-direction: column;
+    }
+    .r-image {
+        width: 100%;
+        padding: 10px;
+    }
+    .r-product-name {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .r-button {
+        width: 100%;
+        padding: 20px;
+    }
+    .r-button button {
+        width: 50%;
+    }
+    .related-collap-content::-webkit-scrollbar {
+        display: none;
+    }
 }
 
 @media(max-width:550px) {
@@ -983,6 +1014,9 @@ hr {
     }
     .form {
         grid-column: 1/3;
+    }
+    * {
+        font-size: 14px;
     }
 }
 
