@@ -301,10 +301,12 @@ body{
     align-self: center;
 }
 
+
 @media(min-width:1680px){
     .inner-grid{
         grid-gap: 2.8rem;
     }
+    
     .parent {
         width: 13vw;
     }
@@ -334,6 +336,7 @@ body{
         margin-left: 1px;
         grid-gap: 0.8rem !important;
     }
+    
     .arrow::after{
         right:-5px !important;
     }
@@ -386,9 +389,7 @@ body{
     .brand-title p {
         font-size: 1.15rem;
     }
-    /* .inner-grid{
-        grid-template-columns: repeat(2, 306px);
-    } */
+    
     .Categories-ul {
         font-size: 12px;
     }
@@ -468,9 +469,7 @@ body{
     .boxes .image-div {
         width: 100%;
     }
-    /* .brand-amplifier{
-       font: size 14px!important;
-    } */
+    
     .Categories {
         font-size: 14px;
     }
