@@ -488,9 +488,7 @@ body{
     .standards {
         font-size: 14px;
     }
-    .header-item-left img {
-        width: 3.5rem;
-    }
+   
     .header-item-left h1 {
         font-size: 14px;
     }
@@ -677,10 +675,7 @@ body{
        position: absolute;
        right: 10px;
     }
-    .header-item-left img {
-        width: 3rem;
-        margin-top: 10px;
-    }
+  
     .header-item-left h1 {
         font-size: 12px;
     }

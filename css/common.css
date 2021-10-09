@@ -1536,6 +1536,12 @@ hr {
     .lg-hr-three {
         margin-top: 55px;
     }
+    .header .wrapper {
+        height: 65px;
+    }
+    .header-item-left img {
+        margin-top: 0px;
+    }
 }
 
 @media(max-width: 425px) {
@@ -1606,6 +1612,18 @@ hr {
     .header-item-left h1 {
         font-size: 12px;
     }
+    .header-item-left img {
+        width: 3rem;
+    }
+    .header .wrapper {
+        height: 60px;
+    }
+    .header-item-left h1 {
+        margin-left: 5px;
+    }
+    .header-item-left h1 {
+        font-size: 11px;
+    }
 }
 
 @media(max-width: 344px) {
@@ -1631,5 +1649,8 @@ hr {
     }
     .header-item-left h1 {
         font-size: 10px;
+    }
+    .header .menu-mobile-trigger {
+        margin-left: 12px;
     }
 }
