@@ -15,7 +15,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
     <link rel="stylesheet" href="../css/ionicon.min.css">
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-    <title>Product Page</title>
+    <title>ProductPage</title>
 </head>
 
 <body>
@@ -522,24 +522,26 @@
         <div class="add-cart-container" id="add-cart-container">
             <div class="add-cart-main">
                 <div class="image-container">
-                    <img src="..\Product Page\Images\7224\ae_techron_7224_pic5.png" alt="">
+                    <img src="..\ProductPage\Images\7224\ae_techron_7224_pic5.png" alt="">
                     <div class="image-gallery-container">
                         <div class="image-gallery">
-                            <img src="..\Product Page\Images\7224\ae_techron_7224_pic5.png" alt="">
-                            <img src="..\Product Page\Images\7224\ae_techron_7224_pic5.png" alt="">
-                            <img src="..\Product Page\Images\7224\ae_techron_7224_pic5.png" alt="">
-                            <img src="..\Product Page\Images\7224\ae_techron_7224_pic5.png" alt="">
+                            <img src="..\ProductPage\Images\7224\ae_techron_7224_pic5.png" alt="">
+                            <img src="..\ProductPage\Images\7224\ae_techron_7224_pic5.png" alt="">
+                            <img src="..\ProductPage\Images\7224\ae_techron_7224_pic5.png" alt="">
+                            <img src="..\ProductPage\Images\7224\ae_techron_7224_pic5.png" alt="">
                         </div>
                     </div>
                 </div>
-                <div class="product desc">
-                    <h3>AE Techron 7224 Power Amplifier DC-300 kHz 900W</h3>
-                    <ul>
-                        <div></div>Up to 1000 watts RMS Power output
-                        <div></div>Small signal response up to 1 MHz</li>
-                        <div></div>Can be user to create series or parellel system for up to 3 times the voltage or 4 times of the current output.
-                        <div></div>up to 16A at 13.5 VDC
-                    </ul>
+                <div class="product-desc">
+                    <div class="product-desc-content">
+                        <h3>AE Techron 7224 Power Amplifier DC-300 kHz 900W</h3>
+                        <ul>
+                            <li> Up to 1000 watts RMS Power output</li>
+                            <li> Small signal response up to 1 MHz</li>
+                            <li> Can be user to create series or parellel system for up to 3 times the voltage or 4 times of the current output. </li>
+                            <li> up to 16A at 13.5 VDC</li>
+                        </ul>
+                    </div>
                     <div class="cart-buttons">
                         <button class="btn btn-left"><a href="#">Add to cart </a> <img src="../images/SVG/BlackCart.svg"
                                 alt=""></button>
@@ -578,16 +580,18 @@
                             </select>
                         </div>
                         <div class="form checkbox-date">
-                            <div class="form-left"><label for="rental">Rental</label>
+                            <div class="form-left">
+                                <label for="rental">Rental</label>
                                 <input type="checkbox" name="rental" id="rental">
                                 <label for="purchase">Purchase</label>
                                 <input type="checkbox" name="purchase" id="purchase">
-                                <label for="qty">Quantity</label>
-                                <input type="number" name="" id="" min="1" max="10">
+
+                                <div class="tied-together"> <label for="qty">Quantity</label>
+                                    <input type="number" name="" id="" min="1" max="10"></div>
                             </div>
                             <div class="form-right">
-                                <input type="number" name="" id="month" min="1" max="10"><label for="month">Month(s)</label>
-                                <label for="date">Rental start Date</label> <input type="date" name="date" id="date">
+                                <div class="tied-together"> <input type="number" name="" id="month" min="1" max="10"><label for="month">Month(s)</label></div>
+                                <div class="tied-together"> <label for="date">Rental Date</label> <input type="date" name="date" id="date"></div>
                             </div>
                         </div>
                         <div class="terms">
@@ -615,37 +619,37 @@
         <div class="specs-bar">
             <div class="inner-specs-bar">
                 <ul>
-                    <li><a href="">Description</a></li>
+                    <li><a href="#description">Description</a></li>
 
 
 
-                    <li> <a href="">Specification</a> </li>
+                    <li> <a href="#specification">Specification</a> </li>
 
 
-                    <li><a href="">Categories</a></li>
+                    <li><a href="#categories">Categories</a></li>
 
-                    <li> <a href="">Application</a> </li>
-
-
-                    <li> <a href="">Industries</a> </li>
+                    <li> <a href="#application">Application</a> </li>
 
 
-                    <li> <a href="">Standards</a> </li>
+                    <li> <a href="#industries">Industries</a> </li>
 
 
-                    <li> <a href="">Documentation</a> </li>
+                    <li> <a href="#standards">Standards</a> </li>
 
 
-                    <li> <a href="">Product Video</a> </li>
+                    <li> <a href="#documentation">Documentation</a> </li>
 
 
-                    <li> <a href="">Related Products</a> </li>
+                    <li> <a href="#product-video">Product Video</a> </li>
+
+
+                    <li> <a href="#related">Related Products</a> </li>
 
 
                 </ul>
             </div>
         </div>
-        <div class="description-container">
+        <div id="description" class="description-container">
             <div class="description-main">
                 <h3>Description</h3>
                 <hr>
@@ -656,7 +660,7 @@
                     making it a great choice for high-speed control applications.</p>
             </div>
         </div>
-        <div class="specification-container">
+        <div id="specification" class="specification-container">
             <div class="specification-main">
                 <h3>Specifications</h3>
                 <hr>
@@ -945,7 +949,7 @@
                 </table>
             </div>
         </div>
-        <div class="categories-container">
+        <div id="categories" class="categories-container">
             <div class="categories-main">
                 <h3>Categories</h3>
                 <hr>
@@ -957,7 +961,7 @@
                 </ul>
             </div>
         </div>
-        <div class="application-container">
+        <div id="application" class="application-container">
             <div class="application-main">
                 <h3>Application</h3>
                 <hr>
@@ -970,7 +974,7 @@
                 </ul>
             </div>
         </div>
-        <div class="industries-container">
+        <div id="industries" class="industries-container">
             <div class="industries-main">
                 <h3>Industries</h3>
                 <hr>
@@ -1032,7 +1036,7 @@
                 </div>
             </div>
         </div>
-        <div class="standards-container">
+        <div id="standards" class="standards-container">
             <div class="standards-main">
                 <h3>Standards</h3>
                 <hr>
@@ -1097,7 +1101,7 @@
                 </div>
             </div>
         </div>
-        <div class="documentation-container">
+        <div id="documentation" class="documentation-container">
             <div class="documentation-main">
                 <h3>Documentation</h3>
                 <hr>
@@ -1124,7 +1128,7 @@
             </div>
         </div>
 
-        <div class="promo-container">
+        <div id="product-video" class="promo-container">
             <div class="promo-main">
                 <h3>Watch Product Promo</h3>
                 <hr>
@@ -1136,9 +1140,9 @@
             </div>
         </div>
 
-        <div class="related-container">
+        <div id="related" class="related-container">
             <div class="related-main">
-                <h3>Related</h3>
+                <h3 id="related">Related</h3>
                 <hr>
 
                 <div class="related-colap-container">
@@ -1146,7 +1150,7 @@
                     <div class="content related-collap-content">
                         <div class="related-products">
                             <div class="r-image">
-                                <img src="../Product Page/Images/cropped-images/pic1.png" alt="">
+                                <img src="../ProductPage/Images/cropped-images/pic1.png" alt="">
                             </div>
                             <div class="r-product-name">
                                 <b>7226 Power Amplifier DC - 600 kHz, 900W</b>
@@ -1165,23 +1169,23 @@
                                         </div>
                                         <div class="pop-add-cart-main">
                                             <div class="image-container">
-                                                <img src="..\Product Page\Images\7224\ae_techron_7224_pic5.png" alt="">
+                                                <img src="..\ProductPage\Images\7224\ae_techron_7224_pic5.png" alt="">
                                                 <div class="image-gallery-container">
                                                     <div class="image-gallery">
-                                                        <img src="..\Product Page\Images\7224\ae_techron_7224_pic5.png" alt="">
-                                                        <img src="..\Product Page\Images\7224\ae_techron_7224_pic5.png" alt="">
-                                                        <img src="..\Product Page\Images\7224\ae_techron_7224_pic5.png" alt="">
-                                                        <img src="..\Product Page\Images\7224\ae_techron_7224_pic5.png" alt="">
+                                                        <img src="..\ProductPage\Images\7224\ae_techron_7224_pic5.png" alt="">
+                                                        <img src="..\ProductPage\Images\7224\ae_techron_7224_pic5.png" alt="">
+                                                        <img src="..\ProductPage\Images\7224\ae_techron_7224_pic5.png" alt="">
+                                                        <img src="..\ProductPage\Images\7224\ae_techron_7224_pic5.png" alt="">
                                                     </div>
                                                 </div>
                                             </div>
-                                            <div class="product desc">
+                                            <div class="product-desc">
                                                 <h3>AE Techron 7224 Power Amplifier DC-300 kHz 900W</h3>
                                                 <ul>
-                                                    <div></div>Up to 1000 watts RMS Power output
-                                                    <div></div>Small signal response up to 1 MHz</li>
-                                                    <div></div>Can be user to create series or parellel system for up to 3 times the voltage or 4 times of the current output.
-                                                    <div></div>up to 16A at 13.5 VDC
+                                                    <li> Up to 1000 watts RMS Power output</li>
+                                                    <li> Small signal response up to 1 MHz</li>
+                                                    <li> Can be user to create series or parellel system for up to 3 times the voltage or 4 times of the current output. </li>
+                                                    <li> up to 16A at 13.5 VDC</li>
                                                 </ul>
                                                 <div class="cart-buttons">
                                                     <button class="btn btn-left"><a href="#">Add to cart </a> <img
@@ -1501,7 +1505,7 @@
                         <hr>
                         <div class="related-products">
                             <div class="r-image">
-                                <img src="../Product Page/Images/cropped-images/pic2.png" alt="">
+                                <img src="../ProductPage/Images/cropped-images/pic2.png" alt="">
                             </div>
                             <div class="r-product-name">
                                 <b> 7228 Power Amplifier DC - 1 MHz, 1000W </b>
@@ -1520,23 +1524,23 @@
                                         </div>
                                         <div class="pop-add-cart-main">
                                             <div class="image-container">
-                                                <img src="..\Product Page\Images\7224\ae_techron_7224_pic5.png" alt="">
+                                                <img src="..\ProductPage\Images\7224\ae_techron_7224_pic5.png" alt="">
                                                 <div class="image-gallery-container">
                                                     <div class="image-gallery">
-                                                        <img src="..\Product Page\Images\7224\ae_techron_7224_pic5.png" alt="">
-                                                        <img src="..\Product Page\Images\7224\ae_techron_7224_pic5.png" alt="">
-                                                        <img src="..\Product Page\Images\7224\ae_techron_7224_pic5.png" alt="">
-                                                        <img src="..\Product Page\Images\7224\ae_techron_7224_pic5.png" alt="">
+                                                        <img src="..\ProductPage\Images\7224\ae_techron_7224_pic5.png" alt="">
+                                                        <img src="..\ProductPage\Images\7224\ae_techron_7224_pic5.png" alt="">
+                                                        <img src="..\ProductPage\Images\7224\ae_techron_7224_pic5.png" alt="">
+                                                        <img src="..\ProductPage\Images\7224\ae_techron_7224_pic5.png" alt="">
                                                     </div>
                                                 </div>
                                             </div>
-                                            <div class="product desc">
+                                            <div class="product-desc">
                                                 <h3>AE Techron 7224 Power Amplifier DC-300 kHz 900W</h3>
                                                 <ul>
-                                                    <div></div>Up to 1000 watts RMS Power output
-                                                    <div></div>Small signal response up to 1 MHz</li>
-                                                    <div></div>Can be user to create series or parellel system for up to 3 times the voltage or 4 times of the current output.
-                                                    <div></div>up to 16A at 13.5 VDC
+                                                    <li> Up to 1000 watts RMS Power output</li>
+                                                    <li> Small signal response up to 1 MHz</li>
+                                                    <li> Can be user to create series or parellel system for up to 3 times the voltage or 4 times of the current output. </li>
+                                                    <li> up to 16A at 13.5 VDC</li>
                                                 </ul>
                                                 <div class="cart-buttons">
                                                     <button class="btn btn-left"><a href="#">Add to cart </a> <img
@@ -1857,7 +1861,7 @@
                         <hr>
                         <div class="related-products">
                             <div class="r-image">
-                                <img src="../Product Page/Images/cropped-images/pic3.png" alt="">
+                                <img src="../ProductPage/Images/cropped-images/pic3.png" alt="">
                             </div>
                             <div class="r-product-name">
                                 <b> 7548 Power Amplifier DC - 100 kHz, 12kW </b>
@@ -1876,23 +1880,23 @@
                                         </div>
                                         <div class="pop-add-cart-main">
                                             <div class="image-container">
-                                                <img src="..\Product Page\Images\7224\ae_techron_7224_pic5.png" alt="">
+                                                <img src="..\ProductPage\Images\7224\ae_techron_7224_pic5.png" alt="">
                                                 <div class="image-gallery-container">
                                                     <div class="image-gallery">
-                                                        <img src="..\Product Page\Images\7224\ae_techron_7224_pic5.png" alt="">
-                                                        <img src="..\Product Page\Images\7224\ae_techron_7224_pic5.png" alt="">
-                                                        <img src="..\Product Page\Images\7224\ae_techron_7224_pic5.png" alt="">
-                                                        <img src="..\Product Page\Images\7224\ae_techron_7224_pic5.png" alt="">
+                                                        <img src="..\ProductPage\Images\7224\ae_techron_7224_pic5.png" alt="">
+                                                        <img src="..\ProductPage\Images\7224\ae_techron_7224_pic5.png" alt="">
+                                                        <img src="..\ProductPage\Images\7224\ae_techron_7224_pic5.png" alt="">
+                                                        <img src="..\ProductPage\Images\7224\ae_techron_7224_pic5.png" alt="">
                                                     </div>
                                                 </div>
                                             </div>
-                                            <div class="product desc">
+                                            <div class="product-desc">
                                                 <h3>AE Techron 7224 Power Amplifier DC-300 kHz 900W</h3>
                                                 <ul>
-                                                    <div></div>Up to 1000 watts RMS Power output
-                                                    <div></div>Small signal response up to 1 MHz</li>
-                                                    <div></div>Can be user to create series or parellel system for up to 3 times the voltage or 4 times of the current output.
-                                                    <div></div>up to 16A at 13.5 VDC
+                                                    <li> Up to 1000 watts RMS Power output</li>
+                                                    <li> Small signal response up to 1 MHz</li>
+                                                    <li> Can be user to create series or parellel system for up to 3 times the voltage or 4 times of the current output. </li>
+                                                    <li> up to 16A at 13.5 VDC</li>
                                                 </ul>
                                                 <div class="cart-buttons">
                                                     <button class="btn btn-left"><a href="#">Add to cart </a> <img
@@ -2213,7 +2217,7 @@
 
                         <div class="related-products">
                             <div class="r-image">
-                                <img src="../Product Page/Images/cropped-images/pic4.png" alt="">
+                                <img src="../ProductPage/Images/cropped-images/pic4.png" alt="">
                             </div>
                             <div class="r-product-name">
                                 <b> 7794 Power Amplifier DC - 30 kHz, 5kW </b>
@@ -2232,23 +2236,23 @@
                                         </div>
                                         <div class="pop-add-cart-main">
                                             <div class="image-container">
-                                                <img src="..\Product Page\Images\7224\ae_techron_7224_pic5.png" alt="">
+                                                <img src="..\ProductPage\Images\7224\ae_techron_7224_pic5.png" alt="">
                                                 <div class="image-gallery-container">
                                                     <div class="image-gallery">
-                                                        <img src="..\Product Page\Images\7224\ae_techron_7224_pic5.png" alt="">
-                                                        <img src="..\Product Page\Images\7224\ae_techron_7224_pic5.png" alt="">
-                                                        <img src="..\Product Page\Images\7224\ae_techron_7224_pic5.png" alt="">
-                                                        <img src="..\Product Page\Images\7224\ae_techron_7224_pic5.png" alt="">
+                                                        <img src="..\ProductPage\Images\7224\ae_techron_7224_pic5.png" alt="">
+                                                        <img src="..\ProductPage\Images\7224\ae_techron_7224_pic5.png" alt="">
+                                                        <img src="..\ProductPage\Images\7224\ae_techron_7224_pic5.png" alt="">
+                                                        <img src="..\ProductPage\Images\7224\ae_techron_7224_pic5.png" alt="">
                                                     </div>
                                                 </div>
                                             </div>
-                                            <div class="product desc">
+                                            <div class="product-desc">
                                                 <h3>AE Techron 7224 Power Amplifier DC-300 kHz 900W</h3>
                                                 <ul>
-                                                    <div></div>Up to 1000 watts RMS Power output
-                                                    <div></div>Small signal response up to 1 MHz</li>
-                                                    <div></div>Can be user to create series or parellel system for up to 3 times the voltage or 4 times of the current output.
-                                                    <div></div>up to 16A at 13.5 VDC
+                                                    <li> Up to 1000 watts RMS Power output</li>
+                                                    <li> Small signal response up to 1 MHz</li>
+                                                    <li> Can be user to create series or parellel system for up to 3 times the voltage or 4 times of the current output. </li>
+                                                    <li> up to 16A at 13.5 VDC</li>
                                                 </ul>
                                                 <div class="cart-buttons">
                                                     <button class="btn btn-left"><a href="#">Add to cart </a> <img
@@ -2568,7 +2572,7 @@
                         <hr>
                         <div class="related-products">
                             <div class="r-image">
-                                <img src="../Product Page/Images/cropped-images/pic1.png" alt="">
+                                <img src="../ProductPage/Images/cropped-images/pic1.png" alt="">
                             </div>
                             <div class="r-product-name">
                                 <b> 7796 Power Amplifier DC - 30 kHz, 6.6kW</b>
@@ -2587,23 +2591,23 @@
                                         </div>
                                         <div class="pop-add-cart-main">
                                             <div class="image-container">
-                                                <img src="..\Product Page\Images\7224\ae_techron_7224_pic5.png" alt="">
+                                                <img src="..\ProductPage\Images\7224\ae_techron_7224_pic5.png" alt="">
                                                 <div class="image-gallery-container">
                                                     <div class="image-gallery">
-                                                        <img src="..\Product Page\Images\7224\ae_techron_7224_pic5.png" alt="">
-                                                        <img src="..\Product Page\Images\7224\ae_techron_7224_pic5.png" alt="">
-                                                        <img src="..\Product Page\Images\7224\ae_techron_7224_pic5.png" alt="">
-                                                        <img src="..\Product Page\Images\7224\ae_techron_7224_pic5.png" alt="">
+                                                        <img src="..\ProductPage\Images\7224\ae_techron_7224_pic5.png" alt="">
+                                                        <img src="..\ProductPage\Images\7224\ae_techron_7224_pic5.png" alt="">
+                                                        <img src="..\ProductPage\Images\7224\ae_techron_7224_pic5.png" alt="">
+                                                        <img src="..\ProductPage\Images\7224\ae_techron_7224_pic5.png" alt="">
                                                     </div>
                                                 </div>
                                             </div>
-                                            <div class="product desc">
+                                            <div class="product-desc">
                                                 <h3>AE Techron 7224 Power Amplifier DC-300 kHz 900W</h3>
                                                 <ul>
-                                                    <div></div>Up to 1000 watts RMS Power output
-                                                    <div></div>Small signal response up to 1 MHz</li>
-                                                    <div></div>Can be user to create series or parellel system for up to 3 times the voltage or 4 times of the current output.
-                                                    <div></div>up to 16A at 13.5 VDC
+                                                    <li> Up to 1000 watts RMS Power output</li>
+                                                    <li> Small signal response up to 1 MHz</li>
+                                                    <li> Can be user to create series or parellel system for up to 3 times the voltage or 4 times of the current output. </li>
+                                                    <li> up to 16A at 13.5 VDC</li>
                                                 </ul>
                                                 <div class="cart-buttons">
                                                     <button class="btn btn-left"><a href="#">Add to cart </a> <img
@@ -2923,7 +2927,7 @@
                         <hr>
                         <div class="related-products">
                             <div class="r-image">
-                                <img src="../Product Page/Images/cropped-images/pic1.png" alt="">
+                                <img src="../ProductPage/Images/cropped-images/pic1.png" alt="">
                             </div>
                             <div class="r-product-name">
                                 <b> 7796 Power Amplifier DC - 30 kHz, 6.6kW</b>
@@ -2942,23 +2946,23 @@
                                         </div>
                                         <div class="pop-add-cart-main">
                                             <div class="image-container">
-                                                <img src="..\Product Page\Images\7224\ae_techron_7224_pic5.png" alt="">
+                                                <img src="..\ProductPage\Images\7224\ae_techron_7224_pic5.png" alt="">
                                                 <div class="image-gallery-container">
                                                     <div class="image-gallery">
-                                                        <img src="..\Product Page\Images\7224\ae_techron_7224_pic5.png" alt="">
-                                                        <img src="..\Product Page\Images\7224\ae_techron_7224_pic5.png" alt="">
-                                                        <img src="..\Product Page\Images\7224\ae_techron_7224_pic5.png" alt="">
-                                                        <img src="..\Product Page\Images\7224\ae_techron_7224_pic5.png" alt="">
+                                                        <img src="..\ProductPage\Images\7224\ae_techron_7224_pic5.png" alt="">
+                                                        <img src="..\ProductPage\Images\7224\ae_techron_7224_pic5.png" alt="">
+                                                        <img src="..\ProductPage\Images\7224\ae_techron_7224_pic5.png" alt="">
+                                                        <img src="..\ProductPage\Images\7224\ae_techron_7224_pic5.png" alt="">
                                                     </div>
                                                 </div>
                                             </div>
-                                            <div class="product desc">
+                                            <div class="product-desc">
                                                 <h3>AE Techron 7224 Power Amplifier DC-300 kHz 900W</h3>
                                                 <ul>
-                                                    <div></div>Up to 1000 watts RMS Power output
-                                                    <div></div>Small signal response up to 1 MHz</li>
-                                                    <div></div>Can be user to create series or parellel system for up to 3 times the voltage or 4 times of the current output.
-                                                    <div></div>up to 16A at 13.5 VDC
+                                                    <li> Up to 1000 watts RMS Power output</li>
+                                                    <li> Small signal response up to 1 MHz</li>
+                                                    <li> Can be user to create series or parellel system for up to 3 times the voltage or 4 times of the current output. </li>
+                                                    <li> up to 16A at 13.5 VDC</li>
                                                 </ul>
                                                 <div class="cart-buttons">
                                                     <button class="btn btn-left"><a href="#">Add to cart </a> <img
@@ -3278,7 +3282,7 @@
                         <hr>
                         <div class="related-products">
                             <div class="r-image">
-                                <img src="../Product Page/Images/cropped-images/pic4.png" alt="">
+                                <img src="../ProductPage/Images/cropped-images/pic4.png" alt="">
                             </div>
                             <div class="r-product-name">
                                 <b> 7794 Power Amplifier DC - 30 kHz, 5kW </b>
@@ -3297,23 +3301,23 @@
                                         </div>
                                         <div class="pop-add-cart-main">
                                             <div class="image-container">
-                                                <img src="..\Product Page\Images\7224\ae_techron_7224_pic5.png" alt="">
+                                                <img src="..\ProductPage\Images\7224\ae_techron_7224_pic5.png" alt="">
                                                 <div class="image-gallery-container">
                                                     <div class="image-gallery">
-                                                        <img src="..\Product Page\Images\7224\ae_techron_7224_pic5.png" alt="">
-                                                        <img src="..\Product Page\Images\7224\ae_techron_7224_pic5.png" alt="">
-                                                        <img src="..\Product Page\Images\7224\ae_techron_7224_pic5.png" alt="">
-                                                        <img src="..\Product Page\Images\7224\ae_techron_7224_pic5.png" alt="">
+                                                        <img src="..\ProductPage\Images\7224\ae_techron_7224_pic5.png" alt="">
+                                                        <img src="..\ProductPage\Images\7224\ae_techron_7224_pic5.png" alt="">
+                                                        <img src="..\ProductPage\Images\7224\ae_techron_7224_pic5.png" alt="">
+                                                        <img src="..\ProductPage\Images\7224\ae_techron_7224_pic5.png" alt="">
                                                     </div>
                                                 </div>
                                             </div>
-                                            <div class="product desc">
+                                            <div class="product-desc">
                                                 <h3>AE Techron 7224 Power Amplifier DC-300 kHz 900W</h3>
                                                 <ul>
-                                                    <div></div>Up to 1000 watts RMS Power output
-                                                    <div></div>Small signal response up to 1 MHz</li>
-                                                    <div></div>Can be user to create series or parellel system for up to 3 times the voltage or 4 times of the current output.
-                                                    <div></div>up to 16A at 13.5 VDC
+                                                    <li> Up to 1000 watts RMS Power output</li>
+                                                    <li> Small signal response up to 1 MHz</li>
+                                                    <li> Can be user to create series or parellel system for up to 3 times the voltage or 4 times of the current output. </li>
+                                                    <li> up to 16A at 13.5 VDC</li>
                                                 </ul>
                                                 <div class="cart-buttons">
                                                     <button class="btn btn-left"><a href="#">Add to cart </a> <img
@@ -3633,7 +3637,7 @@
                         <hr>
                         <div class="related-products">
                             <div class="r-image">
-                                <img src="../Product Page/Images/cropped-images/pic2.png" alt="">
+                                <img src="../ProductPage/Images/cropped-images/pic2.png" alt="">
                             </div>
                             <div class="r-product-name">
                                 <b> 7228 Power Amplifier DC - 1 MHz, 1000W </b>
@@ -3652,23 +3656,23 @@
                                         </div>
                                         <div class="pop-add-cart-main">
                                             <div class="image-container">
-                                                <img src="..\Product Page\Images\7224\ae_techron_7224_pic5.png" alt="">
+                                                <img src="..\ProductPage\Images\7224\ae_techron_7224_pic5.png" alt="">
                                                 <div class="image-gallery-container">
                                                     <div class="image-gallery">
-                                                        <img src="..\Product Page\Images\7224\ae_techron_7224_pic5.png" alt="">
-                                                        <img src="..\Product Page\Images\7224\ae_techron_7224_pic5.png" alt="">
-                                                        <img src="..\Product Page\Images\7224\ae_techron_7224_pic5.png" alt="">
-                                                        <img src="..\Product Page\Images\7224\ae_techron_7224_pic5.png" alt="">
+                                                        <img src="..\ProductPage\Images\7224\ae_techron_7224_pic5.png" alt="">
+                                                        <img src="..\ProductPage\Images\7224\ae_techron_7224_pic5.png" alt="">
+                                                        <img src="..\ProductPage\Images\7224\ae_techron_7224_pic5.png" alt="">
+                                                        <img src="..\ProductPage\Images\7224\ae_techron_7224_pic5.png" alt="">
                                                     </div>
                                                 </div>
                                             </div>
-                                            <div class="product desc">
+                                            <div class="product-desc">
                                                 <h3>AE Techron 7224 Power Amplifier DC-300 kHz 900W</h3>
                                                 <ul>
-                                                    <div></div>Up to 1000 watts RMS Power output
-                                                    <div></div>Small signal response up to 1 MHz</li>
-                                                    <div></div>Can be user to create series or parellel system for up to 3 times the voltage or 4 times of the current output.
-                                                    <div></div>up to 16A at 13.5 VDC
+                                                    <li> Up to 1000 watts RMS Power output</li>
+                                                    <li> Small signal response up to 1 MHz</li>
+                                                    <li> Can be user to create series or parellel system for up to 3 times the voltage or 4 times of the current output. </li>
+                                                    <li> up to 16A at 13.5 VDC</li>
                                                 </ul>
                                                 <div class="cart-buttons">
                                                     <button class="btn btn-left"><a href="#">Add to cart </a> <img
@@ -3988,7 +3992,7 @@
                         <hr>
                         <div class="related-products">
                             <div class="r-image">
-                                <img src="../Product Page/Images/cropped-images/pic1.png" alt="">
+                                <img src="../ProductPage/Images/cropped-images/pic1.png" alt="">
                             </div>
                             <div class="r-product-name">
                                 <b> 7796 Power Amplifier DC - 30 kHz, 6.6kW</b>
@@ -4007,23 +4011,23 @@
                                         </div>
                                         <div class="pop-add-cart-main">
                                             <div class="image-container">
-                                                <img src="..\Product Page\Images\7224\ae_techron_7224_pic5.png" alt="">
+                                                <img src="..\ProductPage\Images\7224\ae_techron_7224_pic5.png" alt="">
                                                 <div class="image-gallery-container">
                                                     <div class="image-gallery">
-                                                        <img src="..\Product Page\Images\7224\ae_techron_7224_pic5.png" alt="">
-                                                        <img src="..\Product Page\Images\7224\ae_techron_7224_pic5.png" alt="">
-                                                        <img src="..\Product Page\Images\7224\ae_techron_7224_pic5.png" alt="">
-                                                        <img src="..\Product Page\Images\7224\ae_techron_7224_pic5.png" alt="">
+                                                        <img src="..\ProductPage\Images\7224\ae_techron_7224_pic5.png" alt="">
+                                                        <img src="..\ProductPage\Images\7224\ae_techron_7224_pic5.png" alt="">
+                                                        <img src="..\ProductPage\Images\7224\ae_techron_7224_pic5.png" alt="">
+                                                        <img src="..\ProductPage\Images\7224\ae_techron_7224_pic5.png" alt="">
                                                     </div>
                                                 </div>
                                             </div>
-                                            <div class="product desc">
+                                            <div class="product-desc">
                                                 <h3>AE Techron 7224 Power Amplifier DC-300 kHz 900W</h3>
                                                 <ul>
-                                                    <div></div>Up to 1000 watts RMS Power output
-                                                    <div></div>Small signal response up to 1 MHz</li>
-                                                    <div></div>Can be user to create series or parellel system for up to 3 times the voltage or 4 times of the current output.
-                                                    <div></div>up to 16A at 13.5 VDC
+                                                    <li> Up to 1000 watts RMS Power output</li>
+                                                    <li> Small signal response up to 1 MHz</li>
+                                                    <li> Can be user to create series or parellel system for up to 3 times the voltage or 4 times of the current output. </li>
+                                                    <li> up to 16A at 13.5 VDC</li>
                                                 </ul>
                                                 <div class="cart-buttons">
                                                     <button class="btn btn-left"><a href="#">Add to cart </a> <img
@@ -4343,7 +4347,7 @@
                         <hr>
                         <div class="related-products">
                             <div class="r-image">
-                                <img src="../Product Page/Images/cropped-images/pic1.png" alt="">
+                                <img src="../ProductPage/Images/cropped-images/pic1.png" alt="">
                             </div>
                             <div class="r-product-name">
                                 <b> 7796 Power Amplifier DC - 30 kHz, 6.6kW</b>
@@ -4362,23 +4366,23 @@
                                         </div>
                                         <div class="pop-add-cart-main">
                                             <div class="image-container">
-                                                <img src="..\Product Page\Images\7224\ae_techron_7224_pic5.png" alt="">
+                                                <img src="..\ProductPage\Images\7224\ae_techron_7224_pic5.png" alt="">
                                                 <div class="image-gallery-container">
                                                     <div class="image-gallery">
-                                                        <img src="..\Product Page\Images\7224\ae_techron_7224_pic5.png" alt="">
-                                                        <img src="..\Product Page\Images\7224\ae_techron_7224_pic5.png" alt="">
-                                                        <img src="..\Product Page\Images\7224\ae_techron_7224_pic5.png" alt="">
-                                                        <img src="..\Product Page\Images\7224\ae_techron_7224_pic5.png" alt="">
+                                                        <img src="..\ProductPage\Images\7224\ae_techron_7224_pic5.png" alt="">
+                                                        <img src="..\ProductPage\Images\7224\ae_techron_7224_pic5.png" alt="">
+                                                        <img src="..\ProductPage\Images\7224\ae_techron_7224_pic5.png" alt="">
+                                                        <img src="..\ProductPage\Images\7224\ae_techron_7224_pic5.png" alt="">
                                                     </div>
                                                 </div>
                                             </div>
-                                            <div class="product desc">
+                                            <div class="product-desc">
                                                 <h3>AE Techron 7224 Power Amplifier DC-300 kHz 900W</h3>
                                                 <ul>
-                                                    <div></div>Up to 1000 watts RMS Power output
-                                                    <div></div>Small signal response up to 1 MHz</li>
-                                                    <div></div>Can be user to create series or parellel system for up to 3 times the voltage or 4 times of the current output.
-                                                    <div></div>up to 16A at 13.5 VDC
+                                                    <li> Up to 1000 watts RMS Power output</li>
+                                                    <li> Small signal response up to 1 MHz</li>
+                                                    <li> Can be user to create series or parellel system for up to 3 times the voltage or 4 times of the current output. </li>
+                                                    <li> up to 16A at 13.5 VDC</li>
                                                 </ul>
                                                 <div class="cart-buttons">
                                                     <button class="btn btn-left"><a href="#">Add to cart </a> <img
@@ -4698,7 +4702,7 @@
                         <hr>
                         <div class="related-products">
                             <div class="r-image">
-                                <img src="../Product Page/Images/cropped-images/pic1.png" alt="">
+                                <img src="../ProductPage/Images/cropped-images/pic1.png" alt="">
                             </div>
                             <div class="r-product-name">
                                 <b> 7796 Power Amplifier DC - 30 kHz, 6.6kW</b>
@@ -4717,23 +4721,23 @@
                                         </div>
                                         <div class="pop-add-cart-main">
                                             <div class="image-container">
-                                                <img src="..\Product Page\Images\7224\ae_techron_7224_pic5.png" alt="">
+                                                <img src="..\ProductPage\Images\7224\ae_techron_7224_pic5.png" alt="">
                                                 <div class="image-gallery-container">
                                                     <div class="image-gallery">
-                                                        <img src="..\Product Page\Images\7224\ae_techron_7224_pic5.png" alt="">
-                                                        <img src="..\Product Page\Images\7224\ae_techron_7224_pic5.png" alt="">
-                                                        <img src="..\Product Page\Images\7224\ae_techron_7224_pic5.png" alt="">
-                                                        <img src="..\Product Page\Images\7224\ae_techron_7224_pic5.png" alt="">
+                                                        <img src="..\ProductPage\Images\7224\ae_techron_7224_pic5.png" alt="">
+                                                        <img src="..\ProductPage\Images\7224\ae_techron_7224_pic5.png" alt="">
+                                                        <img src="..\ProductPage\Images\7224\ae_techron_7224_pic5.png" alt="">
+                                                        <img src="..\ProductPage\Images\7224\ae_techron_7224_pic5.png" alt="">
                                                     </div>
                                                 </div>
                                             </div>
-                                            <div class="product desc">
+                                            <div class="product-desc">
                                                 <h3>AE Techron 7224 Power Amplifier DC-300 kHz 900W</h3>
                                                 <ul>
-                                                    <div></div>Up to 1000 watts RMS Power output
-                                                    <div></div>Small signal response up to 1 MHz</li>
-                                                    <div></div>Can be user to create series or parellel system for up to 3 times the voltage or 4 times of the current output.
-                                                    <div></div>up to 16A at 13.5 VDC
+                                                    <li> Up to 1000 watts RMS Power output</li>
+                                                    <li> Small signal response up to 1 MHz</li>
+                                                    <li> Can be user to create series or parellel system for up to 3 times the voltage or 4 times of the current output. </li>
+                                                    <li> up to 16A at 13.5 VDC</li>
                                                 </ul>
                                                 <div class="cart-buttons">
                                                     <button class="btn btn-left"><a href="#">Add to cart </a> <img
@@ -5053,7 +5057,7 @@
                         <hr>
                         <div class="related-products">
                             <div class="r-image">
-                                <img src="../Product Page/Images/cropped-images/pic4.png" alt="">
+                                <img src="../ProductPage/Images/cropped-images/pic4.png" alt="">
                             </div>
                             <div class="r-product-name">
                                 <b> 7794 Power Amplifier DC - 30 kHz, 5kW </b>
@@ -5072,17 +5076,17 @@
                                         </div>
                                         <div class="pop-add-cart-main">
                                             <div class="image-container">
-                                                <img src="..\Product Page\Images\7224\ae_techron_7224_pic5.png" alt="">
+                                                <img src="..\ProductPage\Images\7224\ae_techron_7224_pic5.png" alt="">
                                                 <div class="image-gallery-container">
                                                     <div class="image-gallery">
-                                                        <img src="..\Product Page\Images\7224\ae_techron_7224_pic5.png" alt="">
-                                                        <img src="..\Product Page\Images\7224\ae_techron_7224_pic5.png" alt="">
-                                                        <img src="..\Product Page\Images\7224\ae_techron_7224_pic5.png" alt="">
-                                                        <img src="..\Product Page\Images\7224\ae_techron_7224_pic5.png" alt="">
+                                                        <img src="..\ProductPage\Images\7224\ae_techron_7224_pic5.png" alt="">
+                                                        <img src="..\ProductPage\Images\7224\ae_techron_7224_pic5.png" alt="">
+                                                        <img src="..\ProductPage\Images\7224\ae_techron_7224_pic5.png" alt="">
+                                                        <img src="..\ProductPage\Images\7224\ae_techron_7224_pic5.png" alt="">
                                                     </div>
                                                 </div>
                                             </div>
-                                            <div class="product desc">
+                                            <div class="product-desc">
                                                 <h3>AE Techron 7224 Power Amplifier DC-300 kHz 900W</h3>
                                                 <ul>
                                                     <div></div>Up to 1000 watts RMS Power output

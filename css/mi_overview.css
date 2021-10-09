@@ -231,8 +231,6 @@ section {
 .products-img>img {
     width: 100%;
 }
-
-
 /* ---------------------------footer box------------------------------ */
 
 .product-categories-container {
@@ -420,6 +418,13 @@ section {
     .lg-hr-three {
         margin-top: 35px;
     }
+    .overview-brand-box a {
+        padding: 19px 2px;
+        font-size: 1rem;
+    }
+    .overview-brand-box {
+        height: 65px;
+    }
 }
 
 @media(max-width:470px) {
@@ -430,10 +435,6 @@ section {
 }
 
 @media(max-width:425px) {
-    .overview-brand-box a {
-        padding: 25px 5px;
-        font-size: 1rem;
-    }
     .feilds-cont p {
         font-size: 1rem;
     }
@@ -454,6 +455,9 @@ section {
         width: 85vw;
         height: 35vh;
     }
+    .overview-brand-box {
+    height: 65px;
+}
 }
 
 @media (max-width:375px) {

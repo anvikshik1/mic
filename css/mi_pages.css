@@ -215,7 +215,6 @@ body{
     flex-direction: column;
     border-radius: 4px;
 }
-
 .carousel-app h5{
     color: rgb(32, 32, 32);
     margin-top: 20px;
@@ -301,9 +300,6 @@ body{
     display: flex;
     align-self: center;
 }
-
-
-
 
 
 @media(min-width:1680px){
@@ -492,9 +488,7 @@ body{
     .standards {
         font-size: 14px;
     }
-    .header-item-left img {
-        width: 3.5rem;
-    }
+   
     .header-item-left h1 {
         font-size: 14px;
     }
@@ -681,10 +675,7 @@ body{
        position: absolute;
        right: 10px;
     }
-    .header-item-left img {
-        width: 3rem;
-        margin-top: 10px;
-    }
+  
     .header-item-left h1 {
         font-size: 12px;
     }
