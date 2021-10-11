@@ -563,7 +563,7 @@
                         </div>
                         <div class="form"><input type="text" name="lname" id="lname" placeholder="Last name*"></td>
                         </div>
-                        <div class="form text-area"><textarea name="yrequest" id="" cols="" rows="5" placeholder="Your Request*"></textarea>
+                        <div class="form text-area"><textarea name="yrequest" id="text-area" cols="" rows="5" placeholder="Your Request*"></textarea>
                         </div>
                         <div class="form"> <input type="text" name="company" id="company" placeholder="Company*">
                         </div>
@@ -582,16 +582,15 @@
                         <div class="form checkbox-date">
                             <div class="form-left">
                                 <label for="rental">Rental</label>
-                                <input type="checkbox" name="rental" id="rental">
+                                <input type="checkbox" name="rental" id="rental" onClick="checkBox()">
                                 <label for="purchase">Purchase</label>
                                 <input type="checkbox" name="purchase" id="purchase">
-
                                 <div class="tied-together"> <label for="qty">Quantity</label>
                                     <input type="number" name="" id="" min="1" max="10"></div>
                             </div>
                             <div class="form-right">
-                                <div class="tied-together"> <input type="number" name="" id="month" min="1" max="10"><label for="month">Month(s)</label></div>
-                                <div class="tied-together"> <label for="date">Rental Date</label> <input type="date" name="date" id="date"></div>
+                                <div class="tied-together"> <input type="number" name="" id="month-rental" disabled="disabled" min="1" max="10" ><label for="month">Month(s)</label></div>
+                                <div class="tied-together"> <label for="date">Rental Date</label> <input type="date" name="date" id="date-rental" disabled="disabled"></div>
                             </div>
                         </div>
                         <div class="terms">
@@ -5477,6 +5476,8 @@
                 <p class="cpy-right">©2021 Maxim Instruments Corporation</p>
             </div>
         </div>
+
+        
         <!--standard colapsible javascript -->
         <script>
             var coll = document.getElementsByClassName("collapsible");
@@ -5510,10 +5511,7 @@
                 });
             }
         </script>
-        <script src="../js/jquery-3.6.0.min.js"></script>
-        <script src="../js/owl.carousel.min.js"></script>
-        <script src="../js/script.js" defer></script>
-        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+            //   -------pop-up---------------------
 
         <script>
             function myFunction() {
@@ -5531,6 +5529,10 @@
                 }
             }
         </script>
+        <script src="../js/jquery-3.6.0.min.js"></script>
+        <script src="../js/owl.carousel.min.js"></script>
+        <script src="../js/script.js" defer></script>
+        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
 </body>
 
 </html>
