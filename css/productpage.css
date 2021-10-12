@@ -9,8 +9,8 @@ body {
 
 .cart-Product-name h3 {
     font-family: Maxim-Klavika-MediumCondensed;
-    font-size: 25px;
-    padding: 18px;
+    font-size: 30px;
+    padding: 23px;
     letter-spacing: 1px;
     font-weight: 500;
 }
@@ -28,14 +28,15 @@ span {
     width: 100%;
     display: flex;
     justify-content: center;
-    height: 500px;
+    height: 640px;
 }
 
 .add-cart-main {
     width: 83%;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-gap: 60px;
+    margin-top: 40px;
+    /* grid-gap: 60px; */
 }
 
 
@@ -47,22 +48,20 @@ span {
     flex-wrap: wrap;
 }
 
+.main-image {
+    height: 250px;
+}
+
 .image-container img {
-    width: 324px;
+    width: 399px;
+    height: 445px;
 }
 
 .image-gallery-container {
-    width: 100%;
+    width: 300px;
     height: 50px;
     display: flex;
     justify-content: center;
-}
-
-.image-gallery {
-    /* width: 45%; */
-    /* height: 50px; */
-    display: flex;
-    /* justify-content: space-between; */
 }
 
 .image-gallery img {
@@ -78,6 +77,15 @@ span {
     border: 2px solid black;
 }
 
+.owl-nav {
+    position: absolute;
+    top: -4px;
+    left: -29px;
+    display: flex;
+    justify-content: space-between;
+    width: 350px;
+}
+
 
 /*   product description   */
 
@@ -87,7 +95,7 @@ span {
 }
 
 .product-desc ul {
-    padding: 82px 10px;
+    padding: 40px 10px 80px 10px;
 }
 
 .product-desc li {
@@ -123,6 +131,7 @@ span {
 
 .btn a {
     text-decoration: none;
+    font-size: 14px;
     color: black;
     padding: 10px;
 }
@@ -138,12 +147,6 @@ span {
 .btn-right a:hover {
     color: rgb(255, 255, 255);
     padding: 10px;
-    font-size: 14px;
-}
-
-.btn-right a {
-    text-decoration: none;
-    color: white;
     font-size: 14px;
 }
 
@@ -163,7 +166,7 @@ span {
     display: flex;
     justify-content: center;
     background-color: white;
-    height: 561px;
+    height: 720px;
     display: none;
 }
 
@@ -171,18 +174,14 @@ span {
     width: 83%;
 }
 
-.request-main h2 {
-    margin: 40px 0px 15px;
+.request-main h2,
+.request-main span {
+    margin: 100px 0px 30px;
     font-size: 28px;
 }
 
 .request-main span {
     margin-left: 95px;
-}
-
-.request-main h2,
-span {
-    font-size: 30px;
 }
 
 .request-main p {
@@ -281,7 +280,8 @@ input[type=number] {
 .form-main [type="submit"],
 .form-cancel-btn {
     -webkit-appearance: button;
-    width: 105px;
+    width: 130px;
+    height: 40px;
     border: 1px solid #ccc;
     margin: 2px;
     padding: 5px;
@@ -316,7 +316,7 @@ input[type=number] {
 }
 
 .inner-specs-bar ul {
-    height: 60px;
+    height: 80px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -324,7 +324,7 @@ input[type=number] {
 
 .inner-specs-bar a {
     color: rgb(153, 153, 153);
-    padding: 16px 0px 16px 0px;
+    padding: 26.5px 0px 26.5px 0px;
 }
 
 .inner-specs-bar a:hover {
@@ -687,7 +687,7 @@ td {
 
 .Product-promo-video {
     width: 100%;
-    height: 600px;
+    height: 720px;
 }
 
 
@@ -705,7 +705,7 @@ td {
 }
 
 .related-main h3 {
-    margin: 25px 0px 7px 0px;
+    margin-top: 20px;
 }
 
 .related-colap-container {
@@ -795,7 +795,7 @@ td {
 /* ------------The Close Button------------------ */
 
 .close {
-    color: #aaaaaa;
+    color: #000000;
     float: right;
     font-size: 28px;
     font-weight: bold;
@@ -808,41 +808,139 @@ td {
     cursor: pointer;
 }
 
-.pop-up-add-cart-container {
-    background-color: white;
-    width: 100%;
-    position: relative;
-}
 
-.pop-up-cart-Product-name {
+/* -------------related pop up section on preview button----- */
+
+.pop-up-cart-Product-name h3 {
     color: black;
-    position: absolute;
-    left: 33%;
     font-size: 20px;
 }
 
-.pop-add-cart-main {
+.pop-up-add-cart-container {
+    background-color: white;
+    width: 100%;
+}
+
+.pop-up-add-cart-main {
+    width: 83%;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 60px;
-    margin: 30px 20px;
+    margin: 30px 0px 30px 0px;
 }
 
-.pop-description-container {
+.pop-up-image-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.pop-up-main-image {
+    display: flex;
+    justify-content: center;
+    width: 356px;
+}
+
+.pop-up-image-container img {
+    width: 80%;
+}
+
+.pop-up-image-gallery-container {
+    width: 100%;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.pop-up-image-gallery {
+    width: 46px;
+    border: 1px solid #ccc;
+    padding: 7px;
+    height: 30px;
+    margin: 5px;
+}
+
+.pop-up-image-gallery img:hover {
+    border: 2px solid black;
+}
+
+
+/*   product description   */
+
+.pop-up-product-desc h3 {}
+
+.pop-up-product-desc ul {
+    padding: 40px 10px 80px 10px;
+}
+
+.pop-up-product-desc li {
+    list-style: disc;
+    font-size: 16px;
+}
+
+.pop-up-cart-buttons {
+    display: flex;
+}
+
+.pop-up-btn {
+    margin: 5px 0px 5px 9px;
+    font-weight: bold;
+    font-size: 12px;
+    width: 194px;
+    height: 40px;
+    align-items: center;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+}
+
+.pop-up-btn-left {
+    display: flex;
+    justify-content: space-between;
+}
+
+.pop-up-btn-left img {
+    padding: 5px;
+    width: 30px;
+    height: 33px;
+}
+
+.pop-up-btn a {
+    text-decoration: none;
+    font-size: 14px;
+    color: black;
+    padding: 10px;
+}
+
+.pop-up-btn-right:hover .pop-up-btn-text {
+    color: white;
+}
+
+.pop-up-btn-right:hover {
+    background-color: black;
+}
+
+.pop-up-btn-right a:hover {
+    color: rgb(255, 255, 255);
+    padding: 10px;
+    font-size: 14px;
+}
+
+.pop-up-description-container {
     width: 100%;
     display: flex;
     justify-content: center;
 }
 
-.pop-description-main {
+.pop-up-description-main {
     width: 95%;
 }
 
-.pop-description-main p {
+.pop-up-description-main p {
     margin-top: 10px;
 }
 
-.pop-specification-container {
+.pop-up-specification-container {
     width: 100%;
     display: flex;
     justify-content: center;
@@ -850,13 +948,14 @@ td {
 
 .pop-up-cart-Product-name h3 {
     font-size: 30px;
+    text-align: center;
 }
 
-.pop-specification-main {
+.pop-up-specification-main {
     width: 95%;
 }
 
-.pop-specs-table {
+.pop-up-specs-table {
     margin-top: 20px;
     width: 100%;
     text-align: left;
@@ -864,12 +963,12 @@ td {
     border: 10px solid white;
 }
 
-.pop-specs-table th,
+.pop-up-specs-table th,
 td {
     padding: 5px;
 }
 
-.pop-specs-table tr:nth-child(even) {
+.pop-up-specs-table tr:nth-child(even) {
     background-color: #f2f2f2;
 }
 
@@ -931,7 +1030,8 @@ td {
     .specs-table {
         font-size: 12px;
     }
-    .request-main h2 span {
+    .request-main h2,
+    .request-main span {
         margin: 11px 0px 0px -1px;
         display: block;
     }
