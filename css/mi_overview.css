@@ -270,6 +270,13 @@ section {
     }
 }
 
+@media(max-width:470px) {
+    .iframevideo,
+    .youtube-video {
+        height: 40vh;
+    }
+}
+
 @media(max-width:425px) {
     .feilds-cont p {
         font-size: 1rem;

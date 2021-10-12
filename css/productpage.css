@@ -1,5 +1,4 @@
-* {
-    box-sizing: border-box;
+body {
     font-family: "Noto Sans", sans-serif;
 }
 
@@ -10,15 +9,17 @@
 
 .cart-Product-name h3 {
     font-family: Maxim-Klavika-MediumCondensed;
-    font-size: 30px;
-    padding: 13px;
+    font-size: 25px;
+    padding: 18px;
+    letter-spacing: 1px;
+    font-weight: 500;
 }
 
 h3,
 h2,
 span {
     font-family: Maxim-Klavika-lightCondensed;
-    font-size: 20px;
+    font-size: 25px;
     font-weight: 1000;
 }
 
@@ -82,11 +83,16 @@ span {
 
 .product-desc h3 {
     padding: 100px 10px 5px 5px;
-    font-size: 25px;
+    font-size: 28px;
 }
 
 .product-desc ul {
     padding: 82px 10px;
+}
+
+.product-desc li {
+    list-style: disc;
+    font-size: 16px;
 }
 
 .cart-buttons {
@@ -96,8 +102,8 @@ span {
 .btn {
     margin: 5px 0px 5px 9px;
     font-weight: bold;
-    font-size: 16px;
-    width: 210px;
+    font-size: 12px;
+    width: 240px;
     height: 40px;
     align-items: center;
     border-radius: 4px;
@@ -132,6 +138,13 @@ span {
 .btn-right a:hover {
     color: rgb(255, 255, 255);
     padding: 10px;
+    font-size: 14px;
+}
+
+.btn-right a {
+    text-decoration: none;
+    color: white;
+    font-size: 14px;
 }
 
 #myDIV {
@@ -184,6 +197,10 @@ span {
     margin-bottom: 60px;
 }
 
+input {
+    outline: none;
+}
+
 .form-main input[type=email],
 input[type=text],
 select {
@@ -197,7 +214,6 @@ select {
 
 input[type=number] {
     border: 1px solid #ccc;
-    margin-left: 12px;
 }
 
 .request-main textarea {
@@ -206,10 +222,15 @@ input[type=number] {
     padding: 5px;
     background-color: #f2f2f2;
     border: 1px solid #ccc;
+    outline: none;
 }
 
 .form-main .text-area {
     grid-column: 1/3;
+}
+
+#text-area {
+    resize: none;
 }
 
 .checkbox-date {
@@ -256,8 +277,8 @@ input[type=number] {
 }
 
 .form-main [type="button"],
-[type="reset"],
-[type="submit"],
+.form-main [type="reset"],
+.form-main [type="submit"],
 .form-cancel-btn {
     -webkit-appearance: button;
     width: 105px;
@@ -616,7 +637,7 @@ td {
 
 .doc {
     background-color: black;
-    height: 70px;
+    height: 150px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -625,6 +646,9 @@ td {
 
 .doc a {
     color: rgb(153, 153, 153);
+    font-family: Maxim-Klavika-LightCondensed;
+    font-size: 30px;
+    font-weight: 600;
 }
 
 .doc:hover a {

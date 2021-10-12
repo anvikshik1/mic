@@ -651,3 +651,21 @@ $(document).ready(function(){
         $(this).parent().parent(".myModal").hide();
     })
 });
+
+//--------------Disable date and time-------------
+function checkBox() {
+    let toggleButton = document.getElementById("rental");
+
+        if(toggleButton.checked === true){
+            document.getElementById("month-rental").disabled =false;
+            document.getElementById("date-rental").disabled =false;
+        } else{
+            document.getElementById("month-rental").disabled =true;
+            document.getElementById("date-rental").disabled =true;
+        }
+    };
+
+
+
+    
+    
