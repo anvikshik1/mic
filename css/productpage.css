@@ -86,7 +86,7 @@ span {
 }
 
 .product-desc ul {
-    padding: 34px 10px;
+    padding: 82px 10px;
 }
 
 .cart-buttons {
@@ -96,21 +96,17 @@ span {
 .btn {
     margin: 5px 0px 5px 9px;
     font-weight: bold;
-    font-size: 12px;
-    width: 184px;
-    height: 30px;
+    font-size: 16px;
+    width: 210px;
+    height: 40px;
     align-items: center;
     border-radius: 4px;
+    border: 1px solid #ccc;
 }
 
 .btn-left {
-    border: 1px solid #ccc;
     display: flex;
     justify-content: space-between;
-}
-
-.btn-left:hover {
-    border: 2px solid #ccc;
 }
 
 .btn-left img {
@@ -119,26 +115,23 @@ span {
     height: 33px;
 }
 
-.btn-right {
-    border: 1px solid black;
-    background-color: black;
-    padding: 5px;
-    color: white;
-}
-
-.btn-right:hover {
-    border: 2px solid #ccc;
-}
-
-.btn-left a {
+.btn a {
     text-decoration: none;
     color: black;
     padding: 10px;
 }
 
-.btn-right a {
-    text-decoration: none;
+.btn-right:hover .btn-text {
     color: white;
+}
+
+.btn-right:hover {
+    background-color: black;
+}
+
+.btn-right a:hover {
+    color: rgb(255, 255, 255);
+    padding: 10px;
 }
 
 #myDIV {
@@ -337,8 +330,8 @@ input[type=number] {
 }
 
 hr {
-    height: 1px;
-    color: lightgray;
+    height: .8px;
+    background-color: lightgray;
 }
 
 .description-main p {
@@ -730,8 +723,9 @@ td {
 
 .r-button button {
     width: 80%;
-    height: 35px;
+    height: 40px;
     border: 1px solid #1e1e1e;
+    border-radius: 4px;
 }
 
 .r-button button:hover {
@@ -768,7 +762,7 @@ td {
     margin: auto;
     padding: 20px;
     border: 1px solid #888;
-    width: 89%;
+    width: 59%;
     height: auto;
     margin-bottom: 100px;
 }
@@ -799,7 +793,7 @@ td {
 .pop-up-cart-Product-name {
     color: black;
     position: absolute;
-    left: 16%;
+    left: 33%;
     font-size: 20px;
 }
 
@@ -828,6 +822,10 @@ td {
     width: 100%;
     display: flex;
     justify-content: center;
+}
+
+.pop-up-cart-Product-name h3 {
+    font-size: 30px;
 }
 
 .pop-specification-main {
