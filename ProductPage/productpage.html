@@ -522,26 +522,28 @@
         <div class="add-cart-container" id="add-cart-container">
             <div class="add-cart-main">
                 <div class="image-container">
-                    <div class="main-image"> <img src="..\ProductPage\Images\7224\ae_techron_7224_pic5.png" alt=""></div>
+                    <div class="main-image"> <img id="featured" src="..\ProductPage\Images\7224\ae_techron_7224.png" alt=""></div>
                     <div class="image-gallery-container">
-                        <div class="image-gallery owl-carousel owl-theme">
-                            <div class="item"><img src="..\ProductPage\Images\7224\ae_techron_7224_pic5.png" alt="">
-                            </div>
-                            <div class="item"><img src="..\ProductPage\Images\7224\ae_techron_7224_pic5.png" alt="">
-                            </div>
-                            <div class="item"><img src="..\ProductPage\Images\7224\ae_techron_7224_pic5.png" alt="">
-                            </div>
-                            <div class="item"><img src="..\ProductPage\Images\7224\ae_techron_7224_pic5.png" alt="">
-                            </div>
-                            <div class="item"><img src="..\ProductPage\Images\7224\ae_techron_7224_pic5.png" alt="">
-                            </div>
-                            <div class="item"><img src="..\ProductPage\Images\7224\ae_techron_7224_pic5.png" alt="">
-                            </div>
-                            <div class="item"><img src="..\ProductPage\Images\7224\ae_techron_7224_pic5.png" alt="">
-                            </div>
-                            <div class="item"><img src="..\ProductPage\Images\7224\ae_techron_7224_pic5.png" alt="">
-                            </div>
+                        <img id="slideLeft" class="arrow" src="..\images\left-arrow-line-symbol.png">
+                        <div class="image-gallery" id="slider">
+                            <img class="thumbnail active" src="..\ProductPage\Images\7224\ae_techron_7224.png" alt="">
+
+                            <img class="thumbnail" src="..\ProductPage\Images\7224\ae_techron_7224_pic2.png" alt="">
+
+                            <img class="thumbnail" src="..\ProductPage\Images\7224\ae_techron_7224_pic3.png" alt="">
+
+                            <img class="thumbnail" src="..\ProductPage\Images\7224\ae_techron_7224_pic4.png" alt="">
+
+                            <img class="thumbnail" src="..\ProductPage\Images\7224\ae_techron_7224_pic5.png" alt="">
+
+                            <img class="thumbnail" src="..\ProductPage\Images\7224\ae_techron_7224.png" alt="">
+
+                            <img class="thumbnail" src="..\ProductPage\Images\7224\ae_techron_7224_pic2.png" alt="">
+
+                            <img class="thumbnail" src="..\ProductPage\Images\7224\ae_techron_7224_pic3.png" alt="">
+
                         </div>
+                        <img id="slideRight" class="arrow" src="..\images\right-arrow-angle.png">
                     </div>
                 </div>
                 <div class="product-desc">
@@ -1179,14 +1181,27 @@
                                         </div>
                                         <div class="pop-up-add-cart-main">
                                             <div class="pop-up-image-container">
-                                                <div class="pop-up-main-image"> <img src="..\ProductPage\Images\7224\ae_techron_7224_pic5.png" alt=""></div>
+                                                <div class="pop-up-main-image"> <img id="pop-up-featured" src="..\ProductPage\Images\7224\ae_techron_7224.png" alt=""></div>
                                                 <div class="pop-up-image-gallery-container">
-                                                    <div class="pop-up-image-gallery">
-                                                        <img src="..\ProductPage\Images\7224\ae_techron_7224_pic5.png" alt="">
-                                                        <img src="..\ProductPage\Images\7224\ae_techron_7224_pic5.png" alt="">
-                                                        <img src="..\ProductPage\Images\7224\ae_techron_7224_pic5.png" alt="">
-                                                        <img src="..\ProductPage\Images\7224\ae_techron_7224_pic5.png" alt="">
+                                                    <img id="pop-up-slideLeft" class="pop-up-arrow" src="..\images\left-arrow-line-symbol.png">
+                                                    <div class="pop-up-image-gallery" id="pop-up-slider">
+                                                        <img class="pop-up-thumbnail active" src="..\ProductPage\Images\7224\ae_techron_7224.png" alt="">
+
+                                                        <img class="pop-up-thumbnail" src="..\ProductPage\Images\7224\ae_techron_7224_pic2.png" alt="">
+
+                                                        <img class="pop-up-thumbnail" src="..\ProductPage\Images\7224\ae_techron_7224_pic3.png" alt="">
+
+                                                        <img class="pop-up-thumbnail" src="..\ProductPage\Images\7224\ae_techron_7224_pic4.png" alt="">
+
+                                                        <img class="pop-up-thumbnail" src="..\ProductPage\Images\7224\ae_techron_7224_pic5.png" alt="">
+
+                                                        <img class="pop-up-thumbnail" src="..\ProductPage\Images\7224\ae_techron_7224.png" alt="">
+
+                                                        <img class="pop-up-thumbnail" src="..\ProductPage\Images\7224\ae_techron_7224_pic2.png" alt="">
+
+                                                        <img class="pop-up-thumbnail" src="..\ProductPage\Images\7224\ae_techron_7224_pic3.png" alt="">
                                                     </div>
+                                                    <img id="pop-up-slideRight" class="pop-up-arrow" src="..\images\right-arrow-angle.png">
                                                 </div>
                                             </div>
                                             <div class="pop-up-product-desc">
@@ -3041,8 +3056,8 @@
 
         <script>
             function myFunction() {
-                var x = document.getElementById("pop-up-add-cart-container");
-                var y = document.getElementById("pop-request-container");
+                var x = document.getElementById("add-cart-container");
+                var y = document.getElementById("request-container");
                 var z = document.getElementById("cart-Product-name")
                 if (x.style.display === "none") {
                     x.style.display = "flex";
@@ -3055,12 +3070,71 @@
                 }
             }
 
-            $(document).ready(function() {
-                $('.owl-carousel').owlCarousel({
-                    items: 4,
-                    nav: true,
-                    dots: false
-                });
+            // product carousal with thumbnail
+
+            let thumbnails = document.getElementsByClassName('thumbnail')
+
+            let activeImages = document.getElementsByClassName('active')
+
+            for (var i = 0; i < thumbnails.length; i++) {
+
+                thumbnails[i].addEventListener('mouseover', function() {
+                    console.log(activeImages)
+
+                    if (activeImages.length > 0) {
+                        activeImages[0].classList.remove('active')
+                    }
+
+
+                    this.classList.add('active')
+                    document.getElementById('featured').src = this.src
+                })
+            }
+
+
+            let buttonRight = document.getElementById('slideRight');
+            let buttonLeft = document.getElementById('slideLeft');
+
+            buttonLeft.addEventListener('click', function() {
+                document.getElementById('slider').scrollLeft -= 180
+            })
+
+            buttonRight.addEventListener('click', function() {
+                document.getElementById('slider').scrollLeft += 180
+            })
+
+
+            // product carousal with thumbnail
+
+            let popupthumbnails = document.getElementsByClassName('pop-up-thumbnail')
+
+            let popupactiveImages = document.getElementsByClassName('active')
+
+            for (var i = 0; i < popupthumbnails.length; i++) {
+
+                popupthumbnails[i].addEventListener('mouseover', function() {
+                    console.log(popupactiveImages)
+
+                    if (popupactiveImages.length > 0) {
+                        popupactiveImages[0].classList.remove('active')
+                    }
+
+
+                    this.classList.add('active')
+                    document.getElementById('pop-up-featured').src = this.src
+                })
+            }
+
+
+            let popupbuttonRight = document.getElementById('pop-up-slideRight');
+            let popupbuttonLeft = document.getElementById('pop-up-slideLeft');
+
+            popupbuttonLeft.addEventListener('click', function() {
+                document.getElementById('pop-up-slider').scrollLeft -= 100
+            })
+
+            popupbuttonRight.addEventListener('click', function() {
+                document.getElementById('pop-up-slider').scrollLeft += 100
             })
         </script>
 </body>
