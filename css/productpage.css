@@ -45,7 +45,14 @@ span {
 .image-container {
     display: flex;
     justify-content: center;
+    flex-direction: column;
     flex-wrap: wrap;
+}
+
+.main-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .main-image #featured {
@@ -394,9 +401,21 @@ hr {
     margin: 20px 0px 7px 0px;
 }
 
+.specs-table-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.specs-table-overflow-container {
+    width: 83%;
+    overflow: auto;
+    display: flex;
+    justify-content: center;
+}
+
 .specs-table {
     margin-top: 20px;
-    width: 100%;
     text-align: left;
     border-collapse: collapse;
     border: 10px solid white;
@@ -1036,6 +1055,12 @@ td {
     .request-container {
         height: auto;
     }
+    .main-image #featured {
+        max-width: 330px;
+    }
+    .btn {
+        width: 200px;
+    }
     .inner-specs-bar ul {
         font-size: 14px;
         flex-wrap: wrap;
@@ -1068,7 +1093,6 @@ td {
         justify-content: flex-start;
         flex-wrap: wrap;
     }
-    @media (max-width: 987px) {}
     .inner-specs-bar a {
         padding-right: 15px;
     }
@@ -1083,9 +1107,19 @@ td {
 }
 
 @media(max-width:930px) {
+    .add-cart-main {
+        grid-gap: 30px;
+    }
+    .pop-add-cart-main {
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 0px;
+    }
     .btn {
-        font-size: 11px;
-        width: 155px;
+        font-size: 10px;
+        width: 178px;
+    }
+    .main-image #featured {
+        max-width: 310px;
     }
     .Product-promo-video {
         height: 420px;
@@ -1097,13 +1131,9 @@ td {
     .checkbox-date {
         justify-content: space-around;
     }
-    .pop-add-cart-main {
-        grid-template-columns: repeat(1, 1fr);
-        grid-gap: 0px;
-    }
 }
 
-@media(max-width:768px) {
+@media(max-width:785px) {
     .add-cart-container {
         height: auto;
     }
@@ -1113,6 +1143,7 @@ td {
     .add-cart-main {
         grid-template-columns: repeat(1, 1fr);
         grid-gap: 0px;
+        margin: 0;
     }
     .product-desc {
         padding-bottom: 40px;
@@ -1247,8 +1278,13 @@ td {
     .cart-Product-name h3 {
         font-size: 19px;
     }
-    .image-container img {
-        width: 100%;
+    .main-image #featured {
+        max-width: 225px;
+    }
+    .image-gallery-container #slider {
+        width: 159px;
+        display: flex;
+        overflow-x: auto;
     }
     .image-gallery {
         width: 100%;
