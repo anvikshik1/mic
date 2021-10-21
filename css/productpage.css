@@ -1248,7 +1248,7 @@ td {
         padding: 20px;
     }
     .r-button button {
-        width: 50%;
+        width: 65%;
     }
     .pop-up-add-cart-container {
         height: auto;
@@ -1265,9 +1265,6 @@ td {
     }
     .pop-up-product-desc ul {
         padding: 20px 40px;
-    }
-    .related-main h3 {
-        margin: 20px 20px 0px;
     }
     .pop-up-specs-table {
         font-size: 11px;
