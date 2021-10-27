@@ -1059,10 +1059,11 @@
             <div class="standards-main">
                 <h3>Standards</h3>
                 <hr>
-                <button class="collapsible-button"> All Standards </button>
-                <div class="standardcontent">
-                    <button class="collapsible-button">Automotive Standards</button>
-                    <div class="standardcontent">
+                <h4 class="collapse-header collapse-header-main collapsed" data-collapse="header">All Standards<span class="collapse-icon" data-collapse="icon" data-parentEl="h4"></span></h4>
+                <div class="collapse-child">
+                    <h4 class="collapse-header collapsed" data-collapse="header">Automotive Standards
+                        <span class="collapse-icon" data-collapse="icon" data-parentEl="h4"></span> </h4>
+                    <div class="collapse-child">
                         <div class="child-collapsible-content">
                             <div class="collap-cont">ISO 11452-10</div>
                             <div class="collap-cont">ISO 11452-8</div>
@@ -1075,8 +1076,8 @@
                             <div class="collap-cont">SAE J1455</div>
                         </div>
                     </div>
-                    <button class="collapsible-button">Automotive OEM Standards</button>
-                    <div class="standardcontent">
+                    <h4 class="collapse-header collapsed" data-collapse="header">Automotive OEM Standards<span class="collapse-icon" data-collapse="icon" data-parentEl="h4"></span> </h4>
+                    <div class="collapse-child">
                         <div class="child-collapsible-content">
                             <div class="collap-cont">ISO 11452-10</div>
                             <div class="collap-cont">ISO 11452-8</div>
@@ -1089,8 +1090,9 @@
                             <div class="collap-cont">SAE J1455</div>
                         </div>
                     </div>
-                    <button class="collapsible-button">MIL-STD</button>
-                    <div class="standardcontent">
+                    <h4 class="collapse-header collapsed" data-collapse="header">MIL-STD
+                        <span class="collapse-icon" data-collapse="icon" data-parentEl="h4"></span> </h4>
+                    <div class="collapse-child">
                         <div class="child-collapsible-content">
                             <div class="collap-cont">ISO 11452-10</div>
                             <div class="collap-cont">ISO 11452-8</div>
@@ -1103,8 +1105,9 @@
                             <div class="collap-cont">SAE J1455</div>
                         </div>
                     </div>
-                    <button class="collapsible-button">Product Standards</button>
-                    <div class="standardcontent">
+                    <h4 class="collapse-header collapsed" data-collapse="header">Product Standards
+                        <span class="collapse-icon" data-collapse="icon" data-parentEl="h4"></span> </h4>
+                    <div class="collapse-child">
                         <div class="child-collapsible-content">
                             <div class="collap-cont">ISO 11452-10</div>
                             <div class="collap-cont">ISO 11452-8</div>
@@ -1118,6 +1121,7 @@
                         </div>
                     </div>
                 </div>
+
             </div>
         </div>
         <div id="documentation" class="documentation-container">
@@ -1192,7 +1196,7 @@
                                             <div class="pop-up-image-container">
                                                 <div class="pop-up-main-image"> <img id="pop-up-featured" class="pop-up-featured" src="..\ProductPage\Images\7224\ae_techron_7224.png" alt=""></div>
                                                 <div class="pop-up-image-gallery-container">
-                                                    <img id="pop-up-slideLeft" class="pop-up-arrow" src="..\images\left-arrow-line-symbol.png">
+                                                    <img id="pop-up-slideLeft" class="pop-up-arrow pop-up-arrow-left" src="..\images\left-arrow-line-symbol.png">
                                                     <div class="pop-up-image-gallery" id="pop-up-slider">
                                                         <img class="pop-up-thumbnail active" src="..\ProductPage\Images\7224\ae_techron_7224.png" alt="">
 
@@ -1210,7 +1214,7 @@
 
                                                         <img class="pop-up-thumbnail" src="..\ProductPage\Images\7224\ae_techron_7224_pic3.png" alt="">
                                                     </div>
-                                                    <img id="pop-up-slideRight" class="pop-up-arrow" src="..\images\right-arrow-angle.png">
+                                                    <img id="pop-up-slideRight" class="pop-up-arrow pop-up-arrow-right" src="..\images\right-arrow-angle.png">
                                                 </div>
                                             </div>
                                             <div class="pop-up-product-desc">
@@ -3099,21 +3103,94 @@
                 });
             }
         </script>
+        <!--------------- standard collpasible---------- -->
         <script>
-            var collStand = document.getElementsByClassName("collapsible-button");
-            var p;
-
-            for (p = 0; p < collStand.length; p++) {
-                collStand[p].addEventListener("click", function() {
-                    this.classList.toggle("active");
-                    var standardcontent = this.nextElementSibling;
-                    if (standardcontent.style.maxHeight) {
-                        standardcontent.style.maxHeight = null;
-                    } else {
-                        standardcontent.style.maxHeight = standardcontent.scrollHeight + "px";
+            function collapseModule(el, addlActions) {
+                var container = el ? $(el) : $(document);
+                container.click(function(e) {
+                    var action = e.target.dataset.collapse;
+                    console.log("action: ", action, "; target", e.target);
+                    var actionHash = {
+                        header: toggleCollapse,
+                        icon: getParent,
                     }
+
+                    var func = actionHash[action];
+                    if (func) {
+                        func(e.target);
+                    }
+                    if (typeof addlActions == 'object' && addlActions.dataset && typeof addlActions.actionHash == 'object') {
+                        action = e.target.dataset[addlActions.dataset];
+                        func = addlActions.actionHash[action];
+                        if (func) {
+                            func(e.target);
+                        }
+                    }
+
                 });
+
+                function toggleCollapse(el) {
+                    $(el).toggleClass('collapsed');
+                }
+
+                function getParent(el) {
+                    var parentType = el.dataset.parentel;
+                    var parent = getParentEl(el, parentType);
+                    console.log("parent: ", parent);
+                    toggleCollapse(parent);
+                }
+
             }
+
+            function getParentEl(el, tagName) {
+                tagName = tagName.toUpperCase();
+                do {
+                    if (el.tagName == tagName) {
+                        return el;
+                    }
+                    el = el.parentElement || el.parentNode;
+                } while (el !== null && el.nodeType === 1);
+                return null;
+            }
+
+            function checkModule(el) {
+                var container = el ? $(el) : $(document);
+                var actions = {
+                    dataset: 'action',
+                    actionHash: {
+                        checkAll: checkSubs,
+
+                    },
+                }
+                collapseModule(container, actions);
+
+
+                function checkSubs(el) {
+                    var isChecked = el.checked;
+                    console.log("checked: ", isChecked);
+                    var parentType = el.dataset.parentel;
+                    var parent = getParentEl(el, parentType);
+                    console.log("parent: ", parent);
+                    var sibling = parent.nextElementSibling;
+                    console.log("sibling: ", sibling);
+                    $(sibling).find("input[type='checkbox']").each(function() {
+                        console.log("checkMe: ", this);
+                        if (this.checked != isChecked) {
+                            $(this).click();
+
+                        }
+                    });
+                }
+            }
+
+            $(document).ready(function() {
+                // collapseModule(".wrapper");
+                checkModule(".standards-container");
+
+                $("input[type='checkbox']").click(function(e) {
+                    console.log("clicked: ", e.target);
+                });
+            });
         </script>
         // -------pop-up---------------------
 
@@ -3141,7 +3218,7 @@
 
             for (var i = 0; i < thumbnails.length; i++) {
 
-                thumbnails[i].addEventListener('mouseover', function() {
+                thumbnails[i].addEventListener('click', function() {
                     console.log(activeImages)
 
                     if (activeImages.length > 0) {
@@ -3167,15 +3244,15 @@
             })
 
 
-            // product carousal with thumbnail
+            // product carousal with thumbnail for related product popup 
 
             let popupthumbnails = document.getElementsByClassName('pop-up-thumbnail')
 
             let popupactiveImages = document.getElementsByClassName('active')
 
-            for (var i = 0; i < popupthumbnails.length; i++) {
+            for (var j = 0; j < popupthumbnails.length; j++) {
 
-                popupthumbnails[i].addEventListener('mouseover', function() {
+                popupthumbnails[j].addEventListener('click', function() {
                     console.log(popupactiveImages)
 
                     if (popupactiveImages.length > 0) {
@@ -3184,20 +3261,20 @@
 
 
                     this.classList.add('active')
-                    document.getElementsById('pop-up-featured').src = this.src
+                    document.getElementById('pop-up-featured').src = this.src
                 })
             }
 
 
-            let popupbuttonRight = document.getElementById('pop-up-slideRight');
-            let popupbuttonLeft = document.getElementById('pop-up-slideLeft');
+            let popupbuttonRight = document.getElementById('pop-up-slideRight')
+            let popupbuttonLeft = document.getElementById('pop-up-slideLeft')
 
             popupbuttonLeft.addEventListener('click', function() {
-                document.getElementById('pop-up-slider').scrollLeft -= 80
+                document.getElementById('pop-up-slider').scrollLeft -= 214
             })
 
             popupbuttonRight.addEventListener('click', function() {
-                document.getElementById('pop-up-slider').scrollLeft += 80
+                document.getElementById('pop-up-slider').scrollLeft += 214
             })
         </script>
 </body>
