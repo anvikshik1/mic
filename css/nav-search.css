@@ -97,7 +97,7 @@ body {
     display: flex;
     justify-content: center;
     position: relative;
-    color: white;
+    /* color: white; */
 }
 
 .inner-half {
@@ -115,7 +115,7 @@ body {
 /* }  */
 
 .collapse .accordion {
-    color: white;
+    /* color: white; */
     font-size: 14px;
     /* margin-left: -4px; */
     font-size: 18px;
@@ -130,7 +130,7 @@ body {
 }
 
 .parent {
-    color: white;
+    /* color: white; */
     font-family: Maxim-Klavika-LightCondensed;
     font-size: 24px;
     display: flex;
@@ -155,7 +155,7 @@ body {
 }
 
 .Categories {
-    color: white;
+    /* color: white; */
     margin-bottom: 40px;
     margin-top: 10px;
 }
@@ -386,7 +386,7 @@ label {
 }
 
 .text-div p {
-    color: white;
+    /* color: white; */
     font-size: 16px;
     margin-top: 15px;
 }
@@ -420,7 +420,7 @@ label {
 }
 
 .boxes .image-div {
-    border: 1px solid white;
+    border: 1px solid rgb(12, 11, 11);
     background-color: white;
     height: 150px;
     display: flex;
