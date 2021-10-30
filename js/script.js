@@ -3,12 +3,12 @@
 const nav = document.querySelector('.header');
 
 window.addEventListener('scroll', function() {
-  const offset = window.pageYOffset;
-  
-  if(offset > 75)
-    nav.classList.add('scroll')
-  else 
-    nav.classList.remove('scroll')
+    const offset = window.pageYOffset;
+
+    if (offset > 75)
+        nav.classList.add('scroll')
+    else
+        nav.classList.remove('scroll')
 });
 
 
@@ -23,7 +23,7 @@ const menuOverlay = document.querySelector('.overlay');
 let subMenu;
 
 menuSection.addEventListener('click', (e) => {
-    if (! menu.classList.contains('active')) {
+    if (!menu.classList.contains('active')) {
         return;
     }
     if (e.target.closest('.menu-item-has-children')) {
@@ -76,7 +76,7 @@ function hideSubMenu() {
 }
 
 // Windows Screen Resizes Function
-window.onresize = function () {
+window.onresize = function() {
     if (this.innerWidth > 991) {
         if (menu.classList.contains('active')) {
             toggleMenu();
@@ -86,7 +86,9 @@ window.onresize = function () {
 
 
 // -------------- image slider ------------------------
-+ function($) {
++
+
+function($) {
     'use strict';
 
     function transitionEnd() {
@@ -106,7 +108,7 @@ window.onresize = function () {
                 }
             }
         }
-        return false 
+        return false
     }
 
     // http://blog.alexmaccaw.com/css-transitions
@@ -137,7 +139,9 @@ window.onresize = function () {
 
 }(jQuery);
 
-+function($) {
++
+
+function($) {
     'use strict';
 
     // CAROUSEL CLASS DEFINITION
@@ -388,11 +392,11 @@ const right = '<i class="fa fa-chevron-right" aria-hidden="true"></i>'
 
 
 // **********owl-carousel***********
-$(document).ready(function () {
+$(document).ready(function() {
     $('.nav-carousel .owl-carousel').owlCarousel({
         loop: true,
         nav: false,
-        margin:0,
+        margin: 0,
         items: 5,
         responsiveClass: true,
         responsive: {
@@ -428,7 +432,7 @@ $(document).ready(function () {
         loop: true,
         dots: true,
         nav: false,
-        autoplay:false,
+        autoplay: false,
         margin: 15,
         items: 5,
         responsiveClass: true,
@@ -437,21 +441,21 @@ $(document).ready(function () {
                 dots: true,
                 items: 1,
                 nav: false,
-                autoplay:true,
+                autoplay: true,
                 dots: false,
             },
             425: {
                 dots: true,
                 items: 1,
                 nav: false,
-                autoplay:true,
+                autoplay: true,
                 dots: false,
             },
             426: {
                 dots: true,
                 items: 2,
                 nav: false,
-                autoplay:true,
+                autoplay: true,
                 dots: false,
             },
             575: {
@@ -485,11 +489,11 @@ $(document).ready(function () {
         loop: true,
         margin: 16,
         dots: false,
-        nav:true,
-        navText:[
+        nav: true,
+        navText: [
             left,
             right
-        ], 
+        ],
         responsiveClass: true,
         responsive: {
             0: {
@@ -513,23 +517,23 @@ $(document).ready(function () {
         nav: false,
         margin: 16,
         dots: true,
-        autoplay:false,
+        autoplay: false,
         responsiveClass: true,
         responsive: {
             0: {
                 items: 1,
                 dots: false,
                 nav: false,
-                autoplay:true,
+                autoplay: true,
             },
             425: {
                 items: 1,
                 dots: true,
                 nav: false,
-                dots:false,
-                autoplay:true,
+                dots: false,
+                autoplay: true,
             },
-            575:{
+            575: {
                 items: 2,
             },
             768: {
@@ -545,9 +549,9 @@ $(document).ready(function () {
     });
     $('.carousel-four .owl-carousel').owlCarousel({
         loop: true,
-        autoplay:false,
+        autoplay: false,
         nav: false,
-        margin:16,
+        margin: 16,
         dots: true,
         items: 5,
         responsiveClass: true,
@@ -556,8 +560,8 @@ $(document).ready(function () {
                 items: 1,
                 dots: true,
                 nav: false,
-                dots:false,
-                autoplay:true,
+                dots: false,
+                autoplay: true,
             },
             575: {
                 items: 2,
@@ -615,7 +619,7 @@ $(document).ready(function () {
                 dots: true,
                 items: 2,
                 nav: false,
-                
+
             },
             768: {
                 dots: true,
@@ -637,35 +641,46 @@ $(document).ready(function () {
 // --------------brand page fade animation-----------------------
 
 AOS.init({
-  duration:800,
+    duration: 800,
 });
 
 // -------------------- pop up-------------------
-$(document).ready(function(){
+$(document).ready(function() {
     $(".myBtn").on("click", function(event) {
-        console.log("my model: ",$(this).parent().siblings(".myModal").show());
+        console.log("my model: ", $(this).parent().siblings(".myModal").show());
         $(this).parent().siblings(".myModal").show();
     })
     $(".close").on("click", function(event) {
-        console.log("my model: ",$(this).parent().siblings(".myModal").show());
-        $(this).parent().parent(".myModal").hide();
-    })
+            console.log("my model: ", $(this).parent().siblings(".myModal").show());
+            $(this).parent().parent(".myModal").hide();
+        })
+        // Next previous button logic.
+    $(".pop-up-left-arrow").on("click", function() {
+        $(".myModal").hide();
+        let parentId = $(this).parent().attr("id").split("_");
+        let num = parseInt(parentId[1]) - 1;
+        let prevButtonId = "#myModal_" + num;
+        $(prevButtonId).show();
+    });
+    $(".pop-up-right-arrow").on("click", function() {
+        $(".myModal").hide();
+        let parentId = $(this).parent().attr("id").split("_");
+        let num = parseInt(parentId[1]) + 1;
+        let nextButtonId = "#myModal_" + num;
+        $(nextButtonId).show();
+    });
+
 });
 
 //--------------Disable date and time-------------
 function checkBox() {
     let toggleButton = document.getElementById("rental");
 
-        if(toggleButton.checked === true){
-            document.getElementById("month-rental").disabled =false;
-            document.getElementById("date-rental").disabled =false;
-        } else{
-            document.getElementById("month-rental").disabled =true;
-            document.getElementById("date-rental").disabled =true;
-        }
-    };
-
-
-
-    
-    
+    if (toggleButton.checked === true) {
+        document.getElementById("month-rental").disabled = false;
+        document.getElementById("date-rental").disabled = false;
+    } else {
+        document.getElementById("month-rental").disabled = true;
+        document.getElementById("date-rental").disabled = true;
+    }
+};
