@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="../css/owl.theme.default.min.css">
     <link rel="stylesheet" href="../css/reset.min.css">
     <link rel="stylesheet" href="../css/common.css">
+    <link rel="stylesheet" href="../css/nav-search.css">
     <link rel="stylesheet" href="../css/homepage.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
@@ -553,9 +554,384 @@
     <section>
 
         <div class="search-box" id="search-box">
-            <div>
-                <input type="search" name="search" id="search" placeholder="Search For Maxim..."><i class="fas fa-search"></i>
+            <form action="searchresult.html">
+                <div class="search-bar">
+                    <input type="search" name="search" id="search" placeholder="Search For Maxim..."><i class="fas fa-search"></i>
+                </div>
+            </form>
+            <div class="onclick-dropdown" id="onclick-dropdown">
+                <div class="onclick-dropdown-inner">
+                    <a href="#">Using MaximInstruments.com Search</a>
+                    <p>You can easily search the entire MaximInstruments.com site in several ways.
+                    </p>
+                    <div class="search-by">Brand Name: <b> Manufacturer</b></div>
+                    <div class="search-by">Standard: <b> IEC 61000-x-xx</b></div>
+                    <div class="search-by">Category: <b>Amplifiers</b></div>
+                    <div class="search-by">Application: <b>Electromagnetic Compatibility (EMC)</b> </div>
+                    <div class="search-by">Industry: <b> Aerospace</b></div>
+
+                    <h4>Quick Links</h4>
+
+                    <p>You can also try the quick links below to fast search, request a quote, or contact us.</p>
+                    <div class="quicklink "><a href="">Product Finder </a></div>
+                    <div class="quicklink "><a href="">Request a Quote</a> </div>
+                    <div class="quicklink "><a href="">Contact Us </a></div>
+
+                </div>
+
             </div>
+            <div class="oninput-dropdown" id="oninput-dropdown">
+                <div class="oninput-dropdown-inner">
+                    <div class="half">
+                        <div class="inner-half">
+                            <div class="collaps-container">
+                                <input type="checkbox" id="click">
+                                <div class="filter-title">
+                                    <label for="click">
+                    <h2 onclick="showMenu()" class="arrow-R-L-bar">Filter by</h2>
+                    </label>
+                                </div>
+
+                                <ol id="one">
+                                    <li id="Brands"><span class="parent collapse arrow">Brands</span>
+                                        <ul>
+                                            <li data-id="Input-box-brands" class="brand-amplifier">
+                                                <input type="checkbox">Amplifier Research
+                                            </li>
+
+                                        </ul>
+                                    </li>
+                                    <li id="Categories"><span class="parent collapse arrow">Categories</span>
+                                        <ul>
+                                            <li data-id="Categories-parent" class="Categories">
+                                                <input type="checkbox"><span class="collapse accordion ">Frequency &amp; Power</span>
+                                                <ul class="Categories-ul">
+                                                    <li data-id="Categories-1">
+                                                        <input type="checkbox">Low Frequency Amplifiers
+                                                    </li>
+                                                    <li data-id="Categories-1">
+                                                        <input type="checkbox">High Frequency Amplifiers
+                                                    </li>
+                                                    <li data-id="Categories-1">
+                                                        <input type="checkbox">Low Power Amplifiers
+                                                    </li>
+                                                    <li data-id="Categories-1">
+                                                        <input type="checkbox">Mid Power Amplifiers
+                                                    </li>
+                                                    <li data-id="Categories-1">
+                                                        <input type="checkbox">high Power Amplifiers
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                            <li data-id="Categories" class="categories-antennas">
+                                                <input type="checkbox"><span class="collapse accordion">Antennas</span>
+                                                <ul>
+                                                    <li data-id="Categories">
+                                                        <input type="checkbox">Log Periodic Antennas
+                                                    </li>
+                                                    <li data-id="Categories">
+                                                        <input type="checkbox">Horn Antennas
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li id="Applications"><span class="parent collapse arrow">Applications</span>
+                                        <ul>
+                                            <li data-id="Applications" class="Applications-li">
+                                                <input type="checkbox"><span class="collapse accordion">EMC</span>
+                                                <ul>
+                                                    <li data-id="Applications" class="app-Emmisions">
+                                                        <input type="checkbox">Radiated Emmisions
+                                                    </li>
+                                                    <li data-id="Applications" class="app-Emmisions">
+                                                        <input type="checkbox">Radiated Immunity
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li id="Industries"><span class="parent collapse arrow">Industries</span>
+
+                                        <ul>
+                                            <li data-id="Industries" class="ind-li">
+                                                <input type="checkbox">Aerospace
+                                            </li>
+                                            <li data-id="Industries" class="ind-li">
+                                                <input type="checkbox">Defense
+                                            </li>
+                                            <li data-id="Industries" class="ind-li">
+                                                <input type="checkbox">Medical
+                                            </li>
+                                            <li data-id="Industries" class="ind-li">
+                                                <input type="checkbox">Telecommunications
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li id="Standards"><span class="parent collapse arrow">Standards</span>
+
+                                        <ul>
+                                            <li data-id="Standards" class="standards">
+                                                <input type="checkbox">
+                                                <span class="collapse accordion">BASIC Standards</span>
+
+                                                <ul>
+                                                    <li data-id="Standards" class="std-li">
+                                                        <input type="checkbox">IEC 61000-4-2
+                                                    </li>
+                                                    <li data-id="Standards" class="std-li">
+                                                        <input type="checkbox">IEC 61000-4-6
+                                                    </li>
+                                                </ul>
+                                            </li>
+
+                                            <li data-id="Standards" class="standards">
+                                                <input type="checkbox">
+                                                <span class="collapse accordion">CISPR</span>
+                                                <ul>
+                                                    <li data-id="Standards" class="std-li">
+                                                        <input type="checkbox">IEC 61000-4-2
+                                                    </li>
+                                                    <li data-id="Standards" class="std-li">
+                                                        <input type="checkbox">IEC 61000-4-6
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                </ol>
+                            </div>
+
+
+                            <!-- -----------grid-container-start----------------- -->
+                            <div class="grid-box-container">
+                                <div class="inner-grid">
+                                    <div class="boxes box-1">
+                                        <div class="image-div">
+                                            <div class="cart">
+                                                <img class="img-cart" src="../images/SVG/Cart.svg" alt="">
+                                            </div>
+                                            <img class="product-img" src="../images/product-images/ar_120s4g8.png" alt="">
+                                        </div>
+                                        <div class="text-div text-div-1">
+                                            <h3>Model 120S4G8</h3>
+                                            <p>Solid State amplifier 4 Ghz - 8 GHz 120W</p>
+                                        </div>
+                                    </div>
+                                    <div class="boxes box-2">
+                                        <div class="image-div">
+                                            <div class="cart">
+                                                <img class="img-cart" src="../images/SVG/Cart.svg" alt="">
+                                            </div>
+                                            <img class="product-img" src="../images/product-images/ar_120t40g45.png" alt="">
+                                        </div>
+                                        <div class="text-div text-div-1">
+                                            <h3>Model 120S4G8</h3>
+                                            <p>Solid State amplifier 4 Ghz - 45 GHz 120W</p>
+                                        </div>
+                                    </div>
+                                    <div class="boxes box-3">
+                                        <div class="image-div">
+                                            <div class="cart">
+                                                <img class="img-cart" src="../images/SVG/Cart.svg" alt="">
+                                            </div>
+                                            <img class="product-img" src="../images/product-images/ar_125s1g4.png" alt="">
+                                        </div>
+                                        <div class="text-div text-div-1">
+                                            <h3>Model 120S4G8</h3>
+                                            <p>Solid State amplifier 0.8 Ghz - 4.2 GHz 120W</p>
+                                        </div>
+                                    </div>
+                                    <div class="boxes box-4">
+                                        <div class="image-div">
+                                            <div class="cart">
+                                                <img class="img-cart" src="../images/SVG/Cart.svg" alt="">
+                                            </div>
+                                            <img class="product-img" src="../images/product-images/ar_10000a225.png" alt="">
+                                        </div>
+                                        <div class="text-div text-div-1">
+                                            <h3>Model 120S4G8</h3>
+                                            <p>Solid State amplifier 4 Ghz - 8 GHz 120W</p>
+                                        </div>
+                                    </div>
+                                    <div class="boxes box-5">
+                                        <div class="image-div">
+                                            <div class="cart">
+                                                <img class="img-cart" src="../images/SVG/Cart.svg" alt="">
+                                            </div>
+                                            <img class="product-img" src="../images/product-images/ar_120s4g8.png" alt="">
+                                        </div>
+                                        <div class="text-div text-div-1">
+                                            <h3>Model 120S4G8</h3>
+                                            <p>Solid State amplifier 4 Ghz - 8 GHz 120W</p>
+                                        </div>
+                                    </div>
+                                    <div class="boxes box-6">
+                                        <div class="image-div">
+                                            <div class="cart">
+                                                <img class="img-cart" src="../images/SVG/Cart.svg" alt="">
+                                            </div>
+                                            <img class="product-img" src="../images/product-images/ar_120t40g45.png" alt="">
+                                        </div>
+                                        <div class="text-div text-div-1">
+                                            <h3>Model 120S4G8</h3>
+                                            <p>Solid State amplifier 4 Ghz - 8 GHz 120W</p>
+                                        </div>
+                                    </div>
+                                    <div class="boxes box-7">
+                                        <div class="image-div">
+                                            <div class="cart">
+                                                <img class="img-cart" src="../images/SVG/Cart.svg" alt="">
+                                            </div>
+                                            <img class="product-img" src="../images/product-images/ar_125s1g4.png" alt="">
+                                        </div>
+                                        <div class="text-div text-div-1">
+                                            <h3>Model 120S4G8</h3>
+                                            <p>Solid State amplifier 4 Ghz - 8 GHz 120W</p>
+                                        </div>
+                                    </div>
+                                    <div class="boxes box-8">
+                                        <div class="image-div">
+                                            <div class="cart">
+                                                <img class="img-cart" src="../images/SVG/Cart.svg" alt="">
+                                            </div>
+                                            <img class="product-img" src="../images/product-images/ar_10000a225.png" alt="">
+                                        </div>
+                                        <div class="text-div text-div-1">
+                                            <h3>Model 120S4G8</h3>
+                                            <p>Solid State amplifier 4 Ghz - 8 GHz 120W</p>
+                                        </div>
+                                    </div>
+                                    <div class="boxes box-9">
+                                        <div class="image-div">
+                                            <div class="cart">
+                                                <img class="img-cart" src="../images/SVG/Cart.svg" alt="">
+                                            </div>
+                                            <img class="product-img" src="../images/product-images/ar_120s4g8.png" alt="">
+                                        </div>
+                                        <div class="text-div text-div-1">
+                                            <h3>Model 120S4G8</h3>
+                                            <p>Solid State amplifier 4 Ghz - 8 GHz 120W</p>
+                                        </div>
+                                    </div>
+                                    <div class="boxes box-10">
+                                        <div class="image-div">
+                                            <div class="cart">
+                                                <img class="img-cart" src="../images/SVG/Cart.svg" alt="">
+                                            </div>
+                                            <img class="product-img" src="../images/product-images/ar_120t40g45.png" alt="">
+                                        </div>
+                                        <div class="text-div text-div-1">
+                                            <h3>Model 120S4G8</h3>
+                                            <p>Solid State amplifier 4 Ghz - 8 GHz 120W</p>
+                                        </div>
+                                    </div>
+                                    <div class="boxes box-11">
+                                        <div class="image-div">
+                                            <div class="cart">
+                                                <img class="img-cart" src="../images/SVG/Cart.svg" alt="">
+                                            </div>
+                                            <img class="product-img" src="../images/product-images/ar_125s1g4.png" alt="">
+                                        </div>
+                                        <div class="text-div text-div-1">
+                                            <h3>Model 120S4G8</h3>
+                                            <p>Solid State amplifier 4 Ghz - 8 GHz 120W</p>
+                                        </div>
+                                    </div>
+                                    <div class="boxes box-12">
+                                        <div class="image-div">
+                                            <div class="cart">
+                                                <img class="img-cart" src="../images/SVG/Cart.svg" alt="">
+                                            </div>
+                                            <img class="product-img" src="../images/product-images/ar_10000a225.png" alt="">
+                                        </div>
+                                        <div class="text-div text-div-1">
+                                            <h3>Model 120S4G8</h3>
+                                            <p>Solid State amplifier 4 Ghz - 8 GHz 120W</p>
+                                        </div>
+                                    </div>
+                                    <div class="boxes box-13">
+                                        <div class="image-div">
+                                            <div class="cart">
+                                                <img class="img-cart" src="../images/SVG/Cart.svg" alt="">
+                                            </div>
+                                            <img class="product-img" src="../images/product-images/ar_120s4g8.png" alt="">
+                                        </div>
+                                        <div class="text-div text-div-1">
+                                            <h3>Model 120S4G8</h3>
+                                            <p>Solid State amplifier 4 Ghz - 8 GHz 120W</p>
+                                        </div>
+                                    </div>
+                                    <div class="boxes box-14">
+                                        <div class="image-div">
+                                            <div class="cart">
+                                                <img class="img-cart" src="../images/SVG/Cart.svg" alt="">
+                                            </div>
+                                            <img class="product-img" src="../images/product-images/ar_120t40g45.png" alt="">
+                                        </div>
+                                        <div class="text-div text-div-1">
+                                            <h3>Model 120S4G8</h3>
+                                            <p>Solid State amplifier 4 Ghz - 8 GHz 120W</p>
+                                        </div>
+                                    </div>
+                                    <div class="boxes box-15">
+                                        <div class="image-div">
+                                            <div class="cart">
+                                                <img class="img-cart" src="../images/SVG/Cart.svg" alt="">
+                                            </div>
+                                            <img class="product-img" src="../images/product-images/ar_125s1g4.png" alt="">
+                                        </div>
+                                        <div class="text-div text-div-1">
+                                            <h3>Model 120S4G8</h3>
+                                            <p>Solid State amplifier 4 Ghz - 8 GHz 120W</p>
+                                        </div>
+                                    </div>
+                                    <div class="boxes box-16">
+                                        <div class="image-div">
+                                            <div class="cart">
+                                                <img class="img-cart" src="../images/SVG/Cart.svg" alt="">
+                                            </div>
+                                            <img class="product-img" src="../images/product-images/ar_10000a225.png" alt="">
+                                        </div>
+                                        <div class="text-div text-div-1">
+                                            <h3>Model 120S4G8</h3>
+                                            <p>Solid State amplifier 4 Ghz - 8 GHz 120W</p>
+                                        </div>
+                                    </div>
+                                    <div class="boxes box-17">
+                                        <div class="image-div">
+                                            <div class="cart">
+                                                <img class="img-cart" src="../images/SVG/Cart.svg" alt="">
+                                            </div>
+                                            <img class="product-img" src="../images/product-images/ar_120s4g8.png" alt="">
+                                        </div>
+                                        <div class="text-div text-div-1">
+                                            <h3>Model 120S4G8</h3>
+                                            <p>Solid State amplifier 4 Ghz - 8 GHz 120W</p>
+                                        </div>
+                                    </div>
+                                    <div class="boxes box-18">
+                                        <div class="image-div">
+                                            <div class="cart">
+                                                <img class="img-cart" src="../images/SVG/Cart.svg" alt="">
+                                            </div>
+                                            <img class="product-img" src="../images/product-images/ar_120t40g45.png" alt="">
+                                        </div>
+                                        <div class="text-div text-div-1">
+                                            <h3>Model 120S4G8</h3>
+                                            <p>Solid State amplifier 4 Ghz - 8 GHz 120W</p>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                        <!-- -----------grid-container-end-----------------  -->
+                    </div>
+
+                </div>
+            </div>
+
         </div>
 
         <!-- --------------------------section content---------------------------- -->
@@ -888,6 +1264,143 @@
     <script src="../js/owl.carousel.min.js"></script>
     <script src="../js/script.js" defer></script>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+
+    <script>
+        var modal = document.getElementById("onclick-dropdown");
+        var modal2 = document.getElementById("oninput-dropdown");
+
+        var btn = document.getElementById("search");
+
+
+        btn.onclick = function() {
+
+            modal.style.display = "block";
+
+
+
+        }
+
+        btn.oninput = function() {
+
+            modal2.style.display = "block";
+
+
+
+        }
+
+
+        // When the user clicks anywhere outside of the modal, close it
+        window.onclick = function(event) {
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
+        }
+
+        window.onclick = function(event) {
+            if (event.target == modal2) {
+                modal.style.display = "none";
+            }
+        }
+
+        // function myFunction() {
+        //     var x = document.getElementById("search-bar");
+        //     var y = document.getElementById("onclick-dropdown");
+        //     if (y.style.display === "none") {
+        //         y.style.display = "block";
+        //     } else {
+        //         y.style.display = "none";
+        //     }
+        // }
+
+        // function myFunction2() {
+        //     var x = document.getElementById("search-bar");
+        //     var y = document.getElementById("oninput-dropdown");
+        //     if (y.style.display === "none") {
+        //         y.style.display = "block";
+        //     } else {
+        //         y.style.display = "none";
+        //     }
+        // }
+    </script>
+
+    <script>
+        $(function() {
+            $('.include').click(function(e) {
+                var $checks = $("input:checked");
+                $.each($checks, function(k, v) {
+                    var tempid = $(this).parent().data('id');
+                    var element = $(this).parent().detach();
+                    if (!$('#two #' + tempid + '-2').length) {
+                        var ol = $('<ol></ol>').attr('id', tempid + '-2');
+                        var heading = $('<span />').text(tempid).attr('id', tempid + '-2-heading').addClass('parent');
+                        ol.prepend(heading);
+                        $('#two').append(ol);
+                    }
+                    $('#two #' + tempid + '-2').append(element);
+                    if ($('#two #' + tempid + '-2').children('li').length == 3) {
+                        $('#two #' + tempid + '-2-heading').hide();
+                    } else {
+                        $('#two #' + tempid + '-2-heading').show();
+                    }
+                });
+            });
+
+            $('.exclude').click(function(e) {
+                var $checks = $("input:checked");
+                $.each($checks, function(k, v) {
+                    var tempid = $(this).parent().data('id');
+                    var element = $(this).parent().detach();
+                    $('#one').find('#' + tempid + ' ul').append(element);
+                    if ($('#two #' + tempid + '-2').children('li').length == 3) {
+                        $('#two #' + tempid + '-2-heading').hide();
+                    } else {
+                        $('#two #' + tempid + '-2-heading').show();
+                    }
+                });
+            });
+
+            $('#one span.parent').on('click', function() {
+                var checked = $(this).parent().find('input').prop('checked');
+                $(this).parent().find('input').prop('checked', !checked);
+            });
+
+            $('#one span.collapse').on('click', function() {
+                $(this).parent().find('ul').slideToggle();
+            });
+        });
+    </script>
+
+    <script>
+        var acc = document.getElementsByClassName("accordion");
+        var i;
+
+        for (i = 0; i < acc.length; i++) {
+            acc[i].addEventListener("click", function() {
+                this.classList.toggle("active-plus-minus");
+            });
+        }
+    </script>
+    <script>
+        var arr = document.getElementsByClassName("arrow");
+        var i;
+
+        for (i = 0; i < arr.length; i++) {
+            arr[i].addEventListener("click", function() {
+                this.classList.toggle("active-arrow");
+            });
+        }
+    </script>
+    <script>
+        var arr = document.getElementsByClassName("arrow-R-L-bar");
+        var i;
+
+        for (i = 0; i < arr.length; i++) {
+            arr[i].addEventListener("click", function() {
+                this.classList.toggle("active-R-L-bar");
+            });
+        }
+    </script>
+
 </body>
 
 </html>
