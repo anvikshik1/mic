@@ -817,6 +817,7 @@ td {
     display: flex;
     height: 100px;
     background: white;
+    border-bottom: 1px solid gray;
 }
 
 .r-image {

@@ -83,13 +83,41 @@
 }
 
 .collaps-container {
-    width: 370px;
-    margin-right: 20px;
+    width: 240px;
 }
 
 .collapse .accordion {
     font-size: 14px;
     font-size: 18px;
+}
+
+#one,
+#one ul li {
+    list-style-type: none;
+}
+
+#one input[type=checkbox] {
+    appearance: none;
+    width: 18px;
+    height: 18px;
+    border: 1px solid gray;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    margin: 4px;
+    float: left;
+}
+
+#one ul {
+    clear: both;
+}
+
+#one input[type=checkbox]:checked:after {
+    content: '\2713';
+    color: rgb(37, 211, 255);
+    font-weight: bold;
+    display: flex;
+    align-items: center;
 }
 
 #two .parent {
@@ -101,137 +129,32 @@
 }
 
 .parent {
-    color: black;
     font-family: Maxim-Klavika-LightCondensed;
-    font-size: 24px;
-    font-weight: bold;
+    font-size: 22px;
     display: flex;
     justify-content: space-between;
     cursor: pointer;
     position: relative;
+    width: 240px;
+    margin: 7px 0px 7px;
 }
 
+.accordion,
+.standards li,
+.Applications-li li,
+.Categories-ul li,
+.categories-antennas li,
+.ind-li,
 .brand-amplifier {
-    margin-left: 27px;
-    margin-top: 7px;
-    margin-bottom: 30px;
-}
-
-.brand-amplifier input {
-    margin-right: 10px;
-}
-
-.Categories {
-    margin-bottom: 40px;
-    margin-top: 10px;
-}
-
-.Categories-parent {
-    margin-left: 27px;
-    margin-top: 7px;
-}
-
-.Categories input {
-    margin-left: 28px;
-    margin-top: 12px;
-    margin-bottom: 12px;
-    margin-right: 10px;
-}
-
-
-/* .Categories-1{
-    margin-left:27px;
-    margin-top:7px;
-} */
-
-.Categories-ul {
-    margin-left: 26px;
-}
-
-.categories-antennas {
-    margin-left: 27px;
-    margin-top: 7px;
-    margin-bottom: 36px;
-}
-
-.categories-antennas input {
-    margin-right: 10px;
-}
-
-.Applications-li {
-    margin-left: 27px;
-    margin-top: 7px;
-    margin-bottom: 40px;
-}
-
-.Applications-li input {
-    margin-right: 10px;
-}
-
-.categories-antennas ul li {
-    margin-left: 27px;
-    margin-top: 7px;
-    margin-bottom: 16px;
-}
-
-
-/* #Applications{
-    color: white;
-    margin-bottom: 40px;
-
-
-} */
-
-.app-Emmisions {
-    margin-left: 27px;
-    margin-top: 7px;
-    margin-bottom: 16px;
-}
-
-
-/* #Industries{
-    color: white;
-    margin-bottom: 40px;
-
-
-} */
-
-#Industries ul li input {
-    margin-right: 10px;
-}
-
-#Industries ul {
-    margin-bottom: 36px;
-}
-
-.ind-li {
-    margin-left: 27px;
-    margin-top: 7px;
-    margin-bottom: 16px;
-}
-
-.standards {
-    margin-left: 27px;
-    margin-top: 7px;
-}
-
-.standards input {
-    margin-right: 10px;
+    display: flex;
+    align-items: center;
+    margin-left: 20px;
+    padding: 4px;
 }
 
 .direction {
     display: flex;
     flex-direction: row;
-}
-
-.direction h5 {
-    margin-left: -5px;
-}
-
-.std-li {
-    margin-left: 27px;
-    margin-top: 7px;
-    margin-bottom: 16px;
 }
 
 #click {
@@ -257,20 +180,12 @@ label h2 {
 label h2 .fas {
     margin-left: 10px;
     display: none;
-    color: rgb(0, 0, 0);
+    color: white;
 }
 
 label {
     position: relative;
 }
-
-
-/* #bars{
-    display: none;
-}
-#one .far{
-    display: none;
-} */
 
 .accordion::before {
     content: '\2212';
@@ -287,24 +202,15 @@ label {
     content: '\276F';
     color: rgb(0, 0, 0);
     font-weight: bold;
+    position: absolute;
     transform: rotate(90deg);
+    right: 5px;
 }
 
 .active-arrow::after {
     content: "\276E";
     transform: rotate(90deg);
 }
-
-
-/* input[type=checkbox] {
-    appearance: none;
-    width: 18px;
-    height: 18px;
-    border: 1px solid gray;
-    cursor: pointer;
-    display: flex;
-    justify-content: center;
-} */
 
 
 /* ---------------------product result------------------------- */
