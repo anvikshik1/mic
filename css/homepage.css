@@ -700,9 +700,9 @@ section {
 }
 
 @media(max-width: 768px) {
-    .search-box div {
+    /* .search-box div {
         width: 92%;
-    }
+    } */
     .search-box input {
         width: 95%;
     }
